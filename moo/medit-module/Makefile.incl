@@ -1,0 +1,36 @@
+if MOO_BUILD_MODULE
+
+pyexec_LTLIBRARIES = _moo.la
+_moo_la_LDFLAGS = -avoid-version -module -export-symbols-regex init_moo
+_moo_la_CFLAGS = $(AM_CFLAGS)
+_moo_la_CXXFLAGS = $(AM_CXXFLAGS)
+
+if MOO_OS_WIN32
+_moo_la_LDFLAGS += -no-undefined -shrext .pyd
+endif
+
+python_DATA = moopython/pygtk/moo.py
+
+_moo_la_SOURCES =			\
+	medit-module/medit-module.cpp	\
+	$(moo_sources)			\
+	$(plugins_sources)
+
+_moo_la_LIBADD = $(MOO_LIBS) $(moo_libadd)
+
+nodist__moo_la_SOURCES =		\
+	$(built_moo_sources)		\
+	$(built_plugins_sources)
+
+EXTRA_DIST += medit-module/moo.rc.in
+if MOO_OS_WIN32
+CLEANFILES += medit-module/moo.rc medit-module/moo.res
+medit-module/moo.rc: medit-module/moo.rc.in $(top_builddir)/config.status
+	$(AM_V_at)$(MKDIR_P) medit-module
+	$(AM_V_GEN)cd $(top_builddir) && ./config.status --silent --file=moo/medit-module/moo.rc
+medit-module/moo.res: medit-module/moo.rc
+	$(AM_V_GEN)$(WINDRES) -i medit-module/moo.rc --input-format=rc -o medit-module/moo.res -O coff
+_moo_la_LIBADD += medit-module/moo.res
+endif
+
+endif MOO_BUILD_MODULE

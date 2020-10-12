@@ -1,0 +1,274 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: as\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-09-18 16:22+0530\n"
+"Last-Translator: \n"
+"Language-Team: Assamese <>\n"
+"Language: as\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;"
+
+msgid ".desktop"
+msgstr "ডেস্কটপ"
+
+msgid "Ada"
+msgstr "এডা"
+
+msgid "Background"
+msgstr "পটভূমি"
+
+msgid "Background set"
+msgstr "পটভূমিৰ সেট"
+
+msgid "Blue based color scheme"
+msgstr "নীল ৰঙ ভিক্তিক ৰঙেৰ বিন্যাস"
+
+msgid "Bold"
+msgstr "গাড়"
+
+msgid "Bold set"
+msgstr "গাঢ় মান নিৰ্ধাৰিত হয়েছে"
+
+msgid "Boolean value"
+msgstr "বুলিয়ান মান"
+
+msgid "C#"
+msgstr "C5"
+
+msgid "C++"
+msgstr "C5"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC হেডাৰ"
+
+msgid "Classic"
+msgstr "পাৰম্পৰিক"
+
+msgid "Classic color scheme"
+msgstr "পাৰম্পৰিক ৰঙেৰ বিন্যাস"
+
+msgid "Cobalt"
+msgstr "কোবাল্ট"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate টেক্সট এডিটৰে ব্যবহৃত ৰঙেৰ স্কিম"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Tango ৰঙেৰ প্যালেট ব্যবহাৰ কৰে নিৰ্মিত ৰঙেৰ বিন্যাস"
+
+msgid "D"
+msgstr " (%'d"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tango ৰঙেৰ প্যালেট ব্যবহাৰ কৰে নিৰ্মিত গাঢ় ৰঙেৰ বিন্যাস"
+
+msgid "Data Type"
+msgstr "ডাটা টাইপ"
+
+msgid "Decimal number"
+msgstr "দশমিক সংখ্যা"
+
+msgid "Defaults"
+msgstr "ডিফল্ট মান"
+
+msgid "Error"
+msgstr "ভুল"
+
+msgid "Escaped Character"
+msgstr "এস্কেপ ক্যাৰেক্টাৰ"
+
+msgid "Floating point number"
+msgstr "ফ্লোটিং পয়েন্ট সংখ্যা"
+
+msgid "Foreground"
+msgstr "অগ্ৰভূমি"
+
+msgid "Foreground color"
+msgstr "পুৰোভূমিৰ ৰং"
+
+msgid "Foreground set"
+msgstr "পুৰোভূমিৰ সেট"
+
+msgid "GAP"
+msgstr "ব্যৱধান"
+
+msgid "Hexadecimal number"
+msgstr "হেক্সাডেসিমাল সংখ্যা"
+
+msgid "Hidden"
+msgstr "আড়ালে"
+
+msgid "Identifier"
+msgstr "অনুক্ৰমণিকা চিনাক্তকৰ্তা:"
+
+msgid "Italic"
+msgstr "তেৰছা"
+
+msgid "Italic set"
+msgstr "তেৰছা মান নিৰ্ধাৰিত হয়েছে"
+
+msgid "Keyword"
+msgstr "কীওয়াৰ্ড"
+
+msgid "Language id"
+msgstr "ভাষাৰ id"
+
+msgid "Language ids"
+msgstr "ভাষাৰ id"
+
+msgid "Language name"
+msgstr "ভাষাৰ নাম"
+
+msgid "Language section"
+msgstr "ভাষাৰ বিভাগ"
+
+msgid "Language specification directories"
+msgstr "ভাষা নিৰ্ধাৰণে ব্যবহৃত ডিৰেক্টৰি"
+
+msgid "Line background"
+msgstr "ৰেখাৰ পটভূমি"
+
+msgid "Line background color"
+msgstr "ৰেখাৰ পটভূমিৰ ৰং"
+
+msgid "Line background set"
+msgstr "ৰেখাৰ পটভূমি নিৰ্ধাৰিত"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "বিন্যাসেৰ স্কিম ধাৰণকাৰী ডিৰেক্টৰি ও ফাইলেৰ তালিকা"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "ভাষা স্পেসিফিকেশন ফাইল (.lang) যে ডিৰেক্টৰী সমূহতে আছে - তাৰ তালিকা "
+
+msgid "List of the ids of the available languages"
+msgstr "উপলব্ধ ভাষাৰ id"
+
+msgid "List of the ids of the available style schemes"
+msgstr "উপলব্ধ বিন্যাসেৰ স্কিমেৰ id-ৰ তালিকা"
+
+msgid "Literate Haskell"
+msgstr "লিটাৰেট Haskell"
+
+msgid "Markup"
+msgstr "মাৰ্কআপ"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "ভাষাৰ প্ৰধান ব্যাখ্যা অনুপস্থিত (id = \"%s\".)"
+
+msgid "Oblivion"
+msgstr "অবলিভিয়ান"
+
+msgid "Operator"
+msgstr "অপাৰেটৰ"
+
+msgid "Others"
+msgstr "অন্যান্য"
+
+msgid "Preprocessor"
+msgstr "প্ৰিপ্ৰসেসৰ"
+
+msgid "Ruby"
+msgstr "চুনি"
+
+msgid "Scheme"
+msgstr "স্কিম"
+
+msgid "Scheme ids"
+msgstr "স্কিমেৰ id"
+
+msgid "Scientific"
+msgstr "বৈজ্ঞানিক"
+
+msgid "Scripts"
+msgstr "স্ক্ৰিপ্ট"
+
+msgid "Sources"
+msgstr "উৎস"
+
+msgid "Strikethrough"
+msgstr "মাজত ৰেখাঙ্কণ"
+
+msgid "Strikethrough set"
+msgstr "মাঝ বৰাবৰ ৰেখাংকন কৰা সেট"
+
+msgid "String"
+msgstr "বাক্য"
+
+msgid "Style scheme description"
+msgstr "বিন্যাসেৰ স্কিমেৰ বৰ্ণনা"
+
+msgid "Style scheme filename"
+msgstr "বিন্যাসেৰ স্কিমেৰ ফাইলেৰ-নাম"
+
+msgid "Style scheme id"
+msgstr "বিন্যাসেৰ স্কিমেৰ id"
+
+msgid "Style scheme name"
+msgstr "বিন্যাসেৰ স্কিমেৰ nam"
+
+msgid "Style scheme search path"
+msgstr "বিন্যাসেৰ স্কিমেৰ অনুসন্ধানেৰ পাথ"
+
+msgid "Tango"
+msgstr "ট্যাঙ্গো"
+
+msgid "Underline"
+msgstr "নিম্নৰেখাঙ্কন"
+
+msgid "Underline set"
+msgstr "নিচ বৰাবৰ ৰেখাংকন কৰা সমষ্টি"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "অজ্ঞাত id '%s', '%s' ৰেগুলাৰ এক্সপ্ৰেশনেৰ মধ্যে উপস্থিত ৰয়েছে"
+
+msgid "Whether background color is set"
+msgstr "পটভূমিৰ ৰং নিৰ্ধাৰিত হয়েছে কি না"
+
+msgid "Whether bold attribute is set"
+msgstr "গাঢ় ভাবেৰ মান নিৰ্ধাৰণ হয়েছে কিনা"
+
+msgid "Whether foreground color is set"
+msgstr "অগ্ৰভূমিৰ ৰং নিৰ্ধাৰণ কৰা হয়েছে কি না"
+
+msgid "Whether italic attribute is set"
+msgstr "তেৰছা ভাবেৰ মান নিৰ্ধাৰণ হয়েছে কিনা"
+
+msgid "Whether line background color is set"
+msgstr "ৰেখাৰ পটভূমিৰ ৰং নিৰ্ধাৰিত হয়েছে কি না"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "গাঢ় ভাবেৰ মান নিৰ্ধাৰণ হয়েছে কিনা"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "ব্যবহাৰকাৰী থেকে ভাষা আড়াল কৰা হবে কি না"
+
+msgid "Whether underline attribute is set"
+msgstr "নিম্নৰেখাঙ্কনেৰ মান নিৰ্ধাৰণ হয়েছে কিনা"
+
+msgid "gettext translation"
+msgstr "gettext অনুবাদ"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "ৰেগুলাৰ এক্সপ্ৰেশন '%s'-ৰ মধ্যে: ব্যাক-ৰেফাৰেন্স সমৰ্থিত হবে না"
+
+msgid "invalid context reference '%s'"
+msgstr "অবৈধ কন্টেক্সট ৰেফাৰেন্স '%s'"
+
+msgid "m4"
+msgstr "m"
+
+msgid "unknown context '%s'"
+msgstr "অজ্ঞাত কনটেক্সট '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "কাৰ্য অসমৰ্থিত"
+

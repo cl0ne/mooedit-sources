@@ -1,0 +1,304 @@
+# translation of ml.po to
+# translation of gtksourceview.master.ml.po to
+# translation of gtksourceview.HEAD.ml.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# FSF-India <locale@gnu.org.in>, 2003.
+# Ani Peter <apeter@redhat.com>, 2006, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ml\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-04-28 14:05+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+""
+
+msgid "Background"
+msgstr "പശ്ചാത്തലം"
+
+msgid "Background color"
+msgstr "പശ്ചാത്തല നിറം"
+
+msgid "Background set"
+msgstr "പശ്ചാത്തലം സജ്ജമാണു്"
+
+msgid "Blue based color scheme"
+msgstr "നീല നിറഞ്ഞ നിറക്കൂട്ടുകള്‍"
+
+msgid "Bold"
+msgstr "ബോള്‍ഡ്"
+
+msgid "Bold set"
+msgstr "ബോള്‍ഡ് വിശേഷത സജ്ജമാണു്"
+
+msgid "Boolean value"
+msgstr "ബൂളിയന്‍ മൂല്ല്യം"
+
+msgid "C"
+msgstr "സി"
+
+msgid "C++"
+msgstr "സി++"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC ഹെഡര്‍"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"എല്ലാ മാറ്റങ്ങള്‍ക്കും regex ഉണ്ടാക്കുവാന്‍ സാധ്യമല്ല, സിന്റാക്സ് എടുത്തുകാണിക്കല്‍ പ്രക്രിയ സാധാരണയേക്കാള്‍ പതിയെയാകുന്നു.\n"
+"പിശക്: %s"
+
+msgid "Classic"
+msgstr "ക്ലാസ്സിക്"
+
+msgid "Classic color scheme"
+msgstr "ക്ലാസ്സിക് നിറക്കൂട്ട്"
+
+msgid "Cobalt"
+msgstr "കോബാള്‍ട്ട്"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate ടെക്സ്റ്റ് എഡിറ്ററില്‍ ഉപയോഗിച്ച നിറങ്ങള്‍"
+
+msgid "Color scheme using Tango color palette"
+msgstr "ടാങ്കോ നിറങ്ങളുടെ താലം ഉപയോഗിത്തുള്ള നിറങ്ങള്‍"
+
+msgid "Comment"
+msgstr "അഭിപ്രായം"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "ടാങ്കോ നിറതാലം ഉപയോഗിച്ചുള്ള ഇരുണ്ട നിറങ്ങള്‍"
+
+msgid "Data Type"
+msgstr "ഡേറ്റാ തരം"
+
+msgid "Decimal number"
+msgstr "ഡെസിമല്‍ സംഖ്യ‌"
+
+msgid "Defaults"
+msgstr "സ്വതവേയുള്ളതു്"
+
+msgid "Error"
+msgstr "പിശക്"
+
+msgid "Escaped Character"
+msgstr "എസ്കെയിപ്ട് ക്യാരക്ടര്‍"
+
+msgid "Floating point number"
+msgstr "ഫ്ലോട്ടിങ് പോയിന്റ് നമ്പര്‍"
+
+msgid "Foreground"
+msgstr "മുന്‍ഭാഗം"
+
+msgid "Foreground color"
+msgstr "മുന്‍ഭാഗത്തിനുള്ള നിറം"
+
+msgid "Foreground set"
+msgstr "മുന്‍ഭാഗം സജ്ജം"
+
+msgid "Forth"
+msgstr "ഫോര്‍ത്"
+
+msgid "Fortran 95"
+msgstr "ഫോര്‍ട്രാന്‍ 95"
+
+msgid "Hexadecimal number"
+msgstr "ഹെക്സാ ഡെസിമല്‍ സംഖ്യ‌"
+
+msgid "Hidden"
+msgstr "അദൃശ്യമായവ"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "ഒരൊറ്റ വരി എടുത്തുകാണിക്കുവാന്‍ ഒരുപാടു് സമയമെടുത്തു, സിന്റാക്സ് എടുത്തുകാണിക്കല്‍ പ്രവര്‍ത്തന രഹിതമാക്കുന്നു"
+
+msgid "Identifier"
+msgstr "ഐഡന്റിഫയര്‍"
+
+msgid "Italic"
+msgstr "ചരിഞ്ഞ"
+
+msgid "Italic set"
+msgstr "ചരിഞ്ഞെഴുതുവാനുള്ള വിശേഷത സജ്ജമാണു്"
+
+msgid "Java"
+msgstr "ജാവാ"
+
+msgid "Keyword"
+msgstr "കീവേര്‍ഡ്"
+
+msgid "Language id"
+msgstr "ഭാഷയുടെ id"
+
+msgid "Language ids"
+msgstr "ഭാഷകളുടെ id"
+
+msgid "Language name"
+msgstr "ഭാഷയുടെ പേരു്"
+
+msgid "Language section"
+msgstr "ഭാഷയ്ക്കുള്ള വിഭാഗം"
+
+msgid "Language specification directories"
+msgstr "ഭാഷ വിവരണ ഡയറക്ടറികള്‍"
+
+msgid "Line background"
+msgstr "വരിയുടെ പശ്ചാത്തലം"
+
+msgid "Line background color"
+msgstr "വരിയുടെ പശ്ചാത്തലത്തിന്റെ നിറം"
+
+msgid "Line background set"
+msgstr "വരി പശ്ചാത്തലം സജ്ജം"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "സ്റ്റൈല്‍ സ്കീമുകള്‍ ലഭ്യമാകുന്ന ഡയറക്ടറികളും ഫയലുകള്‍ കാണിക്കുക"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "ഭാഷ വിവരണ ഫയലുകള്‍ (.lang) അടങ്ങിയിരിക്കുന്ന ഡയറക്ടറികള്‍"
+
+msgid "List of the ids of the available languages"
+msgstr "ലഭ്യമായ ഭാഷകളുടെ id പട്ടിക"
+
+msgid "List of the ids of the available style schemes"
+msgstr "ലഭ്യമായ സ്റ്റൈല്‍ സ്കീമുകളുടെ id ലഭ്യമാക്കുക"
+
+msgid "Mallard"
+msgstr "മല്ലാര്‍ഡ്"
+
+msgid "Markup"
+msgstr "മാര്‍ക്കപ്പ്"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "മെയിന്‍ ലാങ്വേജ് ഡെഫനിഷന്‍ ലഭ്യമല്ല (id = \"%s\".)"
+
+msgid "Octave"
+msgstr "ഒക്ടേവ്"
+
+msgid "Operator"
+msgstr "ഓപ്പറേറ്റര്‍"
+
+msgid "Others"
+msgstr "മറ്റുള്ളവ"
+
+msgid "Pascal"
+msgstr "പാസ്കല്‍"
+
+msgid "Perl"
+msgstr "പേള്‍"
+
+msgid "Preprocessor"
+msgstr "പ്രീപ്രൊസസ്സര്‍"
+
+msgid "Python"
+msgstr "പൈതണ്‍"
+
+msgid "Ruby"
+msgstr "റൂബി"
+
+msgid "Scheme"
+msgstr "സ്കീം"
+
+msgid "Scheme ids"
+msgstr "സ്കീം id"
+
+msgid "Scientific"
+msgstr "ശാസ്ത്രീയം"
+
+msgid "Scripts"
+msgstr "സ്ക്രിപ്റ്റുകള്‍"
+
+msgid "Sources"
+msgstr "ഉറവിടങ്ങള്‍"
+
+msgid "Strikethrough"
+msgstr "ഇടയിലൂടെ വരയിടുക"
+
+msgid "Strikethrough set"
+msgstr "ഇടയിലൂടെ വരയിടുന്നതു് സജ്ജം"
+
+msgid "String"
+msgstr "വാക്യം"
+
+msgid "Style scheme description"
+msgstr "സ്റ്റൈല്‍ സ്കീം വിവരണം"
+
+msgid "Style scheme filename"
+msgstr "സ്റ്റൈല്‍ സ്കീം ഫയല്‍നാമം"
+
+msgid "Style scheme id"
+msgstr "സ്റ്റൈല്‍ സ്കീം id "
+
+msgid "Style scheme name"
+msgstr "സ്റ്റൈല്‍ സ്കീം പേരു്"
+
+msgid "Style scheme search path"
+msgstr "സ്റ്റൈല്‍ സ്കീം തെരച്ചില്‍ പാഥ്"
+
+msgid "Underline"
+msgstr "അടിവരയിടുക"
+
+msgid "Underline set"
+msgstr "അടിവരയിടുവാനുള്ള വിശേഷത സജ്ജമാണു്"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "അപരിചിതമായ id '%s'regex '%s'-ല്‍"
+
+msgid "Whether background color is set"
+msgstr "പശ്ചാത്തല നിറം സജ്ജമാണോ എന്നു്"
+
+msgid "Whether bold attribute is set"
+msgstr "ബോള്‍ഡ് വിശേഷത സജ്ജമാണോ എന്നു്"
+
+msgid "Whether foreground color is set"
+msgstr "മുന്‍ഭാഗത്തിനുള്ള നിറം സജ്ജമാണോ എന്നു്"
+
+msgid "Whether italic attribute is set"
+msgstr "ചരിഞ്ഞെഴുതുവാനുള്ള വിശേഷത സജ്ജമാണോ എന്നു്"
+
+msgid "Whether line background color is set"
+msgstr "വരി പശ്ചാത്തലത്തിനുള്ള നിറം സജ്ജമാണോ എന്നു്"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "ഇടയിലൂടെവരിയിടുന്ന വിശേഷത സജ്ജമാണോ എന്നു്"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "ഉപയോക്താവില്‍ നിന്നും ലാങ്വേജ് മറയ്ക്കണമോ എന്നു്"
+
+msgid "Whether underline attribute is set"
+msgstr "അടിവരയിടുവാനുള്ള വിശേഷത സജ്ജമാണോ എന്നു്"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "കോണ്‍ടെക്സ്റ്റ് '%s'-ല്‍ ഒരു \\%%{...@start} കമാന്‍ഡ് ഉണ്ടാകുവാന്‍ പാടില്ല"
+
+msgid "duplicated context id '%s'"
+msgstr "ആവര്‍ത്തിച്ച കോണ്‍ടെക്സ്റ്റ് id '%s'"
+
+msgid "gettext translation"
+msgstr "gettext പരിഭാഷ"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "regex '%s'-ല്‍: ബാക്ക് റിഫറന്‍സുകള്‍ പിന്തുണയ്ക്കുന്നില്ല"
+
+msgid "invalid context reference '%s'"
+msgstr "തെറ്റായ കോണ്‍ടെക്സ്റ്റ് റിഫറന്‍സ് '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "ലാങ്വേജ് '%s'-ലുള്ള ('%s' റിഫറന്‍സിലുള്ള) വൈള്‍ഡ്കാര്‍ഡ് കോണ്‍ടെക്സ്റ്റിനൊപ്പം ശൈലി തിരുത്തിയെഴുത്തു് ഉപയോഗിച്ചു"
+
+msgid "unknown context '%s'"
+msgstr "അപരിചിതമായ കോണ്ടെക്സ്റ്റ് '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "ലാങ്വേജ് ഡെഫനിഷനുകളില്‍ \\C ഉപയോഗം പിന്തുണയ്ക്കുന്നില്ല"
+

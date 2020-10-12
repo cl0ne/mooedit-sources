@@ -1,0 +1,40 @@
+General Information
+===================
+
+medit is a text editor.
+
+medit is free software, released under GNU GPL license. See the LICENSE
+file in this distribution for details.
+
+The web site is:
+    http://medit.bitbucket.org/
+releases are located at:
+    http://sourceforge.net/project/showfiles.php?group_id=167563
+
+
+Installation
+============
+
+See INSTALL file in this distribution.
+
+
+Bug reports and contact
+=======================
+
+Report bugs and file feature requests in the medit bug tracker at
+http://sourceforge.net/tracker/?group_id=167563&atid=843451 . You can
+also send an email to emuntyan@users.sourceforge.net if you don't feel
+like using the bug tracker, or have any questions/comments.
+
+
+Sources
+=======
+
+medit sources are tracked using mercurial. You can browse medit source
+repository online at http://bitbucket.org/medit/medit/. To check out a
+copy of medit repository, install mercurial, and do
+    hg clone http://bitbucket.org/medit/medit/
+This will create a new directory named 'medit' with medit sources inside.
+To update them later on, do
+    hg pull; hg update
+in this directory.

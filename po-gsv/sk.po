@@ -1,0 +1,281 @@
+# Slovak translation for gtksourceview.
+# Copyright (C) 2003, 2004, 2005, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtksourceview package.
+# Marcel Telka <marcel@telka.sk>, 2003, 2004, 2005.
+# Roman Mátyus <romanmatyus@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-08-20 09:58+0200\n"
+"Last-Translator: Roman Mátyus <romanmatyus@gmail.com>\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "Pozadie"
+
+msgid "Background color"
+msgstr "Farba pozadia"
+
+msgid "Background set"
+msgstr "Pozadie je nastavené"
+
+msgid "Blue based color scheme"
+msgstr "Farebná schéma do modra"
+
+msgid "Bold"
+msgstr "Tučné"
+
+msgid "Bold set"
+msgstr "Tučné je nastavené"
+
+msgid "Boolean value"
+msgstr "Logická hodnota"
+
+msgid "C/C++/ObjC Header"
+msgstr "Hlavička C/C++/ObjC"
+
+msgid "CG Shader Language"
+msgstr "Jazyk CG Shader"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Nepodarilo sa vytvoriť regulárny výraz pre všetky zmeny, proces zvýrazňovania syntaxe bude pracovať pomalšie ako obvykle.\n"
+"Chyba bola: %s"
+
+msgid "Classic"
+msgstr "Klasická"
+
+msgid "Classic color scheme"
+msgstr "Klasická farebná schéma"
+
+msgid "Cobalt"
+msgstr "Kobalt"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Farebná schéma používaná v textovom editore Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Farebná schéma využívajúca farebnú paletu Tango"
+
+msgid "Comment"
+msgstr "Komentár"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tmavá farebná schéma podla farebnej palety Tango"
+
+msgid "Data Type"
+msgstr "Dátový typ"
+
+msgid "Decimal number"
+msgstr "Desiatkové číslo"
+
+msgid "Defaults"
+msgstr "Predvolené"
+
+msgid "Dos Batch"
+msgstr "Dávka systému DOS"
+
+msgid "Error"
+msgstr "Chyba"
+
+msgid "Escaped Character"
+msgstr "Špeciálny znak (escaped)"
+
+msgid "Floating point number"
+msgstr "Číslo s pohyblivou desatinnou čiarkou"
+
+msgid "Foreground"
+msgstr "Popredie"
+
+msgid "Foreground color"
+msgstr "Farba popredia"
+
+msgid "Foreground set"
+msgstr "Popredie je nastavené"
+
+msgid "Hexadecimal number"
+msgstr "Šestnástkové číslo"
+
+msgid "Hidden"
+msgstr "Skrytý"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Zvýrazňovanie jedného riadku zabralo príliš veľa času, zvýrazňovanie syntaxe bude zakázané"
+
+msgid "Identifier"
+msgstr "Identifikátor"
+
+msgid "Italic"
+msgstr "Kurzíva"
+
+msgid "Italic set"
+msgstr "Kurzíva je nastavená"
+
+msgid "Keyword"
+msgstr "Kľúčové slovo"
+
+msgid "Language id"
+msgstr "Identifikátor jazyka"
+
+msgid "Language ids"
+msgstr "Identifikátory jazyka"
+
+msgid "Language name"
+msgstr "Názov jazyka"
+
+msgid "Language section"
+msgstr "Jazyková časť"
+
+msgid "Language specification directories"
+msgstr "Adresáre špecifikácií jazykov"
+
+msgid "Line background"
+msgstr "Pozadie riadka"
+
+msgid "Line background color"
+msgstr "Farba pozadia riadka"
+
+msgid "Line background set"
+msgstr "Pozadie riadka je nastavené"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Zoznam adresárov a súborov, kde sa nachádzajú schémy štýlov"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Zoznam adresárov, kde sa nachádzajú súbory špecifikácií jazykov (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "Zoznam identifikátorov dostupných jazykov"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Zoznam identifikátorov dostupných schém štýlov"
+
+msgid "Markup"
+msgstr "Značka"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Chýba hlavná definícia jazyka (identifikátor = \"%s\".)"
+
+msgid "Objective Caml"
+msgstr "Objektový Caml"
+
+msgid "Oblivion"
+msgstr "Zabudnutie"
+
+msgid "OpenGL Shading Language"
+msgstr "Jazyk OpenGL Shading"
+
+msgid "Operator"
+msgstr "Operátor"
+
+msgid "Others"
+msgstr "Ostatné"
+
+msgid "Preprocessor"
+msgstr "Preprocesor"
+
+msgid "RPM spec"
+msgstr "Špecifikácia RPM"
+
+msgid "Scheme ids"
+msgstr "Identifikátory schém"
+
+msgid "Scientific"
+msgstr "Vedecký"
+
+msgid "Scripts"
+msgstr "Skripty"
+
+msgid "Sources"
+msgstr "Zdroje"
+
+msgid "Strikethrough"
+msgstr "Preškrtnuté"
+
+msgid "Strikethrough set"
+msgstr "Prečiarknutie je nastavené"
+
+msgid "String"
+msgstr "Reťazec"
+
+msgid "Style scheme description"
+msgstr "Popis štýlu schémy"
+
+msgid "Style scheme filename"
+msgstr "Názov súboru schémy štýlu"
+
+msgid "Style scheme id"
+msgstr "Identifikátor schémy štýlu"
+
+msgid "Style scheme name"
+msgstr "Názov schémy štýlu"
+
+msgid "Style scheme search path"
+msgstr "Cesta k schéme štýlu"
+
+msgid "Underline"
+msgstr "Podčiarknuté"
+
+msgid "Underline set"
+msgstr "Podčiarknutie je nastavené"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Neznámy identifikátor '%s' v regulárnom výraze '%s'"
+
+msgid "Whether background color is set"
+msgstr "Či je farba pozadia nastavená"
+
+msgid "Whether bold attribute is set"
+msgstr "Či je atribút tučného písma nastavený"
+
+msgid "Whether foreground color is set"
+msgstr "Či je farba popredia nastavená"
+
+msgid "Whether italic attribute is set"
+msgstr "Či je atribút kurzívy nastavený"
+
+msgid "Whether line background color is set"
+msgstr "Či je farba pozadia riadka nastavená"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Či je atribút prečiarknutia nastavený"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Či má byť jazyk skrytý pred používateľom"
+
+msgid "Whether underline attribute is set"
+msgstr "Či je atribút podčiarknutia nastavený"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "kontext '%s' nemôže obsahovať príkaz \\%%{...@start}"
+
+msgid "duplicated context id '%s'"
+msgstr "duplicitný identifikátor kontextu '%s'"
+
+msgid "gettext translation"
+msgstr "preklad gettext"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "pre regulárny výraz '%s': spätné odkazy nie sú podporované"
+
+msgid "invalid context reference '%s'"
+msgstr "neplatný kontextový odkaz '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "prepisovanie štýlu použité s odkazmi na kontext pomocou náhradných znakov v jazyku '%s' v odkaze '%s'"
+
+msgid "unknown context '%s'"
+msgstr "neznámy kontext '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "použitie \\C nie je podporované v definíciách jazyka"
+

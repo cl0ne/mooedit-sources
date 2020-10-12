@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<glade-interface>
+<!-- interface-requires gtk+ 2.6 -->
+<!-- interface-naming-policy toplevel-contextual -->
+<widget class="GtkWindow" id="window2">
+<property name="visible">True</property>
+<property name="title">window2</property>
+<child>
+<widget class="GtkVBox" id="ScriptPage">
+<property name="visible">True</property>
+<property name="orientation">vertical</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkScrolledWindow" id="scrolledwindow2">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="hscrollbar_policy">automatic</property>
+<property name="vscrollbar_policy">automatic</property>
+<property name="shadow_type">etched-in</property>
+<child>
+<widget class="GtkTextView" id="textview:MooTextView">
+<property name="visible">True</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</glade-interface>

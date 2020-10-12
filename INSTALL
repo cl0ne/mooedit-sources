@@ -1,0 +1,28 @@
+medit uses autotools for the build. Quick build with default options:
+
+tar xjf medit-x.x.x.tar.bz2
+cd medit-x.x.x
+./configure
+make
+make install
+
+This will configure, build, and install medit to /usr/local.
+
+medit requires development packages of the following: gtk2, libxml2, python2, pygtk2.
+For example, on Debian you may need to install libgtk2.0-dev, libxml2-dev, python2.7-dev, python-gtk2-dev.
+
+If you checked out a copy of mercurial repository, then do the following to build:
+
+./autogen.sh
+./configure --enable-dev-mode
+make
+make install
+
+Building medit from Mercurial requires the following, in addition to the dependencies
+listed above: automake, autoconf, libtool, intltool, docbook, xsltproc, txt2tags.
+Other tools may be required and configure may not check for them, please report those
+to the author.
+
+To build a python module which could be used in other programs, use
+--enable-moo-module --enable-shared --disable-static configure flags in addition
+to above.

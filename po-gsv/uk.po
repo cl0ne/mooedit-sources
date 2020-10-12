@@ -1,0 +1,272 @@
+# Ukrainian translation to gtksourceview.
+# Copyright (C) Free Software Foundation, 2003
+# This file is distributed under the same license as the gtksourceview package.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2003-2008
+#
+# wanderlust <wanderlust@ukr.net>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-26 11:22+0300\n"
+"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "Тло"
+
+msgid "Background color"
+msgstr "Колір тла"
+
+msgid "Background set"
+msgstr "Колір тла встановлено"
+
+msgid "Blue based color scheme"
+msgstr "Синя схема кольорів"
+
+msgid "Bold"
+msgstr "Жирний"
+
+msgid "Bold set"
+msgstr "Жирність тексту встановлено"
+
+msgid "Boolean value"
+msgstr "Логічне (бульове) значення"
+
+msgid "C/C++/ObjC Header"
+msgstr "Заголовок C/C++/ObjC"
+
+msgid "CG Shader Language"
+msgstr "Мова Шейдерів CG"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Не вдається створити регулярний вираз для всіх перетворень, виділення синтаксису кольором буде виконуватися значно повільніше.\n"
+"Помилка: %s"
+
+msgid "Classic"
+msgstr "Класична"
+
+msgid "Classic color scheme"
+msgstr "Класична схема кольорів"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Кольорова схема з текстового редактора Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Кольорова схема, що використовує палітру Tango"
+
+msgid "Comment"
+msgstr "Коментар"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Темна кольорова схема, що використовує палітру Tango"
+
+msgid "Data Type"
+msgstr "Тип даних"
+
+msgid "Decimal number"
+msgstr "Десяткове число"
+
+msgid "Defaults"
+msgstr "Типово"
+
+msgid "Dos Batch"
+msgstr "Командний файл DOS"
+
+msgid "Error"
+msgstr "Помилка"
+
+msgid "Escaped Character"
+msgstr "Екрануючий символ"
+
+msgid "Floating point number"
+msgstr "Число з плаваючою комою"
+
+msgid "Foreground"
+msgstr "Текст"
+
+msgid "Foreground color"
+msgstr "Колір тексту"
+
+msgid "Foreground set"
+msgstr "Колір тексту встановлено"
+
+msgid "Hexadecimal number"
+msgstr "Шістнадцяткове число"
+
+msgid "Hidden"
+msgstr "Приховано"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Виділення кольором одного рядка займає багато часу, виділення кольором буде вимкнено"
+
+msgid "Identifier"
+msgstr "Ідентифікатор"
+
+msgid "Italic"
+msgstr "Курсив"
+
+msgid "Italic set"
+msgstr "Курсив встановлено"
+
+msgid "Keyword"
+msgstr "Ключове слово"
+
+msgid "Language id"
+msgstr "Ідентифікатор мови"
+
+msgid "Language ids"
+msgstr "Ідентифікатори мови"
+
+msgid "Language name"
+msgstr "Мова"
+
+msgid "Language section"
+msgstr "Секція мови"
+
+msgid "Language specification directories"
+msgstr "Каталоги зі специфікаціями мов"
+
+msgid "Line background"
+msgstr "Тло рядка"
+
+msgid "Line background color"
+msgstr "Колір тла рядка"
+
+msgid "Line background set"
+msgstr "Колір рядка встановлено"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Список каталогів, в яких знаходяться файли визначення стильових схем"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Список каталогів, в яких знаходяться файли визначення мов (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "Список ідентифікаторів для доступних мов"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Список ідентифікаторів доступних стильових схем"
+
+msgid "Markup"
+msgstr "Розмітка"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Відсутнє головне визначення мови (id=\"%s\".)"
+
+msgid "Objective Caml"
+msgstr "Об'єктний Caml (ocaml)"
+
+msgid "OpenGL Shading Language"
+msgstr "Мова OpenGL Shading"
+
+msgid "Operator"
+msgstr "Оператор"
+
+msgid "Others"
+msgstr "Інше"
+
+msgid "Preprocessor"
+msgstr "Директива препроцесору"
+
+msgid "Scheme ids"
+msgstr "Ідентифікатори схем"
+
+msgid "Scientific"
+msgstr "Наукове"
+
+msgid "Scripts"
+msgstr "Мови сценаріїв"
+
+msgid "Sources"
+msgstr "Тексти програми"
+
+msgid "Strikethrough"
+msgstr "Перекреслення"
+
+msgid "Strikethrough set"
+msgstr "Перекреслення встановлено"
+
+msgid "String"
+msgstr "Рядок"
+
+msgid "Style scheme description"
+msgstr "Опис стильової схеми"
+
+msgid "Style scheme filename"
+msgstr "Назва файлу стильової схеми"
+
+msgid "Style scheme id"
+msgstr "Ідентифікатор стильової схеми"
+
+msgid "Style scheme name"
+msgstr "Стильова схема"
+
+msgid "Style scheme search path"
+msgstr "Шляхи пошуку схем стилю"
+
+msgid "Underline"
+msgstr "Підкреслення"
+
+msgid "Underline set"
+msgstr "Підкреслення встановлено"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Невідомий ідентифікатор '%s' у регулярному виразі '%s'"
+
+msgid "Whether background color is set"
+msgstr "Чи встановлено колір тла"
+
+msgid "Whether bold attribute is set"
+msgstr "Чи встановлено атрибут жирного тексту"
+
+msgid "Whether foreground color is set"
+msgstr "Чи встановлено колір тексту"
+
+msgid "Whether italic attribute is set"
+msgstr "Чи встановлено атрибут курсиву"
+
+msgid "Whether line background color is set"
+msgstr "Чи встановлено колір тла рядка"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Чи встановлено атрибут перекреслення"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Чи приховувати мову від користувача"
+
+msgid "Whether underline attribute is set"
+msgstr "Чи встановлено атрибут підкреслення"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "контекст '%s' не може містити команду \\%%{...@start}"
+
+msgid "duplicated context id '%s'"
+msgstr "повторний ідентифікатор контексту '%s'"
+
+msgid "gettext translation"
+msgstr "Переклад у форматі gettext"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "у регулярному виразі '%s': зворотні дужки не підтримуються"
+
+msgid "invalid context reference '%s'"
+msgstr "некоректне посилання на контекст '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "у мові '%s' використовувалось визначення стилю за допомогою шаблону у посиланні '%s'"
+
+msgid "unknown context '%s'"
+msgstr "невідомий контекст '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "Використання \\C не підтримується  у визначеннях мови"
+

@@ -1,0 +1,579 @@
+/* -%- lang: C; indent-width: 4; use-tabs: no; strip: yes -%-
+ *
+ *   mooutils-pygtk.override
+ *
+ *   Copyright (C) 2004-2010 by Yevgen Muntyan <emuntyan@users.sourceforge.net>
+ *
+ *   This file is part of medit.  medit is free software; you can
+ *   redistribute it and/or modify it under the terms of the
+ *   GNU Lesser General Public License as published by the
+ *   Free Software Foundation; either version 2.1 of the License,
+ *   or (at your option) any later version.
+ *
+ *   You should have received a copy of the GNU Lesser General Public
+ *   License along with medit.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+%%
+override moo_window_class_add_action varargs
+static GtkAction*
+py_action_factory_func (MooWindow  *window,
+                        PyObject   *func_n_args)
+{
+    PyObject *py_window, *args, *func, *result;
+    GtkAction *action;
+
+    g_return_val_if_fail (func_n_args != NULL, NULL);
+    g_return_val_if_fail (PyTuple_Check (func_n_args), NULL);
+    g_return_val_if_fail (PyTuple_GET_SIZE (func_n_args) == 2, NULL);
+
+    func = PyTuple_GET_ITEM (func_n_args, 0);
+    args = PyTuple_GET_ITEM (func_n_args, 1);
+
+    g_return_val_if_fail (PyCallable_Check (func), NULL);
+    g_return_val_if_fail (PyTuple_Check (args), NULL);
+    g_return_val_if_fail (PyTuple_GET_SIZE (args) > 0, NULL);
+
+    py_window = pygobject_new (G_OBJECT (window));
+    PyTuple_SET_ITEM (args, 0, py_window);
+    result = PyObject_Call (func, args, NULL);
+    PyTuple_SET_ITEM (args, 0, NULL);
+    Py_DECREF (py_window);
+
+    if (!result)
+    {
+        PyErr_Print ();
+        return NULL;
+    }
+
+    if (!PyObject_TypeCheck (result, &PyGtkAction_Type))
+    {
+        g_critical ("got invalid value");
+        Py_DECREF (result);
+        return NULL;
+    }
+
+    action = GTK_ACTION (pygobject_get (result));
+    g_object_ref (action);
+    Py_DECREF (result);
+    return action;
+}
+
+static void
+destroy_func_n_args (PyObject *func_n_args)
+{
+    if (func_n_args)
+    {
+        PyTuple_SET_ITEM (PyTuple_GET_ITEM (func_n_args, 1), 0, Py_None);
+        Py_INCREF (Py_None);
+        Py_DECREF (func_n_args);
+    }
+}
+
+static PyObject *
+_wrap_moo_window_class_add_action (G_GNUC_UNUSED PyObject *self, PyObject *args)
+{
+    PyObject *py_type, *py_id, *py_group, *py_factory_func, *func_n_args;
+    GType type;
+    MooWindowClass *klass;
+    int i, extra;
+
+    extra = PyTuple_GET_SIZE (args) - 4;
+
+    if (extra < 0)
+        return_TypeError ("at least three arguments required");
+
+    py_type = PyTuple_GET_ITEM (args, 0);
+    py_id = PyTuple_GET_ITEM (args, 1);
+    py_group = PyTuple_GET_ITEM (args, 2);
+    py_factory_func = PyTuple_GET_ITEM (args, 3);
+
+    type = pyg_type_from_object (py_type);
+
+    if (!type)
+        return NULL;
+
+    if (!g_type_is_a (type, MOO_TYPE_WINDOW))
+        return_TypeError ("type must be derived from MooWindow");
+
+    if (!PyString_Check (py_id))
+        return_TypeError ("name must be a string");
+
+    if (py_group != Py_None && !PyString_Check (py_group))
+        return_TypeError ("group must be a string or None");
+
+    if (!PyCallable_Check (py_factory_func))
+        return_TypeError ("factory_func must be callable");
+
+    klass = (MooWindowClass*) g_type_class_ref (type);
+
+    func_n_args = PyTuple_New (2);
+    PyTuple_SET_ITEM (func_n_args, 0, py_factory_func);
+    Py_INCREF (py_factory_func);
+
+    PyTuple_SET_ITEM (func_n_args, 1, PyTuple_New (1 + extra));
+
+    for (i = 0; i < extra; ++i)
+    {
+        PyTuple_SET_ITEM (PyTuple_GET_ITEM (func_n_args, 1), i + 1,
+                          PyTuple_GET_ITEM (args, i + 4));
+        Py_INCREF (PyTuple_GET_ITEM (args, i + 4));
+    }
+
+    moo_window_class_new_action_custom (klass, PyString_AS_STRING (py_id),
+                                        py_group == Py_None ? NULL : PyString_AS_STRING (py_group),
+                                        (MooWindowActionFunc) py_action_factory_func,
+                                        func_n_args, (GDestroyNotify) destroy_func_n_args);
+
+    g_type_class_unref (klass);
+    return_None;
+}
+%%
+override moo_window_class_find_action kwargs
+static PyObject *
+_wrap_moo_window_class_find_action (G_GNUC_UNUSED PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "cls", (char*) "name", NULL };
+    PyObject *py_type;
+    GType type;
+    const char *action_id;
+    MooWindowClass *klass;
+    gboolean ret;
+
+    if (!PyArg_ParseTupleAndKeywords (args, kwargs, "Os:window_class_find_action", kwlist, &py_type, &action_id))
+        return NULL;
+
+    type = pyg_type_from_object (py_type);
+
+    if (!type)
+        return NULL;
+
+    if (!g_type_is_a (type, MOO_TYPE_WINDOW))
+        return_TypeError ("type must be derived from MooWindow");
+
+    klass = (MooWindowClass*) g_type_class_ref (type);
+    ret = moo_window_class_find_action (klass, action_id);
+    g_type_class_unref (klass);
+
+    return_Bool (ret);
+}
+%%
+override moo_window_class_remove_action kwargs
+static PyObject *
+_wrap_moo_window_class_remove_action (G_GNUC_UNUSED PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "cls", (char*) "name", NULL };
+    PyObject *py_type;
+    GType type;
+    const char *action_id;
+    MooWindowClass *klass;
+
+    if (!PyArg_ParseTupleAndKeywords (args, kwargs, "Os:window_class_remove_action", kwlist, &py_type, &action_id))
+        return NULL;
+
+    type = pyg_type_from_object (py_type);
+
+    if (!type)
+        return NULL;
+
+    if (!g_type_is_a (type, MOO_TYPE_WINDOW))
+        return_TypeError ("type must be derived from MooWindow");
+
+    klass = (MooWindowClass*) g_type_class_ref (type);
+    moo_window_class_remove_action (klass, action_id);
+    g_type_class_unref (klass);
+
+    return_None;
+}
+%%
+override moo_window_class_new_group kwargs
+static PyObject *
+_wrap_moo_window_class_new_group (G_GNUC_UNUSED PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "cls", (char*) "name", (char*) "display_name", NULL };
+    PyObject *py_type;
+    GType type;
+    const char *name, *display_name;
+    MooWindowClass *klass;
+
+    if (!PyArg_ParseTupleAndKeywords (args, kwargs, "Oss:window_class_new_group", kwlist,
+                                      &py_type, &name, &display_name))
+        return NULL;
+
+    type = pyg_type_from_object (py_type);
+
+    if (!type)
+        return NULL;
+
+    if (!g_type_is_a (type, MOO_TYPE_WINDOW))
+        return_TypeError ("type must be derived from MooWindow");
+
+    klass = (MooWindowClass*) g_type_class_ref (type);
+    moo_window_class_new_group (klass, name, display_name);
+    g_type_class_unref (klass);
+
+    return_None;
+}
+%%
+override moo_window_class_find_group kwargs
+static PyObject *
+_wrap_moo_window_class_find_group (G_GNUC_UNUSED PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "cls", (char*) "name", NULL };
+    PyObject *py_type;
+    GType type;
+    const char *name;
+    MooWindowClass *klass;
+    gboolean ret;
+
+    if (!PyArg_ParseTupleAndKeywords (args, kwargs, "Os:window_class_find_group", kwlist,
+                                      &py_type, &name))
+        return NULL;
+
+    type = pyg_type_from_object (py_type);
+
+    if (!type)
+        return NULL;
+
+    if (!g_type_is_a (type, MOO_TYPE_WINDOW))
+        return_TypeError ("type must be derived from MooWindow");
+
+    klass = (MooWindowClass*) g_type_class_ref (type);
+    ret = moo_window_class_find_group (klass, name);
+    g_type_class_unref (klass);
+
+    return_Bool (ret);
+}
+%%
+override moo_window_class_remove_group kwargs
+static PyObject *
+_wrap_moo_window_class_remove_group (G_GNUC_UNUSED PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "cls", (char*) "name", NULL };
+    PyObject *py_type;
+    GType type;
+    const char *name;
+    MooWindowClass *klass;
+
+    if (!PyArg_ParseTupleAndKeywords (args, kwargs, "Os:window_class_remove_group", kwlist,
+                                      &py_type, &name))
+        return NULL;
+
+    type = pyg_type_from_object (py_type);
+
+    if (!type)
+        return NULL;
+
+    if (!g_type_is_a (type, MOO_TYPE_WINDOW))
+        return_TypeError ("type must be derived from MooWindow");
+
+    klass = (MooWindowClass*) g_type_class_ref (type);
+    moo_window_class_remove_group (klass, name);
+    g_type_class_unref (klass);
+
+    return_None;
+}
+%%
+override moo_closure_new varargs
+typedef struct {
+    MooClosure parent;
+    PyObject *func;
+    PyObject *args;
+} MooPyClosure;
+
+static void
+moo_py_closure_call (MooClosure *closure)
+{
+    MooPyClosure *cl = (MooPyClosure*) closure;
+    PyObject *ret;
+
+    ret = PyObject_CallObject (cl->func, cl->args);
+
+    if (!ret)
+        PyErr_Print ();
+
+    Py_XDECREF (ret);
+}
+
+static void
+moo_py_closure_destroy (MooClosure *closure)
+{
+    MooPyClosure *cl = (MooPyClosure*) closure;
+    PyObject *tmp1 = cl->func;
+    PyObject *tmp2 = cl->args;
+    cl->func = NULL;
+    cl->args = NULL;
+    Py_XDECREF (tmp1);
+    Py_XDECREF (tmp2);
+}
+
+static PyObject *
+_wrap_moo_closure_new (G_GNUC_UNUSED PyObject *self, PyObject *args)
+{
+    PyObject *py_func, *cl_args = NULL;
+    MooPyClosure *closure;
+
+    if (!args)
+        return_TypeError ("function argument required");
+
+    py_func = PyTuple_GET_ITEM (args, 0);
+
+    if (!PyCallable_Check (py_func))
+        return_TypeError ("function must be callable");
+
+    if (PyTuple_GET_SIZE (args) > 1)
+    {
+        cl_args = PyTuple_GetSlice (args, 1, PyTuple_GET_SIZE (args));
+
+        if (!cl_args)
+            return NULL;
+    }
+
+    closure = moo_closure_new (MooPyClosure,
+                               moo_py_closure_call,
+                               moo_py_closure_destroy);
+
+    closure->func = py_func;
+    Py_INCREF (closure->func);
+    closure->args = cl_args;
+
+    moo_closure_ref_sink ((MooClosure*) closure);
+
+    return pyg_boxed_new (MOO_TYPE_CLOSURE, closure, FALSE, TRUE);
+}
+%%
+override moo_file_watch_monitor_directory kwargs
+static PyObject *
+_wrap_moo_file_watch_monitor_directory (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "filename", NULL };
+    char *filename;
+    int ret;
+    GError *error = NULL;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:MooFileWatch.monitor_directory", kwlist, &filename))
+        return NULL;
+
+    ret = moo_file_watch_monitor_directory (MOO_FILE_WATCH(self->obj), filename, NULL, &error);
+
+    if (pyg_error_check(&error))
+        return NULL;
+
+    return PyInt_FromLong (ret);
+}
+%%
+override moo_file_watch_monitor_file kwargs
+static PyObject *
+_wrap_moo_file_watch_monitor_file (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "filename", NULL };
+    char *filename;
+    int ret;
+    GError *error = NULL;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:MooFileWatch.monitor_file", kwlist, &filename))
+        return NULL;
+
+    ret = moo_file_watch_monitor_file (MOO_FILE_WATCH (self->obj), filename, NULL, &error);
+
+    if (pyg_error_check(&error))
+        return NULL;
+
+    return PyInt_FromLong (ret);
+}
+%%
+override moo_glade_xml_fill_widget kwargs
+static PyObject *
+_wrap_moo_glade_xml_fill_widget (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "target", (char*) "buffer", (char*) "target_name", NULL };
+    PyGObject *target;
+    char *buffer, *target_name;
+    GError *error = NULL;
+    int ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+                                     "O!ss:MooGladeXML.fill_widget", kwlist,
+                                     &PyGtkWidget_Type, &target,
+                                     &buffer, &target_name))
+        return NULL;
+
+    ret = moo_glade_xml_fill_widget (MOO_GLADE_XML(self->obj),
+                                     GTK_WIDGET(target->obj),
+                                     buffer, -1,
+                                     target_name,
+                                     &error);
+
+    if (pyg_error_check(&error))
+        return NULL;
+
+    return PyBool_FromLong(ret);
+}
+%%
+override moo_file_dialog kwargs
+static PyObject *
+_wrap_moo_file_dialog (G_GNUC_UNUSED PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { (char*) "type", (char*) "parent", (char*) "start_name", (char*) "title", (char*) "start_dir", NULL };
+    PyObject *py_type = NULL;
+    int type;
+    const char *title = NULL;
+    const char *start_dir = NULL;
+    const char *start_name = NULL;
+    const char *ret;
+    GtkWidget *parent = NULL;
+    PyGObject *py_parent = NULL;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O|Ozzz:file_dialog", kwlist,
+                                     &py_type, &py_parent, &start_name, &title, &start_dir))
+        return NULL;
+
+    if (pyg_enum_get_value (MOO_TYPE_FILE_DIALOG_TYPE, py_type, &type))
+        return NULL;
+
+    if ((PyObject*) py_parent == Py_None)
+    {
+        parent = NULL;
+    }
+    else if (py_parent && pygobject_check (py_parent, &PyGtkWidget_Type))
+    {
+        parent = GTK_WIDGET (py_parent->obj);
+    }
+    else if (py_parent)
+    {
+        PyErr_SetString (PyExc_TypeError, "parent should be a GtkWidget or None");
+        return NULL;
+    }
+
+    ret = moo_file_dialog (parent, type, start_name, title, start_dir);
+
+    if (ret)
+        return PyString_FromString(ret);
+
+    return_None;
+}
+%%
+override-slot MooGladeXML.tp_getattr
+static PyObject *
+_wrap_moo_glade_xml_tp_getattr (PyObject *self, char *attr)
+{
+    GObject *ret = NULL;
+
+    if (g_str_has_prefix (attr, "w_"))
+        ret = moo_glade_xml_get_widget (MOO_GLADE_XML (pygobject_get (self)), attr + 2);
+
+    if (ret)
+        return pygobject_new (ret);
+
+    return Py_FindMethod ((PyMethodDef*) _PyMooGladeXML_methods, self, attr);
+}
+%%
+override moo_glade_xml_set_signal_func varargs
+
+typedef struct {
+    PyObject *func;
+    PyObject *args;
+} Closure;
+
+#define closure_new() g_new0 (Closure, 1)
+
+static void
+closure_free (Closure *closure)
+{
+    if (closure)
+    {
+        Py_XDECREF (closure->func);
+        Py_XDECREF (closure->args);
+        g_free (closure);
+    }
+}
+
+static gboolean
+signal_func (MooGladeXML *xml,
+             const char  *widget_id,
+             GtkWidget   *widget,
+             const char  *signal,
+             const char  *handler,
+             const char  *object,
+             gpointer     data)
+{
+    Closure *closure = data;
+    PyObject *result, *args;
+    gboolean ret;
+
+    args = PyTuple_New (6 + (closure->args ? PyTuple_GET_SIZE (closure->args) : 0));
+    PyTuple_SET_ITEM (args, 0, pygobject_new (G_OBJECT (xml)));
+    PyTuple_SET_ITEM (args, 1, PyString_FromString (widget_id));
+    PyTuple_SET_ITEM (args, 2, pygobject_new (G_OBJECT (widget)));
+    PyTuple_SET_ITEM (args, 3, PyString_FromString (signal));
+    PyTuple_SET_ITEM (args, 4, PyString_FromString (handler));
+    PyTuple_SET_ITEM (args, 5, object ? PyString_FromString (object) : Py_None);
+
+    if (!object)
+        Py_INCREF (Py_None);
+
+    if (closure->args)
+    {
+        int i;
+
+        for (i = 0; i < PyTuple_GET_SIZE (closure->args); ++i)
+        {
+            PyTuple_SET_ITEM (args, i + 6, PyTuple_GET_ITEM (closure->args, i));
+            Py_INCREF (PyTuple_GET_ITEM (closure->args, i));
+        }
+    }
+
+    result = PyObject_CallObject (closure->func, args);
+
+    Py_DECREF (args);
+
+    if (result)
+    {
+        ret = PyObject_IsTrue (result);
+        Py_DECREF (result);
+    }
+    else
+    {
+        ret = FALSE;
+        PyErr_Print ();
+    }
+
+    return ret;
+}
+
+static PyObject *
+_wrap_moo_glade_xml_set_signal_func (PyGObject *self, PyObject *args)
+{
+    PyObject *py_func;
+    PyObject *func_args = NULL;
+    Closure *closure;
+
+    if (!args)
+        return_TypeError ("arguments required");
+
+    if (PyTuple_GET_SIZE (args) < 1)
+        return_TypeError ("function argument required");
+
+    py_func = PyTuple_GET_ITEM (args, 0);
+
+    if (!PyCallable_Check (py_func))
+        return_TypeError ("function must be callable");
+
+    if (PyTuple_GET_SIZE (args) > 1)
+    {
+        func_args = PyTuple_GetSlice (args, 1, PyTuple_GET_SIZE (args));
+        if (!func_args)
+            return NULL;
+    }
+
+    closure = closure_new ();
+    closure->func = py_func;
+    Py_INCREF (closure->func);
+    closure->args = func_args;
+
+    moo_glade_xml_set_signal_func (MOO_GLADE_XML (self->obj),
+                                   signal_func, closure,
+                                   (GDestroyNotify) closure_free);
+
+    return_None;
+}

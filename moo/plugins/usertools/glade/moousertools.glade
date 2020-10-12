@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glade-interface>
+<!-- interface-requires gtk+ 2.6 -->
+<!-- interface-naming-policy toplevel-contextual -->
+<widget class="GtkWindow" id="window1">
+<property name="visible">True</property>
+<property name="title">window1</property>
+<child>
+<widget class="GtkVBox" id="Command">
+<property name="visible">True</property>
+<property name="border_width">12</property>
+<property name="spacing">18</property>
+<child>
+<widget class="GtkHBox" id="hbox1">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkVBox" id="vbox2">
+<property name="visible">True</property>
+<property name="spacing">3</property>
+<child>
+<widget class="GtkScrolledWindow" id="scrolledwindow1">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="hscrollbar_policy">automatic</property>
+<property name="vscrollbar_policy">automatic</property>
+<property name="shadow_type">in</property>
+<child>
+<widget class="GtkTreeView" id="treeview">
+<property name="visible">True</property>
+<property name="border_width">3</property>
+<property name="headers_visible">False</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkHBox" id="hbox2">
+<property name="visible">True</property>
+<child>
+<widget class="GtkButton" id="new">
+<property name="visible">True</property>
+<property name="tooltip" translatable="yes">New item</property>
+<property name="focus_on_click">False</property>
+<child>
+<widget class="GtkImage" id="image3">
+<property name="visible">True</property>
+<property name="stock">gtk-new</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkButton" id="delete">
+<property name="visible">True</property>
+<property name="tooltip" translatable="yes">Delete item</property>
+<property name="focus_on_click">False</property>
+<child>
+<widget class="GtkImage" id="image4">
+<property name="visible">True</property>
+<property name="stock">gtk-delete</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+<child>
+<widget class="GtkButton" id="down">
+<property name="visible">True</property>
+<property name="tooltip" translatable="yes">Move item down</property>
+<property name="focus_on_click">False</property>
+<child>
+<widget class="GtkImage" id="image2">
+<property name="visible">True</property>
+<property name="stock">gtk-go-down</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">2</property>
+</packing>
+</child>
+<child>
+<widget class="GtkButton" id="up">
+<property name="visible">True</property>
+<property name="tooltip" translatable="yes">Move item up</property>
+<property name="focus_on_click">False</property>
+<child>
+<widget class="GtkImage" id="image1">
+<property name="visible">True</property>
+<property name="stock">gtk-go-up</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">3</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkVBox" id="tool_vbox">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkTable" id="table">
+<property name="visible">True</property>
+<property name="n_rows">5</property>
+<property name="n_columns">2</property>
+<property name="column_spacing">6</property>
+<property name="row_spacing">6</property>
+<child>
+<widget class="GtkCheckButton" id="enabled">
+<property name="label" translatable="yes">Enabled</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="right_attach">2</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label8">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">_Files:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">filter</property>
+</widget>
+<packing>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="filter">
+<property name="visible">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label1">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">_Requires:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">combo_requires</property>
+</widget>
+<packing>
+<property name="top_attach">2</property>
+<property name="bottom_attach">3</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkComboBox" id="combo_requires">
+<property name="visible">True</property>
+<property name="focus_on_click">False</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">2</property>
+<property name="bottom_attach">3</property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label2">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">_Save:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">combo_save</property>
+</widget>
+<packing>
+<property name="top_attach">3</property>
+<property name="bottom_attach">4</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkComboBox" id="combo_save">
+<property name="visible">True</property>
+<property name="focus_on_click">False</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">3</property>
+<property name="bottom_attach">4</property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label5">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">_Type:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">combo_type</property>
+</widget>
+<packing>
+<property name="top_attach">4</property>
+<property name="bottom_attach">5</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkComboBox" id="combo_type">
+<property name="visible">True</property>
+<property name="focus_on_click">False</property>
+<property name="items" translatable="yes"></property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">4</property>
+<property name="bottom_attach">5</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkAlignment" id="alignment1">
+<property name="visible">True</property>
+<property name="top_padding">3</property>
+<property name="bottom_padding">3</property>
+<property name="left_padding">3</property>
+<property name="right_padding">3</property>
+<child>
+<widget class="GtkNotebook" id="type_notebook">
+<property name="visible">True</property>
+<property name="show_tabs">False</property>
+<property name="show_border">False</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+<widget class="GtkWindow" id="window3">
+<property name="visible">True</property>
+<property name="title">window3</property>
+<child>
+<widget class="GtkVBox" id="PrefsPage">
+<property name="visible">True</property>
+<child>
+<widget class="GtkNotebook" id="notebook">
+<property name="visible">True</property>
+<child>
+<widget class="GtkVBox" id="page_menu:MooPrefsPage">
+<property name="visible">True</property>
+<child>
+<placeholder/>
+</child>
+</widget>
+</child>
+<child>
+<widget class="GtkLabel" id="label12">
+<property name="visible">True</property>
+<property name="label" translatable="yes" context="yes" comments="Label of notebook tab on User Tools prefs page, remove the part before and including |">user-tools-prefs|Tools menu</property>
+</widget>
+<packing>
+<property name="tab_fill">False</property>
+<property name="type">tab</property>
+</packing>
+</child>
+<child>
+<widget class="GtkVBox" id="page_context:MooPrefsPage">
+<property name="visible">True</property>
+<child>
+<placeholder/>
+</child>
+</widget>
+<packing>
+<property name="position">1</property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label13">
+<property name="visible">True</property>
+<property name="label" translatable="yes" context="yes" comments="Label of notebook tab on User Tools prefs page, remove the part before and including |">user-tools-prefs|Context menu</property>
+</widget>
+<packing>
+<property name="position">1</property>
+<property name="tab_fill">False</property>
+<property name="type">tab</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</glade-interface>

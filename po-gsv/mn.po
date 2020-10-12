@@ -1,0 +1,76 @@
+# translation of gtksourceview.HEAD.po to Mongolian
+# translation of gtksourceview.gnome-2-4.po to Mongolian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# S.Dulmandakh <duluu@localhost.localdomain>, 2003.
+# Sanlig Badral <badral@openmn.org>, 2003.
+# Sanlig Badral <Badral@openmn.org>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2004-02-04 02:11+0100\n"
+"Last-Translator: Sanlig Badral <Badral@openmn.org>\n"
+"Language-Team: Mongolian <openmn-core@lists.sf.net>\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2"
+
+msgid ".desktop"
+msgstr ".ажлын тавцан"
+
+msgid "C"
+msgstr "С"
+
+msgid "C#"
+msgstr "СC#"
+
+msgid "C++"
+msgstr ".desktop"
+
+msgid "Comment"
+msgstr "Тайлбар"
+
+msgid "Data Type"
+msgstr "Өгөгдлийн төрөл"
+
+msgid "Keyword"
+msgstr "Түлхүүр үг"
+
+msgid "LaTeX"
+msgstr "ЛаТекс"
+
+msgid "Language specification directories"
+msgstr "Хэлэнд зориулсан хавтаснууд"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Хэлний тодорхойлолт файлууд (.lang) байрлаж буй хавтаснуудын жагсаалт"
+
+msgid "Markup"
+msgstr "Тэмдэглэгээнүүд"
+
+msgid "Others"
+msgstr "Бусад"
+
+msgid "Preprocessor"
+msgstr "Препроцессор"
+
+msgid "Scripts"
+msgstr "Скриптүүд"
+
+msgid "Sources"
+msgstr "Эхүүд"
+
+msgid "String"
+msgstr "Тэмдэгт мөр"
+
+msgid "Verilog"
+msgstr "Вэрилог"
+
+msgid "gettext translation"
+msgstr "gettext орчуулга"
+

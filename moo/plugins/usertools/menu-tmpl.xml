@@ -1,0 +1,194 @@
+<moo-user-tools version="1.0"><!-- -%- indent-width:2 -%- -->
+  <command id="SortLines">
+    <name>Sort Lines</name>
+    <options>need-doc</options>
+    <type>lua</type>
+    <lua:code><![CDATA[
+lines = doc.get_selected_lines()
+if #lines > 1 then
+  table.sort(lines)
+  doc.replace_selected_lines(lines)
+end
+]]></lua:code>
+  </command>
+  <command id="SortLinesUniq"><!-- ###unix### -->
+    <name>Sort | Uniq</name>
+    <options>need-doc</options>
+    <type>exe</type>
+    <exe:input>lines</exe:input>
+    <exe:output>insert</exe:output>
+    <exe:code><![CDATA[
+sort | uniq
+]]></exe:code>
+  </command>
+  <command id="SortLinesUniq"><!-- ###win32### -->
+    <name>Sort | Uniq</name>
+    <options>need-doc</options>
+    <type>lua</type>
+    <lua:code><![CDATA[
+lines = doc.get_selected_lines()
+if #lines == 1 then
+  return
+end
+uniq_lines = {}
+for _, line in pairs(lines) do
+  if (#line ~= 0) then
+    uniq_lines[line] = true
+  end
+end
+lines = {}
+for line, _ in pairs(uniq_lines) do
+  table.insert(lines, line)
+end
+table.sort(lines)
+doc.replace_selected_lines(lines)
+]]></lua:code>
+  </command>
+  <command id="DiffToDisk"><!-- ###unix### -->
+    <name>Diff to Disk</name>
+    <options>need-file</options>
+    <type>exe</type>
+    <exe:input>doc-copy</exe:input>
+    <exe:code><![CDATA[
+diff -pu $DOC_PATH $INPUT_FILE > $TEMP_DIR/m.diff
+medit -r $TEMP_DIR/m.diff
+]]></exe:code>
+  </command>
+  <command id="Yacc"><!-- ###unix### -->
+    <name>Bison</name>
+    <langs>yacc</langs>
+    <options>need-file,need-save</options>
+    <type>exe</type>
+    <exe:filter>bison</exe:filter>
+    <exe:output>pane</exe:output>
+    <exe:code><![CDATA[
+bison $DOC
+]]></exe:code>
+  </command>
+  <command id="LaTeX"><!-- ###unix### -->
+    <name>LaTeX</name>
+    <file-filter>*.tex</file-filter>
+    <options>need-save</options>
+    <accel>&lt;shift&gt;&lt;ctrl&gt;L</accel>
+    <type>exe</type>
+    <exe:output>pane</exe:output>
+    <exe:code><![CDATA[
+[ -f medit-env.sh ] && . medit-env.sh
+doc="${LATEX_MASTER:-$DOC}"
+latex --src-specials "$doc"
+]]></exe:code>
+  </command>
+  <command id="Make_PDF"><!-- ###unix### -->
+    <name>Make PDF</name>
+    <file-filter>*.tex</file-filter>
+    <options>need-save</options>
+    <type>exe</type>
+    <exe:output>pane</exe:output>
+    <exe:code><![CDATA[
+  [ -f medit-env.sh ] && . medit-env.sh
+  doc="${LATEX_MASTER:-$DOC}"
+  doc_base=`basename "$doc" .tex`
+  latex --src-specials "$doc" && \
+  dvips "$doc_base.dvi" && \
+  ps2pdf "$doc_base.ps"
+]]></exe:code>
+  </command>
+  <command id="Bibtex"><!-- ###unix### -->
+    <name>LaTeX</name>
+    <file-filter>*.tex</file-filter>
+    <accel>&lt;shift&gt;&lt;ctrl&gt;B</accel>
+    <type>exe</type>
+    <exe:output>pane</exe:output>
+    <exe:code><![CDATA[
+[ -f medit-env.sh ] && . medit-env.sh
+doc="${LATEX_MASTER:-$DOC}"
+doc_base=`basename "$doc" .tex`
+bibtex "$doc_base"
+]]></exe:code>
+  </command>
+  <command id="PdfLaTeX"><!-- ###unix### -->
+    <name>PdfLaTeX</name>
+    <file-filter>*.tex</file-filter>
+    <options>need-save</options>
+    <type>exe</type>
+    <exe:output>pane</exe:output>
+    <exe:code><![CDATA[
+[ -f medit-env.sh ] && . medit-env.sh
+doc="${LATEX_MASTER:-$DOC}"
+pdflatex "$doc"
+]]></exe:code>
+  </command>
+  <command id="View_DVI"><!-- ###unix### -->
+    <name>View DVI</name>
+    <file-filter>*.tex</file-filter>
+    <accel>&lt;shift&gt;&lt;ctrl&gt;V</accel>
+    <type>exe</type>
+    <exe:output>async</exe:output>
+    <exe:code><![CDATA[
+[ -f medit-env.sh ] && . medit-env.sh
+doc="${LATEX_MASTER:-$DOC}"
+doc_base=`basename "$doc" .tex`
+if (which kdvi > /dev/null); then
+  kdvi --unique "$doc_base.dvi" && \
+  dcop `dcopfind -a 'kviewshell-*'` kdvi-mainwindow#1 hide && \
+  dcop `dcopfind -a 'kviewshell-*'` kdvi-mainwindow#1 show
+else
+  xdg-open "$doc_base.dvi"
+fi
+]]></exe:code>
+  </command>
+  <command id="View_PDF"><!-- ###unix### -->
+    <name>View PDF</name>
+    <file-filter>*.tex</file-filter>
+    <type>exe</type>
+    <exe:output>async</exe:output>
+    <exe:code><![CDATA[
+[ -f medit-env.sh ] && . medit-env.sh
+doc="${LATEX_MASTER:-$DOC}"
+doc_base=`basename "$doc" .tex`
+if (which kpdf > /dev/null); then
+  kpdf=`dcopfind -a 'kpdf-*'`
+  if [ -z "$kpdf" ]; then
+    kpdf "$doc_base.pdf"
+    kpdf=`dcopfind -a 'kpdf-*'`
+  else
+    dcop "$kpdf" kpdf openDocument "$doc_base.pdf"
+  fi
+  dcop "$kpdf" kpdf-mainwindow#1 hide
+  dcop "$kpdf" kpdf-mainwindow#1 show
+else
+  xdg-open "$doc_base.pdf"
+fi
+]]></exe:code>
+  </command>
+  <command id="Math">
+    <name>Math</name>
+    <file-filter>*.tex</file-filter>
+    <accel>&lt;alt&gt;M</accel>
+    <type>lua</type>
+    <lua:code><![CDATA[
+if doc.has_selection() then
+  doc.replace_selected_text('$' .. doc.get_selected_text() .. '$')
+else
+  pos = doc.get_cursor_pos().get_offset()
+  doc.insert_text('$ $')
+  doc.select_range(pos + 1, pos + 2)
+end
+]]></lua:code>
+  </command>
+  <command id="InsertDateAndTime"><!-- ###python### -->
+    <name>Insert Date and Time</name>
+    <options>need-doc</options>
+    <type>python</type>
+    <python:code><![CDATA[
+# insert_date_and_time.py is installed in
+# $prefix/share/medit-1/python
+from insert_date_and_time import get_format
+import time
+
+fmt = get_format(window)
+if fmt is not None:
+    doc.replace_selected_text(time.strftime(fmt))
+]]></python:code>
+  </command>
+</moo-user-tools>

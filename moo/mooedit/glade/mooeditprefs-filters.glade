@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<glade-interface>
+<!-- interface-requires gtk+ 2.8 -->
+<!-- interface-naming-policy toplevel-contextual -->
+<widget class="GtkWindow" id="window3">
+<child>
+<widget class="GtkVBox" id="PrefsFilters">
+<property name="visible">True</property>
+<property name="border_width">12</property>
+<property name="spacing">18</property>
+<child>
+<widget class="GtkVBox" id="vbox23">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkLabel" id="label20">
+<property name="visible">True</property>
+<property name="xalign">0</property>
+<property name="label" translatable="yes">&lt;b&gt;File filters&lt;/b&gt;</property>
+<property name="use_markup">True</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkAlignment" id="alignment12">
+<property name="visible">True</property>
+<property name="left_padding">12</property>
+<child>
+<widget class="GtkVBox" id="vbox24">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkVBox" id="vbox25">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkScrolledWindow" id="scrolledwindow1">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="hscrollbar_policy">automatic</property>
+<property name="vscrollbar_policy">automatic</property>
+<property name="shadow_type">etched-in</property>
+<child>
+<widget class="GtkTreeView" id="filter_treeview">
+<property name="width_request">400</property>
+<property name="height_request">200</property>
+<property name="visible">True</property>
+<property name="reorderable">True</property>
+<property name="rules_hint">True</property>
+<property name="enable_search">False</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkHBox" id="hbox4">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkButton" id="new_filter_setting">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<property name="focus_on_click">False</property>
+<child>
+<widget class="GtkImage" id="image1">
+<property name="visible">True</property>
+<property name="stock">gtk-new</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkButton" id="delete_filter_setting">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<property name="focus_on_click">False</property>
+<child>
+<widget class="GtkImage" id="image2">
+<property name="visible">True</property>
+<property name="stock">gtk-delete</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+<child>
+<widget class="GtkButton" id="filter_setting_down">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<child>
+<widget class="GtkImage" id="image3">
+<property name="visible">True</property>
+<property name="stock">gtk-go-down</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">2</property>
+</packing>
+</child>
+<child>
+<widget class="GtkButton" id="filter_setting_up">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<child>
+<widget class="GtkImage" id="image4">
+<property name="visible">True</property>
+<property name="stock">gtk-go-up</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">3</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</glade-interface>

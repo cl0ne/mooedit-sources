@@ -1,0 +1,995 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>moo.Edit - document object</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-moo.html" title="Chapter 1. medit Lua API">
+<link rel="prev" href="ch01s05.html" title="moo.CmdView">
+<link rel="next" href="ch01s07.html" title="moo.EditTab - document tab object">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">moo.Edit - document object</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01s05.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 1. <span class="application">medit</span> Lua API</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch01s07.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="lua.MooEdit"></a>moo.Edit - document object</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch01s06.html#lua.signal:MooEdit:after-save">signal after-save</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.signal:MooEdit:before-save">signal before-save</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.signal:MooEdit:will-close">signal will-close</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.signal:MooEdit:will-save">signal will-save</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_append_text">append_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_begin_non_undoable_action">begin_non_undoable_action()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_begin_user_action">begin_user_action()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_can_redo">can_redo()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_can_undo">can_undo()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_clear">clear()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_close">close()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_comment_selection">comment_selection()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_copy">copy()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_cut">cut()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_delete_selected_lines">delete_selected_lines()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_delete_selected_text">delete_selected_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_delete_text">delete_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_end_non_undoable_action">end_non_undoable_action()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_end_user_action">end_user_action()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_buffer">get_buffer()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_char_at_pos">get_char_at_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_char_count">get_char_count()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_clean">get_clean()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_cursor_pos">get_cursor_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_display_basename">get_display_basename()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_display_name">get_display_name()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_editor">get_editor()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_encoding">get_encoding()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_end_pos">get_end_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_file">get_file()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_filename">get_filename()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_lang_id">get_lang_id()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_line_at_cursor">get_line_at_cursor()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_line_at_pos">get_line_at_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_line_count">get_line_count()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_line_end_type">get_line_end_type()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_line_text">get_line_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_line_text_at_pos">get_line_text_at_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_n_views">get_n_views()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_pos_at_line">get_pos_at_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_pos_at_line_end">get_pos_at_line_end()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_selected_lines">get_selected_lines()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_selected_text">get_selected_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_selection_end_pos">get_selection_end_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_selection_start_pos">get_selection_start_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_start_pos">get_start_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_status">get_status()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_tab">get_tab()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_text">get_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_uri">get_uri()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_view">get_view()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_views">get_views()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_get_window">get_window()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_has_selection">has_selection()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_insert_text">insert_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_is_empty">is_empty()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_is_modified">is_modified()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_is_untitled">is_untitled()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_paste">paste()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_redo">redo()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_reload">reload()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_replace_selected_lines">replace_selected_lines()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_replace_selected_text">replace_selected_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_replace_text">replace_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_save">save()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_save_as">save_as()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_save_copy">save_copy()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_select_all">select_all()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_select_lines">select_lines()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_select_lines_at_pos">select_lines_at_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_select_range">select_range()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_set_clean">set_clean()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_set_cursor_pos">set_cursor_pos()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_set_encoding">set_encoding()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_set_line_end_type">set_line_end_type()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_set_modified">set_modified()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_set_text">set_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_uncomment_selection">uncomment_selection()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s06.html#lua.moo_edit_undo">undo()</a></span></dt>
+</dl></div>
+<p>Object which represents a document. It has methods for file operations and manipulating document text.</p>
+<pre class="programlisting">
+<code class="constant"><a class="link" href="ch02s06.html" title="gtk.GObject">gtk.GObject</a></code>
+  |
+  +-- moo.Edit
+</pre>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooEdit:after-save"></a>signal after-save</h3></div></div></div>
+<pre class="programlisting">after-save()</pre>
+<p>This signal is emitted after the document has been successfully saved on disk.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooEdit:before-save"></a>signal before-save</h3></div></div></div>
+<pre class="programlisting">before-save(file)</pre>
+<p>This signal is emitted when the document is going to be saved on disk. Callbacks should return <code class="constant"><a class="link" href="ch01s18.html#lua.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CANCEL</a></code> if document should not be saved, and <code class="constant"><a class="link" href="ch01s18.html#lua.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CONTINUE</a></code> otherwise.  For example, if before saving the file must be checked out from a version control system, a callback can do that and return <code class="constant"><a class="link" href="ch01s18.html#lua.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CANCEL</a></code> if checkout failed.  Callbacks should not modify document content. If you need to modify it before saving, use <code class="function"><a class="link" href="ch01s06.html#lua.signal:MooEdit:will-save" title="signal will-save">will-save</a></code> signal instead. </p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>file</code></em></span> : </p></td>
+<td><p> the <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code> object which represents saved file</p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em>  <code class="constant"><a class="link" href="ch01s18.html#lua.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CANCEL</a></code> to cancel saving, <code class="constant"><a class="link" href="ch01s18.html#lua.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CONTINUE</a></code> otherwise.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooEdit:will-close"></a>signal will-close</h3></div></div></div>
+<pre class="programlisting">will-close()</pre>
+<p>This signal is emitted before the document is closed.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooEdit:will-save"></a>signal will-save</h3></div></div></div>
+<pre class="programlisting">will-save(file)</pre>
+<p>This signal is emitted when the document is going to be saved on disk, after <code class="function"><a class="link" href="ch01s06.html#lua.signal:MooEdit:before-save" title="signal before-save">before-save</a></code> signal. Callbacks may modify document content at this point.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>file</code></em></span> : </p></td>
+<td><p> the <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code> object which represents saved file</p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_append_text"></a>append_text()</h3></div></div></div>
+<pre class="programlisting">doc.append_text(text)</pre>
+<p>Append text to the end of document.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_begin_non_undoable_action"></a>begin_non_undoable_action()</h3></div></div></div>
+<pre class="programlisting">doc.begin_non_undoable_action()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_begin_user_action"></a>begin_user_action()</h3></div></div></div>
+<pre class="programlisting">doc.begin_user_action()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_can_redo"></a>can_redo()</h3></div></div></div>
+<pre class="programlisting">doc.can_redo()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_can_undo"></a>can_undo()</h3></div></div></div>
+<pre class="programlisting">doc.can_undo()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_clear"></a>clear()</h3></div></div></div>
+<pre class="programlisting">doc.clear()</pre>
+<p>Remove all text from document.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_close"></a>close()</h3></div></div></div>
+<pre class="programlisting">doc.close()</pre>
+<p><em class="parameter"><code>Returns:</code></em>  whether document was closed</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_comment_selection"></a>comment_selection()</h3></div></div></div>
+<pre class="programlisting">doc.comment_selection()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_copy"></a>copy()</h3></div></div></div>
+<pre class="programlisting">doc.copy()</pre>
+<p>Copy selection to clipboard.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_cut"></a>cut()</h3></div></div></div>
+<pre class="programlisting">doc.cut()</pre>
+<p>Cut selection to clipboard.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_delete_selected_lines"></a>delete_selected_lines()</h3></div></div></div>
+<pre class="programlisting">doc.delete_selected_lines()</pre>
+<p>Delete selected lines. Similar to <code class="function"><a class="link" href="ch01s06.html#lua.moo_edit_delete_selected_text" title="delete_selected_text()">delete_selected_text()</a></code> but selection is extended to include whole lines. If no text is selected then line at cursor is deleted.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_delete_selected_text"></a>delete_selected_text()</h3></div></div></div>
+<pre class="programlisting">doc.delete_selected_text()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_delete_text"></a>delete_text()</h3></div></div></div>
+<pre class="programlisting">doc.delete_text(start, end)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>start</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>end</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_end_non_undoable_action"></a>end_non_undoable_action()</h3></div></div></div>
+<pre class="programlisting">doc.end_non_undoable_action()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_end_user_action"></a>end_user_action()</h3></div></div></div>
+<pre class="programlisting">doc.end_user_action()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_buffer"></a>get_buffer()</h3></div></div></div>
+<pre class="programlisting">doc.get_buffer()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s09.html" title="gtk.TextBuffer">gtk.TextBuffer</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_char_at_pos"></a>get_char_at_pos()</h3></div></div></div>
+<pre class="programlisting">doc.get_char_at_pos(pos)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>pos</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_char_count"></a>get_char_count()</h3></div></div></div>
+<pre class="programlisting">doc.get_char_count()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_clean"></a>get_clean()</h3></div></div></div>
+<pre class="programlisting">doc.get_clean()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_cursor_pos"></a>get_cursor_pos()</h3></div></div></div>
+<pre class="programlisting">doc.get_cursor_pos()</pre>
+<p><em class="parameter"><code>Returns:</code></em> Iterator which points to the current cursor (insertion point) position. In the case when text selection is not empty, it points to one of the ends of the selection.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_display_basename"></a>get_display_basename()</h3></div></div></div>
+<pre class="programlisting">doc.get_display_basename()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_display_name"></a>get_display_name()</h3></div></div></div>
+<pre class="programlisting">doc.get_display_name()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_editor"></a>get_editor()</h3></div></div></div>
+<pre class="programlisting">doc.get_editor()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s10.html" title="moo.Editor - editor object">moo.Editor</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_encoding"></a>get_encoding()</h3></div></div></div>
+<pre class="programlisting">doc.get_encoding()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_end_pos"></a>get_end_pos()</h3></div></div></div>
+<pre class="programlisting">doc.get_end_pos()</pre>
+<p><em class="parameter"><code>Returns:</code></em> Iterator which points to the end of the document, i.e. the position past the last character in the document.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_file"></a>get_file()</h3></div></div></div>
+<pre class="programlisting">doc.get_file()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_filename"></a>get_filename()</h3></div></div></div>
+<pre class="programlisting">doc.get_filename()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_lang_id"></a>get_lang_id()</h3></div></div></div>
+<pre class="programlisting">doc.get_lang_id()</pre>
+<p><em class="parameter"><code>Returns:</code></em> id of language currently used in the document. If no language is used, then string "none" is returned.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_line_at_cursor"></a>get_line_at_cursor()</h3></div></div></div>
+<pre class="programlisting">doc.get_line_at_cursor()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><code class="constant">1</code></code>-based number of the current cursor line.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_line_at_pos"></a>get_line_at_pos()</h3></div></div></div>
+<pre class="programlisting">doc.get_line_at_pos(pos)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>pos</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><code class="constant">1</code></code>-based number of the line at the given position.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_line_count"></a>get_line_count()</h3></div></div></div>
+<pre class="programlisting">doc.get_line_count()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_line_end_type"></a>get_line_end_type()</h3></div></div></div>
+<pre class="programlisting">doc.get_line_end_type()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s18.html#lua.MooLineEndType" title="moo.LineEndType">moo.LineEndType</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_line_text"></a>get_line_text()</h3></div></div></div>
+<pre class="programlisting">doc.get_line_text(line=0)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>line</code></em></span> : </p></td>
+<td><p><code class="constant"><code class="constant">1</code></code>-based line number.</p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> text at line <em class="parameter"><code>line</code></em>, not including line end characters. If <em class="parameter"><code>line</code></em> is missing, returns text at cursor line.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_line_text_at_pos"></a>get_line_text_at_pos()</h3></div></div></div>
+<pre class="programlisting">doc.get_line_text_at_pos(pos)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>pos</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> text at line which contains position <em class="parameter"><code>pos</code></em>, not including the line end character(s).</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_n_views"></a>get_n_views()</h3></div></div></div>
+<pre class="programlisting">doc.get_n_views()</pre>
+<p>Get the number of views which belong to this document.</p>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_pos_at_line"></a>get_pos_at_line()</h3></div></div></div>
+<pre class="programlisting">doc.get_pos_at_line(line)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>line</code></em></span> : </p></td>
+<td><p><code class="constant"><code class="constant">1</code></code>-based line number.</p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> Iterator which points to the beginning of the given line.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_pos_at_line_end"></a>get_pos_at_line_end()</h3></div></div></div>
+<pre class="programlisting">doc.get_pos_at_line_end(line)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>line</code></em></span> : </p></td>
+<td><p><code class="constant"><code class="constant">1</code></code>-based line number.</p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> Iterator which points to the end of the given line (i.e. the position before the line end character(s)).</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_selected_lines"></a>get_selected_lines()</h3></div></div></div>
+<pre class="programlisting">doc.get_selected_lines()</pre>
+<p>Returns selected lines as a list of strings, one string for each line, line terminator characters not included. If nothing is selected, then line at cursor is returned. </p>
+<p><em class="parameter"><code>Returns:</code></em> list of strings</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_selected_text"></a>get_selected_text()</h3></div></div></div>
+<pre class="programlisting">doc.get_selected_text()</pre>
+<p><em class="parameter"><code>Returns:</code></em> selected text.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_selection_end_pos"></a>get_selection_end_pos()</h3></div></div></div>
+<pre class="programlisting">doc.get_selection_end_pos()</pre>
+<p><em class="parameter"><code>Returns:</code></em> Iterator which points to the end of the current text selection. If the selection is empty, it returns the current cursor position.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_selection_start_pos"></a>get_selection_start_pos()</h3></div></div></div>
+<pre class="programlisting">doc.get_selection_start_pos()</pre>
+<p><em class="parameter"><code>Returns:</code></em> Iterator which points to the beginning of the current text selection. If the selection is empty, it returns the current cursor position.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_start_pos"></a>get_start_pos()</h3></div></div></div>
+<pre class="programlisting">doc.get_start_pos()</pre>
+<p><em class="parameter"><code>Returns:</code></em> Iterator which points to the beginning of the document.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_status"></a>get_status()</h3></div></div></div>
+<pre class="programlisting">doc.get_status()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s18.html#lua.MooEditStatus" title="moo.EditStatus">moo.EditStatus</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_tab"></a>get_tab()</h3></div></div></div>
+<pre class="programlisting">doc.get_tab()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s07.html" title="moo.EditTab - document tab object">moo.EditTab</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_text"></a>get_text()</h3></div></div></div>
+<pre class="programlisting">doc.get_text(start=<code class="constant">nil</code>, end=<code class="constant">nil</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>start</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code> or <code class="constant">nil</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>end</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code> or <code class="constant">nil</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> text between <em class="parameter"><code>start</code></em> and <em class="parameter"><code>end</code></em>. If <em class="parameter"><code>end</code></em> is missing then it returns text from <em class="parameter"><code>start</code></em> to the end of document; and if both <em class="parameter"><code>start</code></em> and <em class="parameter"><code>end</code></em> are missing then it returns whole document content.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_uri"></a>get_uri()</h3></div></div></div>
+<pre class="programlisting">doc.get_uri()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_view"></a>get_view()</h3></div></div></div>
+<pre class="programlisting">doc.get_view()</pre>
+<p>Get the active view of this document.</p>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s08.html" title="moo.EditView - document view object">moo.EditView</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_views"></a>get_views()</h3></div></div></div>
+<pre class="programlisting">doc.get_views()</pre>
+<p>Get the list of views which belong to this document.</p>
+<p><em class="parameter"><code>Returns:</code></em> list of <code class="constant"><a class="link" href="ch01s08.html" title="moo.EditView - document view object">moo.EditView</a></code> objects</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_get_window"></a>get_window()</h3></div></div></div>
+<pre class="programlisting">doc.get_window()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s09.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_has_selection"></a>has_selection()</h3></div></div></div>
+<pre class="programlisting">doc.has_selection()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_insert_text"></a>insert_text()</h3></div></div></div>
+<pre class="programlisting">doc.insert_text(text, where=<code class="constant">nil</code>)</pre>
+<p>Insert <em class="parameter"><code>text</code></em> at position <em class="parameter"><code>where</code></em> or at cursor position if <em class="parameter"><code>where</code></em> is <code class="constant"><code class="constant">nil</code></code>.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>where</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code> or <code class="constant">nil</code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_is_empty"></a>is_empty()</h3></div></div></div>
+<pre class="programlisting">doc.is_empty()</pre>
+<p>This function returns whether the document is "empty", i.e. is not modified, is untitled, and contains no text.</p>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_is_modified"></a>is_modified()</h3></div></div></div>
+<pre class="programlisting">doc.is_modified()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_is_untitled"></a>is_untitled()</h3></div></div></div>
+<pre class="programlisting">doc.is_untitled()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_paste"></a>paste()</h3></div></div></div>
+<pre class="programlisting">doc.paste()</pre>
+<p>Paste clipboard contents.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_redo"></a>redo()</h3></div></div></div>
+<pre class="programlisting">doc.redo()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_reload"></a>reload()</h3></div></div></div>
+<pre class="programlisting">doc.reload(info=<code class="constant">nil</code>)</pre>
+<p>Reload document from disk </p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>info</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch01s13.html" title="moo.ReloadInfo - information for reloading a file">moo.ReloadInfo</a></code> or <code class="constant">nil</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em>  whether document was successfully reloaded</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_replace_selected_lines"></a>replace_selected_lines()</h3></div></div></div>
+<pre class="programlisting">doc.replace_selected_lines(replacement)</pre>
+<p>replace selected lines with <em class="parameter"><code>replacement</code></em>. Similar to <code class="function"><a class="link" href="ch01s06.html#lua.moo_edit_replace_selected_text" title="replace_selected_text()">replace_selected_text()</a></code>, but selection is extended to include whole lines. If nothing is selected, then line at cursor is replaced.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>replacement</code></em></span> : </p></td>
+<td><p>list of lines to replace selected lines with, maybe empty</p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_replace_selected_text"></a>replace_selected_text()</h3></div></div></div>
+<pre class="programlisting">doc.replace_selected_text(replacement)</pre>
+<p>Replace selected text with string <em class="parameter"><code>replacement</code></em>. If nothing is selected, then <em class="parameter"><code>replacement</code></em> is inserted at cursor.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>replacement</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_replace_text"></a>replace_text()</h3></div></div></div>
+<pre class="programlisting">doc.replace_text(start, end, text)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>start</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>end</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_save"></a>save()</h3></div></div></div>
+<pre class="programlisting">doc.save()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_save_as"></a>save_as()</h3></div></div></div>
+<pre class="programlisting">doc.save_as(info)</pre>
+<p>Save document with new filename and/or encoding. If <em class="parameter"><code>info</code></em> is missing or <code class="constant"><code class="constant">nil</code></code> then the user is asked for a new filename first.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>info</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch01s14.html" title="moo.SaveInfo - information for saving a file">moo.SaveInfo</a></code> or <code class="constant">nil</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_save_copy"></a>save_copy()</h3></div></div></div>
+<pre class="programlisting">doc.save_copy(info)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>info</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch01s14.html" title="moo.SaveInfo - information for saving a file">moo.SaveInfo</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_select_all"></a>select_all()</h3></div></div></div>
+<pre class="programlisting">doc.select_all()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_select_lines"></a>select_lines()</h3></div></div></div>
+<pre class="programlisting">doc.select_lines(start, end=0)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>start</code></em></span> : </p></td>
+<td><p><code class="constant">integer index (1-based)</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>end</code></em></span> : </p></td>
+<td><p><code class="constant">integer index (1-based)</code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_select_lines_at_pos"></a>select_lines_at_pos()</h3></div></div></div>
+<pre class="programlisting">doc.select_lines_at_pos(start, end=<code class="constant">nil</code>)</pre>
+<p>Select lines which span the range from <em class="parameter"><code>start</code></em> to <em class="parameter"><code>end</code></em> (including <em class="parameter"><code>end</code></em> position). If <em class="parameter"><code>end</code></em> is <code class="constant"><code class="constant">nil</code></code>, then it selects single line which contains position <em class="parameter"><code>start</code></em>.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>start</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>end</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code> or <code class="constant">nil</code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_select_range"></a>select_range()</h3></div></div></div>
+<pre class="programlisting">doc.select_range(start, end)</pre>
+<p>Select text from <em class="parameter"><code>start</code></em> to <em class="parameter"><code>end</code></em>.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>start</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>end</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_set_clean"></a>set_clean()</h3></div></div></div>
+<pre class="programlisting">doc.set_clean(clean)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>clean</code></em></span> : </p></td>
+<td><p><code class="constant">bool</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_set_cursor_pos"></a>set_cursor_pos()</h3></div></div></div>
+<pre class="programlisting">doc.set_cursor_pos(pos)</pre>
+<p>Move the text cursor to the given position. No text is selected after this operation, use one of the select* methods if you need to select a range of text.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>pos</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_set_encoding"></a>set_encoding()</h3></div></div></div>
+<pre class="programlisting">doc.set_encoding(encoding)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>encoding</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_set_line_end_type"></a>set_line_end_type()</h3></div></div></div>
+<pre class="programlisting">doc.set_line_end_type(le)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>le</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch01s18.html#lua.MooLineEndType" title="moo.LineEndType">moo.LineEndType</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_set_modified"></a>set_modified()</h3></div></div></div>
+<pre class="programlisting">doc.set_modified(modified)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>modified</code></em></span> : </p></td>
+<td><p><code class="constant">bool</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_set_text"></a>set_text()</h3></div></div></div>
+<pre class="programlisting">doc.set_text(text)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_uncomment_selection"></a>uncomment_selection()</h3></div></div></div>
+<pre class="programlisting">doc.uncomment_selection()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_undo"></a>undo()</h3></div></div></div>
+<pre class="programlisting">doc.undo()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01s05.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-moo.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch01s07.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">moo.CmdView </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> moo.EditTab - document tab object</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

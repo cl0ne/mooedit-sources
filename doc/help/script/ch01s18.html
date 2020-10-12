@@ -1,0 +1,223 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Enumerations</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-moo.html" title="Chapter 1. medit Lua API">
+<link rel="prev" href="ch01s17.html" title="Functions">
+<link rel="next" href="lua-gtk.html" title="Chapter 2. Gtk API for Lua scripts">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Enumerations</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01s17.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 1. <span class="application">medit</span> Lua API</th>
+<td width="20%" align="right"> <a accesskey="n" href="lua-gtk.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="lua.enums"></a>Enumerations</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch01s18.html#lua.MooCloseResponse">moo.CloseResponse</a></span></dt>
+<dt><span class="sect2"><a href="ch01s18.html#lua.MooEditStatus">moo.EditStatus</a></span></dt>
+<dt><span class="sect2"><a href="ch01s18.html#lua.MooLineEndType">moo.LineEndType</a></span></dt>
+<dt><span class="sect2"><a href="ch01s18.html#lua.MooOpenFlags">moo.OpenFlags</a></span></dt>
+<dt><span class="sect2"><a href="ch01s18.html#lua.MooSaveChangesResponse">moo.SaveChangesResponse</a></span></dt>
+<dt><span class="sect2"><a href="ch01s18.html#lua.MooSaveResponse">moo.SaveResponse</a></span></dt>
+</dl></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.MooCloseResponse"></a>moo.CloseResponse</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_CLOSE_RESPONSE_CONTINUE.title"></a>CLOSE_RESPONSE_CONTINUE</code></span></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_CLOSE_RESPONSE_CANCEL.title"></a>CLOSE_RESPONSE_CANCEL</code></span></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.MooEditStatus"></a>moo.EditStatus</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_EDIT_STATUS_NORMAL.title"></a>EDIT_STATUS_NORMAL</code></span></p></td>
+<td><p> none of the below flags, it is equal to <code class="code">0</code>.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_EDIT_STATUS_MODIFIED_ON_DISK.title"></a>EDIT_STATUS_MODIFIED_ON_DISK</code></span></p></td>
+<td><p> file has been modified on disk outside the program.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_EDIT_STATUS_DELETED.title"></a>EDIT_STATUS_DELETED</code></span></p></td>
+<td><p> file has been deleted from disk.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_EDIT_STATUS_CHANGED_ON_DISK.title"></a>EDIT_STATUS_CHANGED_ON_DISK</code></span></p></td>
+<td><p> file has been modified on disk outside the program or deleted from disk, it is equal to <code class="code"><code class="constant"><a class="link" href="ch01s18.html#lua.MooEditStatus" title="moo.EditStatus">EDIT_STATUS_MODIFIED_ON_DISK</a></code> | <code class="constant"><a class="link" href="ch01s18.html#lua.MooEditStatus" title="moo.EditStatus">EDIT_STATUS_DELETED</a></code></code>.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_EDIT_STATUS_MODIFIED.title"></a>EDIT_STATUS_MODIFIED</code></span></p></td>
+<td><p> document content is modifed and not saved yet.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_EDIT_STATUS_NEW.title"></a>EDIT_STATUS_NEW</code></span></p></td>
+<td><p> file doesn't exist on disk yet. This is the state of documents opened from command line when requested file doesn't exist.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_EDIT_STATUS_CLEAN.title"></a>EDIT_STATUS_CLEAN</code></span></p></td>
+<td><p> doesn't prompt on close, even if it's modified.</p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.MooLineEndType"></a>moo.LineEndType</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_LE_UNIX.title"></a>LE_UNIX</code></span></p></td>
+<td><p> UNIX line endings (<code class="code">\n</code>)</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_LE_WIN32.title"></a>LE_WIN32</code></span></p></td>
+<td><p> Windows line endings (<code class="code">\r\n</code>)</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_LE_MAC.title"></a>LE_MAC</code></span></p></td>
+<td><p> classic Mac line endings (<code class="code">\r</code>)</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_LE_NATIVE.title"></a>LE_NATIVE</code></span></p></td>
+<td><p> equal to <code class="constant"><a class="link" href="ch01s18.html#lua.MooLineEndType" title="moo.LineEndType">LE_UNIX</a></code> on UNIX systems (including Mac OS X) and <code class="constant"><a class="link" href="ch01s18.html#lua.MooLineEndType" title="moo.LineEndType">LE_WIN32</a></code> on Windows</p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.MooOpenFlags"></a>moo.OpenFlags</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_OPEN_FLAG_NEW_WINDOW.title"></a>OPEN_FLAG_NEW_WINDOW</code></span></p></td>
+<td><p> open document in a new window</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_OPEN_FLAG_NEW_TAB.title"></a>OPEN_FLAG_NEW_TAB</code></span></p></td>
+<td><p> open document in existing window (default)</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_OPEN_FLAG_RELOAD.title"></a>OPEN_FLAG_RELOAD</code></span></p></td>
+<td><p> reload document if it's already open</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_OPEN_FLAG_CREATE_NEW.title"></a>OPEN_FLAG_CREATE_NEW</code></span></p></td>
+<td><p> if file doesn't exist on disk, create a new document</p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.MooSaveChangesResponse"></a>moo.SaveChangesResponse</h3></div></div></div>
+<p>Values returned by <code class="function"><a class="link" href="ch01s17.html#lua.moo_save_changes_dialog" title="save_changes_dialog()">save_changes_dialog()</a></code>.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_SAVE_CHANGES_RESPONSE_CANCEL.title"></a>SAVE_CHANGES_RESPONSE_CANCEL</code></span></p></td>
+<td><p> cancel current operation, don't save</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_SAVE_CHANGES_RESPONSE_SAVE.title"></a>SAVE_CHANGES_RESPONSE_SAVE</code></span></p></td>
+<td><p> do save the file</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_SAVE_CHANGES_RESPONSE_DONT_SAVE.title"></a>SAVE_CHANGES_RESPONSE_DONT_SAVE</code></span></p></td>
+<td><p> do not save the file and continue</p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.MooSaveResponse"></a>moo.SaveResponse</h3></div></div></div>
+<p>Values returned by <code class="function"><a class="link" href="ch01s10.html#lua.signal:MooEditor:before-save" title="signal before-save">MooEditor.before-save</a></code> and <code class="function"><a class="link" href="ch01s06.html#lua.signal:MooEdit:before-save" title="signal before-save">MooEdit.before-save</a></code> callbacks.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_SAVE_RESPONSE_CONTINUE.title"></a>SAVE_RESPONSE_CONTINUE</code></span></p></td>
+<td><p> continue invoking before-save callbacks, save if there aren't any left</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="constant"><a name="lua.MOO_SAVE_RESPONSE_CANCEL.title"></a>SAVE_RESPONSE_CANCEL</code></span></p></td>
+<td><p> stop invoking before-save callbacks and do not save</p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01s17.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-moo.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="lua-gtk.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Functions </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> Chapter 2. Gtk API for Lua scripts</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

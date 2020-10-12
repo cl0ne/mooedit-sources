@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medit-filters version="1.0">
+  <!-- Output filter for shell commands. Translators: remove the part before and including |. -->
+  <filter id="default" _name="Filter|Default">
+    <match what="stdout" pattern="^(?P&lt;file&gt;[^:]+):(?P&lt;line&gt;\d+)?"/>
+    <match what="stderr" pattern="^(?P&lt;file&gt;[^:]+):(?P&lt;line&gt;\d+)?"/>
+  </filter>
+
+  <!-- Output filter for shell commands. Translators: remove the part before and including |. -->
+  <filter id="none" _name="Filter|None"/>
+
+  <!-- Output filter for shell commands. Translators: remove the part before and including |. -->
+  <filter id="bison" _name="Filter|Bison">
+    <match what="stderr" pattern="(?P&lt;file&gt;[^:]+):(?P&lt;line&gt;\d+)\.(\d+|\d+\-\d+):"/>
+  </filter>
+
+  <!-- Output filter for shell commands. Translators: remove the part before and including |. -->
+  <filter id="python" _name="Filter|Python">
+    <match what="stderr" pattern='\s*File\s*\"(?P&lt;file&gt;[^"]+)\",\s*line\s*(?P&lt;line&gt;\d+).*' style="output-error"/>
+    <match what="stderr" pattern='\s*(?P&lt;file&gt;[^:]+):(?P&lt;line&gt;\d+):.*' style="output-error"/>
+  </filter>
+
+  <!-- Output filter for shell commands. Translators: remove the part before and including |. -->
+  <filter id="latex" _name="Filter|LaTeX">
+    <match what="stdout" pattern="^l\.(?P&lt;line&gt;\d+)" style="output-error" span="2"/>
+    <match what="stdout" pattern="^LaTeX Warning: .* on input line (?P&lt;line&gt;\d+)\." style="output-error"/>
+    <match what="stdout" pattern="^(Over|Under)full \\[vh]box .* detected at line (?P&lt;line&gt;\d+)" style="output-error"/>
+    <match what="stdout" pattern="^(Over|Under)full \\[vh]box .* in paragraph at lines (?P&lt;line&gt;\d+)\-\-\d+" style="output-error"/>
+    <match what="stdout" pattern="^LaTeX Warning: .*" style="output-error"/>
+    <match what="stdout" pattern="^\! LaTeX Error: .*" style="output-error"/>
+    <match what="stdout" pattern="\((?P&lt;file&gt;[/.][^\(\)\s]+)">
+      <action type="push" name="file" substring="file"/>
+    </match>
+    <match what="stdout" pattern="\(">
+      <action type="push" name="file"/>
+    </match>
+    <match what="stdout" pattern="\)">
+      <action type="pop" name="file"/>
+    </match>
+  </filter>
+
+  <!-- Output filter for shell commands. Translators: remove the part before and including |. -->
+  <filter id="make" _name="Filter|Make">
+    <match what="stderr" pattern=".* from (?P&lt;file&gt;[^:]+):(?P&lt;line&gt;\d+)[:,].*" style="output-error"/>
+    <match what="stderr" pattern="(?P&lt;file&gt;[^:]+):(?P&lt;line&gt;\d+):(\d+:)?\s*(?:error|warning)\s*:.*" style="output-error"/>
+    <match what="stderr" pattern="(?P&lt;file&gt;[^:]+):(?P&lt;line&gt;\d+):.*" style="output-error"/>
+    <match what="stderr" pattern="(?P&lt;file&gt;[^:]+):(?P&lt;line&gt;\d+).\d+-\d+:.*" style="output-error"/>
+
+    <match what="stderr" pattern="(?P&lt;file&gt;[^:]+)\((?P&lt;line&gt;\d+)\):(\d+:)?\s*(error|warning|remark).*" style="output-error"/>
+
+    <match what="stderr" pattern="\s+File &quot;(?P&lt;file&gt;[^&quot;]+)&quot;, line (?P&lt;line&gt;\d+).*" style="output-error"/>
+
+    <match what="stdout" pattern="^g?make\[\d+\]: Entering directory `(?P&lt;dir&gt;.*)'">
+      <action type="push" name="directory" substring="dir"/>
+    </match>
+    <match what="stdout" pattern="^g?make\[\d+\]: Leaving directory">
+      <action type="pop" name="directory"/>
+    </match>
+  </filter>
+</medit-filters>

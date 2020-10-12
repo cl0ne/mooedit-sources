@@ -1,0 +1,183 @@
+# translation of gtksourceview.HEAD.po to Maithili
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-03-15 16:15+0530\n"
+"Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
+"Language-Team: Maithili <maithili.sf.net>\n"
+"Language: mai\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+""
+
+msgid ".desktop"
+msgstr ".डेस्कटॉप"
+
+msgid "Ada"
+msgstr "अडा"
+
+msgid "Background"
+msgstr "पृष्ठभूमि"
+
+msgid "Background color"
+msgstr "पृष्ठभूमि रँग"
+
+msgid "Background set"
+msgstr "पृष्ठभूमि नियत"
+
+msgid "Bold"
+msgstr "मोट"
+
+msgid "C#"
+msgstr "सी#"
+
+msgid "C++"
+msgstr "सी++"
+
+msgid "ChangeLog"
+msgstr "लाग बदलू"
+
+msgid "Classic"
+msgstr "क्लासिक"
+
+msgid "Comment"
+msgstr "टिप्पणी"
+
+msgid "DTD"
+msgstr "डीटीडी"
+
+msgid "Data Type"
+msgstr "डेटा प्रकार"
+
+msgid "Defaults"
+msgstr "मूलभूत"
+
+msgid "Diff"
+msgstr "डिफ़"
+
+msgid "Error"
+msgstr "त्रुटि"
+
+msgid "Foreground"
+msgstr "अग्रभूमि"
+
+msgid "Foreground color"
+msgstr "अग्रभूमि रंग"
+
+msgid "Foreground set"
+msgstr "अग्रभूमि नियत"
+
+msgid "Fortran 95"
+msgstr "फॉरट्रान 95"
+
+msgid "Haskell"
+msgstr "हास्कल"
+
+msgid "Hidden"
+msgstr "नुकाएल"
+
+msgid "IDL"
+msgstr "आईडीएल"
+
+msgid "Identifier"
+msgstr "पहचानकएनिहार"
+
+msgid "Italic"
+msgstr "तिरछा"
+
+msgid "Java"
+msgstr "जावा"
+
+msgid "Keyword"
+msgstr "कीवर्ड"
+
+msgid "LaTeX"
+msgstr "लेटेक्स"
+
+msgid "Language specification directories"
+msgstr "भाषा विशेषतासभ डायरेक्ट्रीसभ"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "डायरेक्ट्रीसभ क' सूची जतए भाषा विशेषतासभक फाइल (.lang) निर्धारित अछि"
+
+msgid "Makefile"
+msgstr "मेकफाइल"
+
+msgid "Markup"
+msgstr "चिन्हित करू"
+
+msgid "Octave"
+msgstr "ओक्टेव"
+
+msgid "Operator"
+msgstr "ऑपरेटर"
+
+msgid "Others"
+msgstr "आन "
+
+msgid "PHP"
+msgstr "पीएचपी"
+
+msgid "Pascal"
+msgstr "पास्कल"
+
+msgid "Perl"
+msgstr "पर्ल"
+
+msgid "Preprocessor"
+msgstr "प्री-प्रोसेसर"
+
+msgid "Python"
+msgstr "पायथन"
+
+msgid "Ruby"
+msgstr "रूबी"
+
+msgid "Scheme"
+msgstr "योजना"
+
+msgid "Scientific"
+msgstr "वैज्ञानिक"
+
+msgid "Scripts"
+msgstr "स्क्रिप्ट्सभ"
+
+msgid "Sources"
+msgstr "श्रोत"
+
+msgid "Strikethrough"
+msgstr "आरपार काटनाइ"
+
+msgid "Strikethrough set"
+msgstr "आर पार काटनाइ नियत"
+
+msgid "String"
+msgstr "स्ट्रिंग"
+
+msgid "Tango"
+msgstr "टेंगो"
+
+msgid "Texinfo"
+msgstr "टेक्सइनफो"
+
+msgid "Underline"
+msgstr "रेखांकित"
+
+msgid "Underline set"
+msgstr "रेखांकन नियत"
+
+msgid "Verilog"
+msgstr "वेरिलॉग"
+
+msgid "gettext translation"
+msgstr "गेटटेक्स्ट अनुवाद"
+

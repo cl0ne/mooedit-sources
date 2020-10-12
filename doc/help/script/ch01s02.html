@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>medit object model</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-moo.html" title="Chapter 1. medit Lua API">
+<link rel="prev" href="ch01s01.html" title="Introduction">
+<link rel="next" href="ch01s03.html" title="Notations">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">
+<span class="application">medit</span> object model</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01s01.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 1. <span class="application">medit</span> Lua API</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch01s03.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="section-script-lua-object-model"></a><span class="application">medit</span> object model</h2></div></div></div>
+<p><span class="application">medit</span> uses a very simple object model where its objects are
+represented as user data in Lua and methods are provided via metatable
+shared by all objects of all "classes". Method dispatch is dynamic,
+i.e. metatable does not contain functions which correspond to methods,
+and <code class="code">obj:method</code> returns a function object which knows which
+method on which object it is going to call.</p>
+<p>This manual lists and talks about "classes", but it is merely
+to avoid complicated terminology. When we say that an object belongs
+to or is an instance of a class <code class="code">Foo</code>, it just means that
+it has methods listed in manual section for class <code class="code">Foo</code>
+and methods of parent classes, if any.</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Note</h3>
+To call a method, you can use both <code class="code">obj:method(args)</code>
+and <code class="code">obj.method(args)</code>.
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01s01.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-moo.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch01s03.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Introduction </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> Notations</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

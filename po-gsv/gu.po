@@ -1,0 +1,338 @@
+# translation of gtksourceview.master.gu.po to Gujarati
+# Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
+# Ankit Patel <ankit@redhat.com>, 2007.
+# Sweta Kothari <swkothar@redhat.com>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.master.gu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-09-09 12:51+0530\n"
+"Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
+"Language-Team: Gujarati\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+""
+
+msgid "Background"
+msgstr "પાશ્વભાગ"
+
+msgid "Background color"
+msgstr "પાશ્વભાગ રંગ"
+
+msgid "Background set"
+msgstr "પાશ્વભાગ સમૂહ"
+
+msgid "Blue based color scheme"
+msgstr "વાદળી આધારિત રંગ યોજના"
+
+msgid "Bold"
+msgstr "ઘાટું"
+
+msgid "Bold set"
+msgstr "ઘાટું સુયોજીત"
+
+msgid "Boolean value"
+msgstr "બુલિયન કિંમત"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC હેડર"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"બધા પરિવહનો માટે regex બનાવી શકતા નથી, વાક્યરચના પ્રકાશન પ્રક્રિયા હંમેશ કરતા ધીમી હશે.\n"
+"ભૂલ આ હતી: %s"
+
+msgid "Classic"
+msgstr "શાસ્ત્રિય"
+
+msgid "Classic color scheme"
+msgstr "શાસ્ત્રિય રંગ પદ્ધતિ"
+
+msgid "Cobalt"
+msgstr "કોબાલ્ટ"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate લખાણ સંપાદકમાં વપરાતી રંગ પદ્ધતિ"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Tango રંગ પેલેટ વાપરી રહેલ રંગ પદ્ધતિ"
+
+msgid "Comment"
+msgstr "ટિપ્પણી"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tango રંગ પેલેટ વાપરી રહેલ ઘાટી રંગ પદ્ધતિ"
+
+msgid "Data Type"
+msgstr "માહિતિ પ્રકાર"
+
+msgid "Decimal number"
+msgstr "દશાંશ સંખ્યા"
+
+msgid "Defaults"
+msgstr "મૂળભૂતો"
+
+msgid "Diff"
+msgstr "અલગ"
+
+msgid "Dos Batch"
+msgstr "ડોસ બેચ"
+
+msgid "Eiffel"
+msgstr "એઇફેલ"
+
+msgid "Erlang"
+msgstr "એરલેન્ગ"
+
+msgid "Error"
+msgstr "ભૂલ"
+
+msgid "Escaped Character"
+msgstr "એસ્કેપ અક્ષર"
+
+msgid "Floating point number"
+msgstr "અપૂર્ણાંક સંખ્યા"
+
+msgid "Foreground"
+msgstr "અગ્રભાગ"
+
+msgid "Foreground color"
+msgstr "અગ્રભાગ રંગ"
+
+msgid "Foreground set"
+msgstr "અગ્રભાગ સમૂહ"
+
+msgid "Forth"
+msgstr "આગળ"
+
+msgid "Fortran 95"
+msgstr "ફોરટ્રાન ૯૫"
+
+msgid "Haddock"
+msgstr "હેડોક"
+
+msgid "Haskell"
+msgstr "હાસ્કેલ"
+
+msgid "Hexadecimal number"
+msgstr "હેક્ઝાડેસીમલ નંબર"
+
+msgid "Hidden"
+msgstr "છૂપુ"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "એક જ લીટી ને પ્રકાશન માટે ઘણો બધો સમય લીધો, વાક્યરચના પ્રકાશન નિષ્ક્રિય થયેલ હશે"
+
+msgid "Identifier"
+msgstr "ઓળખાવનાર"
+
+msgid "Italic"
+msgstr "ત્રાંસુ"
+
+msgid "Italic set"
+msgstr "ત્રાંસા સમૂહ"
+
+msgid "Keyword"
+msgstr "મુખ્ય શબ્દ"
+
+msgid "LaTeX"
+msgstr "લેટેક્સ"
+
+msgid "Language id"
+msgstr "ભાષા id"
+
+msgid "Language ids"
+msgstr "ભાષા ids"
+
+msgid "Language name"
+msgstr "ભાષા નામ"
+
+msgid "Language section"
+msgstr "ભાષા વિભાગ"
+
+msgid "Language specification directories"
+msgstr "ભાષાની સ્પષ્ટતા માટેની ડિરેક્ટરીઓ"
+
+msgid "Line background"
+msgstr "લીટી પાશ્વભાગ"
+
+msgid "Line background color"
+msgstr "લીટી પાશ્વભાગ રંગ"
+
+msgid "Line background set"
+msgstr "લીટી પાશ્વભાગ સમૂહ"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "ડિરેક્ટરીઓ અને ફાઈલોની યાદી કે જ્યાં શૈલી પદ્ધતિઓ સ્થિત થયેલ છે"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "ડિરેક્ટરીની યાદી જ્યાં ભાષાની સ્પષ્ટતા માટેની (.lang) સ્થિત છે. "
+
+msgid "List of the ids of the available languages"
+msgstr "ઉપલબ્ધ ભાષાઓના ids ની યાદી"
+
+msgid "List of the ids of the available style schemes"
+msgstr "ઉપલબ્ધ શૈલી પદ્ધતિઓના ids ની યાદી"
+
+msgid "Lua"
+msgstr "લ્યુઆ"
+
+msgid "Markup"
+msgstr "નિશાની કરો"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "મુખ્ય ભાષા વ્યાખ્યા ગુમ થયેલ (id = \"%s\".)"
+
+msgid "Nemerle"
+msgstr "અંક"
+
+msgid "Objective Caml"
+msgstr "ઓબ્જેક્ટીવ Caml"
+
+msgid "Oblivion"
+msgstr "ઓબ્લીવીયન"
+
+msgid "Octave"
+msgstr "ઓક્ટેવ"
+
+msgid "Operator"
+msgstr "કારક"
+
+msgid "Others"
+msgstr "બીજા"
+
+msgid "Pascal"
+msgstr "પાસ્કલ"
+
+msgid "Preprocessor"
+msgstr "પ્રીપ્રોસેસર"
+
+msgid "Ruby"
+msgstr "રુબી"
+
+msgid "Scheme"
+msgstr "પદ્ધતિ"
+
+msgid "Scheme ids"
+msgstr "પદ્ધતિ ids"
+
+msgid "Scientific"
+msgstr "વૈજ્ઞાનિક"
+
+msgid "Scripts"
+msgstr "સ્ક્રિપ્ટો"
+
+msgid "Sources"
+msgstr "સ્રોતો"
+
+msgid "Strikethrough"
+msgstr "ચેકી નાંખો"
+
+msgid "Strikethrough set"
+msgstr "ચેકી નાંખો સમૂહ"
+
+msgid "String"
+msgstr "શબ્દમાળા"
+
+msgid "Style scheme description"
+msgstr "શૈલી પદ્ધતિ વર્ણન"
+
+msgid "Style scheme filename"
+msgstr "શૈલી પદ્ધતિ ફાઈલનામ"
+
+msgid "Style scheme id"
+msgstr "શૈલી પદ્ધતિ id"
+
+msgid "Style scheme name"
+msgstr "શૈલી પદ્ધતિ નામ"
+
+msgid "Style scheme search path"
+msgstr "શૈલી પદ્ધતિ શોધ પાથ"
+
+msgid "Texinfo"
+msgstr "લખાણ જાણકારી"
+
+msgid "Underline"
+msgstr "નીચે લીટી"
+
+msgid "Underline set"
+msgstr "નીચે લીટી સમૂહ"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "અજ્ઞાત id '%s' regex '%s' માં"
+
+msgid "Vala"
+msgstr "વાલા"
+
+msgid "Verilog"
+msgstr "વેરીલોગ"
+
+msgid "Whether background color is set"
+msgstr "શું પાશ્વભાગ રંગ સુયોજીત છે"
+
+msgid "Whether bold attribute is set"
+msgstr "શું ઘાટું લક્ષણ સુયોજીત છે"
+
+msgid "Whether foreground color is set"
+msgstr "શું અગ્રભાગ રંગ સુયોજીત છે"
+
+msgid "Whether italic attribute is set"
+msgstr "શું ત્રાંસા લક્ષણ સુયોજીત છે"
+
+msgid "Whether line background color is set"
+msgstr "શું લીટી પાશ્વભાગ રંગ સુયોજીત છે"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "શું ચેકી નાંખો સમૂહ સુયોજીત છે"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "શું ભાષા વપરાશકર્તાથી છુપી હોવી જોઈએ"
+
+msgid "Whether underline attribute is set"
+msgstr "શું નીચે લીટી લક્ષણ સુયોજીત છે"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "સંદર્ભ '%s' એ \\%%{...@start} આદેશ સમાવી શકતો નથી"
+
+msgid "duplicated context id '%s'"
+msgstr "નકલી સંદર્ભ id '%s'"
+
+msgid "gettext translation"
+msgstr "gettext રુપાંતર"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "regex '%s' માં: પાશ્વસંદર્ભો આધારભૂત નથી"
+
+msgid "invalid context reference '%s'"
+msgstr "અયોગ્ય સંદર્ભ '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "ભાષા '%s' માં '%s' ના સંદર્ભે વાઈલ્ડકાર્ડ સંદર્ભ સાથે વપરાઈ રહેલ શૈલી ઓવરરાઈડ કરો"
+
+msgid "unknown context '%s'"
+msgstr "અજ્ઞાત સંદર્ભ '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "\\C વાપરવાનું એ ભાષા વ્યાખ્યાઓમાં આધારભૂત નથી"
+

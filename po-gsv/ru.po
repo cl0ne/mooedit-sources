@@ -1,0 +1,291 @@
+# translation of gtksourceview.master.ru.po to Russian
+# translation of gtksourceview to Russian
+# Copyright (C) 2003 Free Software Foundation
+# This file is distributed under the same license as the gtksourceview package.
+#
+#
+# Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2003-2004.
+# Mikhail Zabaluev <mhz@altlinux.org>, 2004.
+# Leonid Kanter <leon@asplinux.ru>, 2005, 2006, 2010.
+# Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2007.
+# Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+# Lebedev Roman <roman@lebedev.com>, 2008.
+# der_FeniX <kofenix@gmail.com>, 2010.
+# Yuri Kozlov <yuray@komyakino.ru>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-17 20:34+0300\n"
+"Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
+"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.11.4"
+
+msgid "Background"
+msgstr "Фон"
+
+msgid "Background color"
+msgstr "Цвет фона"
+
+msgid "Background set"
+msgstr "Цвет фона установлен"
+
+msgid "Blue based color scheme"
+msgstr "Синяя цветовая схема"
+
+msgid "Bold"
+msgstr "Жирный"
+
+msgid "Bold set"
+msgstr "Жирность текста установлена"
+
+msgid "Boolean value"
+msgstr "Булево (логическое) значение"
+
+msgid "C/C++/ObjC Header"
+msgstr "Заголовок C/C++/ObjC"
+
+msgid "CG Shader Language"
+msgstr "Язык Шейдеров CG"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Не удалось создать регулярное выражение для всех преобразований, подсветка синтаксиса будет выполняться гораздо медленнее.\n"
+"Ошибка: %s"
+
+msgid "Classic"
+msgstr "Классическая"
+
+msgid "Classic color scheme"
+msgstr "Классическая цветовая схема"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Цветовая схема из текстового редактора Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Цветовая схема, использующая палитру Tango"
+
+msgid "Comment"
+msgstr "Комментарий"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Тёмная цветовая схема, использующая палитру Tango"
+
+msgid "Data Type"
+msgstr "Тип данных"
+
+msgid "Decimal number"
+msgstr "Десятичное число"
+
+msgid "Defaults"
+msgstr "По умолчанию"
+
+msgid "Dos Batch"
+msgstr "Командный файл DOS"
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "Escaped Character"
+msgstr "Экранирующий символ"
+
+msgid "Floating point number"
+msgstr "Число с плавающей точкой"
+
+msgid "Foreground"
+msgstr "Текст"
+
+msgid "Foreground color"
+msgstr "Цвет текста"
+
+msgid "Foreground set"
+msgstr "Цвет текста установлен"
+
+msgid "Hexadecimal number"
+msgstr "Шестнадцатеричное число"
+
+msgid "Hidden"
+msgstr "Скрыто"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Обработка одной строки заняла слишком много времени, подсветка синтаксиса будет отключена"
+
+msgid "Identifier"
+msgstr "Идентификатор"
+
+msgid "Italic"
+msgstr "Курсив"
+
+msgid "Italic set"
+msgstr "Курсив установлен"
+
+msgid "Keyword"
+msgstr "Ключевое слово"
+
+msgid "Language id"
+msgstr "Идентификатор языка"
+
+msgid "Language ids"
+msgstr "Идентификаторы языка"
+
+msgid "Language name"
+msgstr "Язык"
+
+msgid "Language section"
+msgstr "Секция языка"
+
+msgid "Language specification directories"
+msgstr "Каталоги со спецификациями языков"
+
+msgid "Line background"
+msgstr "Фон строки"
+
+msgid "Line background color"
+msgstr "Цвет фона строки"
+
+msgid "Line background set"
+msgstr "Цвет строки установлен"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Список каталогов, где расположены файлы определения стилевых схем"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Список каталогов, где расположены файлы определения языка (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "Список идентификаторов для доступных языков"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Список идентификаторов доступных стилевых схем"
+
+msgid "Literate Haskell"
+msgstr "Грамотный Haskell"
+
+msgid "Markup"
+msgstr "Разметка"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Отсутствует главное определение языка (id=\"%s\".)"
+
+msgid "Objective Caml"
+msgstr "Объектный Caml (ocaml)"
+
+msgid "OpenGL Shading Language"
+msgstr "Язык шейдеров OpenGL"
+
+msgid "Operator"
+msgstr "Оператор"
+
+msgid "Others"
+msgstr "Прочее"
+
+msgid "Preprocessor"
+msgstr "Директива препроцессора"
+
+msgid "RPM spec"
+msgstr "Спецификация RPM"
+
+msgid "Scheme ids"
+msgstr "Идентификатор схемы"
+
+msgid "Scientific"
+msgstr "Научное"
+
+msgid "Scripts"
+msgstr "Языки сценариев"
+
+msgid "Sources"
+msgstr "Исходные тексты"
+
+msgid "Strikethrough"
+msgstr "Перечёркивание"
+
+msgid "Strikethrough set"
+msgstr "Перечёркивание установлено"
+
+msgid "String"
+msgstr "Строка"
+
+msgid "Style scheme description"
+msgstr "Описание стилевой схемы"
+
+msgid "Style scheme filename"
+msgstr "Имя файла стилевой схемы"
+
+msgid "Style scheme id"
+msgstr "Идентификатор стилевой схемы"
+
+msgid "Style scheme name"
+msgstr "Стилевая схема"
+
+msgid "Style scheme search path"
+msgstr "Пути поиска схем стиля"
+
+msgid "Underline"
+msgstr "Подчёркивание"
+
+msgid "Underline set"
+msgstr "Подчёркивание установлено"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Неизвестный идентификатор «%s» в регулярном выражении «%s»"
+
+msgid "Whether background color is set"
+msgstr "Установлен ли цвет фона"
+
+msgid "Whether bold attribute is set"
+msgstr "Установлен атрибут жирного текста"
+
+msgid "Whether foreground color is set"
+msgstr "Установлен ли цвет текста"
+
+msgid "Whether italic attribute is set"
+msgstr "Установлен ли атрибут курсива"
+
+msgid "Whether line background color is set"
+msgstr "Установлен ли цвет фона строки"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Установлен ли атрибут перечёркивания"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Скрывать ли язык от пользователя"
+
+msgid "Whether underline attribute is set"
+msgstr "Установлен ли атрибут подчёркивания"
+
+msgid "Yacc"
+msgstr "Yack"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "контекст «%s» не может содержать команду \\%%{...@start}"
+
+msgid "duplicated context id '%s'"
+msgstr "повторный идентификатор контекста «%s»"
+
+msgid "gettext translation"
+msgstr "Перевод в формате gettext"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "в регулярном выражении «%s»: обратные ссылки не поддерживаются"
+
+msgid "invalid context reference '%s'"
+msgstr "некорректная ссылка на контекст «%s»"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "в языке «%s» использовалось переопределение стиля с помощью шаблона в ссылке «%s»"
+
+msgid "unknown context '%s'"
+msgstr "неизвестный контекст «%s»"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "Использование \\C не поддерживается в определениях языка"
+

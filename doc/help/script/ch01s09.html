@@ -1,0 +1,217 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>moo.EditWindow - document window object</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-moo.html" title="Chapter 1. medit Lua API">
+<link rel="prev" href="ch01s08.html" title="moo.EditView - document view object">
+<link rel="next" href="ch01s10.html" title="moo.Editor - editor object">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">moo.EditWindow - document window object</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01s08.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 1. <span class="application">medit</span> Lua API</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch01s10.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="lua.MooEditWindow"></a>moo.EditWindow - document window object</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch01s09.html#lua.signal:MooEditWindow:before-close">signal before-close</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.signal:MooEditWindow:will-close">signal will-close</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_close">close()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_close_all">close_all()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_active_doc">get_active_doc()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_active_tab">get_active_tab()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_active_view">get_active_view()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_docs">get_docs()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_editor">get_editor()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_n_tabs">get_n_tabs()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_output">get_output()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_tabs">get_tabs()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_get_views">get_views()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_present_output">present_output()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_set_active_doc">set_active_doc()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_set_active_tab">set_active_tab()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s09.html#lua.moo_edit_window_set_active_view">set_active_view()</a></span></dt>
+</dl></div>
+<pre class="programlisting">
+<code class="constant"><a class="link" href="ch01s16.html" title="moo.Window - window object">moo.Window</a></code>
+  |
+  +-- moo.EditWindow
+</pre>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooEditWindow:before-close"></a>signal before-close</h3></div></div></div>
+<pre class="programlisting">before-close()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s18.html#lua.MooCloseResponse" title="moo.CloseResponse">moo.CloseResponse</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooEditWindow:will-close"></a>signal will-close</h3></div></div></div>
+<pre class="programlisting">will-close()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_close"></a>close()</h3></div></div></div>
+<pre class="programlisting">window.close()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_close_all"></a>close_all()</h3></div></div></div>
+<pre class="programlisting">window.close_all()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_active_doc"></a>get_active_doc()</h3></div></div></div>
+<pre class="programlisting">window.get_active_doc()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s06.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_active_tab"></a>get_active_tab()</h3></div></div></div>
+<pre class="programlisting">window.get_active_tab()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s07.html" title="moo.EditTab - document tab object">moo.EditTab</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_active_view"></a>get_active_view()</h3></div></div></div>
+<pre class="programlisting">window.get_active_view()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s08.html" title="moo.EditView - document view object">moo.EditView</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_docs"></a>get_docs()</h3></div></div></div>
+<pre class="programlisting">window.get_docs()</pre>
+<p><em class="parameter"><code>Returns:</code></em> list of <code class="constant"><a class="link" href="ch01s06.html" title="moo.Edit - document object">moo.Edit</a></code> objects</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_editor"></a>get_editor()</h3></div></div></div>
+<pre class="programlisting">window.get_editor()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s10.html" title="moo.Editor - editor object">moo.Editor</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_n_tabs"></a>get_n_tabs()</h3></div></div></div>
+<pre class="programlisting">window.get_n_tabs()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_output"></a>get_output()</h3></div></div></div>
+<pre class="programlisting">window.get_output()</pre>
+<p>Get the output pane, create it if necessary. This function does not open the pane, use <code class="constant"><a class="link" href="ch01s09.html#lua.moo_edit_window_present_output" title="present_output()">moo.EditWindow.present_output()</a></code> for that.</p>
+<p><em class="parameter"><code>Returns:</code></em>  an output pane, as <code class="constant"><a class="link" href="ch01s05.html" title="moo.CmdView">moo.CmdView</a></code> object.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_tabs"></a>get_tabs()</h3></div></div></div>
+<pre class="programlisting">window.get_tabs()</pre>
+<p><em class="parameter"><code>Returns:</code></em> list of <code class="constant"><a class="link" href="ch01s07.html" title="moo.EditTab - document tab object">moo.EditTab</a></code> objects</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_get_views"></a>get_views()</h3></div></div></div>
+<pre class="programlisting">window.get_views()</pre>
+<p><em class="parameter"><code>Returns:</code></em> list of <code class="constant"><a class="link" href="ch01s08.html" title="moo.EditView - document view object">moo.EditView</a></code> objects</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_present_output"></a>present_output()</h3></div></div></div>
+<pre class="programlisting">window.present_output()</pre>
+<p>Open the output pane.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_set_active_doc"></a>set_active_doc()</h3></div></div></div>
+<pre class="programlisting">window.set_active_doc(doc)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch01s06.html" title="moo.Edit - document object">moo.Edit</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_set_active_tab"></a>set_active_tab()</h3></div></div></div>
+<pre class="programlisting">window.set_active_tab(tab)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>tab</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch01s07.html" title="moo.EditTab - document tab object">moo.EditTab</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_edit_window_set_active_view"></a>set_active_view()</h3></div></div></div>
+<pre class="programlisting">window.set_active_view(view)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch01s08.html" title="moo.EditView - document view object">moo.EditView</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01s08.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-moo.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch01s10.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">moo.EditView - document view object </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> moo.Editor - editor object</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

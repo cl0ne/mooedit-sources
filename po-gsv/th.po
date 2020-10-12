@@ -1,0 +1,280 @@
+# Thai translation of gtksourceview.
+# Copyright (C) 2004-2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtksourceview package.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2004-2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-06-15 23:12+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "พื้นหลัง"
+
+msgid "Background color"
+msgstr "สีพื้นหลัง"
+
+msgid "Background set"
+msgstr "ใช้สีพื้นหลัง"
+
+msgid "Blue based color scheme"
+msgstr "ชุดสีโทนน้ำเงิน"
+
+msgid "Bold"
+msgstr "หนา"
+
+msgid "Bold set"
+msgstr "ใช้ตัวหนา"
+
+msgid "Boolean value"
+msgstr "ค่าบูลีน"
+
+msgid "C/C++/ObjC Header"
+msgstr "แฟ้มส่วนหัว C/C++/ObjC"
+
+msgid "CG Shader Language"
+msgstr "ภาษา Shader CG"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"ไม่สามารถสร้าง regex สำหรับทุก transition ได้ การเน้นข้อความตามไวยากรณ์อาจทำงานช้ากว่าปกติ\n"
+"ข้อผิดพลาดคือ: %s"
+
+msgid "Classic"
+msgstr "ดั้งเดิม"
+
+msgid "Classic color scheme"
+msgstr "ชุดสีแบบดั้งเดิม"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "ชุดสีที่ใช้ในโปรแกรมแก้ไขข้อความ Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "ชุดสีซึ่งใช้สีจากจานสีของ Tango"
+
+msgid "Comment"
+msgstr "หมายเหตุ"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "ชุดสีเข้มซึ่งใช้สีจากจานสีของ Tango"
+
+msgid "Data Type"
+msgstr "ชนิดข้อมูล"
+
+msgid "Decimal number"
+msgstr "เลขฐานสิบ"
+
+msgid "Defaults"
+msgstr "ปริยาย"
+
+msgid "Dos Batch"
+msgstr "แบตช์ของดอส"
+
+msgid "Eiffel"
+msgstr "ไอเฟล"
+
+msgid "Error"
+msgstr "ข้อผิดพลาด"
+
+msgid "Escaped Character"
+msgstr "อักขระหลีก"
+
+msgid "Floating point number"
+msgstr "เลขทศนิยม"
+
+msgid "Foreground"
+msgstr "ตัวอักษร"
+
+msgid "Foreground color"
+msgstr "ศีตัวอักษร"
+
+msgid "Foreground set"
+msgstr "ใช้สีตัวอักษร"
+
+msgid "Graphviz Dot"
+msgstr "Dot ของ Graphviz"
+
+msgid "Hexadecimal number"
+msgstr "เลขฐานสิบหก"
+
+msgid "Hidden"
+msgstr "ซ่อน"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "การเน้นไวยากรณ์เพียงบรรทัดเดียวใช้เวลานานเกินไป จะปิดการเน้นไวยากรณ์"
+
+msgid "Identifier"
+msgstr "ชื่อตัวแปร"
+
+msgid "Italic"
+msgstr "เอียง"
+
+msgid "Italic set"
+msgstr "ใช้ตัวเอียง"
+
+msgid "JavaScript"
+msgstr "จาวาสคริปต์"
+
+msgid "Keyword"
+msgstr "คำหลัก"
+
+msgid "Language id"
+msgstr "id ภาษา"
+
+msgid "Language ids"
+msgstr "id ภาษาที่มี"
+
+msgid "Language name"
+msgstr "ชื่อภาษา"
+
+msgid "Language section"
+msgstr "หมวดภาษา"
+
+msgid "Language specification directories"
+msgstr "ไดเรกทอรีข้อกำหนดภาษา"
+
+msgid "Line background"
+msgstr "พื้นหลังบรรทัด"
+
+msgid "Line background color"
+msgstr "สีพื้นหลังบรรทัด"
+
+msgid "Line background set"
+msgstr "ใช้สีพื้นหลังบรรทัด"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "รายชื่อไดเรกทอรีและแฟ้มที่เก็บชุดสไตล์"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "รายชื่อไดเรกทอรีที่เก็บแฟ้มข้อกำหนดภาษา (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "รายชื่อของ id ของภาษาที่มี"
+
+msgid "List of the ids of the available style schemes"
+msgstr "รายชื่อของ id ของชุดสไตล์ที่มี"
+
+msgid "Markup"
+msgstr "มาร์กอัป"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "ไม่มีข้อกำหนดภาษาหลัก (id = \"%s\")"
+
+msgid "OpenGL Shading Language"
+msgstr "ภาษา Shading OpenGL"
+
+msgid "Operator"
+msgstr "ตัวกระทำ"
+
+msgid "Others"
+msgstr "อื่นๆ"
+
+msgid "Preprocessor"
+msgstr "พรีโพรเซสเซอร์"
+
+msgid "RPM spec"
+msgstr "สเปค RPM"
+
+msgid "Scheme ids"
+msgstr "id ของชุดสไตล์ที่มี"
+
+msgid "Scientific"
+msgstr "วิทยาศาสตร์"
+
+msgid "Scripts"
+msgstr "สคริปต์"
+
+msgid "Sources"
+msgstr "ซอร์สโค้ด"
+
+msgid "Strikethrough"
+msgstr "ขีดฆ่า"
+
+msgid "Strikethrough set"
+msgstr "ใช้ตัวขีดฆ่า"
+
+msgid "String"
+msgstr "สตริง"
+
+msgid "Style scheme description"
+msgstr "คำบรรยายของชุดสไตล์"
+
+msgid "Style scheme filename"
+msgstr "ชื่อแฟ้มชุดสไตล์"
+
+msgid "Style scheme id"
+msgstr "id ของชุดสไตล์"
+
+msgid "Style scheme name"
+msgstr "ชื่อของชุดสไตล์"
+
+msgid "Style scheme search path"
+msgstr "พาธสำหรับค้นหาชุดสไตล์"
+
+msgid "Underline"
+msgstr "ขีดเส้นใต้"
+
+msgid "Underline set"
+msgstr "ใช้ตัวขีดเส้นใต้"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "ไม่รู้จัก id '%s' ใน regex '%s'"
+
+msgid "Whether background color is set"
+msgstr "ระบุว่ามีการกำหนดสีพื้นหลังหรือไม่"
+
+msgid "Whether bold attribute is set"
+msgstr "กำหนดว่ากำหนดรูปแบบเป็นตัวหนาหรือไม่"
+
+msgid "Whether foreground color is set"
+msgstr "ระบุว่ามีการกำหนดสีตัวอักษรหรือไม่"
+
+msgid "Whether italic attribute is set"
+msgstr "ระบุว่ามีการกำหนดรูปแบบเป็นตัวเอียงหรือไม่"
+
+msgid "Whether line background color is set"
+msgstr "ระบุว่ามีการกำหนดสีพื้นหลังของบรรทัดหรือไม่"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "ระบุว่ามีการกำหนดรูปแบบเป็นตัวขีดฆ่าหรือไม่"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "ระบุว่าควรซ่อนภาษานี้ไม่ให้ผู้ใช้เห็นหรือไม่"
+
+msgid "Whether underline attribute is set"
+msgstr "ระบุว่ามีการกำหนดรูปแบบเป็นตัวขีดเส้นใต้หรือไม่"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "บริบท '%s' จะมีคำสั่ง \\%%{...@start} ไม่ได้"
+
+msgid "duplicated context id '%s'"
+msgstr "id ของบริบท '%s' ซ้ำกัน"
+
+msgid "gettext translation"
+msgstr "คำแปล gettext"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "ใน regex '%s': ไม่รองรับการอ้างอิงกลับ"
+
+msgid "invalid context reference '%s'"
+msgstr "ตัวอ้างอิงบริบท '%s' ใช้การไม่ได้"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "มีการทับค่าสไตล์ในตัวอ้างอิงบริบทที่เป็น wildcard ในภาษา '%s' ที่ตัวอ้างอิง '%s'"
+
+msgid "unknown context '%s'"
+msgstr "ไม่รู้จักบริบท '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "ไม่รองรับการใช้ \\C ในข้อกำหนดภาษา"
+

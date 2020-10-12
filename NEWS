@@ -1,0 +1,673 @@
+2017-11-12  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.2.92-devel ===
+
+2017-11-12  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.2.91-devel ===
+
+    New lang files from gtksourceview.
+    Fixed translated labels on windows.
+    Fixed grep command on windows.
+    Fixed a bug where scrolling would never stop.
+    Open Containing Folder menu item for windows.
+
+2017-10-28  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.2.90-devel ===
+
+    Add _Keywords key to the desktop file, patch by josgalo.
+    Updated French translation by Yannick Duchêne.
+    Ulrich Eckhardt's feature of automatic synchronization with files on disk.
+
+2014-03-20  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.2.0 ===
+
+    Updated Spanish translation by Eulogio Serradilla.
+    New Polish translation by Piotr Orzechowski.
+    Fixed a bug in parsing grep output for UNC paths on windows.
+    Updated syntax highlighting definitions.
+    Fixed compilation with new glib and gcc.
+    Exposed more functionality, in particular the output pane, to scripts.
+    Finally made file completion case-insensitive on windows.
+
+2012-11-25  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.1.2 ===
+
+    Updated Japanese translation from Toshiharu Kudoh.
+    Updated German translation by Debianer.
+    Partial workaround for the Gtk bug with Shift key: make Shift-Fn
+    key combinations work as global shortcuts.
+
+2012-07-27  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.1.1 ===
+
+    Fixed some build errors:
+        Check for sys/wait.h, so that HAVE_SYS_WAIT_H is defined when needed.
+        Link with gmodule explicitly.
+
+2012-03-04  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.1.0 ===
+
+    Fixed few memory leaks.
+    Improved documentation.
+    Made lua scripts use UTF-8 strings by default.
+    Fixed font selector in terminal pane.
+    Fixed clicks and drags with Shift key pressed.
+    Store 'Show hidden files' setting of file selector in preferences.
+    Added Japanese translation by Toshiharu Kudoh.
+    Updated Spanish translation by Sebikul.
+    Added Finnish translation by Tommi Nieminen.
+
+2011-10-23  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.0.5 ===
+
+    Fixed a bug where filename "12d1:1446" was treated as file "12d1"
+    and line number 1446.
+    Unbroke keyboard shortcuts when running under gtk-2.24.7.
+
+2011-09-11  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.0.4 ===
+
+    Added protobuf lang file by Pavel Artyomkin.
+
+2011-04-14  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.0.3 ===
+
+    Fixed "Move to Split Notebook" command.
+
+2011-04-04  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.0.2 ===
+
+    Fixed importing pygobject and pygtk with python-2.7 (at least on
+    openSUSE newer pygtk in medit was broken).
+
+2011-02-26  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.0.1 ===
+
+    Updated Russian translation.
+    Fixed a crash on windows when syntax highlighting gets disabled
+    because of very long lines.
+    Updated ini.lang.
+
+2011-01-29  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 1.0.0 ===
+
+    New release which breaks backwards compatibility (which won't be
+    broken again for long time, not until medit-2.0). Bugs have been
+    fixed, features have been implemented, new bugs have been introduced.
+
+    Highlights:
+
+    - Consistent API for Python and Lua scripts, generated from
+      source code, together with documentation. This allows for
+      much more powerful Lua scripts.
+    - Added option to show all spaces, not just Tab characters.
+    - Allow searching in a list of directories instead of just a single one.
+    - Added --geometry command line option.
+    - Added split views - multiple views of the same document in one
+      notebook tab.
+    - Windows can display two notebooks to allow viewing two different
+      documents at the same as well.
+    - Build system uses autotools again. Cmake is nice but not nice enough.
+
+2010-10-05  Yevgen Muntyan  <emuntyan@sourceforge.net>
+
+    * === Released 0.10.5 ===
+
+    Added an option to show spaces, not just tabs.
+    Added linker flags to fix build on some Linux distributions.
+    Fixed bug where Select All menu item wouldn't select text on
+    some builds (found by Andrey Frantsuzov).
+
+2010-04-29  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 0.10.4 ===
+
+    Python plugins are back.
+
+2010-04-16  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 0.10.3 ===
+
+    Fixed crash in Find File command.
+
+    Windows: downgraded gtk to 2.16.6 because of problems with
+    "client-side windows" feature. Fixed a bug with synaptics
+    touchpad where scrolling would stop working after a dialog
+    was shown.
+
+2010-04-14  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 0.10.2 ===
+
+    Added back man page, fixed compilation on systems where cmake
+    builds dynamic libraries by default.
+
+    On windows, made medit use case-insensitive filename comparison
+    and fixed scrolling with a Synaptics touchpad.
+
+2010-03-19  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 0.10.1 ===
+
+    Restored lost ctags plugin. Added simple installation
+    instructions.
+
+2010-02-28  Yevgen Muntyan  <emuntyan@users.sourceforge.net>
+
+    * === Released 0.10.0 ===
+
+2008-08-29  Yevgen Muntyan  <muntyan@tamu.edu>
+
+    * === Released 0.9.4 ===
+
+    Corrected a brain dead logic error which led to data loss:
+    medit did not report a proper error when it could not convert
+    content to requested encoding (e.g. when trying to save text
+    with accented characters in ASCII). Thanks to LoneFox.
+
+    Updated and corrected documentation.
+    Fixed recent files menu where underscore in filenames showed
+    up as mnemonics underline.
+    Added recent files dialog.
+    Fixed saving session on logout.
+    Made open-dialog-follows-doc option apply to Save As too.
+    Much improved Mac OS X port (which requires much improved Mac OS X
+    Gtk port from SVN).
+    Once again fixed document tab icon appearance.
+    Made tilde expansion work in Find in Files dialog.
+    Fixed bug in Preferences dialog caused by a buggy Ubuntu Gtk patch.
+    Worked around freezing when editing a document with very long lines.
+    Added Open With Default Application to file selector menu.
+    Made ctags plugin not try to run ctags on a non-existent file.
+    User data files on windows are now stored in <User>/Application Data
+    instead of the home folder, medit will move old files on startup.
+    Fixed win32 bug with saving session file.
+    Lot of lang files were improved.
+
+    Added Dutch translation by Kris Van Bruwaene.
+    Updated German translation by Christian Dywan.
+
+2008-02-10  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.9.3 ===
+
+    Fixed double-click glitch in the file selector.
+    Made file list remember expanded and collapsed rows.
+    Implemented Find in Files on windows.
+    Fixed handling UNC paths on windows.
+    GtkRecent*, which caused freezing on load and save,
+    is no longer used.
+    Made ctags plugin enabled by default.
+    Fixed deleting folders on windows.
+
+    Updated German translation by Christian Dywan.
+
+2008-01-10  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.9.2 ===
+
+    Fixed broken windows build.
+
+2008-01-09  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.9.1 ===
+
+    Added more editor functions for Lua scripts.
+    Made building with --disable-nls work again.
+    Fixed alternating button order in Find dialog; use it
+    in more dialogs (LoneFox).
+    Fixed a segfault in user tools preferences.
+    Small buttons in the notebook and window panes follow
+    gtk theme.
+    Notebook tabs no longer scroll on closing document.
+    Nicer arrow buttons in notebook.
+    configure doesn't fail to detect pygtk when pycairo-dev
+    is absent.
+    Added a setting to ensure trailing newline character
+    on save.
+    Emacs-like filename:line strings are now recognized by
+    default in shell tools output.
+    File list plugin.
+    Function list plugin (Christian Dywan).
+    File selector allows selecting by dragging the mouse
+    and DND for multiple items.
+    Window panes configurations is now saved and restored
+    properly; panes may be re-arranged by DND.
+    Added color schemes for the terminal.
+    Fixed the bug when the toolbar didn't pick up default gtk
+    style.
+    Fixed all memory leaks found by valgrind.
+
+    Updated French translation by Collilieux.
+    Updated Spanish translation by Arnau Sanchez.
+    Updated German translation by Christian Dywan.
+    Updated Chinese translation by Chaosye.
+
+    Special thanks to Christian Dywan.
+
+2007-11-29  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.9.0 ===
+
+    Replaced MooScript with Lua.
+    Improved user-defined tools, made it possible to store
+    tools in separate files instead of creating and editing
+    them via Preferences dialog.
+    Added online help.
+    Rearranged menu items, removed Settings menu.
+    Added a setting for window title format.
+    Made Preferences dialog remember its size to make
+    editing scripts more comfortable.
+    Fixed the bug with storing clipboard contents on exit.
+    Fixed files drag'n'drop on windows.
+    Improved syntax highlighting.
+    medit now reads meditrc files in data directories, so it's
+    possible to have pre-set options different from defaults.
+    Fixed Find in Files and Find File menu items broken on
+    some systems.
+    Fixed highlighting current line and behavior of Home/End
+    keys when line wrapping is enabled.
+    Fixed entries for language extensions and mime types in the
+    Preferences dialog.
+    Added a command-line option to open documents in a new window.
+
+    Czech translation by Vlastimil Ott.
+    Updated German translation by Christian Dywan.
+
+2007-08-07  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.10 ===
+
+    Fixed numerous memory leaks.
+    Fixed an issue with indentation when pressing Enter key
+    on an empty line.
+    Fixed tooltips on toolbar, once again, now for gtk-2.10.
+    Added a setting for what directory should be shown in the
+    Open dialog.
+
+2007-07-31  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.9 ===
+
+    Russian translation by Andrey Fedoseev.
+    Spanish translation by Arnau Sanchez.
+
+    Added a setting to disable sessions (Joris_M).
+    Added a setting to draw right margin in text, as in gedit.
+    Unbroke loading old lang files.
+    Fixed some bugs in notebook tabs drawing.
+    Re-added --with-broken-gtk-theme configure option for Suse.
+    Do not ignore displayed tab width when printing.
+    Worked around crash with Export as PDF and gtk-2.10.
+
+    New and improved syntax highlighting:
+        c, css, pkgconfig.
+
+2007-07-10  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.8 ===
+
+    New command-line option --app-name: instances with different names
+    do not share sessions, and --app-name works as --pid argument when
+    an instance with given name is already running.
+    Added hidden setting for width of displayed Tab characters.
+    Fixed theming bug in the paned widget.
+    Improved Preferences dialog.
+    Updated German translation (Christian Dywan).
+
+    New and improved syntax highlighting:
+        ada, awk, c, changelog, cpp, haskell, html, java, lua, m4,
+        objc, ocl, ruby, scheme, sh.
+
+2007-06-24  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.7 ===
+
+    Implemented session support.
+    Use xdg-open to open files from file selector.
+    Fixed build on darwin.
+    Added translation for language files.
+
+    Changed license of almost everything to LGPL.
+
+2007-06-14  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.6 ===
+
+    Chinese translation by Chaosye.
+    German translation by Christian Dywan.
+
+    User config and data files are moved into ~/.config, ~/.share, etc.,
+    according to XDG specification. medit will move old files into new
+    locations on startup, so transition should be smooth and invisible (Oliwer).
+
+    Improved file encodings handling, and fixed some bugs related to it.
+    Made it use more stock items and icons from icon themes.
+    Improved paned widget behavior, no more nasty drawing artifacts.
+    Fixed Find dialog which treated replacement text as a regular
+    expression.
+    Made editor recognize "nxml" emacs mode as xml.
+    freedesktop.org mime type database is used now on windows, so it knows
+    how to highlight files of common types.
+    'medit filename' behaves better when another isntance is already running.
+    Underline character in a filename is no longer treated as mnemonic
+    underline in the Window menu.
+    Fixed tab icons background bug (Christian Dywan).
+
+    Improved syntax highlighting:
+      c csharp css desktop fortran gap gtkrc idl java javascript latex m4
+      ocaml octave pascal perl pkgconfig po ruby scheme sh sql tcl verilog
+      vhdl xml
+    New syntax highlighting:
+      docbook ocaml spec
+
+2007-04-09  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.5 ===
+
+    Fixed critical win32 bug: editor duplicated line endings on save,
+    screwing up files and everything (Thomas Gilgin).
+
+    Implemented selecting whole lines on click/drag over line numbers
+    margin (stonecrest).
+    Made it save user-chosen encodings in Open and Save dialog.
+    It's now possible to print line numbers.
+
+    Version 0.8.4 broke loading files on unix, and was deleted.
+
+2007-04-06  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.3 ===
+
+    French translation by Collilieux.
+    Finally made tools written in Python work.
+    Fixed Stop button in replace confirmation dialog.
+    Number following colon after filename on command line is treated as line number,
+    e.g. 'medit /home/user/foo:134'.
+
+    File selector fixes:
+      Use exo-open when running on XFCE.
+      Correctly determine mime type of backup files and text files.
+      Executable files do not get passed to gnome-open and alike, so they are not
+      executed on double-click.
+      Improved performance and memory consumption.
+
+    Improved syntax highlighting: C, C++, po, gtk-doc, Makefile,
+
+2007-02-03  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.2 ===
+
+    Made medit ask whether to save changes on logout.
+    Fixed build without libxml2.
+    Fixed PHP and Java syntax highlighting.
+    Double-click in file selector now opens text files in the editor,
+    and uses default applications for the rest of files.
+
+2007-01-20  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.1 ===
+
+    Added syntax highlighting for pkgconfig, libtool, dpatch, dtd.
+    Improved highlighting for shell, python, desktop, m4, xml.
+    Improved compiler and python output views.
+    Added simple python project type.
+    Made Alt-<number> shortcuts switch tabs (stonecrest).
+    All filter settings matching given filename are applied now,
+    in order they are specified, so it's easy to set settings
+    for a folder or single glob, and then tweak them for individual
+    files.
+    Added character encoding selectors to Open and Save dialogs.
+    File permissions are now preserved when using Save As.
+    Input fifo's are created in a separate subdirectory of /tmp,
+    to pollute it less.
+    Windows build uses mime types database from freedesktop.org
+    now.
+    Implemented folder watching on windows: file selector updates
+    automatically when folder content changes.
+    Drag'n'drop in file selector works with Go to Current Doc Folder button.
+    Added bunch of tools for LaTeX documents.
+
+2006-11-30  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.8.0 ===
+
+    Added document bookmarks (Dmytro Savchuk).
+    "medit" without arguments opens new file if existing process instance
+    is used (Lontronics).
+    Open dialog remembers its size (Lontronics).
+
+2006-11-19  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.7.97 ===
+
+    Added Print Preview and Export as PDF menu items.
+    Improved print preview.
+    Fixed problem with multiple windows on twm (Lontronics).
+
+2006-11-13  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.7.96 ===
+
+    Fixed print preview for different page orientations.
+    Made editor use document font to display line numbers.
+
+2006-11-13  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.7.95 ===
+
+    Quick fix release for 0.7.9.
+
+    Fixed crash on windows with pygtk older than 2.10.
+    Got drawing tabs and trailing spaces back.
+
+2006-11-12  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.7.9 ===
+
+    Beta version of new 0.8 release.
+
+    Syntax highlighting has been replaced with brand new syntax
+    highlighting from GtkSourceView. It supports million different
+    languages, and has much better performance.
+
+    New features and improvements:
+        Win32 installer includes GTK.
+        Implemented print preview; implemented printing with
+        text styles from the document.
+        Implemented customizable output filters, for highlighting
+        errors in commands output and automatic opening appropriate
+        files.
+        Copying file in the file selector copies its URI/path
+        when appropriate.
+        Added "async" mode for running shell commands: output is
+        redirected to medit's parent console and medit does not
+        wait for the command to terminate.
+
+    Fixed bugs include:
+        Problem with new keyboard shortcuts not applied immediately
+        when set in Configure Shortcuts dialog.
+        Build errors with gtk-2.6.
+        Paned widgets can't be covered by document anymore.
+        Lot of other bugs too.
+
+2006-08-24  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.7.1 ===
+
+    Quick-fix release: fixed some build errors,
+    removed shell unix tools from win32 build.
+
+2006-08-23  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.7.0 ===
+
+    New features and impovements:
+        New and improved user-defined tools.
+        Much improved Find plugin.
+        I18n infrastructure is in place (no translations yet).
+        Reworked plugin system.
+        Experimental project plugin.
+        Printing with gtk-2.10.
+
+        Made it possible to blacklist certain extensions, so no language
+        is picked up for them.
+        Added New File action in file selector.
+        Made displayed tab width configurable.
+        Close editor tabs by middle mouse button click (Thomas Gilgin).
+        Made font selectors show only monospace fonts.
+        Find Current Word action (Thomas Gilgin).
+        Improved terminal drawing.
+        Prettified python console (Geoffrey French).
+
+    Disabled active strings and completion in this version, they will
+    be reenabled and made actually useful in next releases.
+
+    Bug fixes include:
+        Fixed bug with simultaneous dragging icon and reordering tabs in notebook.
+        On opening files prefer locale encoding to builtin ones (Thomas Gilgin).
+        Do not try to open special files both on windows and unix.
+        Fix startup notification protocol handling, so the editor does not steal
+        focus when using single instance mode and does pop up on correct desktop
+        when needed.
+        Color scheme setting applied after opening a document (Thomas Gilgin).
+        Custom shortcuts did not get saved under certain conditions.
+        Fixed tab icon dnd which caused input lock in child windows.
+        Fixed bug in Search/Replace when replacement uses back references.
+        Store clipboard contents on quit (Thomas Gilgin).
+        Fixed crash on paste from another application.
+        Save search history and search options (Thomas Gilgin).
+
+2006-05-26  Yevgen Muntyan  <muntyan@math.tamu.edu>
+    * === Released 0.6.99 ===
+
+    Added Open With submenu in file selector popup menu.
+    Fixed bug with per-language settings lost on save.
+    Added document list menu in editor windows.
+    Fixed crash on paste from another application.
+    Improved entry completion behaviour.
+    Improved python plugin.
+    Updated printing code for changes in gtk api.
+    Fixed file selector background bug.
+    There is a single win32 installer now, and medit picks up python if it's present
+    on startup: medit is not linked to pythonxx.dll, python support has been moved
+    into pymo2x plugins.
+    Improved build infrastructure (Andreas Hanke).
+    Bug fixes.
+
+2006-05-04  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.98 ===
+
+    Added printing support for gtk-2.9.
+        Printing support in gtk is not stable yet, and will likely change
+        in future, therefore printing in medit must be explicitely enabled by
+        --enable-printing argument to configure.
+    Fixed drawing bug when opening big files.
+    Made window panes save their position after changing it by drag-n-drop.
+    Build fixes on AMD Linux, other bug fixes.
+
+2006-05-04  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.97 ===
+
+    medit now uses system pcre library if present; FAM support is disabled.
+
+    Allow adding tools into different menus.
+    Added gnuplot syntax highlighting.
+    Fixed python output pane: it now jumps to correct line in error
+    messages, and it uses Stop button.
+    Added gui for setting per-language settings in Preferences dialog.
+    Dropping a file into the text area opens file now, instead of pasting uri.
+    "medit filename" from command line creates new file if the argument is not
+    an existing file.
+
+2006-04-30  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.96 ===
+
+    Fixed bugs:
+        Build problems on AMD64 - David Hough.
+        Missing #include <time.h> - Nick Treleaven, David Hough.
+        Problem with hidden toolbar showing up anyway - Andrey Fedoseev.
+        Missing window icon - Andrey Fedoseev.
+
+2006-04-30  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.95 ===
+
+    Greatly improved syntax highlighting, zillion fixes.
+
+2006-04-20  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.9 ===
+
+    User-defined completion, tools, and context menus.
+
+2006-04-09  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.8 ===
+
+    Finally unbroke windows terminal, and finally fixed
+    bug with terminal eating 100% of cpu time.
+
+    Active strings, user-defined commands:
+        Added support for python scripts and shell commands.
+
+2006-04-06  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.7 ===
+
+    Reverted changes in windows terminal.
+
+2006-04-06  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.6 ===
+
+    Lot of bugs fixed, lot of bugs introduced.
+
+    MooEdit:
+        Made quick search work.
+        Line ends type is detected automatically, and
+        used when saving file.
+
+2006-03-29  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.5 ===
+
+    0.6.4 is broken
+
+2006-03-29  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.4 ===
+
+    MooEdit:
+        Implemented printing for gtk-2.10.
+
+    MooTerm:
+        Rewritten drawing.
+
+    MooFileView:
+        Made it work (to some extent) on windows.
+
+2006-03-15  Yevgen Muntyan  <muntyan@math.tamu.edu>
+
+    * === Released 0.6.3 ===
+
+    Added customizable menus, with user-defined actions using MooScript.
+
+    MooApp:
+        Fixed input pipe eating all cpu time.
+        Use recursive g_remove on windows for removing directories, to avoid
+        shell api asking user if he wants t remove temporary directory.
+        Custom About dialog.
+
+    MooEdit:
+        Reenabled force-tag-redraw hack in highlighter, due to GTK bug.
+        Fixed unreal slowness of highlighting matching brackets.
+
+    MooTerm:
+        Made moo_term_get_selection_bounds() public.
+
+    MooFileView:
+        Unbroke get_parent_folder
+
+    Python module:
+        Made moo module behave like a package.
+        Made atributes of TermIter and TermTextAttr writable.
+        Added file-like objects which use g_print* for sys.stdout and sys.stderr.

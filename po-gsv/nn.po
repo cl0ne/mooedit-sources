@@ -1,0 +1,283 @@
+# Norwegian Nynorsk messages for gtksourceview.
+# Copyright (C) 2003, 2008 Free Software Foundation, Inc.
+#
+# Eskild Hustvedt <eskildh@gnome.org> 2008
+# Kjartan Maraas <kmaraas@gnome.org>, 2003-2008.
+# Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview 1.2.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-13 20:08+0100\n"
+"Last-Translator: Torstein Adolf Winterseth <kvikende@fsfe.org>\n"
+"Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;"
+
+msgid "Background"
+msgstr "Bakgrunn"
+
+msgid "Background color"
+msgstr "Bakgrunnsfarge"
+
+msgid "Background set"
+msgstr "Bakgrunn sett"
+
+msgid "Blue based color scheme"
+msgstr "Blåbasert fargeskjema"
+
+msgid "Bold"
+msgstr "Feit"
+
+msgid "Bold set"
+msgstr "Feit sett"
+
+msgid "Boolean value"
+msgstr "Bolsk verdi"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC deklarasjonsfil"
+
+msgid "CG Shader Language"
+msgstr "CG Shader-språk"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Klarte ikkje oppretta eit regulært uttrykk for alle transisjonane. Merking av syntaks vil vera langsamare enn vanleg.\n"
+"Feilen var: %s"
+
+msgid "ChangeLog"
+msgstr "Endringslogg"
+
+msgid "Classic"
+msgstr "Klassisk"
+
+msgid "Classic color scheme"
+msgstr "Klassisk fargeskjema"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Fargeschema som brukast i tekstredigeringsprogrammet Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Fargeschema som brukar Tango-fargepaletten"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Mørkt fargeskjema som brukar Tango-fargepaletten"
+
+msgid "Data Type"
+msgstr "Datatype"
+
+msgid "Decimal number"
+msgstr "Desimaltal"
+
+msgid "Defaults"
+msgstr "Forval"
+
+msgid "Error"
+msgstr "Feil"
+
+msgid "Escaped Character"
+msgstr "Verna-teikn"
+
+msgid "Floating point number"
+msgstr "Flyttal"
+
+msgid "Foreground"
+msgstr "Forgrunn"
+
+msgid "Foreground color"
+msgstr "Forgrunnsfarge"
+
+msgid "Foreground set"
+msgstr "Forgrunn sett"
+
+msgid "Hexadecimal number"
+msgstr "Heksadesimalt tal"
+
+msgid "Hidden"
+msgstr "Gøymd"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Å framheva ei enkel linje tok for lang tid. Syntaksframheving vil slåast av"
+
+msgid "Identifier"
+msgstr "Identifikator"
+
+msgid "Italic"
+msgstr "Kursiv"
+
+msgid "Italic set"
+msgstr "Kursiv sett"
+
+msgid "Keyword"
+msgstr "Nøkkelord"
+
+msgid "LaTeX"
+msgstr "LaTex"
+
+msgid "Language id"
+msgstr "Språk-ID"
+
+msgid "Language ids"
+msgstr "Språk-ID-ar"
+
+msgid "Language name"
+msgstr "Språknamn"
+
+msgid "Language section"
+msgstr "Språkseksjon"
+
+msgid "Language specification directories"
+msgstr "Mapper for språkspesifikasjonar"
+
+msgid "Line background"
+msgstr "Bakgrunn for linje"
+
+msgid "Line background color"
+msgstr "Bakgrunnsfarge for linje"
+
+msgid "Line background set"
+msgstr "Bakgrunn for linje sett"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Liste med mapper og filer der stilskjema finst"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Liste over mapper der språkspesifikasjonsfiler (.lang) finst"
+
+msgid "List of the ids of the available languages"
+msgstr "Liste med ID-ar for tilgjengelege språk"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Liste over ID-ane til dei tilgjengelege stilskjemaa."
+
+msgid "Literate Haskell"
+msgstr "Literate haskell"
+
+msgid "Makefile"
+msgstr "Makefil"
+
+msgid "Markup"
+msgstr "Merking"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Manglar hovudspråkdefinisjon (id = «%s».)"
+
+msgid "OOC"
+msgstr "OCL"
+
+msgid "Others"
+msgstr "Andre"
+
+msgid "Preprocessor"
+msgstr "Preprosessor"
+
+msgid "RPM spec"
+msgstr "RPM-spesifikasjon"
+
+msgid "Scheme"
+msgstr "Skjema"
+
+msgid "Scheme ids"
+msgstr "Skjema-ID"
+
+msgid "Scientific"
+msgstr "Vitskapeleg"
+
+msgid "Scripts"
+msgstr "Skript"
+
+msgid "Sources"
+msgstr "Kjeldekode"
+
+msgid "Strikethrough"
+msgstr "Gjennomstreka"
+
+msgid "Strikethrough set"
+msgstr "Gjennomstreka sett"
+
+msgid "String"
+msgstr "Streng"
+
+msgid "Style scheme description"
+msgstr "Skildring av stilskjema"
+
+msgid "Style scheme filename"
+msgstr "Filnamn til stilskjema"
+
+msgid "Style scheme id"
+msgstr "ID for stilskjema"
+
+msgid "Style scheme name"
+msgstr "Namn til stilskjema"
+
+msgid "Style scheme search path"
+msgstr "Søkjestig for stilschema"
+
+msgid "Underline"
+msgstr "Understreka"
+
+msgid "Underline set"
+msgstr "Understreka sett"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Ukjend ID «%s» i vanleg uttrykk «%s»"
+
+msgid "Whether background color is set"
+msgstr "Om bakgrunnsfargen er sett"
+
+msgid "Whether bold attribute is set"
+msgstr "Om attributten feit er sett"
+
+msgid "Whether foreground color is set"
+msgstr "Om forgrunnsfargen er sett"
+
+msgid "Whether italic attribute is set"
+msgstr "Om attributten kursiv er sett"
+
+msgid "Whether line background color is set"
+msgstr "Om bakgrunnsfarge for linje er sett"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Om attributten gjennomstreka er sett"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Om språket skal skjulast frå brukaren"
+
+msgid "Whether underline attribute is set"
+msgstr "Om attributten understreka er sett"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "kontekst «%s» kan ikkje ha ein \\%%{...@start}-kommando"
+
+msgid "duplicated context id '%s'"
+msgstr "duplisert kontekts-ID «%s»"
+
+msgid "gettext translation"
+msgstr "gettext-omsetjing"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "i regex «%s»: bakoverreferansar er ikkje støtta"
+
+msgid "invalid context reference '%s'"
+msgstr "ugyldig kontekst-referanse «%s»"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "overstyring av stil brukt med jokerteign-referanse i språket «%s» i referanse «%s»"
+
+msgid "unknown context '%s'"
+msgstr "ukjend kontekst «%s»"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "Bruk av \\C er ikkje støtta i språkdefinisjonar"
+

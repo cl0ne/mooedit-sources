@@ -1,0 +1,59 @@
+# translation of gtksourceview.HEAD.po to Belarusian
+# This file is distributed under the same license as the gtksourceview package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Vital Khilko <dojlid@mova.org>, 2003
+# Ales Nyakhaychyk <nab@mail.by>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2003-08-13 17:31+0300\n"
+"Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
+"Language-Team: Belarusian <i18n@mova.org>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.6"
+
+msgid "Comment"
+msgstr "Камэнтар"
+
+msgid "Data Type"
+msgstr "Тып даньняў"
+
+msgid "Diff"
+msgstr "Розьніца"
+
+msgid "Keyword"
+msgstr "Ключавое слова"
+
+msgid "Language specification directories"
+msgstr "Каталёгі пазначэньня мовы"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Сьпіс каталёгаў дзе знаходзяцца файлы якія пазначаюць мову"
+
+msgid "Markup"
+msgstr "Разьметка"
+
+msgid "Others"
+msgstr "Іншае"
+
+msgid "Preprocessor"
+msgstr "Прэпрацэсар"
+
+msgid "Scripts"
+msgstr "Сцэнары"
+
+msgid "Sources"
+msgstr "Крыніцы"
+
+msgid "String"
+msgstr "Радок"
+
+msgid "gettext translation"
+msgstr "пераклад gettext"
+

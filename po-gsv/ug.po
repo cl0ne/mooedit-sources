@@ -1,0 +1,294 @@
+# Uyghur translation for gtksourceview.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Gheyret Kenji<gheyret@yahoo.com>,2010.
+# Sahran <sahran.ug@gmail.com>, 2010.
+# Zeper <zeper@msn.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-11-25 14:29+0600\n"
+"Last-Translator: Sahran <sahran@live.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "تەگلىك"
+
+msgid "Background color"
+msgstr "تەگلىك رەڭگى"
+
+msgid "Background set"
+msgstr "تەگلىك تەڭشىكى"
+
+msgid "Blue based color scheme"
+msgstr "كۆك رەڭ ئاساسىدىكى رەڭ لايىھىسى"
+
+msgid "Bold"
+msgstr "توم"
+
+msgid "Bold set"
+msgstr "توم تەڭشىكى"
+
+msgid "Boolean value"
+msgstr "بۇلىن لوگىكىلىق قىممەت"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC ھۆججەت بېشى"
+
+msgid "CG Shader Language"
+msgstr "CG Shader تىلى"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"ھەممە ئايلاندۇرۇشقا مۇنتىزىم ئىپادە قۇرالمىدى، گرامماتىكا يورۇتۇش جەريانى ئادەتتىكى ئەھۋالدىن ئەھۋالدىن ئاستا.\n"
+"خاتالىق: %s"
+
+msgid "ChangeLog"
+msgstr "ئۆزگىرىش خاتىرىسى"
+
+msgid "Classic"
+msgstr "كلاسسىك"
+
+msgid "Classic color scheme"
+msgstr "كلاسسىك رەڭ لايىھىسى"
+
+msgid "Cobalt"
+msgstr "كوبالت"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate تېكىست تەھرىرلىگۈچتە ئىشلەتكەن رەڭ لايىھىسىنى ئىشلىتىدۇ"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Tango رەڭ تاختىسىدىكى رەڭ لايىھىسىنى ئىشلىتىدۇ"
+
+msgid "Comment"
+msgstr "ئىزاھات"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tango رەڭ تاختىسىدىكى تۇتۇق رەڭ لايىھىسىنى ئىشلىتىدۇ"
+
+msgid "Data Type"
+msgstr "سانلىق-مەلۇمات تىپى"
+
+msgid "Decimal number"
+msgstr "ئونلۇق سىستېمىدىكى سان"
+
+msgid "Defaults"
+msgstr "كۆڭۈلدىكى قىممەتلەر"
+
+msgid "Diff"
+msgstr "پەرق"
+
+msgid "Dos Batch"
+msgstr "Dos توپ بىر تەرەپ قىلىش"
+
+msgid "Erlang"
+msgstr "ئېرلاڭ"
+
+msgid "Error"
+msgstr "خاتالىق"
+
+msgid "Escaped Character"
+msgstr "كود ئالماشتۇرۇش ھەرپى"
+
+msgid "Floating point number"
+msgstr "لەيلىمە چېكىت سان"
+
+msgid "Foreground"
+msgstr "ئالدى كۆرۈنۈش"
+
+msgid "Foreground color"
+msgstr "ئالدى كۆرۈنۈش رەڭگى"
+
+msgid "Foreground set"
+msgstr "ئالدى كۆرۈنۈش تەڭشىكى"
+
+msgid "GDB Log"
+msgstr "GDB خاتىرىسى"
+
+msgid "Go"
+msgstr "يۆتكەل"
+
+msgid "Graphviz Dot"
+msgstr "Graphviz نۇقتا"
+
+msgid "Hexadecimal number"
+msgstr "ئون ئالتىلىك سىستېمىدىكى سان"
+
+msgid "Hidden"
+msgstr "يوشۇرۇن"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "پۈتۈن بىر قۇرنى يورۇتۇشقا كەتكەن ۋاقىت بەك كۆپ، گرامماتىكا يورۇتۇش چەكلىنىدۇ"
+
+msgid "Identifier"
+msgstr "بەلگە"
+
+msgid "Italic"
+msgstr "يانتۇ"
+
+msgid "Italic set"
+msgstr "يانتۇ تەڭشىكى"
+
+msgid "Keyword"
+msgstr "ھالقىلىق سۆز"
+
+msgid "Language id"
+msgstr "تىل كىملىكى"
+
+msgid "Language ids"
+msgstr "تىل كىملىكلىرى"
+
+msgid "Language name"
+msgstr "تىل ئىسمى"
+
+msgid "Language section"
+msgstr "تىل بۆلىكى"
+
+msgid "Language specification directories"
+msgstr "تىل ئۆلچىمى مۇندەرىجىسى"
+
+msgid "Line background"
+msgstr "قۇر تەگلىكى"
+
+msgid "Line background color"
+msgstr "قۇر تەگلىك رەڭگى"
+
+msgid "Line background set"
+msgstr "قۇر تەگلىك تەڭشىكى"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "ئۇسلۇب لايىھە تۇرۇشلۇق مۇندەرىجە ۋە ھۆججەتلەرنىڭ تىزىملىكى"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "تىل ئۆلچىمى ھۆججىتى(.lang) تۇرۇشلۇق مۇندەرىجە"
+
+msgid "List of the ids of the available languages"
+msgstr "ئىشلەتكىلى بولىدىغان تىل كىملىك تىزىملىكى"
+
+msgid "List of the ids of the available style schemes"
+msgstr "مەۋجۇت ئۇسلۇب لايىھە كىملىكىنىڭ تىزىملىكى"
+
+msgid "Literate Haskell"
+msgstr "ساۋاتلىق Haskell"
+
+msgid "Markup"
+msgstr "بەلگە"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "ئاساسىي تىل ئېنىقلىمىسى كەم (id = \"%s\".)"
+
+msgid "OpenGL Shading Language"
+msgstr "OpenGL رەڭلەش تىلى"
+
+msgid "Operator"
+msgstr "ئەمەل بەلگىسى"
+
+msgid "Others"
+msgstr "باشقىلار"
+
+msgid "Preprocessor"
+msgstr "ئالدىن بىر تەرەپ قىلغۇچ"
+
+msgid "Scheme"
+msgstr "نۇسخا"
+
+msgid "Scheme ids"
+msgstr "لايىھە كىملىكلىرى"
+
+msgid "Scientific"
+msgstr "پەن-تېخنىكا"
+
+msgid "Sources"
+msgstr "مەنبە"
+
+msgid "Strikethrough"
+msgstr "ئۆچۈرۈش سىزىقى"
+
+msgid "Strikethrough set"
+msgstr "ئۆچۈرۈش سىزىقىنى تەڭشىكى"
+
+msgid "String"
+msgstr "تېكىست"
+
+msgid "Style scheme description"
+msgstr "ئۇسلۇب لايىھە چۈشەندۈرۈشى"
+
+msgid "Style scheme filename"
+msgstr "ئۇسلۇب لايىھە ھۆججەت ئاتى"
+
+msgid "Style scheme id"
+msgstr "ئۇسلۇب لايىھە كىملىكى"
+
+msgid "Style scheme name"
+msgstr "ئۇسلۇب لايىھە ئاتى"
+
+msgid "Style scheme search path"
+msgstr "ئۇسلۇب لايىھە ئىزدەش يولى"
+
+msgid "Underline"
+msgstr "ئاستى سىزىق"
+
+msgid "Underline set"
+msgstr "ئاستى سىزىق تەڭشىكى"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "‘%2$s مۇنتىزىم ئىپادىدىكى نامەلۇم كىملىك ‘%1$s"
+
+msgid "Whether background color is set"
+msgstr "تەگلىك رەڭگى تەڭشىلەمدۇ يوق"
+
+msgid "Whether bold attribute is set"
+msgstr "توم خاسلىق تەڭشىلەمدۇ يوق"
+
+msgid "Whether foreground color is set"
+msgstr "ئالدى كۆرۈنۈش رەڭگى تەڭشىلەمدۇ يوق"
+
+msgid "Whether italic attribute is set"
+msgstr "يانتۇ خاسلىق تەڭشىلەمدۇ يوق"
+
+msgid "Whether line background color is set"
+msgstr "قۇر تەگلىك رەڭگى تەڭشىلەمدۇ يوق"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "ئۆچۈرۈش سىزىق خاسلىقى تەڭشىلەمدۇ يوق"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "ئىشلەتكۈچىگە نىسبەتەن تىلنى يوشۇرامدۇ يوق"
+
+msgid "Whether underline attribute is set"
+msgstr "ئاستى سىزىق خاسلىقى تەڭشىلەمدۇ يوق"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "'%s' تىل ئورامى \\%%{...@start} بۇيرۇقىنى ئۆز ئىچىگە ئالمايدۇ"
+
+msgid "duplicated context id '%s'"
+msgstr "تەكرارلانغان تىل ئورام id '%s'"
+
+msgid "gettext translation"
+msgstr "gettext تەرجىمە"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "مۇنتىزىم ئىپادە '%s' دىكى: ئارقا نەقىلنى قوللىمايدۇ"
+
+msgid "invalid context reference '%s'"
+msgstr "ئىناۋەتسىز تىل ئورامى نەقىلى '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "'%s' تىلى '%s' دىن پايدىلانغاندا ئورتاق بەلگە تىل ئورامى بىلەن بىللە ئىشلىتىدىغان ئۇسلۇب قاپلىنىدۇ"
+
+msgid "unknown context '%s'"
+msgstr "نامەلۇم تىل ئورامى '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "تىل ئېنىقلىمىسىدا \\C ئىشلىتىشنى قوللىمايدۇ"
+

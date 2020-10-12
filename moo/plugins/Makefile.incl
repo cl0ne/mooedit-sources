@@ -1,0 +1,24 @@
+plugins_sources +=			\
+	plugins/moofileselector-prefs.cpp\
+	plugins/moofileselector.cpp	\
+	plugins/moofileselector.h	\
+	plugins/mooplugin-builtin.h	\
+	plugins/mooplugin-builtin.cpp	\
+	plugins/moofilelist.cpp		\
+	plugins/moofind.cpp
+
+EXTRA_DIST +=						\
+	plugins/glade/moofileselector-prefs.glade	\
+	plugins/glade/moofileselector.glade		\
+	plugins/glade/moofind.glade			\
+	plugins/glade/moogrep.glade
+
+built_plugins_sources +=				\
+	plugins/moofileselector-prefs-gxml.h		\
+	plugins/moofileselector-gxml.h			\
+	plugins/moofind-gxml.h				\
+	plugins/moogrep-gxml.h
+
+include plugins/ctags/Makefile.incl
+include plugins/usertools/Makefile.incl
+include plugins/support/Makefile.incl

@@ -1,0 +1,61 @@
+<moo-user-tools version="1.0"><!-- -%- indent-width:2 -%- -->
+  <command id="SwitchHeaderAndImplementation">
+    <name>Switch _Header and Implementation</name>
+    <langs>c, cpp, objc, chdr, gap</langs>
+    <options>need-file</options>
+    <type>lua</type>
+    <lua:code><![CDATA[
+extensions = {
+  { {".h", ".hh", ".hpp", ".hxx", ".H"}, {".c", ".cc", ".cpp", ".cxx", ".C", ".m", ".mm"} },
+  { {".gd"}, {".gi"} },
+}
+
+new = nil
+base, ext = os.path.splitext(doc.get_filename())
+if os.name == 'nt' then
+  ext = ext:lower()
+end
+
+for _, p in ipairs(extensions) do
+  if table.index(p[1], ext) > 0 then
+    new = p[2];
+    break
+  elseif table.index(p[2], ext) > 0 then
+    new = p[1];
+    break
+  end
+end
+
+if not new then
+  return
+end
+
+for _, e in ipairs(new) do
+  file = base .. e
+  if os.path.exists(file) then
+    editor.open_path(file)
+    return
+  end
+end
+]]></lua:code>
+  </command>
+  <command id="DVI_Forward_Search"><!-- ###unix### -->
+    <name>DVI Forward Search</name>
+    <file-filter>*.tex</file-filter>
+    <options>need-file</options>
+    <type>exe</type>
+    <exe:output>async</exe:output>
+    <exe:code><![CDATA[
+[ -f medit-env.sh ] && . medit-env.sh
+doc="${LATEX_MASTER:-$DOC}"
+doc_base=`basename "$doc" .tex`
+if (which kdvi > /dev/null); then
+  kdvi --unique file:"$doc_base.dvi"#src:"$LINE$DOC" && \
+  dcop `dcopfind -a 'kviewshell-*'` kdvi-mainwindow#1 hide && \
+  dcop `dcopfind -a 'kviewshell-*'` kdvi-mainwindow#1 show
+else
+  xdg-open "$doc_base.dvi"
+fi
+]]></exe:code>
+  </command>
+</moo-user-tools>

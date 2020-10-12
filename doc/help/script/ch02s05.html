@@ -1,0 +1,324 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>gtk.GFile</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-gtk.html" title="Chapter 2. Gtk API for Lua scripts">
+<link rel="prev" href="ch02s04.html" title="gtk.Container">
+<link rel="next" href="ch02s06.html" title="gtk.GObject">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">gtk.GFile</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch02s04.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 2. Gtk API for Lua scripts</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="lua.GFile"></a>gtk.GFile</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_new_for_path">new_for_path()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_new_for_uri">new_for_uri()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_parse_name">parse_name()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_dup">dup()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_equal">equal()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_basename">get_basename()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_child">get_child()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_child_for_display_name">get_child_for_display_name()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_parent">get_parent()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_parse_name">get_parse_name()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_path">get_path()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_relative_path">get_relative_path()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_uri">get_uri()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_get_uri_scheme">get_uri_scheme()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_has_parent">has_parent()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_has_prefix">has_prefix()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_has_uri_scheme">has_uri_scheme()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_hash">hash()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_is_native">is_native()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s05.html#lua.g_file_resolve_relative_path">resolve_relative_path()</a></span></dt>
+</dl></div>
+<pre class="programlisting">
+<code class="constant"><a class="link" href="ch02s06.html" title="gtk.GObject">gtk.GObject</a></code>
+  |
+  +-- gtk.GFile
+</pre>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_new_for_path"></a>new_for_path()</h3></div></div></div>
+<pre class="programlisting">GFile.new_for_path(path)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>path</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_new_for_uri"></a>new_for_uri()</h3></div></div></div>
+<pre class="programlisting">GFile.new_for_uri(uri)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>uri</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_parse_name"></a>parse_name()</h3></div></div></div>
+<pre class="programlisting">GFile.parse_name(parse_name)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>parse_name</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_dup"></a>dup()</h3></div></div></div>
+<pre class="programlisting">file.dup()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_equal"></a>equal()</h3></div></div></div>
+<pre class="programlisting">file.equal(file2)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>file2</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_basename"></a>get_basename()</h3></div></div></div>
+<pre class="programlisting">file.get_basename()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_child"></a>get_child()</h3></div></div></div>
+<pre class="programlisting">file.get_child(name)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>name</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_child_for_display_name"></a>get_child_for_display_name()</h3></div></div></div>
+<pre class="programlisting">file.get_child_for_display_name(display_name)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>display_name</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_parent"></a>get_parent()</h3></div></div></div>
+<pre class="programlisting">file.get_parent()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_parse_name"></a>get_parse_name()</h3></div></div></div>
+<pre class="programlisting">file.get_parse_name()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_path"></a>get_path()</h3></div></div></div>
+<pre class="programlisting">file.get_path()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_relative_path"></a>get_relative_path()</h3></div></div></div>
+<pre class="programlisting">file.get_relative_path(descendant)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>descendant</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_uri"></a>get_uri()</h3></div></div></div>
+<pre class="programlisting">file.get_uri()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_get_uri_scheme"></a>get_uri_scheme()</h3></div></div></div>
+<pre class="programlisting">file.get_uri_scheme()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_has_parent"></a>has_parent()</h3></div></div></div>
+<pre class="programlisting">file.has_parent(parent=<code class="constant">nil</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>parent</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code> or <code class="constant">nil</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_has_prefix"></a>has_prefix()</h3></div></div></div>
+<pre class="programlisting">file.has_prefix(prefix)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>prefix</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_has_uri_scheme"></a>has_uri_scheme()</h3></div></div></div>
+<pre class="programlisting">file.has_uri_scheme(uri_scheme)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>uri_scheme</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_hash"></a>hash()</h3></div></div></div>
+<pre class="programlisting">file.hash()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_is_native"></a>is_native()</h3></div></div></div>
+<pre class="programlisting">file.is_native()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_file_resolve_relative_path"></a>resolve_relative_path()</h3></div></div></div>
+<pre class="programlisting">file.resolve_relative_path(relative_path)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>relative_path</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s05.html" title="gtk.GFile">gtk.GFile</a></code></p>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch02s04.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-gtk.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">gtk.Container </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> gtk.GObject</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

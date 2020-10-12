@@ -1,0 +1,313 @@
+# translation of mr.po to Marathi
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
+# sandeep shedmake <sandeep.shedmake@gmail.com>, 2008.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: mr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-09-09 17:55+0530\n"
+"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+"Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+""
+
+msgid "Background"
+msgstr "पार्श्वभूमी"
+
+msgid "Background color"
+msgstr "पार्श्वरंग"
+
+msgid "Background set"
+msgstr "पार्श्वभूमी समायोजन"
+
+msgid "Blue based color scheme"
+msgstr "निळा रंग आधारीत योजना"
+
+msgid "Bold"
+msgstr "ठळक"
+
+msgid "Bold set"
+msgstr "ठकळ संच"
+
+msgid "Boolean value"
+msgstr "बूलिअन मूल्य"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC शिर्षक"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"सर्व रूपांतर करीता regex निर्माण करू शकत नाही, रचना ठळक करण्याची पध्दत नेहमीपेक्षा जास्त हळु राहेल.\n"
+"त्रुटी अशी होती: %s"
+
+msgid "Classic"
+msgstr "क्लासिक"
+
+msgid "Classic color scheme"
+msgstr "विशिष्ट रंग योजना"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate पाठ्य संपादक मध्ये वापरण्याजोगी रंग योजना"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Tango रंग पेलेटचा वापर करणारी रंग योजना"
+
+msgid "Comment"
+msgstr "टीप"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tango रंग पेलेटचा वापर केलेली गडद रंग योजना"
+
+msgid "Data Type"
+msgstr "माहिती प्रकार"
+
+msgid "Decimal number"
+msgstr "दशमान संख्या"
+
+msgid "Defaults"
+msgstr "मुलभूत"
+
+msgid "Docbook"
+msgstr "दस्तऐवज पुस्तिका"
+
+msgid "Error"
+msgstr "त्रुटी"
+
+msgid "Escaped Character"
+msgstr "टाळायचे अक्षर"
+
+msgid "Floating point number"
+msgstr "फ्लोटींग बिंदू संख्या"
+
+msgid "Foreground"
+msgstr "पृष्ठभूमी"
+
+msgid "Foreground color"
+msgstr "पृष्ठभागावरील रंग"
+
+msgid "Foreground set"
+msgstr "पृष्ठभागाचे समायोजन"
+
+msgid "Forth"
+msgstr "पुढचे"
+
+msgid "Haskell"
+msgstr "हास्केल"
+
+msgid "Hexadecimal number"
+msgstr "हेक्झाडेसीमल संख्या"
+
+msgid "Hidden"
+msgstr "लपविलेले"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "एक ओळ ठळक करण्यास बराच वेळा लागला, रचना ठळक करणे अकार्यान्वीत केले जाईल"
+
+msgid "Identifier"
+msgstr "ओळखकर्ता"
+
+msgid "Italic"
+msgstr "तिरपे"
+
+msgid "Italic set"
+msgstr "तिरपे संच"
+
+msgid "Keyword"
+msgstr "कळशब्द"
+
+msgid "Language id"
+msgstr "भाषा id"
+
+msgid "Language ids"
+msgstr "भाषा ids"
+
+msgid "Language name"
+msgstr "भाषा नाव"
+
+msgid "Language section"
+msgstr "भाषा विभाग"
+
+msgid "Language specification directories"
+msgstr "भाषा"
+
+msgid "Line background"
+msgstr "ओळ पार्श्वभूमी"
+
+msgid "Line background color"
+msgstr "ओळीचे पार्श्वभूमी रंग"
+
+msgid "Line background set"
+msgstr "ओळीचे पृष्ठभूमी संच"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "शैली सुत्रयोजना जेथे स्थित आहे त्या संचयीका व फाइलची यादी"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "भाषा संयोजना फाइल (.lang) जेथे स्थित आहेत त्या संचयीकाची यादी दर्शवा"
+
+msgid "List of the ids of the available languages"
+msgstr "उपलब्ध भाषाची id ची यादी"
+
+msgid "List of the ids of the available style schemes"
+msgstr "उपलब्ध शैली सुत्रयोजनाचे ids ची यादी"
+
+msgid "Literate Haskell"
+msgstr "लीटरेट Haskell"
+
+msgid "Lua"
+msgstr "लुआ"
+
+msgid "Makefile"
+msgstr "मेकफाइल"
+
+msgid "Mallard"
+msgstr "मल्लार्ड"
+
+msgid "Markup"
+msgstr "मार्कअप"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "मुख्य भाषाची व्याख्या आढळली नाही (id = \"%s\".)"
+
+msgid "Nemerle"
+msgstr "नेमेर्ले"
+
+msgid "Objective Caml"
+msgstr "उदिष्ठ-C Caml"
+
+msgid "Objective-C"
+msgstr "उदिष्ठ-C"
+
+msgid "Octave"
+msgstr "अष्टक"
+
+msgid "Operator"
+msgstr "ऑपरेटर"
+
+msgid "Others"
+msgstr "इतर"
+
+msgid "Pascal"
+msgstr "पास्कल"
+
+msgid "Perl"
+msgstr "पर्ल"
+
+msgid "Preprocessor"
+msgstr "पुर्वप्रोसेसर"
+
+msgid "RPM spec"
+msgstr "RPM स्पेक"
+
+msgid "Ruby"
+msgstr "रूबी"
+
+msgid "Scheme"
+msgstr "स्कीम"
+
+msgid "Scheme ids"
+msgstr "सुत्रयोजना ids"
+
+msgid "Scientific"
+msgstr "शास्त्रीय "
+
+msgid "Scripts"
+msgstr "स्क्रिप्ट्स"
+
+msgid "Sources"
+msgstr "स्त्रोत"
+
+msgid "Strikethrough"
+msgstr "नकोअसणारे लेखन नष्ट करा"
+
+msgid "Strikethrough set"
+msgstr "लेखन खोडण्याची क्रिया"
+
+msgid "String"
+msgstr "पंक्ती"
+
+msgid "Style scheme description"
+msgstr "शैली सुत्रयोजना वर्णन"
+
+msgid "Style scheme filename"
+msgstr "शैली सुत्रयोजना फाइलनाव"
+
+msgid "Style scheme id"
+msgstr "शैली सुत्रयोजना id"
+
+msgid "Style scheme name"
+msgstr "शैली सुत्रयोजना नाव"
+
+msgid "Style scheme search path"
+msgstr "शैली सुत्रयोजना शोध मार्ग"
+
+msgid "Underline"
+msgstr "अधोरेखन"
+
+msgid "Underline set"
+msgstr "अधोरेखन"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "regex '%s' मधिल अपरिचीत '%s'"
+
+msgid "Whether background color is set"
+msgstr "पार्श्वभूमी रंग संच आहे का"
+
+msgid "Whether bold attribute is set"
+msgstr "ठळक गुणधर्म संच आहे का"
+
+msgid "Whether foreground color is set"
+msgstr "पृष्ठभूमी रंग संच आहे का"
+
+msgid "Whether italic attribute is set"
+msgstr "तिरपे गुणधर्म संच आहे का"
+
+msgid "Whether line background color is set"
+msgstr "ओळ पार्श्वभूमी रंग संच आहे का"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "खोडा गुणधर्म संच आहे का"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "वापरकर्त्यापासून भाषा लपविले पाहिजे का"
+
+msgid "Whether underline attribute is set"
+msgstr "अधोरेखीत गुणधर्म संच आहे का"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "संदर्भ '%s' मध्ये \\%%{...@start} आदेश समाविष्ट असू शकत नाही"
+
+msgid "duplicated context id '%s'"
+msgstr "एखसारखे संदर्भ id '%s'"
+
+msgid "gettext translation"
+msgstr "gettext भाषांतर"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "regex '%s' मध्ये: बॅकरेफरन्स समर्थीत नाही"
+
+msgid "invalid context reference '%s'"
+msgstr "अवैध संदर्भातील संदर्भ '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "वाईल्डकार्ड संदर्भातील संदर्भ भाषा '%s' ref '%s' मध्ये वापरल्या गेलेली शैली अभिभावी"
+
+msgid "unknown context '%s'"
+msgstr "अपरिचीत संदर्भ '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "\\C ची वापरणी भाषा व्याख्या मध्ये समर्थीत नाही"
+

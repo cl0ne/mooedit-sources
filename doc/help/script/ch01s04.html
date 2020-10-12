@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>moo.App - application object</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-moo.html" title="Chapter 1. medit Lua API">
+<link rel="prev" href="ch01s03.html" title="Notations">
+<link rel="next" href="ch01s05.html" title="moo.CmdView">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">moo.App - application object</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01s03.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 1. <span class="application">medit</span> Lua API</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch01s05.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="lua.MooApp"></a>moo.App - application object</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch01s04.html#lua.signal:MooApp:load-session">signal load-session</a></span></dt>
+<dt><span class="sect2"><a href="ch01s04.html#lua.signal:MooApp:quit">signal quit</a></span></dt>
+<dt><span class="sect2"><a href="ch01s04.html#lua.signal:MooApp:save-session">signal save-session</a></span></dt>
+<dt><span class="sect2"><a href="ch01s04.html#lua.signal:MooApp:started">signal started</a></span></dt>
+<dt><span class="sect2"><a href="ch01s04.html#lua.moo_app_instance">instance()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s04.html#lua.moo_app_get_editor">get_editor()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s04.html#lua.moo_app_quit">quit()</a></span></dt>
+</dl></div>
+<pre class="programlisting">
+<code class="constant"><a class="link" href="ch02s06.html" title="gtk.GObject">gtk.GObject</a></code>
+  |
+  +-- moo.App
+</pre>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooApp:load-session"></a>signal load-session</h3></div></div></div>
+<pre class="programlisting">load-session()</pre>
+<p>This signal is emitted when application is loading session, after editor session has been loaded.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooApp:quit"></a>signal quit</h3></div></div></div>
+<pre class="programlisting">quit()</pre>
+<p>This signal is emitted when application quits, after session has been saved.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooApp:save-session"></a>signal save-session</h3></div></div></div>
+<pre class="programlisting">save-session()</pre>
+<p>This signal is emitted when application is saving session, before saving editor session.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.signal:MooApp:started"></a>signal started</h3></div></div></div>
+<pre class="programlisting">started()</pre>
+<p>This signal is emitted after application loaded session, started main loop, and hit idle for the first time.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_app_instance"></a>instance()</h3></div></div></div>
+<pre class="programlisting">App.instance()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s04.html" title="moo.App - application object">moo.App</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_app_get_editor"></a>get_editor()</h3></div></div></div>
+<pre class="programlisting">app.get_editor()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch01s10.html" title="moo.Editor - editor object">moo.Editor</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_app_quit"></a>quit()</h3></div></div></div>
+<pre class="programlisting">app.quit()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01s03.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-moo.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch01s05.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Notations </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> moo.CmdView</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

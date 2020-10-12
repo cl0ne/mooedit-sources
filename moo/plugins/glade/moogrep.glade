@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<glade-interface>
+<widget class="GtkDialog" id="Grep">
+<property name="title">Find in Files</property>
+<property name="modal">True</property>
+<property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
+<child internal-child="vbox">
+<widget class="GtkVBox" id="dialog-vbox1">
+<property name="visible">True</property>
+<child>
+<widget class="GtkAlignment" id="alignment1">
+<property name="visible">True</property>
+<property name="top_padding">6</property>
+<property name="bottom_padding">6</property>
+<property name="left_padding">6</property>
+<property name="right_padding">6</property>
+<child>
+<widget class="GtkVBox" id="vbox1">
+<property name="visible">True</property>
+<child>
+<widget class="GtkTable" id="table1">
+<property name="visible">True</property>
+<property name="n_rows">4</property>
+<property name="n_columns">2</property>
+<child>
+<widget class="GtkEventBox" id="eventbox1">
+<property name="visible">True</property>
+<property name="tooltip">This entry content will be passed to grep</property>
+<child>
+<widget class="GtkLabel" id="label1">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">_Pattern:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">pattern_combo:MooHistoryCombo</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEventBox" id="eventbox2">
+<property name="visible">True</property>
+<property name="tooltip">Enter semicolon-separated list of globs</property>
+<child>
+<widget class="GtkLabel" id="label2">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Fi_les:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">glob_combo:MooHistoryCombo</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEventBox" id="eventbox3">
+<property name="visible">True</property>
+<property name="tooltip">You can use Tab completion in this entry</property>
+<child>
+<widget class="GtkLabel" id="label3">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">_Directory:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">dir_combo:MooHistoryCombo</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="top_attach">2</property>
+<property name="bottom_attach">3</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEventBox" id="eventbox4">
+<property name="visible">True</property>
+<property name="tooltip">Enter semicolon-separated list of globs</property>
+<child>
+<widget class="GtkLabel" id="label5">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">S_kip files:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">skip_combo:MooHistoryCombo</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="top_attach">3</property>
+<property name="bottom_attach">4</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="pattern_combo:MooHistoryCombo">
+<property name="visible">True</property>
+<property name="tooltip">This entry content will be passed to grep</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="glob_combo:MooHistoryCombo">
+<property name="visible">True</property>
+<property name="tooltip">Enter semicolon-separated list of globs</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="dir_combo:MooHistoryCombo">
+<property name="visible">True</property>
+<property name="tooltip">You can use Tab completion in this entry</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">2</property>
+<property name="bottom_attach">3</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="skip_combo:MooHistoryCombo">
+<property name="visible">True</property>
+<property name="tooltip">Enter semicolon-separated list of globs</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">3</property>
+<property name="bottom_attach">4</property>
+<property name="y_options"></property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+</packing>
+</child>
+<child>
+<widget class="GtkAlignment" id="alignment2">
+<property name="visible">True</property>
+<property name="top_padding">6</property>
+<property name="bottom_padding">6</property>
+<property name="left_padding">12</property>
+<child>
+<widget class="GtkCheckButton" id="case_sensitive_button">
+<property name="visible">True</property>
+<property name="label" translatable="yes">Case _sensitive</property>
+<property name="use_underline">True</property>
+<property name="response_id">0</property>
+<property name="active">True</property>
+<property name="draw_indicator">True</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="position">2</property>
+</packing>
+</child>
+<child internal-child="action_area">
+<widget class="GtkHButtonBox" id="dialog-action_area1">
+<property name="visible">True</property>
+<property name="layout_style">GTK_BUTTONBOX_END</property>
+<child>
+<widget class="GtkButton" id="button1">
+<property name="visible">True</property>
+<property name="can_default">True</property>
+<property name="label">gtk-cancel</property>
+<property name="use_stock">True</property>
+<property name="focus_on_click">False</property>
+<property name="response_id">-6</property>
+</widget>
+</child>
+<child>
+<widget class="GtkButton" id="button2">
+<property name="visible">True</property>
+<property name="can_default">True</property>
+<property name="has_default">True</property>
+<property name="label">gtk-find</property>
+<property name="use_stock">True</property>
+<property name="focus_on_click">False</property>
+<property name="response_id">-5</property>
+</widget>
+<packing>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="pack_type">GTK_PACK_END</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</glade-interface>

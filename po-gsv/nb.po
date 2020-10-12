@@ -1,0 +1,240 @@
+# Norwegian messages for gtksourceview.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org, 2003-2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview 2.5.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-01-13 22:13+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "Bakgrunn"
+
+msgid "Background color"
+msgstr "Bakgrunnsfarge"
+
+msgid "Background set"
+msgstr "Bakgrunn satt"
+
+msgid "Blue based color scheme"
+msgstr "Fargeschema basert på blå"
+
+msgid "Bold"
+msgstr "Fet"
+
+msgid "Bold set"
+msgstr "Fet satt"
+
+msgid "Boolean value"
+msgstr "Bolsk verdi"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC-header"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Kan ikke opprette et regulært uttrykk for alle transisjonene. Uthevelse av syntaks vil være tregere enn vanlig.\n"
+"Feilen var: %s"
+
+msgid "ChangeLog"
+msgstr "Endringslogg"
+
+msgid "Classic"
+msgstr "Klassisk"
+
+msgid "Classic color scheme"
+msgstr "Klassisk fargeschema"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Fargeschema som brukes i tekstredigeringsprogrammet Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Fargeschema som bruker Tango-fargepaletten"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Mørkt fargeschema som bruker Tango-fargepaletten"
+
+msgid "Data Type"
+msgstr "Datatype"
+
+msgid "Decimal number"
+msgstr "Desimaltall"
+
+msgid "Defaults"
+msgstr "Forvalg"
+
+msgid "Dos Batch"
+msgstr "Dos stegvis fil"
+
+msgid "Error"
+msgstr "Feil"
+
+msgid "Escaped Character"
+msgstr "Escaped-tegn"
+
+msgid "Floating point number"
+msgstr "Flyttall"
+
+msgid "Foreground"
+msgstr "Forgrunn"
+
+msgid "Foreground color"
+msgstr "Forgrunnsfarge"
+
+msgid "Foreground set"
+msgstr "Forgrunn satt"
+
+msgid "Hexadecimal number"
+msgstr "Heksadesimalt tall"
+
+msgid "Hidden"
+msgstr "Skjult"
+
+msgid "Identifier"
+msgstr "Identifikator"
+
+msgid "Italic"
+msgstr "Kursiv"
+
+msgid "Italic set"
+msgstr "Kursiv satt"
+
+msgid "Keyword"
+msgstr "Nøkkelord"
+
+msgid "LaTeX"
+msgstr "LaTex"
+
+msgid "Language id"
+msgstr "Språk-ID"
+
+msgid "Language ids"
+msgstr "Språk-IDer"
+
+msgid "Language name"
+msgstr "Språknavn"
+
+msgid "Language section"
+msgstr "Språkseksjon"
+
+msgid "Language specification directories"
+msgstr "Kataloger for språkspesifikasjoner"
+
+msgid "Line background"
+msgstr "Bakgrunn for linje"
+
+msgid "Line background color"
+msgstr "Bakgrunnsfarge for linje"
+
+msgid "Line background set"
+msgstr "Bakgrunn for linje satt"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Liste med kataloger og filer der schema for stiler finnes"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Liste over kataloger der språkspesifikasjonsfiler (.lang) finnes"
+
+msgid "List of the ids of the available languages"
+msgstr "Liste med IDer for tilgjengelige språk"
+
+msgid "Makefile"
+msgstr "Makefil"
+
+msgid "Markup"
+msgstr "Merking"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Mangler hovedspråkdefinisjon (id = «%s».)"
+
+msgid "Others"
+msgstr "Andre"
+
+msgid "Preprocessor"
+msgstr "Preprosessor"
+
+msgid "RPM spec"
+msgstr "RPM-spec"
+
+msgid "Scheme ids"
+msgstr "Schema-ID"
+
+msgid "Scientific"
+msgstr "Vitenskapelig"
+
+msgid "Scripts"
+msgstr "Skript"
+
+msgid "Sources"
+msgstr "Kildekode"
+
+msgid "Strikethrough"
+msgstr "Gjennomstreket"
+
+msgid "Strikethrough set"
+msgstr "Gjennomstreket satt"
+
+msgid "String"
+msgstr "Streng"
+
+msgid "Style scheme description"
+msgstr "Beskrivelse av stilschema"
+
+msgid "Style scheme search path"
+msgstr "Søkesti for stilschema"
+
+msgid "Text2Tags"
+msgstr "Tekst-til-tagger"
+
+msgid "Underline"
+msgstr "Understreket"
+
+msgid "Underline set"
+msgstr "Understreket satt"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Ukjent ID «%s» i vanlig uttrykk «%s»"
+
+msgid "Whether background color is set"
+msgstr "Om bakgrunnsfargen er satt"
+
+msgid "Whether bold attribute is set"
+msgstr "Om attributten fet er satt"
+
+msgid "Whether foreground color is set"
+msgstr "Om forgrunnsfargen er satt"
+
+msgid "Whether italic attribute is set"
+msgstr "Om attributten kursiv er satt"
+
+msgid "Whether line background color is set"
+msgstr "Om bakgrunnsfarge for linje er satt"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Om attributten gjennomstreket er satt"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Im språke skal skjules fra brukeren"
+
+msgid "Whether underline attribute is set"
+msgstr "Om attributten understreket er satt"
+
+msgid "gettext translation"
+msgstr "gettext-oversettelse"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "Bruk av \\C er ikke støttet i språkdefinisjoner"
+

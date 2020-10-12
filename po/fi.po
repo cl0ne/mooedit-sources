@@ -1,0 +1,2536 @@
+# Finnish translation of medit.
+# This file is distributed under the same license as the medit package.
+# Tommi Nieminen <translator@legisign.org>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-06 09:58-0800\n"
+"PO-Revision-Date: 2012-01-31 14:17+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Tommi Nieminen <translator@legisign.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#. error message for wrong commmand line
+#: ../moo/medit-app/main.c:110
+#, c-format
+msgid "Invalid value '%s' for option %s"
+msgstr "Väärä arvo ”%s” valitsimelle %s"
+
+#. help message for command line option --new-app
+#: ../moo/medit-app/main.c:117
+msgid "Run new instance of application"
+msgstr "Käynnistä sovelluksesta toinen instanssi"
+
+#. help message for command line option --use-session
+#: ../moo/medit-app/main.c:119
+msgid "Load and save session"
+msgstr "Tallenna ja lataa istunto"
+
+#. help message for command line option --pid=PID
+#: ../moo/medit-app/main.c:121
+msgid "Use existing instance with process id PID"
+msgstr "Käytä olemassaolevaa instanssia, jonka prosessitunniste on PID"
+
+#. "PID" part in "--pid=PID"
+#: ../moo/medit-app/main.c:122
+msgid "PID"
+msgstr "PID"
+
+#. help message for command line option --app-name=NAME
+#: ../moo/medit-app/main.c:124
+msgid "Set instance name to NAME if it's not already running"
+msgstr "Aseta instanssin nimeksi NAME, ellei se ole jo käynnissä"
+
+#. "NAME" part in "--app-name=NAME"
+#: ../moo/medit-app/main.c:125
+msgid "NAME"
+msgstr "NIMI"
+
+#. help message for command line option --new-window
+#: ../moo/medit-app/main.c:127
+msgid "Open file(s) in a new window"
+msgstr "Avaa tiedosto(t) uuteen ikkunaan"
+
+#. help message for command line option --new-tab
+#: ../moo/medit-app/main.c:129
+msgid "Open file(s) in a new tab"
+msgstr "Avaa tiedosto(t) uuteen välilehteen"
+
+#. help message for command line option --line=LINE
+#: ../moo/medit-app/main.c:135
+msgid "Open file and position cursor on line LINE"
+msgstr "Avaa tiedosto ja siirrä kohdistin riville RIVI"
+
+#. "LINE" part in --line=LINE
+#: ../moo/medit-app/main.c:136
+msgid "LINE"
+msgstr "RIVI"
+
+#. help message for command line option --encoding=ENCODING
+#: ../moo/medit-app/main.c:138
+msgid "Use character encoding ENCODING"
+msgstr "Käytä merkistökoodausta KOODAUS"
+
+#. "ENCODING" part in --encoding=ENCODING
+#: ../moo/medit-app/main.c:139
+msgid "ENCODING"
+msgstr "KOODAUS"
+
+#. help message for command line option --reload
+#: ../moo/medit-app/main.c:141
+msgid "Automatically reload file if it was modified on disk"
+msgstr "Lataa tiedosto automaattisesti uudelleen sen muututtua levyllä"
+
+#. help message for command line option --geometry=WIDTHxHEIGHT[+X+Y]
+#: ../moo/medit-app/main.c:153
+msgid "Default window size and position"
+msgstr "Ikkunan oletuskoko ja -sijainti"
+
+#. "WIDTHxHEIGHT[+X+Y]" part in --geometry=WIDTHxHEIGHT[+X+Y]
+#: ../moo/medit-app/main.c:154
+msgid "WIDTHxHEIGHT[+X+Y]"
+msgstr "LEVEYS×KORKEUS[+X+Y]"
+
+#. help message for command line option --version
+#: ../moo/medit-app/main.c:156
+msgid "Show version information and exit"
+msgstr "Näytä versiotiedot ja lopeta"
+
+#. "FILES" part in "medit [OPTION...] [FILES]"
+#: ../moo/medit-app/main.c:172
+msgid "FILES"
+msgstr "TIEDOSTOT"
+
+#. error message for wrong commmand line
+#: ../moo/medit-app/main.c:254
+#, c-format
+msgid "%s and %s options may not be used simultaneously\n"
+msgstr "Valitsimia %s ja %s ei voi käyttää yhtä aikaa\n"
+
+#: ../moo/medit-app/medit.desktop.in.h:1
+msgid "Text editor"
+msgstr "Tekstimuokkain"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooapp/glade/mooappabout-credits.glade.h:2
+msgid "Dialog title|Credits"
+msgstr "Kiitokset"
+
+#. Tab label in Credits dialog
+#: ../moo/mooapp/glade/mooappabout-credits.glade.h:4
+msgid "Thanks"
+msgstr "Kiitokset"
+
+#. Tab label in Credits dialog
+#: ../moo/mooapp/glade/mooappabout-credits.glade.h:6
+msgid "Written by"
+msgstr "Tekijä(t)"
+
+#. Tab label in Credits dialog
+#: ../moo/mooapp/glade/mooappabout-credits.glade.h:8
+msgid "Translated by"
+msgstr "Kääntäjä(t)"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooapp/glade/mooappabout-dialog.glade.h:2
+msgid "Dialog title|About"
+msgstr "Tietoja"
+
+#. Credits button label in About dialog
+#: ../moo/mooapp/glade/mooappabout-dialog.glade.h:4
+msgid "C_redits"
+msgstr "_Kiitokset"
+
+#. License button label in About dialog
+#: ../moo/mooapp/glade/mooappabout-dialog.glade.h:6
+msgid "_License"
+msgstr "_Lisenssi"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooapp/glade/mooappabout-license.glade.h:2
+msgid "Dialog title|License"
+msgstr "Lisenssi"
+
+#. Translators: this goes into About box, under Translated by tab,
+#. do not ignore it, markup isn't always used. It should be something
+#. like "Some Guy <someguy@domain.net>", with lines separated by \n
+#: ../moo/mooapp/mooappabout.c:57
+msgid "translator-credits"
+msgstr "Tommi Nieminen <translator@legisign.org>"
+
+#. Translators: this goes into About box, under Translated by tab,
+#. this must be valid html markup, e.g.
+#. "Some Guy <a href=\"mailto:someguy@domain.net\">&lt;someguy@domain.net&gt;</a>"
+#. Lines must be separated by <br>, like "First guy<br>Second Guy"
+#: ../moo/mooapp/mooappabout.c:62
+msgid "translator-credits-markup"
+msgstr ""
+"Tommi Nieminen <a href=\"mailto:translator@legisign.org\">&lt;"
+"translator@legisign.org&gt;</a>"
+
+#: ../moo/mooapp/mooapp.c:993
+msgid "Report a Bug..."
+msgstr "Ilmoita ohjelmavirheestä..."
+
+#: ../moo/mooapp/mooapp.c:1356
+#, c-format
+msgid ""
+"The following URL will be opened:\n"
+"\n"
+"%s\n"
+"\n"
+"It contains medit version and your operating system name (%s)"
+msgstr ""
+"Seuraavat verkko-osoitteet avataan:\n"
+"\n"
+"%s\n"
+"\n"
+"Sisältää meditin version ja käyttöjärjestelmäsi nimen (%s)"
+
+#: ../moo/mooapp/mooapp.c:1363
+msgid "Open URL?"
+msgstr "Avataanko osoite?"
+
+#. Prefs dialog title
+#: ../moo/mooapp/mooapp.c:1401
+msgid "Preferences"
+msgstr "Asetukset"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:1
+msgid "<b>Loading</b>"
+msgstr "<b>Ladataan</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:2
+msgid "Encodings to _autodetect:"
+msgstr "_Automaattisesti tunnistettavat koodaukset:"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:3
+msgid ""
+"Comma-separated list of encodings to try when opening a file. 'LOCALE' means "
+"current locale encoding."
+msgstr ""
+"Puolipistein erotettu tiedostoa avattaessa kokeiltavien merkistökoodausten "
+"luettelo. \"LOCALE\" tarkoittaa nykyistä koodausta."
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:4
+msgid "<b>Saving</b>"
+msgstr "<b>Tallennetaan</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:5
+msgid "Encoding for _new files:"
+msgstr "_Uusien tiedostojen koodaus:"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:6
+msgid "Remove trailing _spaces"
+msgstr "P_oista rivinloppuiset välilyönnit"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:7
+msgid "Ensure trailing new_line"
+msgstr "Varmista tiedoston loppuvan _rivinvaihtoon"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:8
+msgid "Make _backups"
+msgstr "Tee _varmuuskopio"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:9
+msgid "<b>Sessions</b>"
+msgstr "<b>Istunnot</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:10
+msgid "Enable _session support"
+msgstr "Käytä _istuntotukea"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:11
+msgid "<b>Dialogs</b>"
+msgstr "<b>Diálogos</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-file.glade.h:12
+msgid "Open and Save As dialogs show current document _folder"
+msgstr ""
+"Avaa- ja Tallenna nimellä -ikkunat avautuvat n_ykyisen asiakirjan kansioon"
+
+#: ../moo/mooedit/glade/mooeditprefs-filters.glade.h:1
+msgid "<b>File filters</b>"
+msgstr "<b>Tiedostosuotimet</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:1
+msgid "<b>Keyboard</b>"
+msgstr "<b>Näppäimistö</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:2
+msgid "Smart Home and End"
+msgstr "Älykkäät Home ja End"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:3
+msgid "Enable auto indentation"
+msgstr "Sisennä automaattisesti"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:4
+msgid "Do not use tabs for indentation"
+msgstr "Älä sisennä sarkaimin"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:5
+msgid "Backspace key unindents"
+msgstr "Askelpalautin vähentää sisennystä"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:6
+msgid "Tab key indents"
+msgstr "Sarkainnäppäin sisentää"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:7
+msgid "Indent width:"
+msgstr "Sisennys:"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:8
+msgid "Tab width:"
+msgstr "Sarkausleveys:"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:9
+msgid "<b>Font and colors</b>"
+msgstr "<b>Kirjasin ja värit</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:10
+msgid "Font:"
+msgstr "Kirjasin:"
+
+#: ../moo/mooedit/glade/mooeditprefs-general.glade.h:11
+msgid "Color scheme:"
+msgstr "Väriteema:"
+
+#: ../moo/mooedit/glade/mooeditprefs-langs.glade.h:1
+msgid "<b>Language-specific options</b>"
+msgstr "<b>Kielikohtaiset asetukset</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-langs.glade.h:2
+msgid "Options:"
+msgstr "Asetukset:"
+
+#: ../moo/mooedit/glade/mooeditprefs-langs.glade.h:3
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:3
+msgid "Mime types:"
+msgstr "MIME-tyypit:"
+
+#: ../moo/mooedit/glade/mooeditprefs-langs.glade.h:4
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:5
+msgid "Extensions:"
+msgstr "Laajennukset:"
+
+#: ../moo/mooedit/glade/mooeditprefs-langs.glade.h:5
+msgid "Language:"
+msgstr "Kieli:"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:1
+msgid "<b>Text wrapping</b>"
+msgstr "<b>Tekstin rivitys</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:2
+msgid "Enable text wrapping"
+msgstr "Rivitä teksti"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:3
+msgid "Do not split words"
+msgstr "Älä jaa sanoja"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:4
+msgid "<b>Highlighting</b>"
+msgstr "<b>Korostus</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:5
+msgid "Enable syntax highlighting"
+msgstr "Korosta syntaksi"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:6
+msgid "Highlight matching brackets"
+msgstr "Korosta sulkuparit"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:7
+msgid "Highlight mismatching brackets"
+msgstr "Korosta parittomat sulkeet"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:8
+msgid "Highlight current line"
+msgstr "Korosta nykyinen rivi"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:9
+msgid "<b>Misc</b>"
+msgstr "<b>Sekalaista</b>"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:10
+msgid "Show line numbers"
+msgstr "Näytä rivinumerointi"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:11
+msgid "Show tabs"
+msgstr "Näytä sarkaimet"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:12
+msgid "Show spaces"
+msgstr "Näytä välilyönnit"
+
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:13
+msgid "Show trailing spaces"
+msgstr "Näytä rivinloppuiset välilyönnit"
+
+#. Part of the phrase "Draw right margin at column [XX]"
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:15
+msgid "Draw right margin"
+msgstr "Merkitse oikea reunus"
+
+# Jatkoa id:hen ”Merkitse oikea reunus”, tämän jälkeen sarakkeen nro
+#. Part of the phrase "Draw right margin at column [XX]"
+#: ../moo/mooedit/glade/mooeditprefs-view.glade.h:17
+msgid "at column"
+msgstr "sarakkeeseen"
+
+#: ../moo/mooedit/glade/mooeditsavemult.glade.h:1
+msgid "Select the documents you want to save:"
+msgstr "Valitse tallennettavat asiakirjat:"
+
+#: ../moo/mooedit/glade/moopluginprefs.glade.h:1
+msgid "<b>Plugins</b>"
+msgstr "<b>Liitännäiset</b>"
+
+#: ../moo/mooedit/glade/moopluginprefs.glade.h:2
+msgid "<b>Version:</b>"
+msgstr "<b>Versio:</b>"
+
+#: ../moo/mooedit/glade/moopluginprefs.glade.h:3
+msgid "<b>Author:</b>"
+msgstr "<b>Tekijä:</b>"
+
+#: ../moo/mooedit/glade/moopluginprefs.glade.h:4
+msgid "<b>Description:</b>"
+msgstr "<b>Kuvaus:</b>"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:1
+msgid "Print using text styles"
+msgstr "Tulosta käyttäen tekstityylejä"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:2
+msgid "Use custom font:"
+msgstr "Käytä omaa kirjasinta:"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:3
+msgid "Wrap long lines"
+msgstr "Rivitä pitkät rivit"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:4
+msgid "Ellipsize long lines"
+msgstr "Katkaise pitkät rivit"
+
+#. Part of the phrase "Print line numbers" "every" "1" "lines"
+#: ../moo/mooedit/glade/mooprint.glade.h:6
+msgid "Print line numbers"
+msgstr "Tulosta rivinumerointi"
+
+#. Part of the phrase "Print line numbers" "every" "1" "lines"
+#: ../moo/mooedit/glade/mooprint.glade.h:8
+msgid "every"
+msgstr "kaikki"
+
+#. Part of the phrase "Print line numbers" "every" "1" "lines"
+#: ../moo/mooedit/glade/mooprint.glade.h:10
+msgid "lines"
+msgstr "riviä"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:11
+msgid "Print header"
+msgstr "Tulosta ylätunniste"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:12
+msgid "Print separator line"
+msgstr "Tulosta erotinviiva"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:13
+msgid "Right:"
+msgstr "Oikea:"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:14
+msgid "Center:"
+msgstr "Centro:"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:15
+msgid "Left:"
+msgstr "Vasen:"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:16
+msgid "Header"
+msgstr "Ylätunniste"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:17
+msgid "Print footer"
+msgstr "Tulosta alatunniste"
+
+#: ../moo/mooedit/glade/mooprint.glade.h:18
+msgid "Footer"
+msgstr "Alatunniste"
+
+#: ../moo/mooedit/glade/mooquicksearch.glade.h:1
+msgid "_Case sensitive"
+msgstr "Coincidir capitalización"
+
+#: ../moo/mooedit/glade/mooquicksearch.glade.h:2
+msgid "_Regular expression"
+msgstr "_Säännöllinen lauseke"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:1
+msgid "_Text to find:"
+msgstr "_Etsittävä teksti:"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:2
+msgid "Regular e_xpression"
+msgstr "_Säännöllinen lauseke"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:3 ../moo/plugins/moofind.c:1116
+msgid "Find"
+msgstr "Etsi"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:4
+msgid "_Replacement text:"
+msgstr "_Korvaava teksti:"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:5
+msgid "_Literal replacement"
+msgstr ""
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:6
+msgid "Replace With"
+msgstr "Korvaa jonolla"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:7
+msgid "Don't _prompt on replace"
+msgstr "Älä vahvistusta korvausta"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:8
+msgid "Find _backwards"
+msgstr "Etsi _taaksepäin"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:9
+#: ../moo/plugins/glade/moogrep.glade.h:5
+msgid "Case _sensitive"
+msgstr "Coincidir _capitalización"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:10
+msgid "S_elected text"
+msgstr "_Valittu teksti"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:11
+msgid "From c_ursor"
+msgstr "_Kohdistimesta"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:12
+msgid "_Whole words only"
+msgstr "Vain k_okonaiset sanat"
+
+#: ../moo/mooedit/glade/mootextfind.glade.h:13
+msgid "Options"
+msgstr "Asetukset"
+
+#: ../moo/mooedit/glade/mootextfind-prompt.glade.h:1
+msgid "Replace?"
+msgstr "Korvataanko?"
+
+#: ../moo/mooedit/glade/mootextfind-prompt.glade.h:2
+msgid "_Replace"
+msgstr "K_orvaa"
+
+#: ../moo/mooedit/glade/mootextfind-prompt.glade.h:3
+msgid "Replace _All"
+msgstr "Korvaa k_aikki"
+
+#: ../moo/mooedit/glade/mootextfind-prompt.glade.h:4
+#: ../moo/mooedit/mooeditwindow.c:551
+msgid "Find _Next"
+msgstr "Etsi _seuraava"
+
+#: ../moo/mooedit/glade/mootextfind-prompt.glade.h:5
+msgid "Sto_p"
+msgstr "K_eskeytä"
+
+#: ../moo/mooedit/glade/mootextgotoline.glade.h:1
+#: ../moo/mooedit/mooeditwindow.c:601
+msgid "Go to Line"
+msgstr "Siirry riville"
+
+#: ../moo/mooedit/glade/mootextgotoline.glade.h:2
+msgid "Go to line:"
+msgstr "Siirry riville:"
+
+#. menu item label
+#: ../moo/mooedit/medit.xml.h:2
+msgid "_File"
+msgstr "_Tiedosto"
+
+#. menu item label
+#: ../moo/mooedit/medit.xml.h:4
+msgid "_Search"
+msgstr "_Etsi"
+
+#. menu item label
+#: ../moo/mooedit/medit.xml.h:6
+msgid "_View"
+msgstr "_Näkymä"
+
+#. menu item label
+#: ../moo/mooedit/medit.xml.h:8
+msgid "Pa_nes"
+msgstr "Ke_hykset"
+
+#. menu item label
+#: ../moo/mooedit/medit.xml.h:10
+msgid "_Document"
+msgstr "_Asiakirja"
+
+#: ../moo/mooedit/medit.xml.h:11
+msgid "_Tools"
+msgstr "T_yökalut"
+
+#. menu item label
+#: ../moo/mooedit/medit.xml.h:13
+msgid "_Window"
+msgstr "_Ikkuna"
+
+#. Translators: number of documents here is always greater than one, so
+#. ignore singular form (which is simply copy of the plural here)
+#: ../moo/mooedit/mooeditdialogs.c:373
+#, c-format
+msgid ""
+"There are %u documents with unsaved changes. Save changes before closing?"
+msgid_plural ""
+"There are %u documents with unsaved changes. Save changes before closing?"
+msgstr[0] ""
+"Tiene %u documentos con cambios no guardados. ¿Salvar los cambios antes de "
+"cerrar?"
+msgstr[1] ""
+"Tiene %u documentos con cambios no guardados. ¿Salvar los cambios antes de "
+"cerrar?"
+
+#: ../moo/mooedit/mooeditdialogs.c:428
+#, c-format
+msgid ""
+"Could not save file\n"
+"%s"
+msgstr ""
+"Tiedostoa ei voitu tallentaa:\n"
+"%s"
+
+#: ../moo/mooedit/mooeditdialogs.c:490
+#, c-format
+msgid ""
+"Could not save file %s in encoding %s. Do you want to save it in UTF-8 "
+"encoding instead?"
+msgstr ""
+"Tiedostoa %s ei voi tallentaa koodaukseen %s. Haluatko tallentaa sen UTF-8:"
+"ksi?"
+
+#: ../moo/mooedit/mooeditdialogs.c:494
+msgid "Save file in UTF-8 encoding?"
+msgstr "Tallennetaanko tiedosto UTF-8-koodauksella?"
+
+#. Could not open file foo.txt
+#: ../moo/mooedit/mooeditdialogs.c:521 ../moo/mooedit/mooeditdialogs.c:588
+#, c-format
+msgid ""
+"Could not open file\n"
+"%s"
+msgstr ""
+"Tiedostoa ei voitu avata:\n"
+"%s"
+
+#: ../moo/mooedit/mooeditdialogs.c:527 ../moo/mooedit/mooeditdialogs.c:590
+msgid "Could not open file"
+msgstr "Tiedostoa ei voitu avata"
+
+#: ../moo/mooedit/mooeditdialogs.c:532
+#, c-format
+msgid ""
+"Could not open file using character encoding %s. Try to select another "
+"encoding below."
+msgstr ""
+"Tiedostoa ei voitu avata merkistökoodauksella %s. Valitse toinen koodaus "
+"alta."
+
+#: ../moo/mooedit/mooeditdialogs.c:535
+#, c-format
+msgid ""
+"Could not detect file character encoding. Try to select an encoding below."
+msgstr "Tiedoston merkistökoodausta ei tunnistetta. Valitse koodaus alta."
+
+#. Could not reload file foo.txt
+#: ../moo/mooedit/mooeditdialogs.c:620
+#, c-format
+msgid ""
+"Could not reload file\n"
+"%s"
+msgstr ""
+"No se pudo recargar el archivo\n"
+"%s"
+
+#: ../moo/mooedit/mooeditdialogs.c:648
+#, c-format
+msgid "Discard changes in file '%s'?"
+msgstr "Hylätäänkö tiedoston ”%s” muutokset?"
+
+#: ../moo/mooedit/mooeditdialogs.c:650
+msgid "If you reload the document, changes will be discarded"
+msgstr "Jos lataat asiakirjan uudelleen, muutokset hylätään"
+
+#: ../moo/mooedit/mooeditdialogs.c:651 ../moo/mooedit/mooeditwindow.c:441
+msgid "_Reload"
+msgstr "Lataa _uudelleen"
+
+#: ../moo/mooedit/mooeditdialogs.c:673
+#, c-format
+msgid "Overwrite modified file '%s'?"
+msgstr "Korvataanko muuttunut tiedosto ”%s”?"
+
+#: ../moo/mooedit/mooeditdialogs.c:674
+#, c-format
+msgid ""
+"File '%s' was modified on disk by another process. If you save it, changes "
+"on disk will be lost."
+msgstr ""
+"Toinen prosessi muutti tiedostoa \"%s\" levyllä. Jos tallennat, nämä "
+"muutokset menetetään."
+
+#: ../moo/mooedit/mooeditdialogs.c:676
+msgid "Over_write"
+msgstr "K_orvaa"
+
+#: ../moo/mooedit/mooeditdialogs.c:697
+msgid ""
+"Beginning of document reached.\n"
+"Continue from the end?"
+msgstr ""
+"Saavuttiin asiakirjan loppuun.\n"
+"Jatketaanko lopusta?"
+
+#: ../moo/mooedit/mooeditdialogs.c:700
+msgid ""
+"End of document reached.\n"
+"Continue from the beginning?"
+msgstr ""
+"Saavuttiin asiakirjan loppuun.\n"
+"Jatketaanko alusta?"
+
+#: ../moo/mooedit/mooeditdialogs.c:740
+#, c-format
+msgid "Invalid regular expression"
+msgstr "Virheellinen säännöllinen lauseke"
+
+#: ../moo/mooedit/mooedit-fileops.c:1111 ../moo/plugins/moofileselector.c:511
+msgid "Untitled"
+msgstr "Nimetön"
+
+#: ../moo/mooedit/mooedit-fileops.c:1113
+#, c-format
+msgid "Untitled %d"
+msgstr "Nimetön %d"
+
+#: ../moo/mooedit/mooeditor.c:330
+msgid "Open Recent Files Dialog"
+msgstr "Avaa viimeaikaisten tiedostojen ikkuna"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooedit/mooeditor.c:332
+msgid "Open Recent|_More..."
+msgstr "_Lisää..."
+
+#: ../moo/mooedit/mooeditor.c:598
+msgid "Open new editor window"
+msgstr "Avaa uusi muokkausikkuna"
+
+#: ../moo/mooedit/mooeditor.c:784
+msgid "Open Recent"
+msgstr "Avaa viimeaikainen"
+
+#. Translators: if translated, it should be a comma-separated list
+#. of encodings to try when opening files. Encodings names should be
+#. those understood by iconv, or "LOCALE" which means user's locale
+#. charset. For instance, the default value is "UTF-8,LOCALE,ISO_8859-15,ISO_8859-1".
+#. You want to add common preferred non-UTF8 encodings used in your locale.
+#. Do not remove ISO_8859-15 and ISO_8859-1, instead leave them at the end,
+#. these are common source files encodings.
+#: ../moo/mooedit/mooeditprefs.c:51
+msgid "encodings_list"
+msgstr "encodings_list"
+
+#. Label of a Preferences dialog page, remove the part before and including |
+#: ../moo/mooedit/mooeditprefspage.c:168
+msgid "PreferencesPage|General"
+msgstr "Yleistä"
+
+#. Label of a Preferences dialog page, remove the part before and including |
+#: ../moo/mooedit/mooeditprefspage.c:204
+msgid "PreferencesPage|File Filters"
+msgstr "Tiedostosuotimet"
+
+#. Label of a Preferences dialog page, remove the part before and including |
+#: ../moo/mooedit/mooeditprefspage.c:257
+msgid "PreferencesPage|View"
+msgstr "Näkymä"
+
+#. Label of a Preferences dialog page, remove the part before and including |
+#: ../moo/mooedit/mooeditprefspage.c:304
+msgid "PreferencesPage|File"
+msgstr "Tiedosto"
+
+#. Label of a Preferences dialog page, remove the part before and including |
+#: ../moo/mooedit/mooeditprefspage.c:344
+msgid "PreferencesPage|Languages"
+msgstr "Kielet"
+
+#. Label in the Language combo box on Languages preferences page,
+#. remove the part before and including |
+#. Menu item in the Language menu
+#: ../moo/mooedit/mooeditprefspage.c:561 ../moo/mooedit/mooeditwindow.c:3992
+msgid "Language|None"
+msgstr "Ei mitään"
+
+#. Column label on File Filters prefs page
+#: ../moo/mooedit/mooeditprefspage.c:1024
+msgctxt "filter-prefs-column"
+msgid "Filter"
+msgstr "Suodin"
+
+#. Column label on File Filters prefs page
+#: ../moo/mooedit/mooeditprefspage.c:1026
+msgctxt "filter-prefs-column"
+msgid "Options"
+msgstr "Asetukset"
+
+#: ../moo/mooedit/mooeditwindow.c:424
+msgid "Create new document"
+msgstr "Luo uusi asiakirja"
+
+#: ../moo/mooedit/mooeditwindow.c:432
+msgid "_Open..."
+msgstr "_Avaa..."
+
+#: ../moo/mooedit/mooeditwindow.c:433
+msgid "Open..."
+msgstr "Avaa..."
+
+#: ../moo/mooedit/mooeditwindow.c:440 ../moo/moofileview/moofileview.c:1281
+#: ../moo/moofileview/moofileview.c:1282
+msgid "Reload"
+msgstr "Lataa uudelleen"
+
+#: ../moo/mooedit/mooeditwindow.c:442
+msgid "Reload document"
+msgstr "Lataa asiakirja uudelleen"
+
+#: ../moo/mooedit/mooeditwindow.c:473
+msgid "Save _As..."
+msgstr "Tallenna _nimellä..."
+
+#: ../moo/mooedit/mooeditwindow.c:474
+msgid "Save as..."
+msgstr "Tallenna nimellä..."
+
+#: ../moo/mooedit/mooeditwindow.c:484
+msgid "Close document"
+msgstr "Sulje asiakirja"
+
+#: ../moo/mooedit/mooeditwindow.c:492
+msgid "Close All"
+msgstr "Sulje kaikki"
+
+#: ../moo/mooedit/mooeditwindow.c:493
+msgid "Close A_ll"
+msgstr "Sulje k_aikki"
+
+#: ../moo/mooedit/mooeditwindow.c:494
+msgid "Close all documents"
+msgstr "Sulje kaikki asiakirjat"
+
+#: ../moo/mooedit/mooeditwindow.c:501
+msgid "Previous Tab"
+msgstr "Edellinen välilehti"
+
+#: ../moo/mooedit/mooeditwindow.c:502
+msgid "_Previous Tab"
+msgstr "_Edellinen välilehti"
+
+#: ../moo/mooedit/mooeditwindow.c:503
+msgid "Previous tab"
+msgstr "Edellinen välilehti"
+
+#: ../moo/mooedit/mooeditwindow.c:511
+msgid "Next Tab"
+msgstr "Seuraava välilehti"
+
+#: ../moo/mooedit/mooeditwindow.c:512
+msgid "_Next Tab"
+msgstr "_Seuraava välilehti"
+
+#: ../moo/mooedit/mooeditwindow.c:513
+msgid "Next tab"
+msgstr "Seuraava välilehti"
+
+#: ../moo/mooedit/mooeditwindow.c:521
+msgid "Previous Tab In View"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:522
+msgid "_Previous Tab In View"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:523
+msgid "Previous tab in view"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:530
+msgid "Next Tab In View"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:531
+msgid "_Next Tab In View"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:532
+msgid "Next tab in view"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:550
+msgid "Find Next"
+msgstr "Etsi seuraava"
+
+#: ../moo/mooedit/mooeditwindow.c:552
+msgid "Find next"
+msgstr "Etsi seuraava"
+
+#: ../moo/mooedit/mooeditwindow.c:561
+msgid "Find Previous"
+msgstr "Etsi edellinen"
+
+#: ../moo/mooedit/mooeditwindow.c:562
+msgid "Find _Previous"
+msgstr "Etsi e_dellinen"
+
+#: ../moo/mooedit/mooeditwindow.c:563
+msgid "Find previous"
+msgstr "Etsi edellinen"
+
+#: ../moo/mooedit/mooeditwindow.c:583
+msgid "Find Current Word"
+msgstr "Etsi tätä sanaa"
+
+#: ../moo/mooedit/mooeditwindow.c:584
+msgid "Find Current _Word"
+msgstr "Etsi tätä _sanaa"
+
+#: ../moo/mooedit/mooeditwindow.c:592
+msgid "Find Current Word Backwards"
+msgstr "Etsi tätä sanaa taaksepäin"
+
+#: ../moo/mooedit/mooeditwindow.c:593
+msgid "Find Current Word _Backwards"
+msgstr "Etsi tätä s_anaa taaksepäin"
+
+#: ../moo/mooedit/mooeditwindow.c:602
+msgid "_Go to Line..."
+msgstr "Siirry ri_ville..."
+
+#: ../moo/mooedit/mooeditwindow.c:603
+msgid "Go to line..."
+msgstr "Siirry riville..."
+
+#: ../moo/mooedit/mooeditwindow.c:612
+msgid "Toggle Text Wrapping"
+msgstr "Rivitä/Älä rivitä"
+
+#: ../moo/mooedit/mooeditwindow.c:613
+msgid "_Wrap Text"
+msgstr "_Rivitä teksti"
+
+#: ../moo/mooedit/mooeditwindow.c:620
+msgid "Toggle Line Numbers Display"
+msgstr "Näytä/Älä näytä rivinumeroita"
+
+#: ../moo/mooedit/mooeditwindow.c:621
+msgid "Show _Line Numbers"
+msgstr "_Näytä rivinumerointi"
+
+#: ../moo/mooedit/mooeditwindow.c:627
+msgid "Focus Document"
+msgstr "Kohdista asiakirja"
+
+# arnau
+#: ../moo/mooedit/mooeditwindow.c:628
+msgid "_Focus Document"
+msgstr "Ko_hdista asiakirja"
+
+#: ../moo/mooedit/mooeditwindow.c:635 ../moo/mooedit/mooeditwindow.c:636
+msgid "Focus Other Split Notebook"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:643
+msgid "Move to Split Notebook"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:644
+msgid "_Move to Split Notebook"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:652 ../moo/mooedit/mooeditwindow.c:653
+msgid "Split View Horizontally"
+msgstr "Jaa näkymä vaakasuunnassa"
+
+#: ../moo/mooedit/mooeditwindow.c:660 ../moo/mooedit/mooeditwindow.c:661
+msgid "Split View Vertically"
+msgstr "Jaa näkymä pystysuunnassa"
+
+#: ../moo/mooedit/mooeditwindow.c:667 ../moo/mooedit/mooeditwindow.c:668
+msgid "Focus Next Split View"
+msgstr "Kohdista seuraavaan kehykseen"
+
+#: ../moo/mooedit/mooeditwindow.c:712
+msgid "Toggle Bookmark"
+msgstr "Aseta/Poista kirjanmerkki"
+
+#: ../moo/mooedit/mooeditwindow.c:713
+msgid "Toggle _Bookmark"
+msgstr "Aseta tai poista _kirjanmerkki"
+
+#: ../moo/mooedit/mooeditwindow.c:721
+msgid "Next Bookmark"
+msgstr "Seuraava kirjanmerkki"
+
+#: ../moo/mooedit/mooeditwindow.c:722
+msgid "_Next Bookmark"
+msgstr "_Seuraava kirjanmerkki"
+
+#: ../moo/mooedit/mooeditwindow.c:729
+msgid "Previous Bookmark"
+msgstr "Edellinen kirjanmerkki"
+
+#: ../moo/mooedit/mooeditwindow.c:730
+msgid "_Previous Bookmark"
+msgstr "E_dellinen kirjanmerkki"
+
+#. action
+#: ../moo/mooedit/mooeditwindow.c:738 ../moo/mooedit/mooeditwindow.c:739
+#: ../moo/mooedit/mooeditwindow.c:740
+msgid "Comment"
+msgstr "Kommentoi"
+
+#. action
+#: ../moo/mooedit/mooeditwindow.c:748 ../moo/mooedit/mooeditwindow.c:749
+#: ../moo/mooedit/mooeditwindow.c:750
+msgid "Uncomment"
+msgstr "Poista kommentista"
+
+#. Insensitive menu item which appears in Window menu with no documents open
+#: ../moo/mooedit/mooeditwindow.c:778
+msgid "No Documents"
+msgstr "Ei asiakirjoja"
+
+#: ../moo/mooedit/mooeditwindow.c:786
+msgid "Page Setup"
+msgstr "Sivun asetukset"
+
+#: ../moo/mooedit/mooeditwindow.c:787
+msgid "Page S_etup..."
+msgstr "_Sivun asetukset..."
+
+#: ../moo/mooedit/mooeditwindow.c:788
+msgid "Page Setup..."
+msgstr "Sivun asetukset..."
+
+#: ../moo/mooedit/mooeditwindow.c:804 ../moo/mooedit/mooeditwindow.c:805
+msgid "Print..."
+msgstr "Tulosta..."
+
+#: ../moo/mooedit/mooeditwindow.c:813 ../moo/mooedit/mooeditwindow.c:2032
+msgid "Export as PDF"
+msgstr "Vie PDF:nä"
+
+#: ../moo/mooedit/mooeditwindow.c:814
+msgid "E_xport as PDF..."
+msgstr "_Vie PDF:nä..."
+
+#: ../moo/mooedit/mooeditwindow.c:815
+msgid "Export as PDF..."
+msgstr "Vie PDF:nä..."
+
+#. Translators: this goes into window title, %s stands for filename, e.g. "/foo/bar.txt [new file]"
+#: ../moo/mooedit/mooeditwindow.c:1087
+#, c-format
+msgid "%s [new file]"
+msgstr "%s [uusi tiedosto]"
+
+#. Translators: this goes into window title, %s stands for filename, e.g. "/foo/bar.txt [modified on disk]"
+#: ../moo/mooedit/mooeditwindow.c:1090
+#, c-format
+msgid "%s [modified on disk]"
+msgstr "%s [muokattu levyllä]"
+
+#. Translators: this goes into window title, %s stands for filename, e.g. "/foo/bar.txt [deleted]"
+#: ../moo/mooedit/mooeditwindow.c:1093
+#, c-format
+msgid "%s [deleted]"
+msgstr "%s [poistettu]"
+
+#. Translators: this goes into window title, %s stands for filename, e.g. "/foo/bar.txt [new file] [modified]"
+#: ../moo/mooedit/mooeditwindow.c:1101
+#, c-format
+msgid "%s [new file] [modified]"
+msgstr "%s [uusi tiedosto] [muokattu]"
+
+#. Translators: this goes into window title, %s stands for filename, e.g. "/foo/bar.txt [modified on disk] [modified]"
+#: ../moo/mooedit/mooeditwindow.c:1104
+#, c-format
+msgid "%s [modified on disk] [modified]"
+msgstr "%s [muokattu levyllä] [muokattu]"
+
+#. Translators: this goes into window title, %s stands for filename, e.g. "/foo/bar.txt [deleted] [modified]"
+#: ../moo/mooedit/mooeditwindow.c:1107
+#, c-format
+msgid "%s [deleted] [modified]"
+msgstr "%s [poistettu] [muokattu]"
+
+#. Translators: this goes into window title, %s stands for filename, e.g. "/foo/bar.txt [modified]"
+#: ../moo/mooedit/mooeditwindow.c:1110
+#, c-format
+msgid "%s [modified]"
+msgstr "%s [muokattu]"
+
+#: ../moo/mooedit/mooeditwindow.c:1357
+msgid "Reopen Using Encoding"
+msgstr "Avaa uudelleen koodauksella"
+
+#: ../moo/mooedit/mooeditwindow.c:1407
+msgid "_Encoding"
+msgstr "K_oodaus"
+
+#: ../moo/mooedit/mooeditwindow.c:1461
+msgid "Line En_dings"
+msgstr "_Rivinloput"
+
+#: ../moo/mooedit/mooeditwindow.c:1468
+msgid "_Windows (CR+LF)"
+msgstr "_Windows (CR+LF)"
+
+#: ../moo/mooedit/mooeditwindow.c:1477
+msgid "_Unix (LF)"
+msgstr "_UNIX (LF)"
+
+#: ../moo/mooedit/mooeditwindow.c:1481
+msgid "_Mac (CR)"
+msgstr "_Mac (CR)"
+
+#. Item in document tab context menu
+#: ../moo/mooedit/mooeditwindow.c:2239
+msgctxt "tab-context-menu"
+msgid "Close"
+msgstr "Sulje"
+
+#. Item in document tab context menu
+#: ../moo/mooedit/mooeditwindow.c:2251
+msgctxt "tab-context-menu"
+msgid "Close All Others"
+msgstr "Sulje kaikki muut"
+
+#. Item in document tab context menu
+#: ../moo/mooedit/mooeditwindow.c:2269
+msgctxt "tab-context-menu"
+msgid "Detach"
+msgstr "Irrota"
+
+#. Item in document tab context menu
+#: ../moo/mooedit/mooeditwindow.c:2279
+msgctxt "tab-context-menu"
+msgid "Move to Split Notebook"
+msgstr ""
+
+#: ../moo/mooedit/mooeditwindow.c:3846
+#, c-format
+msgid "Line: %s Col: %s"
+msgstr "Rivi: %s Sar: %s"
+
+#: ../moo/mooedit/mooeditwindow.c:3847
+#, c-format
+msgid "Chars: %s"
+msgstr "Merkkejä: %s"
+
+#. Label in the editor window statusbar - Overwrite or Insert mode
+#: ../moo/mooedit/mooeditwindow.c:3890
+msgid "OVR"
+msgstr "KOR"
+
+#: ../moo/mooedit/mooeditwindow.c:3890
+msgid "INS"
+msgstr "LIS"
+
+#: ../moo/mooedit/mooeditwindow.c:3987
+msgid "_Language"
+msgstr "_Kieli"
+
+#: ../moo/mooedit/mooplugin.c:1425
+msgctxt "Prefs page label"
+msgid "Plugins"
+msgstr "Liitännäiset"
+
+#: ../moo/mooedit/mooplugin.c:1450
+msgctxt "plugin-prefs-column"
+msgid "Enabled"
+msgstr "Käytössä"
+
+#: ../moo/mooedit/mooplugin.c:1456
+msgctxt "plugin-prefs-column"
+msgid "Plugin"
+msgstr "Liitännäinen"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooedit/mooplugin-loader.c:227
+#, c-format
+msgid ""
+"console message|ignoring file '%s', module version '%s' is not compatible "
+"with current version %u.%u"
+msgstr ""
+"ohitetaan tiedosto \"%s\": moduulin version \"%s\" ei ole yhteensopivan "
+"nykyisen version %u.%u kanssa"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooedit/mooplugin-loader.c:237
+#, c-format
+msgid "console message|invalid module version '%s' in file '%s'"
+msgstr "kelvoton moduulin version \"%s\" tiedostossa \"%s\""
+
+#: ../moo/mooedit/mootextfind.c:165
+msgctxt "Dialog title"
+msgid "Replace"
+msgstr "Korvaa"
+
+#: ../moo/mooedit/mootextfind.c:171
+msgctxt "Dialog title"
+msgid "Find"
+msgstr "Etsi"
+
+#: ../moo/mooedit/mootextfind.c:475
+msgid "No search term entered"
+msgstr "Hakujonoa ei annettu"
+
+#: ../moo/mooedit/mootextfind.c:778 ../moo/mooedit/mootextfind.c:884
+#: ../moo/mooedit/mootextfind.c:1039
+msgid "Search hit top, continuing at bottom"
+msgstr "Haku saapui tiedoston alkuun, jatketaan lopusta"
+
+#: ../moo/mooedit/mootextfind.c:780 ../moo/mooedit/mootextfind.c:882
+#: ../moo/mooedit/mootextfind.c:962
+msgid "Search hit bottom, continuing at top"
+msgstr "Haku saapui tiedoston loppuun, jatketaan alusta"
+
+#: ../moo/mooedit/mootextfind.c:789 ../moo/mooedit/mootextfind.c:894
+#: ../moo/mooedit/mootextfind.c:970 ../moo/mooedit/mootextfind.c:1047
+#, c-format
+msgid "Pattern not found: %s"
+msgstr "Hahmoa ei löytynyt: %s"
+
+#: ../moo/mooedit/mootextfind.c:876
+#, c-format
+msgid "Found single instance of pattern '%s'"
+msgstr "Hahmosta \"%s\" löytyi yksi esiintymä"
+
+#: ../moo/mooedit/mootextfind.c:1082
+msgid "No replacement made"
+msgstr "Korvauksia ei tehty"
+
+#: ../moo/mooedit/mootextfind.c:1088
+#, c-format
+msgid "%u replacement made"
+msgid_plural "%u replacements made"
+msgstr[0] "Tehtiin %u korvaus"
+msgstr[1] "Tehtiin %u korvausta"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:1
+#: ../moo/moofileview/moofileview.c:1241 ../moo/moofileview/moofileview.c:1242
+msgid "Edit Bookmarks"
+msgstr "Muokkaa kirjanmerkkejä"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:2
+msgid "Icon:"
+msgstr "Kuvake:"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:3
+msgid "Path:"
+msgstr "Sijainti:"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:4
+msgid "Add bookmark"
+msgstr "Lisää kirjanmerkki"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:5
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:11
+msgid "New"
+msgstr "Uusi"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:6
+msgid "Add separator"
+msgstr "Lisää erotin"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:7
+msgid "Add Separator"
+msgstr "Lisää erotin"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:8
+msgid "Delete selected items"
+msgstr "Poista valitut kohdat"
+
+#: ../moo/moofileview/glade/moobookmark-editor.glade.h:9
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:12
+msgid "Delete"
+msgstr "Poista"
+
+#: ../moo/moofileview/glade/moocreatefolder.glade.h:1
+msgid "Create Folder"
+msgstr "Luo kansio"
+
+#: ../moo/moofileview/glade/moofileprops.glade.h:1
+msgid "General"
+msgstr "Yleistä"
+
+#: ../moo/moofileview/glade/moofileview-drop.glade.h:1
+#: ../moo/plugins/glade/moofileselector.glade.h:1
+#: ../moo/plugins/moofileselector.c:907 ../moo/plugins/moofileselector.c:932
+msgid "Save As"
+msgstr "Tallenna nimellä"
+
+#. Column label in file selector bookmark editor
+#: ../moo/moofileview/moobookmarkmgr.c:961
+msgctxt "fileview-bookmark-editor"
+msgid "Icon"
+msgstr "Kuvake"
+
+#. Column label in file selector bookmark editor
+#: ../moo/moofileview/moobookmarkmgr.c:977
+msgctxt "fileview-bookmark-editor"
+msgid "Label"
+msgstr "Teksti"
+
+#. Column label in file selector bookmark editor
+#: ../moo/moofileview/moobookmarkmgr.c:995
+msgctxt "fileview-bookmark-editor"
+msgid "Path"
+msgstr "Sijainti"
+
+#: ../moo/moofileview/moofileview.c:1115 ../moo/plugins/moofileselector.c:647
+#: ../moo/plugins/moofileselector.c:648 ../moo/plugins/moofileselector.c:1290
+#: ../moo/plugins/moofileselector-prefs.c:72
+msgid "File Selector"
+msgstr "Tiedostovalitsin"
+
+#: ../moo/moofileview/moofileview.c:1124
+msgid "Go to parent folder"
+msgstr "Siirry ylempään kansioon"
+
+#: ../moo/moofileview/moofileview.c:1173 ../moo/moofileview/moofileview.c:3350
+msgid "Delete..."
+msgstr "Poista..."
+
+#: ../moo/moofileview/moofileview.c:1174 ../moo/moofileview/moofileview.c:3351
+msgid "Delete selected files"
+msgstr "Poista valitut tiedostot"
+
+#: ../moo/moofileview/moofileview.c:1184 ../moo/moofileview/moofileview.c:1185
+msgid "Show Hidden Files"
+msgstr "Näytä piilotiedostot"
+
+#: ../moo/moofileview/moofileview.c:1193 ../moo/moofileview/moofileview.c:1194
+msgid "Show Parent Folder"
+msgstr "Näytä ylempi kansio"
+
+#: ../moo/moofileview/moofileview.c:1200 ../moo/moofileview/moofileview.c:1201
+msgid "Case Sensitive Sort"
+msgstr "Lajittele pien- ja suuraakkoset erikseen"
+
+#: ../moo/moofileview/moofileview.c:1207 ../moo/moofileview/moofileview.c:1208
+msgid "Show Folders First"
+msgstr "Näytä kansiot ensin"
+
+#: ../moo/moofileview/moofileview.c:1224 ../moo/moofileview/moofileview.c:1225
+#: ../moo/moofileview/moofileview.xml.h:3
+msgid "Bookmarks"
+msgstr "Kirjanmerkit"
+
+#: ../moo/moofileview/moofileview.c:1233 ../moo/moofileview/moofileview.c:1234
+msgid "Add Bookmark"
+msgstr "Lisää kirjanmerkki"
+
+#: ../moo/moofileview/moofileview.c:1585
+msgid "Filter"
+msgstr "Suodin"
+
+#: ../moo/moofileview/moofileview.c:3194
+#, c-format
+msgid "Move folder %s to Trash?"
+msgstr "Siirretäänkö kansio %s roskakoriin?"
+
+#: ../moo/moofileview/moofileview.c:3197
+#, c-format
+msgid "Move file %s to Trash?"
+msgstr "Siirretäänkö tiedosto %s roskakoriin?"
+
+#: ../moo/moofileview/moofileview.c:3202
+msgid "Move selected files to Trash?"
+msgstr "Siirretäänkö valitut tiedostot roskakoriin?"
+
+#: ../moo/moofileview/moofileview.c:3210
+#, c-format
+msgid "Delete folder %s and all its content?"
+msgstr "Poistetaanko kansio %s sisältöineen"
+
+#: ../moo/moofileview/moofileview.c:3213
+#, c-format
+msgid "Delete file %s?"
+msgstr "Poistetaanko tiedosto %s?"
+
+#: ../moo/moofileview/moofileview.c:3218
+msgid "Delete selected files?"
+msgstr "Poistetaanko valitut tiedostot?"
+
+#: ../moo/moofileview/moofileview.c:3280
+#, c-format
+msgid "Could not delete folder %s"
+msgstr "Kansiota %s ei voi poistaa"
+
+#: ../moo/moofileview/moofileview.c:3283
+#, c-format
+msgid "Could not delete file %s"
+msgstr "Tiedostoa %s ei voi poistaa"
+
+#: ../moo/moofileview/moofileview.c:3344
+msgid "Move to Trash..."
+msgstr "Siirrä roskakoriin..."
+
+#: ../moo/moofileview/moofileview.c:3345
+msgid "Move selected files to Trash"
+msgstr "Siirrä valitut tiedostot roskakoriin"
+
+#. Translators: this is a context menu item label in the file selector, remove the part before and including |
+#: ../moo/moofileview/moofileview-tools.c:335
+msgid "Open with|Default Application"
+msgstr "Oletussovellus"
+
+#: ../moo/moofileview/moofileview.xml.h:1
+msgid "View"
+msgstr "Näkymä"
+
+#: ../moo/moofileview/moofileview.xml.h:2
+msgid "Open _With"
+msgstr "Avaa _ohjelmalla"
+
+#: ../moo/moolua/mooluaplugin.cpp:112
+msgid "Lua"
+msgstr "Lua"
+
+#: ../moo/moolua/mooluaplugin.cpp:112
+msgid "Lua support"
+msgstr "Lua-tuki"
+
+#: ../moo/moopython/plugins/medit/runpython.py:43
+msgid "Python Output"
+msgstr "Python-tuloste"
+
+#: ../moo/moopython/plugins/python.py:48 ../moo/moopython/plugins/python.py:49
+msgid "Python Console"
+msgstr "Python-konsoli"
+
+#: ../moo/moopython/plugins/python.py:56 ../moo/moopython/plugins/python.py:57
+msgid "Run File"
+msgstr "Suorita tiedosto"
+
+#: ../moo/moopython/plugins/terminal.py:177
+msgid "Terminal"
+msgstr "Pääte"
+
+#: ../moo/moopython/plugins/terminal.py:225
+msgid "Default"
+msgstr "Oletus"
+
+#: ../moo/moopython/plugins/terminal.py:226
+msgid "Black on White"
+msgstr "Mustaa valkoisella"
+
+#: ../moo/moopython/plugins/terminal.py:229
+msgid "Black on Light Yellow"
+msgstr "Mustaa vaaleankeltaisella"
+
+#: ../moo/moopython/plugins/terminal.py:232
+msgid "Marble"
+msgstr "Marmori"
+
+#: ../moo/moopython/plugins/terminal.py:235
+msgid "Green on Black"
+msgstr "Vihreää mustalla"
+
+#: ../moo/moopython/plugins/terminal.py:238
+msgid "Paper, Light"
+msgstr "Paperi, vaalea"
+
+#: ../moo/moopython/plugins/terminal.py:241
+msgid "Paper"
+msgstr "Paperi"
+
+#: ../moo/moopython/plugins/terminal.py:244
+msgid "Linux Colors"
+msgstr "Linux-värit"
+
+#: ../moo/moopython/plugins/terminal.py:247
+msgid "VIM Colors"
+msgstr "VIM-värit"
+
+#: ../moo/moopython/plugins/terminal.py:250
+msgid "White on Black"
+msgstr "Valkoista mustalla"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooutils/glade/mooaccelprefs.glade.h:2
+msgid "Shortcut|None"
+msgstr "Ei mitään"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooutils/glade/mooaccelprefs.glade.h:4
+msgid "Shortcut|Default"
+msgstr "Oletus"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooutils/glade/mooaccelprefs.glade.h:6
+msgid "Shortcut|Custom"
+msgstr "Oma"
+
+#: ../moo/mooutils/glade/mooaccelprefs.glade.h:7
+msgid "Default key:"
+msgstr "Oletusnäppäin:"
+
+#: ../moo/mooutils/glade/mooaccelprefs.glade.h:8
+msgid "Shortcut for selected action"
+msgstr "Valitun toiminnon pikanäppäin"
+
+#. Column label in Configure Shortcuts dialog
+#: ../moo/mooutils/mooaccelprefs.c:261
+msgctxt "accel-editor-column"
+msgid "Action"
+msgstr "Toiminto"
+
+#. Column label in Configure Shortcuts dialog
+#: ../moo/mooutils/mooaccelprefs.c:270
+msgctxt "accel-editor-column"
+msgid "Shortcut"
+msgstr "Pikanäppäin"
+
+#. Column label in Configure Shortcuts dialog
+#: ../moo/mooutils/mooaccelprefs.c:279
+msgctxt "accel-editor-column"
+msgid "Global"
+msgstr "Yleinen"
+
+#: ../moo/mooutils/mooaccelprefs.c:804
+msgid "Configure Shortcuts"
+msgstr "Pikanäppäinasetukset"
+
+#: ../moo/mooutils/moodialogs.c:419
+#, c-format
+msgid "Save changes to document \"%s\" before closing?"
+msgstr "Tallennetaanko muutokset asiakirjaan ”%s” ennen sulkemista?"
+
+#: ../moo/mooutils/moodialogs.c:420
+msgid "Save changes to the document before closing?"
+msgstr "Tallennetaan asiakirjamuutoksen ennen sulkemista?"
+
+#: ../moo/mooutils/moodialogs.c:425
+msgid "If you don't save, changes will be discarded"
+msgstr "Ellet tallenna, muutokset hylätään"
+
+#. Translators: 012345 denotes order in which character encoding
+#. groups should appear, e.g. 543210 means inverse order.
+#. 0 - "West European",
+#. 1 - "East European",
+#. 2 - "East Asian",
+#. 3 - "SE & SW Asian",
+#. 4 - "Middle Eastern",
+#. 5 - "Unicode"
+#: ../moo/mooutils/mooencodings.c:179
+msgid "012345"
+msgstr "012345"
+
+#: ../moo/mooutils/mooencodings.c:703
+msgid "Auto Detected"
+msgstr "Automaattisesti tunnistettu"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooutils/mooencodings.c:732
+msgid "Encodings combo submenu|Other"
+msgstr "Muu"
+
+#: ../moo/mooutils/mooencodings.c:831
+msgid "Charact_er encoding:"
+msgstr "_Merkistökoodaus:"
+
+#: ../moo/mooutils/mooencodings-data.h:27
+msgid "West European"
+msgstr "Länsieurooppalainen"
+
+#: ../moo/mooutils/mooencodings-data.h:28
+msgid "East European"
+msgstr "Itäeurooppalainen"
+
+#: ../moo/mooutils/mooencodings-data.h:29
+msgid "East Asian"
+msgstr "Itäaasialainen"
+
+#: ../moo/mooutils/mooencodings-data.h:30
+msgid "SE & SW Asian"
+msgstr "Kaakkois- ja lounaisaasialainen"
+
+#: ../moo/mooutils/mooencodings-data.h:31
+msgid "Middle Eastern"
+msgstr "Lähi-itä"
+
+#: ../moo/mooutils/mooencodings-data.h:32
+msgid "Unicode"
+msgstr "Unicode"
+
+#: ../moo/mooutils/mooencodings-data.h:53
+msgid "Ascii"
+msgstr "ASCII"
+
+#: ../moo/mooutils/mooencodings-data.h:55
+#: ../moo/mooutils/mooencodings-data.h:68
+#: ../moo/mooutils/mooencodings-data.h:113
+#: ../moo/mooutils/mooencodings-data.h:138
+#: ../moo/mooutils/mooencodings-data.h:151
+msgid "Western"
+msgstr "Länsimainen"
+
+#: ../moo/mooutils/mooencodings-data.h:56
+#: ../moo/mooutils/mooencodings-data.h:114
+#: ../moo/mooutils/mooencodings-data.h:128
+#: ../moo/mooutils/mooencodings-data.h:149
+msgid "Central European"
+msgstr "Keskieurooppalainen"
+
+#: ../moo/mooutils/mooencodings-data.h:57
+msgid "South European"
+msgstr "Eteläeurooppalainen"
+
+#: ../moo/mooutils/mooencodings-data.h:58
+#: ../moo/mooutils/mooencodings-data.h:66
+#: ../moo/mooutils/mooencodings-data.h:156
+msgid "Baltic"
+msgstr "Balttilainen"
+
+#: ../moo/mooutils/mooencodings-data.h:59
+#: ../moo/mooutils/mooencodings-data.h:115
+#: ../moo/mooutils/mooencodings-data.h:122
+#: ../moo/mooutils/mooencodings-data.h:124
+#: ../moo/mooutils/mooencodings-data.h:130
+#: ../moo/mooutils/mooencodings-data.h:150
+msgid "Cyrillic"
+msgstr "Kyrillinen"
+
+#: ../moo/mooutils/mooencodings-data.h:60
+#: ../moo/mooutils/mooencodings-data.h:118
+#: ../moo/mooutils/mooencodings-data.h:127
+#: ../moo/mooutils/mooencodings-data.h:155
+msgid "Arabic"
+msgstr "Arabialainen"
+
+#: ../moo/mooutils/mooencodings-data.h:61
+#: ../moo/mooutils/mooencodings-data.h:133
+#: ../moo/mooutils/mooencodings-data.h:152
+msgid "Greek"
+msgstr "Kreikkalainen"
+
+# Ei aavistustakaan, mitä tarkoittaa, mutta tuskin tarvitaankaan
+#: ../moo/mooutils/mooencodings-data.h:62
+msgid "Hebrew Visual"
+msgstr "Visuaalinen heprea"
+
+#: ../moo/mooutils/mooencodings-data.h:63
+#: ../moo/mooutils/mooencodings-data.h:117
+#: ../moo/mooutils/mooencodings-data.h:136
+#: ../moo/mooutils/mooencodings-data.h:154
+msgid "Hebrew"
+msgstr "Heprealainen"
+
+#: ../moo/mooutils/mooencodings-data.h:64
+#: ../moo/mooutils/mooencodings-data.h:116
+#: ../moo/mooutils/mooencodings-data.h:140
+#: ../moo/mooutils/mooencodings-data.h:153
+msgid "Turkish"
+msgstr "Turkkilainen"
+
+#: ../moo/mooutils/mooencodings-data.h:65
+msgid "Nordic"
+msgstr "Pohjoismainen"
+
+#: ../moo/mooutils/mooencodings-data.h:67
+msgid "Celtic"
+msgstr "Kelttiläinen"
+
+#: ../moo/mooutils/mooencodings-data.h:69
+#: ../moo/mooutils/mooencodings-data.h:139
+msgid "Romanian"
+msgstr "Romanialainen"
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:72
+msgid "encoding label|UTF-7"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:74
+msgid "encoding label|UTF-32BE-BOM (big-endian, with BOM)"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:76
+msgid "encoding label|UTF-32LE-BOM (little-endian, with BOM)"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:78
+msgid "encoding label|UTF-32BE (big-endian, no BOM)"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:80
+msgid "encoding label|UTF-32LE (little-endian, no BOM)"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:82
+msgid "encoding label|UTF-16BE-BOM (big-endian, with BOM)"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:84
+msgid "encoding label|UTF-16LE-BOM (little-endian, with BOM)"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:86
+msgid "encoding label|UTF-16BE (big-endian, no BOM)"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:88
+msgid "encoding label|UTF-16LE (little-endian, no BOM)"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:90
+msgid "encoding label|UTF-8-BOM"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:92
+msgid "encoding label|UTF-32"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:94
+msgid "encoding label|UTF-16"
+msgstr ""
+
+#. Label of an encoding menu item, remove the part before and including |
+#: ../moo/mooutils/mooencodings-data.h:96
+msgid "encoding label|UTF-8"
+msgstr ""
+
+#: ../moo/mooutils/mooencodings-data.h:98
+msgid "Armenian"
+msgstr "Armenialainen"
+
+#: ../moo/mooutils/mooencodings-data.h:99
+#: ../moo/mooutils/mooencodings-data.h:100
+#: ../moo/mooutils/mooencodings-data.h:105
+msgid "Chinese Traditional"
+msgstr "Perinteinen kiinalainen"
+
+#: ../moo/mooutils/mooencodings-data.h:101
+msgid "Cyrillic/Russian"
+msgstr "Kyrillinen/Venäjä"
+
+#: ../moo/mooutils/mooencodings-data.h:103
+#: ../moo/mooutils/mooencodings-data.h:120
+#: ../moo/mooutils/mooencodings-data.h:143
+msgid "Japanese"
+msgstr "Japanilainen"
+
+#: ../moo/mooutils/mooencodings-data.h:104
+#: ../moo/mooutils/mooencodings-data.h:121
+#: ../moo/mooutils/mooencodings-data.h:123
+#: ../moo/mooutils/mooencodings-data.h:146
+msgid "Korean"
+msgstr "Korealainen"
+
+#: ../moo/mooutils/mooencodings-data.h:107
+#: ../moo/mooutils/mooencodings-data.h:108
+#: ../moo/mooutils/mooencodings-data.h:109
+#: ../moo/mooutils/mooencodings-data.h:111
+msgid "Chinese Simplified"
+msgstr "Yksinkertaistettu kiinalainen"
+
+#: ../moo/mooutils/mooencodings-data.h:110
+msgid "Georgian"
+msgstr "Georgialainen"
+
+#: ../moo/mooutils/mooencodings-data.h:125
+#: ../moo/mooutils/mooencodings-data.h:141
+msgid "Cyrillic/Ukrainian"
+msgstr "Kyrillinen/Ukraina"
+
+#: ../moo/mooutils/mooencodings-data.h:129
+msgid "Croatian"
+msgstr "Kroatialainen"
+
+#: ../moo/mooutils/mooencodings-data.h:131
+msgid "Hindi"
+msgstr "Hindi"
+
+#: ../moo/mooutils/mooencodings-data.h:132
+msgid "Persian"
+msgstr "Persialainen"
+
+#: ../moo/mooutils/mooencodings-data.h:134
+msgid "Gujarati"
+msgstr "Gudžaratí"
+
+#: ../moo/mooutils/mooencodings-data.h:135
+msgid "Gurmukhi"
+msgstr "Gurmukhi"
+
+#: ../moo/mooutils/mooencodings-data.h:137
+msgid "Icelandic"
+msgstr "Islantilainen"
+
+#: ../moo/mooutils/mooencodings-data.h:144
+#: ../moo/mooutils/mooencodings-data.h:147
+#: ../moo/mooutils/mooencodings-data.h:157
+msgid "Vietnamese"
+msgstr "Vietnamilainen"
+
+#: ../moo/mooutils/mooencodings-data.h:145
+msgid "Thai"
+msgstr "Thai"
+
+#. menu item in Insert Special Character submenu of text entry context menu
+#: ../moo/mooutils/mooentry.c:533
+msgctxt "insert-special-char"
+msgid "Line End"
+msgstr "Rivin loppu"
+
+#. menu item in Insert Special Character submenu of text entry context menu
+#: ../moo/mooutils/mooentry.c:535
+msgctxt "insert-special-char"
+msgid "Tab"
+msgstr "Sarkain"
+
+#. label of Insert Special Character submenu in text entry context menu
+#: ../moo/mooutils/mooentry.c:578
+msgctxt "insert-special-char"
+msgid "Insert Special Character"
+msgstr "Lisää erikoismerkki"
+
+#: ../moo/mooutils/moofiledialog.c:650
+msgid "Selected file is not a regular file"
+msgstr "Valittu tiedosto ei ole tavallinen tiedosto"
+
+#: ../moo/mooutils/moofilewriter.c:101
+#, c-format
+msgid "Could not open %s: %s"
+msgstr "Ei voitu avata tiedostoa %s: %s"
+
+#: ../moo/mooutils/moofilewriter.c:291 ../moo/mooutils/mooutils-fs.c:386
+#: ../moo/mooutils/mooutils-fs.c:405 ../moo/mooutils/mooutils-fs.c:421
+#, c-format
+msgid "Could not create folder %s: %s"
+msgstr "Kansiota %s ei voitu luoda: %s"
+
+#: ../moo/mooutils/moofiltermgr.c:545
+msgid "_Show:"
+msgstr "_Näytä:"
+
+#: ../moo/mooutils/moohelp.c:205
+msgid "Help files not found"
+msgstr "Ohjetiedostoja ei löydy"
+
+#: ../moo/mooutils/moohelp.c:217
+#, c-format
+msgid "File '%s' is missing in the directory '%s'"
+msgstr "Tiedosto ”%s” puuttuu kansiosta ”%s”"
+
+#: ../moo/mooutils/moohelp.c:220
+msgid "Could not find help file"
+msgstr "Ohjetiedostoa ei löydy"
+
+#: ../moo/mooutils/moopane.c:702
+msgid "Remove pane"
+msgstr "Sulje kehys"
+
+#: ../moo/mooutils/moopane.c:712
+msgid "Hide pane"
+msgstr "Piilota kehys"
+
+#: ../moo/mooutils/moopane.c:716
+msgid "Sticky"
+msgstr "Fijo"
+
+#: ../moo/mooutils/moopane.c:720
+msgid "Detach pane"
+msgstr "Irrota kehys"
+
+#: ../moo/mooutils/moopane.c:733
+msgid "Attach"
+msgstr "Kiinnitä"
+
+#: ../moo/mooutils/moopane.c:737
+msgid "Keep on top"
+msgstr "Pidä _ylinnä"
+
+#: ../moo/mooutils/moostock.c:29
+msgid "Save _None"
+msgstr "_Älä tallenna mitään"
+
+#: ../moo/mooutils/moostock.c:30
+msgid "Save _Selected"
+msgstr "Tallenna _valitut"
+
+#: ../moo/mooutils/moostock.c:32
+msgid "Move"
+msgstr "Siirrä"
+
+#: ../moo/mooutils/moostock.c:33
+msgid "Link"
+msgstr "Linkitä"
+
+#: ../moo/mooutils/moostock.c:35 ../moo/plugins/moofileselector.c:1136
+msgid "Save Copy"
+msgstr "Tallenna kopio"
+
+#: ../moo/mooutils/moostock.c:36
+msgid "_New Folder"
+msgstr "_Uusi kansio"
+
+#: ../moo/mooutils/moostock.c:37
+msgid "New _Window"
+msgstr "Uusi _ikkuna"
+
+#. This is error message in file selector when rm
+#. fails for some strange reason
+#: ../moo/mooutils/mooutils-fs.c:226
+#, c-format
+msgid "Could not run 'rm' command: %s"
+msgstr "rm-komentoa ei saatu suoritetuksi: %s"
+
+#. This is error message in file selector when rm
+#. fails to delete a file or folder
+#: ../moo/mooutils/mooutils-fs.c:244
+#, c-format
+msgid "'rm' command failed: %s"
+msgstr "rm-komento epäonnistui: %s"
+
+#: ../moo/mooutils/mooutils-fs.c:294 ../moo/mooutils/mooutils-fs.c:314
+#: ../moo/mooutils/mooutils-fs.c:341
+#, c-format
+msgid "Could not remove %s: %s"
+msgstr "Ei voitu poistaa tiedostoa %s: %s"
+
+#: ../moo/mooutils/mooutils-fs.c:450
+#, c-format
+msgid "Could not rename file %s to %s: %s"
+msgstr "Ei voitu muuttaa tiedoston %s nimeksi %s: %s"
+
+#. Translators: remove the part before and including |
+#: ../moo/mooutils/mooutils-misc.c:1803
+#, c-format
+msgid "console message|in file %s, line %d, function %s: %s"
+msgstr "tiedostossa %s, rivillä %d, funktiossa %s: %s"
+
+#. "Unknown error" may be displayed if there is a bug in the program
+#. and proper error message has not been set. It doesn't provide any
+#. useful information obviously
+#: ../moo/mooutils/mooutils-misc.c:2186
+msgid "Unknown error"
+msgstr "Tuntematon virhe"
+
+#: ../moo/mooutils/moowindow.c:248
+msgid "Configure _Shortcuts..."
+msgstr "Pika_näppäinasetukset..."
+
+#: ../moo/mooutils/moowindow.c:256 ../moo/mooutils/moowindow.c:257
+msgid "Show Toolbar"
+msgstr "Näytä työkalurivi"
+
+#: ../moo/mooutils/moowindow.c:263 ../moo/mooutils/moowindow.c:264
+msgid "Show Menubar"
+msgstr "Näytä valikkorivi"
+
+#: ../moo/mooutils/moowindow.c:271 ../moo/mooutils/moowindow.c:272
+msgid "Show Statusbar"
+msgstr "Näytä tilarivi"
+
+#: ../moo/mooutils/moowindow.c:508
+#, c-format
+msgid "Could not parse geometry string '%s'\n"
+msgstr "Ei voitu jäsentää geometriajonoa \"%s\"\n"
+
+#: ../moo/mooutils/moowindow.c:1254
+msgid "_Icons Only"
+msgstr "Vain _kuvakkeet"
+
+#: ../moo/mooutils/moowindow.c:1255
+msgid "_Labels Only"
+msgstr "Vain _teksti"
+
+#: ../moo/mooutils/moowindow.c:1256
+msgid "Labels _Below Icons"
+msgstr "Teksti kuvakkeiden _alla"
+
+#: ../moo/mooutils/moowindow.c:1257
+msgid "Labels Be_side Icons"
+msgstr "Teksti kuvakkeiden _vieressä"
+
+#: ../moo/mooutils/moowindow.c:1267
+msgid "Toolbar _Style"
+msgstr "T_yökalurivin tyyli"
+
+#. label of Ctags plugin pane
+#: ../moo/plugins/ctags/ctags-plugin.c:119
+#: ../moo/plugins/ctags/ctags-plugin.c:120
+msgctxt "window-pane"
+msgid "Functions"
+msgstr "Funktiot"
+
+#: ../moo/plugins/glade/moofileselector.glade.h:2
+msgid "Save as"
+msgstr "Tallenna nimellä"
+
+#: ../moo/plugins/glade/moofileselector.glade.h:3
+msgid "Create File"
+msgstr "Luo tiedosto"
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:1
+msgid "<b>Open With</b>"
+msgstr "<b>Avaa ohjelmalla</b>"
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:2
+msgid ""
+"Semicolon-separated list of mime types, e.g. 'text/*;application/x-glade'"
+msgstr ""
+"Puolipistein erotettu MIME-tyyppiluettelo, esim. \"text/*;application/x-glade"
+"\""
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:4
+msgid "Semicolon-separated list of file globs, e.g. '*.txt;foo.*;*bar*'"
+msgstr ""
+"Puolipistein erotettu tiedostohahmoluettelo, esim. \"*.txt;jotain.*;*jotain*"
+"\""
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:7
+#, no-c-format
+msgid ""
+"Shell command to open the file: '%f' is replaced with file path, e.g. "
+"'foobar %f'"
+msgstr ""
+"Tiedoston avaava päätekomento: \"%f\" korvataan tiedoston sijainnilla, esim. "
+"\"foobar %f\""
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:8
+msgid "Command:"
+msgstr "Komento:"
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:9
+msgid "Menu item label"
+msgstr "Valikkokohdan teksti"
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:10
+msgid "Name:"
+msgstr "Nimi:"
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:13
+msgid "Move down"
+msgstr "Siirrä alemmas"
+
+#: ../moo/plugins/glade/moofileselector-prefs.glade.h:14
+msgid "Move up"
+msgstr "Siirrä ylemmäs"
+
+#: ../moo/plugins/glade/moofind.glade.h:1
+#: ../moo/plugins/glade/moogrep.glade.h:1
+msgid "_Pattern:"
+msgstr "_Malli:"
+
+#: ../moo/plugins/glade/moofind.glade.h:2
+#: ../moo/plugins/glade/moogrep.glade.h:3
+msgid "_Directory:"
+msgstr "_Kansio:"
+
+#: ../moo/plugins/glade/moofind.glade.h:3
+#: ../moo/plugins/glade/moogrep.glade.h:4
+msgid "S_kip files:"
+msgstr "_Ohita tiedostot:"
+
+#: ../moo/plugins/glade/moogrep.glade.h:2
+msgid "Fi_les:"
+msgstr "_Tiedostot:"
+
+#: ../moo/plugins/moofilelist.c:2353 ../moo/plugins/moofilelist.c:2354
+#: ../moo/plugins/moofilelist.c:2411
+msgid "File List"
+msgstr "Tiedostoluettelo"
+
+#: ../moo/plugins/moofilelist.c:2411
+msgid "List of files"
+msgstr "Tiedostojen luettelo"
+
+#: ../moo/plugins/moofileselector.c:388
+#, c-format
+msgid "Create file in folder '%s':"
+msgstr "Luo tiedosto kansioon \"%s\":"
+
+#: ../moo/plugins/moofileselector.c:443
+#, c-format
+msgid "Could not create file '%s'"
+msgstr "Ei voitu luoda tiedostoa \"%s\""
+
+#: ../moo/plugins/moofileselector.c:444 ../moo/plugins/moofileselector.c:820
+#, c-format
+msgid ""
+"Could not convert '%s' to filename encoding. Please consider simpler name, "
+"such as foo.blah or blah.foo"
+msgstr ""
+"Nimeä \"%s\" ei voitu muuttaa tiedostonimien merkistökoodaukseen. Harkitse "
+"yksinkertaisempaa nimeä, esim. jotain.joo tai joo.jotain"
+
+#: ../moo/plugins/moofileselector.c:459
+#, c-format
+msgid "File '%s' already exists"
+msgstr "Tiedosto \"%s\" on jo olemassa"
+
+#: ../moo/plugins/moofileselector.c:612
+msgid "Go to current document directory"
+msgstr "Siirry nykyisen asiakirjan kansioon"
+
+#: ../moo/plugins/moofileselector.c:624 ../moo/plugins/moofileselector.c:625
+msgid "New File..."
+msgstr "Uusi tiedosto..."
+
+#: ../moo/plugins/moofileselector.c:819
+#, c-format
+msgid "Could not save file as '%s'"
+msgstr "Tiedostoa ei voitu tallentaa nimelle \"%s\""
+
+#: ../moo/plugins/moofileselector.c:952
+msgid "Save Copy As"
+msgstr "Tallenna kopio nimellä"
+
+#: ../moo/plugins/moofileselector.c:978
+msgid "Rename To"
+msgstr "Muuta nimeä"
+
+#: ../moo/plugins/moofileselector.c:1118
+msgid "Move Here"
+msgstr "Siirrä tähän"
+
+#: ../moo/plugins/moofileselector.c:1119
+msgid "Move/Rename..."
+msgstr "Siirrä tai muuta nimeä..."
+
+#: ../moo/plugins/moofileselector.c:1127
+msgid "Save Here"
+msgstr "Tallenna tähän"
+
+#: ../moo/plugins/moofileselector.c:1128
+msgid "Save As..."
+msgstr "Tallenna nimellä..."
+
+#: ../moo/plugins/moofileselector.c:1137
+msgid "Save Copy As..."
+msgstr "Tallenna kopio nimellä..."
+
+#: ../moo/plugins/moofileselector.c:1291
+msgid "File selector pane for editor window"
+msgstr "Muokkainikkunan tiedostonvalintaruutu"
+
+#: ../moo/plugins/moofind.c:186
+msgid "Search Results"
+msgstr "Haun tulokset"
+
+#: ../moo/plugins/moofind.c:250 ../moo/plugins/moofind.c:251
+msgid "Find In Files"
+msgstr "Etsi tiedostoista"
+
+#: ../moo/plugins/moofind.c:252
+msgid "Find in files"
+msgstr "Etsi tiedostoista"
+
+#: ../moo/plugins/moofind.c:260 ../moo/plugins/moofind.c:261
+#: ../moo/plugins/moofind.c:996
+msgid "Find File"
+msgstr "Etsi tiedostoa"
+
+#: ../moo/plugins/moofind.c:262
+msgid "Find file"
+msgstr "Etsi tiedostoa"
+
+#: ../moo/plugins/moofind.c:965
+msgid "Find in Files"
+msgstr "Etsi tiedostoista"
+
+#: ../moo/plugins/moofind.c:1048 ../moo/plugins/moofind.c:1074
+#, c-format
+msgid "*** %u match found ***"
+msgid_plural "*** %u matches found ***"
+msgstr[0] "*** %u osuma ***"
+msgstr[1] "*** %u osumaa ***"
+
+#: ../moo/plugins/moofind.c:1055 ../moo/plugins/moofind.c:1080
+#, c-format
+msgid "*** %u file found ***"
+msgid_plural "*** %u files found ***"
+msgstr[0] "*** Löytyi %u tiedosto ***"
+msgstr[1] "*** Löytyi %u tiedostoa ***"
+
+#: ../moo/plugins/moofind.c:1116
+msgid "Finds everything"
+msgstr "Etsi kaikki"
+
+#. label of Output window pane
+#: ../moo/plugins/support/mooeditwindowoutput.c:47
+#: ../moo/plugins/support/mooeditwindowoutput.c:48
+msgctxt "window-pane"
+msgid "Output"
+msgstr "Tuloste"
+
+#. Output filter for shell commands. Translators: remove the part before and including |.
+#: ../moo/plugins/usertools/filters.xml.h:2
+msgid "Filter|Default"
+msgstr "Oletus"
+
+#. Output filter for shell commands. Translators: remove the part before and including |.
+#: ../moo/plugins/usertools/filters.xml.h:4
+msgid "Filter|None"
+msgstr "Ei mitään"
+
+#. Output filter for shell commands. Translators: remove the part before and including |.
+#: ../moo/plugins/usertools/filters.xml.h:6
+msgid "Filter|Bison"
+msgstr "Bison"
+
+#. Output filter for shell commands. Translators: remove the part before and including |.
+#: ../moo/plugins/usertools/filters.xml.h:8
+msgid "Filter|Python"
+msgstr "Python"
+
+#. Output filter for shell commands. Translators: remove the part before and including |.
+#: ../moo/plugins/usertools/filters.xml.h:10
+msgid "Filter|LaTeX"
+msgstr "LaTeX"
+
+#. Output filter for shell commands. Translators: remove the part before and including |.
+#: ../moo/plugins/usertools/filters.xml.h:12
+msgid "Filter|Make"
+msgstr "make"
+
+#: ../moo/plugins/usertools/glade/mooedittools-exe.glade.h:1
+msgid "Filter:"
+msgstr "Suodin:"
+
+#: ../moo/plugins/usertools/glade/mooedittools-exe.glade.h:2
+msgid "Output:"
+msgstr "Tuloste:"
+
+#: ../moo/plugins/usertools/glade/mooedittools-exe.glade.h:3
+msgid "Input:"
+msgstr "Syöte:"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:1
+msgid "New item"
+msgstr "Uusi kohde"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:2
+msgid "Delete item"
+msgstr "Poista kohde"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:3
+msgid "Move item down"
+msgstr "Siirrä kohdetta alemmas"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:4
+msgid "Move item up"
+msgstr "Siirrä kohdetta ylemmäs"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:5
+msgid "Enabled"
+msgstr "Käytössä"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:6
+msgid "_Files:"
+msgstr "T_iedostot:"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:7
+msgid "_Requires:"
+msgstr "_Vaatii:"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:8
+msgid "_Save:"
+msgstr "_Tallenna:"
+
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:9
+msgid "_Type:"
+msgstr "T_yyppi:"
+
+#. Label of notebook tab on User Tools prefs page, remove the part before and including |
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:11
+msgid "user-tools-prefs|Tools menu"
+msgstr "Työkaluvalikko"
+
+#. Label of notebook tab on User Tools prefs page, remove the part before and including |
+#: ../moo/plugins/usertools/glade/moousertools.glade.h:13
+msgid "user-tools-prefs|Context menu"
+msgstr "Kontekstivalikko"
+
+#. Translators: this is an action for output of a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:89
+msgid "Output|None"
+msgstr "Ei mitään"
+
+#. Translators: this is an action for output of a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:91
+msgid "Output|None, asynchronous"
+msgstr "Ei mitään, tahdistamaton"
+
+#. Translators: this is an action for output of a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:94
+msgid "Output|Console"
+msgstr "Tuloste"
+
+#. Translators: this is an action for output of a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:97
+msgid "Output|Output pane"
+msgstr "Tulosteruutu"
+
+#. Translators: this is an action for output of a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:99
+msgid "Output|Insert into the document"
+msgstr "Lisää asiakirjaan"
+
+#. Translators: this is an action for output of a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:101
+msgid "Output|New document"
+msgstr "Uusi asiakirja"
+
+#: ../moo/plugins/usertools/moocommand-exe.c:819
+msgid "Shell command"
+msgstr "Päätekomento"
+
+#. Translators: this is a kind of input for a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:1063
+msgid "Input|None"
+msgstr "Ei mitään"
+
+#. Translators: this is a kind of input for a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:1065
+msgid "Input|Selected lines"
+msgstr "Valitut rivit"
+
+#. Translators: this is a kind of input for a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:1067
+msgid "Input|Selection"
+msgstr "Valinta"
+
+#. Translators: this is a kind of input for a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:1069
+msgid "Input|Whole document"
+msgstr "Koko asiakirja"
+
+#. Translators: this is a kind of input for a shell command, remove the part before and including |
+#: ../moo/plugins/usertools/moocommand-exe.c:1071
+msgid "Input|Document copy"
+msgstr "Asiakirjan kopio"
+
+#: ../moo/plugins/usertools/moocommand-script.cpp:279
+msgid "Lua script"
+msgstr "Lua-skripti"
+
+#: ../moo/plugins/usertools/moocommand-script.cpp:285
+msgid "Python script"
+msgstr "Python-skripti"
+
+#: ../moo/plugins/usertools/moousertools.c:394
+#: ../moo/plugins/usertools/moousertools-prefs.c:559
+msgid "Tools"
+msgstr "Työkalut"
+
+#: ../moo/plugins/usertools/moousertools.c:1376
+msgid "User Tools"
+msgstr "Käyttäjän työkalut"
+
+#: ../moo/plugins/usertools/moousertools.c:1377
+msgid "Configurable tools"
+msgstr "Muokattavat työkalut"
+
+#: ../moo/plugins/usertools/moousertools-prefs.c:109
+msgid "New Command"
+msgstr "Uusi komento"
+
+#. 'Requires' combo box entry on Tools prefs page
+#: ../moo/plugins/usertools/moousertools-prefs.c:162
+msgctxt "Requires-combo"
+msgid "Nothing"
+msgstr "Ei mitään"
+
+#. 'Requires' combo box entry on Tools prefs page
+#: ../moo/plugins/usertools/moousertools-prefs.c:164
+msgctxt "Requires-combo"
+msgid "Document"
+msgstr "Asiakirja"
+
+#. 'Requires' combo box entry on Tools prefs page
+#: ../moo/plugins/usertools/moousertools-prefs.c:166
+msgctxt "Requires-combo"
+msgid "File on disk"
+msgstr "Tiedosto levyllä"
+
+#. 'Save' combo box entry on Tools prefs page
+#: ../moo/plugins/usertools/moousertools-prefs.c:177
+msgctxt "Save-combo"
+msgid "Nothing"
+msgstr "Ei mitään"
+
+#. 'Save' combo box entry on Tools prefs page
+#: ../moo/plugins/usertools/moousertools-prefs.c:179
+msgctxt "Save-combo"
+msgid "Current document"
+msgstr "Nykyinen asiakirja"
+
+#. 'Save' combo box entry on Tools prefs page
+#: ../moo/plugins/usertools/moousertools-prefs.c:181
+msgctxt "Save-combo"
+msgid "All documents"
+msgstr "Kaikki asiakirjat"
+
+#~ msgid ""
+#~ "console message|in file %s, line %d, function %s:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "tiedostossa %s, rivillä %d, funktiossa %s:\n"
+#~ "%s"
+
+#~ msgid "Could not save file"
+#~ msgstr "No se pudo guardar el archivo"
+
+#~ msgid ""
+#~ "Error saving file\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Error guardando el archivo\n"
+#~ "%s"
+
+#~ msgid "Error saving file"
+#~ msgstr "Error guardando el archivo"
+
+#~ msgid "Command type:"
+#~ msgstr "Tipo de comando:"
+
+#~ msgid "Context menu"
+#~ msgstr "Menú contextual"
+
+#~ msgid "Tools menu"
+#~ msgstr "Menú de herramientas"
+
+#~ msgid "Case sensitive"
+#~ msgstr "Coincidir capitalización"
+
+#~ msgid "<b>Default language</b>"
+#~ msgstr "<b>Resaltado por omisión</b>"
+
+#~ msgid "Python"
+#~ msgstr "Python"
+
+#~ msgid "Python support"
+#~ msgstr "Soporte Python"
+
+#~ msgid "Show only fixed width fonts"
+#~ msgstr "Mostrar sólo fuentes monoespaciadas"
+
+#~ msgid "Terminal plugin"
+#~ msgstr "Plugin de terminal"
+
+#~ msgid "medit"
+#~ msgstr "medit"
+
+#~ msgid "Dialog title|System Info"
+#~ msgstr "Información de sistema"
+
+#~ msgid "System Info"
+#~ msgstr "Información de sistema"
+
+#~ msgid "Use default theme font"
+#~ msgstr "Usar la tipografía por defecto del tema"
+
+#~ msgid "Loading and saving"
+#~ msgstr "Cargar y salvar"
+
+#~ msgid "Languages and files"
+#~ msgstr "Tipos de archivos"
+
+#~ msgid "medit is a text editor"
+#~ msgstr "medit es un editor de texto"
+
+#~ msgid "DPatch"
+#~ msgstr "DPatch"
+
+#~ msgid "GAP source file"
+#~ msgstr "Fichero de fuente GAP"
+
+#~ msgid "Show File Selector"
+#~ msgstr "Mostrar selector de archivos"
+
+#~ msgid "Show file selector"
+#~ msgstr "AMostrar selector de archivos"
+
+#~ msgid "Show Terminal"
+#~ msgstr "Mostrar terminal"
+
+#~ msgid "Icons _and Labels"
+#~ msgstr "Iconos _y etiquetas"
+
+#~ msgid "Use spaces to indent"
+#~ msgstr "Usa espacios al indentar"
+
+#~ msgid "Close _All"
+#~ msgstr "Cerrar _todos"
+
+#~ msgid "Item in the notebook popup menu|Encoding"
+#~ msgstr "Codificación"
+
+#~ msgid "Chars: "
+#~ msgstr "Caracteres: "
+
+#~ msgid "Could not find help files, most likely it means broken installation"
+#~ msgstr ""
+#~ "No se encontraron archivos de ayuda, lo que probablemente significa una "
+#~ "instalación rota"
+
+#~ msgid "MooScript"
+#~ msgstr "Mooscript"
+
+#~ msgid "Close _without Saving"
+#~ msgstr "Cerrar _sin guardar"
+
+#~ msgid "CVS and SVN dirs"
+#~ msgstr "Directorios CVS y SVN"
+
+#~ msgid "Select _All"
+#~ msgstr "Seleccionar _todo"

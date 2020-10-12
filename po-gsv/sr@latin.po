@@ -1,0 +1,332 @@
+# Serbian translation of gtksourceview
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003 - 2009.
+#
+# This file is distributed under the same license as the gtksourceview package.
+#
+# Maintainer: Danilo Šegan <dsegan@gmx.net>
+# Reviewed on 2005-09-03 by: Danilo Šegan <dsegan@gmx.net>
+# Translate on 2009-21-09 by: Branko Kokanović <branko.kokanovic@gmail.com>
+# Branko Kokanović <branko.kokanovic@gmail.com>, 2010.
+# Miloš Popović <gpopac@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-08-21 17:13+0200\n"
+"Last-Translator: Miloš Popović <gpopac@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4;    plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 :    n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;"
+
+msgid "Background"
+msgstr "Pozadina"
+
+msgid "Background color"
+msgstr "Boja pozadine"
+
+msgid "Background set"
+msgstr "Postavljena pozadina"
+
+msgid "BibTeX"
+msgstr "BibTeks"
+
+msgid "Blue based color scheme"
+msgstr "Plava šema boja"
+
+msgid "Bold"
+msgstr "Podebljano"
+
+msgid "Bold set"
+msgstr "Postavljeno podebljano"
+
+msgid "Boolean value"
+msgstr "Istinitosna vrednost"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC zaglavlje"
+
+msgid "CG Shader Language"
+msgstr "Jezik CG nijansiranja"
+
+msgid "CUDA"
+msgstr "KUDA"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Ne mogu da napravim regularni izraz za sve prelaze, proces isticanja sintakse će biti sporiji.\n"
+"Greška: %s"
+
+msgid "ChangeLog"
+msgstr "Dnevnik promena"
+
+msgid "Classic"
+msgstr "Klasično"
+
+msgid "Classic color scheme"
+msgstr "Klasična šema boja"
+
+msgid "Cobalt"
+msgstr "Kobalt"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Šema boja korišćena u Kejt uređivaču teksta"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Šema boja koristeći Tango paletu boja"
+
+msgid "Comment"
+msgstr "Primedba"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tamna šema boja koristeći Tango paletu boja"
+
+msgid "Data Type"
+msgstr "Tip podataka"
+
+msgid "Decimal number"
+msgstr "Dekadni broj"
+
+msgid "Defaults"
+msgstr "Podrazumevano"
+
+msgid "Diff"
+msgstr "Razlike (Diff)"
+
+msgid "Docbook"
+msgstr "Dokbuk"
+
+msgid "Dos Batch"
+msgstr "DOS batch"
+
+msgid "Eiffel"
+msgstr "Ajfel"
+
+msgid "Error"
+msgstr "Greška"
+
+msgid "Escaped Character"
+msgstr "Znak za izbegavanje"
+
+msgid "Floating point number"
+msgstr "Broj u pokretnom zarezu"
+
+msgid "Foreground"
+msgstr "Tekst"
+
+msgid "Foreground color"
+msgstr "Boja teksta"
+
+msgid "Foreground set"
+msgstr "Postavljena boja teksta"
+
+msgid "Haskell"
+msgstr "Haskel"
+
+msgid "Hexadecimal number"
+msgstr "Heksadecimalni broj"
+
+msgid "Hidden"
+msgstr "Skriven"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Isticanje jedne linije je trajalo predugo, isticanje sintakse će biti onemogućeno"
+
+msgid "Identifier"
+msgstr "Identifikator"
+
+msgid "Italic"
+msgstr "Kurziv"
+
+msgid "Italic set"
+msgstr "Postavljen kurziv"
+
+msgid "Kate"
+msgstr "Kejt"
+
+msgid "Keyword"
+msgstr "Ključna reč"
+
+msgid "LaTeX"
+msgstr "LaTeH"
+
+msgid "Language id"
+msgstr "Identifikacija jezika"
+
+msgid "Language ids"
+msgstr "Identifikacije jezika"
+
+msgid "Language name"
+msgstr "Ime jezika"
+
+msgid "Language section"
+msgstr "Odeljak jezika"
+
+msgid "Language specification directories"
+msgstr "Direktorijumi sa definicijama jezika"
+
+msgid "Line background"
+msgstr "Pozadina linije"
+
+msgid "Line background color"
+msgstr "Boja pozadine linije"
+
+msgid "Line background set"
+msgstr "Postavljena pozadina linije"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Spisak direktorijuma i datoteka u kojima se nalaze sheme stila"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Spisak direktorijuma u kojima se nalaze datoteke sa definicijama jezika (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "Spisak identifikacija dostupnih jezika"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Spisak identifikatora dostupnih šema stila"
+
+msgid "Literate Haskell"
+msgstr "Literate Haskel"
+
+msgid "Mallard"
+msgstr "Malard"
+
+msgid "Markup"
+msgstr "Označavanje"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Nedostaje glavna definicija jezika (ib = „%s“.)"
+
+msgid "Objective Caml"
+msgstr "Objektni Caml"
+
+msgid "Objective-C"
+msgstr "Objektni C"
+
+msgid "Octave"
+msgstr "Oktava"
+
+msgid "OpenGL Shading Language"
+msgstr "Jezik za OpenGL senčenje"
+
+msgid "Others"
+msgstr "Ostali"
+
+msgid "Pascal"
+msgstr "Paskal"
+
+msgid "Preprocessor"
+msgstr "Preprocesor"
+
+msgid "Python"
+msgstr "Piton"
+
+msgid "Ruby"
+msgstr "Rubi"
+
+msgid "Scheme"
+msgstr "Šema"
+
+msgid "Scheme ids"
+msgstr "Identifikatori šema"
+
+msgid "Scientific"
+msgstr "Naučni"
+
+msgid "Scripts"
+msgstr "Skripte"
+
+msgid "Sources"
+msgstr "Izvori"
+
+msgid "Strikethrough"
+msgstr "Precrtano"
+
+msgid "Strikethrough set"
+msgstr "Postavljeno precrtano"
+
+msgid "String"
+msgstr "Niska"
+
+msgid "Style scheme description"
+msgstr "Opis sheme stila"
+
+msgid "Style scheme filename"
+msgstr "Ime datoteke sheme stila"
+
+msgid "Style scheme id"
+msgstr "Identifikator sheme stila"
+
+msgid "Style scheme name"
+msgstr "Ime sheme stila"
+
+msgid "Style scheme search path"
+msgstr "Putanja za pretragu sheme stila"
+
+msgid "Texinfo"
+msgstr "Tehinfo"
+
+msgid "Underline"
+msgstr "Podvučeno"
+
+msgid "Underline set"
+msgstr "Postavljeno podvučeno"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Nepoznata identifikacija „%s“ u regularnom izrazu „%s“"
+
+msgid "Whether background color is set"
+msgstr "Da li je boja pozadine postavljena"
+
+msgid "Whether bold attribute is set"
+msgstr "Da li je postavljeno da je tekst podebljan"
+
+msgid "Whether foreground color is set"
+msgstr "Da li je boja teksta postavljena"
+
+msgid "Whether italic attribute is set"
+msgstr "Da li je postavljeno da je tekst u kurzivu"
+
+msgid "Whether line background color is set"
+msgstr "Da li je postavljena boja pozadine linije"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Da li je postavljeno da je tekst precrtan"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Određuje da li jezik treba da bude skriven od korisnika"
+
+msgid "Whether underline attribute is set"
+msgstr "Da li je postavljeno da je tekst podvučen"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "kontekst '%s' ne može da sadrži \\%%{...@start} naredbu"
+
+msgid "duplicated context id '%s'"
+msgstr "ponovljeni identifikator konteksta „%s“"
+
+msgid "gettext translation"
+msgstr "gettekst prevod"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "u regularnom izrazu „%s“: povratne reference nisu podržane"
+
+msgid "invalid context reference '%s'"
+msgstr "neispravna referenca konteksta „%s“"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "preklapanje stila korišćeno sa džoker referencom konteksta u jeziku „%s“ i referenci „%s“"
+
+msgid "unknown context '%s'"
+msgstr "nepoznati kontekst „%s“"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "korišćenje \\C nije podržano u definicijama jezika"
+

@@ -1,0 +1,269 @@
+# gtksourceview ja.po.
+# Copyright (C) 2003-2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtksourceview package.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+# Satoru SATOH <ss@gnome.gr.jp>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview gnome-2-30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-02-22 17:46+0900\n"
+"Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "背景色"
+
+msgid "Background color"
+msgstr "背景色です"
+
+msgid "Background set"
+msgstr "背景色の指定"
+
+msgid "Blue based color scheme"
+msgstr "青をベースにした色のスキーム"
+
+msgid "Bold"
+msgstr "太字"
+
+msgid "Bold set"
+msgstr "太字の指定"
+
+msgid "Boolean value"
+msgstr "論理値"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC のヘッダ"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"すべての変換に対して正規表現オブジェクトを生成できないので、構文の強調表示が通常よりも遅くなります:\n"
+"エラー: %s"
+
+msgid "Classic"
+msgstr "クラシック"
+
+msgid "Classic color scheme"
+msgstr "古くから使われている伝統的な色のスキーム"
+
+msgid "Cobalt"
+msgstr "コバルト"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate テキスト・エディタで使用している色のスキーム"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Tango 系の配色を使った色のスキーム"
+
+msgid "Comment"
+msgstr "コメント"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tango 系の配色を使った暗い色のスキーム"
+
+msgid "Data Type"
+msgstr "データ型"
+
+msgid "Decimal number"
+msgstr "10進数"
+
+msgid "Defaults"
+msgstr "デフォルト値"
+
+msgid "Dos Batch"
+msgstr "DOS のバッチファイル"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid "Escaped Character"
+msgstr "エスケープした文字"
+
+msgid "Floating point number"
+msgstr "浮動小数点数"
+
+msgid "Foreground"
+msgstr "前景"
+
+msgid "Foreground color"
+msgstr "前景色です"
+
+msgid "Foreground set"
+msgstr "背景色の指定"
+
+msgid "Hexadecimal number"
+msgstr "16 進数"
+
+msgid "Hidden"
+msgstr "隠す"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "1行を強調表示するのにとても時間がかかっているので、構文の強調表示を無効にします"
+
+msgid "Identifier"
+msgstr "識別子"
+
+msgid "Italic"
+msgstr "イタリック"
+
+msgid "Italic set"
+msgstr "イタリックの指定"
+
+msgid "Keyword"
+msgstr "キーワード"
+
+msgid "Language id"
+msgstr "言語 ID"
+
+msgid "Language ids"
+msgstr "言語の ID"
+
+msgid "Language name"
+msgstr "言語の名前"
+
+msgid "Language section"
+msgstr "言語のセクション"
+
+msgid "Language specification directories"
+msgstr "言語指定のフォルダ"
+
+msgid "Line background"
+msgstr "線の背景色"
+
+msgid "Line background color"
+msgstr "線の背景色です"
+
+msgid "Line background set"
+msgstr "線の背景色の指定"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "スタイルのスキームを格納しているフォルダとファイルの並びです"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "言語指定ファイル (.lang) を格納するフォルダの一覧です"
+
+msgid "List of the ids of the available languages"
+msgstr "利用可能なプログラミング言語の ID の並びです"
+
+msgid "List of the ids of the available style schemes"
+msgstr "利用可能なスタイルに対するスキーム ID の並びです"
+
+msgid "Markup"
+msgstr "マークアップ"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "主要な言語定義がありません (id = \"%s\")"
+
+msgid "Operator"
+msgstr "演算子"
+
+msgid "Others"
+msgstr "その他"
+
+msgid "Preprocessor"
+msgstr "プリプロセッサ"
+
+msgid "RPM spec"
+msgstr "RPM スペック"
+
+msgid "Scheme"
+msgstr "スキーム"
+
+msgid "Scheme ids"
+msgstr "スキームの IDs"
+
+msgid "Scientific"
+msgstr "科学"
+
+msgid "Scripts"
+msgstr "スクリプト"
+
+msgid "Sources"
+msgstr "ソース"
+
+msgid "Strikethrough"
+msgstr "打ち消し線"
+
+msgid "Strikethrough set"
+msgstr "打ち消し線の指定"
+
+msgid "String"
+msgstr "文字列"
+
+msgid "Style scheme description"
+msgstr "スタイルのスキームの説明"
+
+msgid "Style scheme filename"
+msgstr "スタイルのスキームのファイル名"
+
+msgid "Style scheme id"
+msgstr "スタイルのスキーム ID"
+
+msgid "Style scheme name"
+msgstr "スタイルのスキーム名"
+
+msgid "Style scheme search path"
+msgstr "スタイルのスキームを検索するパス"
+
+msgid "Underline"
+msgstr "下線"
+
+msgid "Underline set"
+msgstr "下線の指定"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "正規表現 '%2$s' の中に不明な ID '%1$s' があります"
+
+msgid "Whether background color is set"
+msgstr "背景色を指定するかどうかです"
+
+msgid "Whether bold attribute is set"
+msgstr "太字の属性を付与するかどうかです"
+
+msgid "Whether foreground color is set"
+msgstr "背景色を指定するかどうかです"
+
+msgid "Whether italic attribute is set"
+msgstr "イタリックの属性を付与するかどうかです"
+
+msgid "Whether line background color is set"
+msgstr "線の背景色を指定するかどうかです"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "打ち消し線を指定するかどうかです"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "言語をユーザに表示しないようにするかどうかです"
+
+msgid "Whether underline attribute is set"
+msgstr "下線の属性を付与するかどうかです"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "コンテキスト '%s' には \\%%{...@start} コマンドを格納できません"
+
+msgid "duplicated context id '%s'"
+msgstr "コンテキスト ID '%s' が重複しています"
+
+msgid "gettext translation"
+msgstr "gettext の翻訳"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "正規表現 '%s': 後方参照はサポートしていません"
+
+msgid "invalid context reference '%s'"
+msgstr "不正なコンテキストのリファレンス '%s'"
+
+msgid "unknown context '%s'"
+msgstr "不明なコンテキスト '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "言語定義では \\C 言語の使用をサポートしていません"
+

@@ -1,0 +1,282 @@
+# Catalan translation of gtksourceview.
+# Copyright © 2003 - 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtksourceview package.
+# Aleix Badia i Bosch <abadia@ica.es>, 2003, 2004.
+# Josep Puigdemont i Casamajó <josep.puigdemont@gmail.com>, 2005, 2006, 2007.
+# Gil Forcada <gilforcada@guifi.net>, 2008, 2009, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-16 21:20+0100\n"
+"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "Fons"
+
+msgid "Background color"
+msgstr "Color de fons"
+
+msgid "Background set"
+msgstr "S'ha establit el fons"
+
+msgid "Blue based color scheme"
+msgstr "Esquema de color blau"
+
+msgid "Bold"
+msgstr "Negreta"
+
+msgid "Bold set"
+msgstr "S'ha establit la negreta"
+
+msgid "Boolean value"
+msgstr "Valor booleà"
+
+msgid "C/C++/ObjC Header"
+msgstr "Capçalera de C/C++/ObjC"
+
+msgid "CG Shader Language"
+msgstr "Llenguatge de sombres CG"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"No s'ha pogut crear una expressió regular per a totes les transicions. El procés de ressaltat serà més lent de l'habitual.\n"
+"L'error ha sigut: %s"
+
+msgid "ChangeLog"
+msgstr "Registre de canvis"
+
+msgid "Classic"
+msgstr "Clàssic"
+
+msgid "Classic color scheme"
+msgstr "Esquema de color clàssic"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Esquema de color que s'utilitza en l'editor de text Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Esquema de color que utilitza la paleta de colors del Tango"
+
+msgid "Comment"
+msgstr "Comentari"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Esquema de color fosc que utilitza la paleta de colors del Tango"
+
+msgid "Data Type"
+msgstr "Tipus de dada"
+
+msgid "Decimal number"
+msgstr "Nombre decimal"
+
+msgid "Defaults"
+msgstr "Valors predeterminats"
+
+msgid "Diff"
+msgstr "Diferència"
+
+msgid "Docbook"
+msgstr "DocBook"
+
+msgid "Dos Batch"
+msgstr "Batch del DOS"
+
+msgid "Escaped Character"
+msgstr "Caràcter d'escapada"
+
+msgid "Floating point number"
+msgstr "Nombre de coma flotant"
+
+msgid "Foreground"
+msgstr "Primer pla"
+
+msgid "Foreground color"
+msgstr "Color del primer pla"
+
+msgid "Foreground set"
+msgstr "S'ha establit el primer pla"
+
+msgid "Graphviz Dot"
+msgstr "Dot del Graphviz"
+
+msgid "Hexadecimal number"
+msgstr "Nombre hexadecimal"
+
+msgid "Hidden"
+msgstr "Ocult"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "S'ha trigat massa en ressaltar una sola línia, per la qual cosa s'inhabilitarà el ressaltat de la sintaxi"
+
+msgid "Identifier"
+msgstr "Identificador"
+
+msgid "Italic"
+msgstr "Cursiva"
+
+msgid "Italic set"
+msgstr "S'ha establit la cursiva"
+
+msgid "Keyword"
+msgstr "Paraula clau"
+
+msgid "Language id"
+msgstr "Identificador del llenguatge"
+
+msgid "Language ids"
+msgstr "Identificadors de llenguatge"
+
+msgid "Language name"
+msgstr "Nom del llenguatge"
+
+msgid "Language section"
+msgstr "Secció del llenguatge"
+
+msgid "Language specification directories"
+msgstr "Directoris d'especificació del llenguatge"
+
+msgid "Line background"
+msgstr "Fons de la línia"
+
+msgid "Line background color"
+msgstr "Color de fons de la línia"
+
+msgid "Line background set"
+msgstr "S'ha establit el fons de la línia"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Llista de directoris i fitxers on hi ha els esquemes d'estil"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Llistat de directoris on hi ha els fitxers d'especificació del llenguatge (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "Llista d'identificadors dels llenguatges disponibles"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Llista dels identificadors d'esquemes d'estil disponibles"
+
+msgid "Literate Haskell"
+msgstr "Haskell literal"
+
+msgid "Markup"
+msgstr "Marcatge"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Falta la definició del llenguatge principal (id = «%s».)"
+
+msgid "OpenGL Shading Language"
+msgstr "Llenguatge de sombres d'OpenGL"
+
+msgid "Operator"
+msgstr "Operador"
+
+msgid "Others"
+msgstr "Altres"
+
+msgid "Preprocessor"
+msgstr "Preprocessador"
+
+msgid "RPM spec"
+msgstr "Especificació RPM"
+
+msgid "Scheme ids"
+msgstr "Identificadors d'esquemes"
+
+msgid "Scientific"
+msgstr "Científic"
+
+msgid "Sources"
+msgstr "Codis font"
+
+msgid "Strikethrough"
+msgstr "Barrat"
+
+msgid "Strikethrough set"
+msgstr "S'ha establit el barrat"
+
+msgid "String"
+msgstr "Cadena"
+
+msgid "Style scheme description"
+msgstr "Descripció de l'esquema d'estil"
+
+msgid "Style scheme filename"
+msgstr "Nom de fitxer de l'esquema d'estil"
+
+msgid "Style scheme id"
+msgstr "Identificador d'esquema d'estil"
+
+msgid "Style scheme name"
+msgstr "Nom de l'esquema d'estil"
+
+msgid "Style scheme search path"
+msgstr "Camí de cerca de l'esquema d'estil"
+
+msgid "Underline"
+msgstr "Subratllat"
+
+msgid "Underline set"
+msgstr "S'ha establit el subratllat"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Identificador «%s» desconegut en l'expressió regular «%s»"
+
+msgid "Whether background color is set"
+msgstr "Si s'ha establit el color de fons"
+
+msgid "Whether bold attribute is set"
+msgstr "Si s'ha establit l'atribut de negreta"
+
+msgid "Whether foreground color is set"
+msgstr "Si s'ha establit el color del primer pla"
+
+msgid "Whether italic attribute is set"
+msgstr "Si s'ha establit l'atribut de cursiva"
+
+msgid "Whether line background color is set"
+msgstr "Si s'ha establit el color de fons de la línia"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Si s'ha establit l'atribut de barrat"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Si s'hauria d'ocultar el llenguatge a l'usuari"
+
+msgid "Whether underline attribute is set"
+msgstr "Si s'ha establit l'atribut de subratllat"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "en el context «%s» no hi pot haver l'orde \\%%{...@start}"
+
+msgid "duplicated context id '%s'"
+msgstr "identificador de context duplicat «%s»"
+
+msgid "gettext translation"
+msgstr "Traducció del gettext"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "en l'expressió regular «%s»: no es permeten les referències anteriors"
+
+msgid "invalid context reference '%s'"
+msgstr "referència de context «%s» no vàlida"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "s'ha utilitzat la sobreescriptura d'estil amb una referència de context comodí en el llenguatge «%s» a la referència «%s»"
+
+msgid "unknown context '%s'"
+msgstr "context desconegut «%s»"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "no es pot utilitzar \\C en les definicions de llenguatges"
+

@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>medit scripting manual</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="next" href="lua-moo.html" title="Chapter 1. medit Lua API">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">
+<span class="application">medit</span> scripting manual</th></tr>
+<tr>
+<td width="20%" align="left"> </td>
+<th width="60%" align="center"> </th>
+<td width="20%" align="right"> <a accesskey="n" href="lua-moo.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="book">
+<div class="titlepage">
+<div>
+<div><h1 class="title">
+<a name="medit-scripting-manual"></a><span class="application">medit</span> scripting manual</h1></div>
+<div><p class="releaseinfo">1.2.92-devel</p></div>
+</div>
+<hr>
+</div>
+<div class="toc">
+<p><b>Table of Contents</b></p>
+<dl class="toc">
+<dt><span class="chapter"><a href="lua-moo.html">1. <span class="application">medit</span> Lua API</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch01s01.html">Introduction</a></span></dt>
+<dt><span class="sect1"><a href="ch01s02.html"><span class="application">medit</span> object model</a></span></dt>
+<dt><span class="sect1"><a href="ch01s03.html">Notations</a></span></dt>
+<dt><span class="sect1"><a href="ch01s04.html">moo.App - application object</a></span></dt>
+<dt><span class="sect1"><a href="ch01s05.html">moo.CmdView</a></span></dt>
+<dt><span class="sect1"><a href="ch01s06.html">moo.Edit - document object</a></span></dt>
+<dt><span class="sect1"><a href="ch01s07.html">moo.EditTab - document tab object</a></span></dt>
+<dt><span class="sect1"><a href="ch01s08.html">moo.EditView - document view object</a></span></dt>
+<dt><span class="sect1"><a href="ch01s09.html">moo.EditWindow - document window object</a></span></dt>
+<dt><span class="sect1"><a href="ch01s10.html">moo.Editor - editor object</a></span></dt>
+<dt><span class="sect1"><a href="ch01s11.html">moo.LineView</a></span></dt>
+<dt><span class="sect1"><a href="ch01s12.html">moo.OpenInfo - information for opening a file</a></span></dt>
+<dt><span class="sect1"><a href="ch01s13.html">moo.ReloadInfo - information for reloading a file</a></span></dt>
+<dt><span class="sect1"><a href="ch01s14.html">moo.SaveInfo - information for saving a file</a></span></dt>
+<dt><span class="sect1"><a href="ch01s15.html">moo.TextView - text view object</a></span></dt>
+<dt><span class="sect1"><a href="ch01s16.html">moo.Window - window object</a></span></dt>
+<dt><span class="sect1"><a href="ch01s17.html">Functions</a></span></dt>
+<dt><span class="sect1"><a href="ch01s18.html">Enumerations</a></span></dt>
+</dl></dd>
+<dt><span class="chapter"><a href="lua-gtk.html">2. Gtk API for Lua scripts</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch02s01.html">Introduction</a></span></dt>
+<dt><span class="sect1"><a href="ch02s02.html">gtk.Bin</a></span></dt>
+<dt><span class="sect1"><a href="ch02s03.html">gtk.Box</a></span></dt>
+<dt><span class="sect1"><a href="ch02s04.html">gtk.Container</a></span></dt>
+<dt><span class="sect1"><a href="ch02s05.html">gtk.GFile</a></span></dt>
+<dt><span class="sect1"><a href="ch02s06.html">gtk.GObject</a></span></dt>
+<dt><span class="sect1"><a href="ch02s07.html">gtk.GdkRectangle</a></span></dt>
+<dt><span class="sect1"><a href="ch02s08.html">gtk.Object</a></span></dt>
+<dt><span class="sect1"><a href="ch02s09.html">gtk.TextBuffer</a></span></dt>
+<dt><span class="sect1"><a href="ch02s10.html">gtk.TextIter</a></span></dt>
+<dt><span class="sect1"><a href="ch02s11.html">gtk.TextView</a></span></dt>
+<dt><span class="sect1"><a href="ch02s12.html">gtk.VBox</a></span></dt>
+<dt><span class="sect1"><a href="ch02s13.html">gtk.Widget</a></span></dt>
+<dt><span class="sect1"><a href="ch02s14.html">gtk.Window</a></span></dt>
+<dt><span class="sect1"><a href="ch02s15.html">Enumerations</a></span></dt>
+</dl></dd>
+<dt><span class="chapter"><a href="python-moo.html">3. <span class="application">medit</span> Python API</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="ch03s01.html">Introduction</a></span></dt>
+<dt><span class="sect1"><a href="ch03s02.html">moo.App - application object</a></span></dt>
+<dt><span class="sect1"><a href="ch03s03.html">moo.CmdView</a></span></dt>
+<dt><span class="sect1"><a href="ch03s04.html">moo.Edit - document object</a></span></dt>
+<dt><span class="sect1"><a href="ch03s05.html">moo.EditTab - document tab object</a></span></dt>
+<dt><span class="sect1"><a href="ch03s06.html">moo.EditView - document view object</a></span></dt>
+<dt><span class="sect1"><a href="ch03s07.html">moo.EditWindow - document window object</a></span></dt>
+<dt><span class="sect1"><a href="ch03s08.html">moo.Editor - editor object</a></span></dt>
+<dt><span class="sect1"><a href="ch03s09.html">moo.LineView</a></span></dt>
+<dt><span class="sect1"><a href="ch03s10.html">moo.OpenInfo - information for opening a file</a></span></dt>
+<dt><span class="sect1"><a href="ch03s11.html">moo.ReloadInfo - information for reloading a file</a></span></dt>
+<dt><span class="sect1"><a href="ch03s12.html">moo.SaveInfo - information for saving a file</a></span></dt>
+<dt><span class="sect1"><a href="ch03s13.html">moo.TextView - text view object</a></span></dt>
+<dt><span class="sect1"><a href="ch03s14.html">moo.Window - window object</a></span></dt>
+<dt><span class="sect1"><a href="ch03s15.html">Functions</a></span></dt>
+<dt><span class="sect1"><a href="ch03s16.html">Enumerations</a></span></dt>
+</dl></dd>
+</dl>
+</div>
+<div class="list-of-examples">
+<p><b>List of Examples</b></p>
+<dl><dt>2.1. <a href="ch02s06.html#idm2726">GObject.connect()</a>
+</dt></dl>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left"> </td>
+<td width="20%" align="center"> </td>
+<td width="40%" align="right"> <a accesskey="n" href="lua-moo.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top"> </td>
+<td width="20%" align="center"> </td>
+<td width="40%" align="right" valign="top"> Chapter 1. <span class="application">medit</span> Lua API</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

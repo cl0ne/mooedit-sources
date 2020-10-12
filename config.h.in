@@ -1,0 +1,215 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+#ifndef __CONFIG_H__
+#define __CONFIG_H__
+
+/* always defined to indicate that i18n is enabled */
+#undef ENABLE_NLS
+
+/* GETTEXT_PACKAGE */
+#undef GETTEXT_PACKAGE
+
+/* Define to 1 if you have the `bind_textdomain_codeset' function. */
+#undef HAVE_BIND_TEXTDOMAIN_CODESET
+
+/* Define to 1 if you have the Mac OS X function CFLocaleCopyCurrent in the
+   CoreFoundation framework. */
+#undef HAVE_CFLOCALECOPYCURRENT
+
+/* Define to 1 if you have the Mac OS X function CFPreferencesCopyAppValue in
+   the CoreFoundation framework. */
+#undef HAVE_CFPREFERENCESCOPYAPPVALUE
+
+/* Define to 1 if you have the `dcgettext' function. */
+#undef HAVE_DCGETTEXT
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you have the `getc_unlocked' function. */
+#undef HAVE_GETC_UNLOCKED
+
+/* Define if the GNU gettext() function is already present or preinstalled. */
+#undef HAVE_GETTEXT
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define if your <locale.h> file defines LC_MESSAGES. */
+#undef HAVE_LC_MESSAGES
+
+/* Define to 1 if you have the <locale.h> header file. */
+#undef HAVE_LOCALE_H
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 if you have the `mmap' function. */
+#undef HAVE_MMAP
+
+/* Define to 1 if you have the <signal.h> header file. */
+#undef HAVE_SIGNAL_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <sys/utsname.h> header file. */
+#undef HAVE_SYS_UTSNAME_H
+
+/* Define to 1 if you have the <sys/wait.h> header file. */
+#undef HAVE_SYS_WAIT_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* cache files are saved in this directory */
+#undef MEDIT_PORTABLE_CACHE_DIR
+
+/* prefs files are saved in this directory */
+#undef MEDIT_PORTABLE_DATA_DIR
+
+/* file which enables portable mode */
+#undef MEDIT_PORTABLE_MAGIC_FILE_NAME
+
+/* broken gtk theme */
+#undef MOO_BROKEN_GTK_THEME
+
+/* build ctags plugin */
+#undef MOO_BUILD_CTAGS
+
+/* MOO_CONFIG_H_INCLUDED */
+#undef MOO_CONFIG_H_INCLUDED
+
+/* MOO_COPYRIGHT */
+#undef MOO_COPYRIGHT
+
+/* MOO_DISPLAY_VERSION */
+#undef MOO_DISPLAY_VERSION
+
+/* MOO_EMAIL */
+#undef MOO_EMAIL
+
+/* enable code coverage testing */
+#undef MOO_ENABLE_COVERAGE
+
+/* build python bindings and plugin */
+#undef MOO_ENABLE_PYTHON
+
+/* MOO_MAJOR_VERSION */
+#undef MOO_MAJOR_VERSION
+
+/* MOO_MICRO_VERSION */
+#undef MOO_MICRO_VERSION
+
+/* MOO_MINOR_VERSION */
+#undef MOO_MINOR_VERSION
+
+/* MOO_MODULE_MAJOR_VERSION */
+#undef MOO_MODULE_MAJOR_VERSION
+
+/* MOO_MODULE_MINOR_VERSION */
+#undef MOO_MODULE_MINOR_VERSION
+
+/* session-%s.xml */
+#undef MOO_NAMED_SESSION_XML_FILE_NAME
+
+/* data goes into /usr/share/$MOO_PACKAGE_NAME, etc. */
+#undef MOO_PACKAGE_NAME
+
+/* prefs.xml */
+#undef MOO_PREFS_XML_FILE_NAME
+
+/* session.xml */
+#undef MOO_SESSION_XML_FILE_NAME
+
+/* state.xml */
+#undef MOO_STATE_XML_FILE_NAME
+
+/* MOO_VERSION */
+#undef MOO_VERSION
+
+/* MOO_WEBSITE */
+#undef MOO_WEBSITE
+
+/* MOO_WEB_CONTACT */
+#undef MOO_WEB_CONTACT
+
+/* Name of package */
+#undef PACKAGE
+
+/* PACKAGE_BUGREPORT */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Enable extensions on AIX 3, Interix.  */
+#ifndef _ALL_SOURCE
+# undef _ALL_SOURCE
+#endif
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# undef _GNU_SOURCE
+#endif
+/* Enable threading extensions on Solaris.  */
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# undef _POSIX_PTHREAD_SEMANTICS
+#endif
+/* Enable extensions on HP NonStop.  */
+#ifndef _TANDEM_SOURCE
+# undef _TANDEM_SOURCE
+#endif
+/* Enable general extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# undef __EXTENSIONS__
+#endif
+
+
+/* Version number of package */
+#undef VERSION
+
+/* Define to 1 if on MINIX. */
+#undef _MINIX
+
+/* Define to 2 if the system does not provide POSIX.1 features except with
+   this defined. */
+#undef _POSIX_1_SOURCE
+
+/* Define to 1 if you need to in order for `stat' and other things to work. */
+#undef _POSIX_SOURCE
+
+#include <moo-config.h>
+#endif // __CONFIG_H__

@@ -1,0 +1,32 @@
+moo_sources +=						\
+	gtksourceview/gtksourcecontextengine.c		\
+	gtksourceview/gtksourcecontextengine.h		\
+	gtksourceview/gtksourceengine.c			\
+	gtksourceview/gtksourceengine.h			\
+	gtksourceview/gtksourceiter.c			\
+	gtksourceview/gtksourceiter.h			\
+	gtksourceview/gtksourcelanguage-parser-1.c	\
+	gtksourceview/gtksourcelanguage-parser-2.c	\
+	gtksourceview/gtksourcelanguage-private.h	\
+	gtksourceview/gtksourcelanguage.c		\
+	gtksourceview/gtksourcelanguage.h		\
+	gtksourceview/gtksourcelanguagemanager.c	\
+	gtksourceview/gtksourcelanguagemanager.h	\
+	gtksourceview/gtksourcestyle-private.h		\
+	gtksourceview/gtksourcestyle.c			\
+	gtksourceview/gtksourcestyle.h			\
+	gtksourceview/gtksourcestylescheme.c		\
+	gtksourceview/gtksourcestylescheme.h		\
+	gtksourceview/gtksourcestyleschememanager.c	\
+	gtksourceview/gtksourcestyleschememanager.h	\
+	gtksourceview/gtksourceview-utils.c		\
+	gtksourceview/gtksourceview-utils.h		\
+	gtksourceview/gtktextregion.c			\
+	gtksourceview/gtktextregion.h			\
+	gtksourceview/gtksourceview-i18n.h		\
+	gtksourceview/gtksourceview-marshal.h		\
+	gtksourceview/gtksourceview-api.h		\
+	gtksourceview/gtksourcebuffer.h			\
+	gtksourceview/gtksourceview.h
+
+# -%- strip:true -%-

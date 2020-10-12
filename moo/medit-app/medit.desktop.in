@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=medit
+_Comment=Text editor
+Exec=medit %F
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+Icon=medit
+Categories=Utility;TextEditor;
+_Keywords=editor;texteditor;text

@@ -1,0 +1,129 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>moo.CmdView</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-moo.html" title="Chapter 1. medit Lua API">
+<link rel="prev" href="ch01s04.html" title="moo.App - application object">
+<link rel="next" href="ch01s06.html" title="moo.Edit - document object">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">moo.CmdView</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01s04.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 1. <span class="application">medit</span> Lua API</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch01s06.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="lua.MooCmdView"></a>moo.CmdView</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch01s05.html#lua.None">new()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s05.html#lua.moo_cmd_view_run_command">run_command()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s05.html#lua.moo_cmd_view_set_filter_by_id">set_filter_by_id()</a></span></dt>
+<dt><span class="sect2"><a href="ch01s05.html#lua.moo_cmd_view_write_with_filter">write_with_filter()</a></span></dt>
+</dl></div>
+<pre class="programlisting">
+<code class="constant"><a class="link" href="ch01s11.html" title="moo.LineView">moo.LineView</a></code>
+  |
+  +-- moo.CmdView
+</pre>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.None"></a>new()</h3></div></div></div>
+<pre class="programlisting">CmdView.new()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_cmd_view_run_command"></a>run_command()</h3></div></div></div>
+<pre class="programlisting">cmd_view.run_command(cmd, working_dir=<code class="constant">nil</code>, job_name=<code class="constant">nil</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>cmd</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>working_dir</code></em></span> : </p></td>
+<td><p><code class="constant">string</code> or <code class="constant">nil</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job_name</code></em></span> : </p></td>
+<td><p><code class="constant">string</code> or <code class="constant">nil</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_cmd_view_set_filter_by_id"></a>set_filter_by_id()</h3></div></div></div>
+<pre class="programlisting">cmd_view.set_filter_by_id(id)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>id</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.moo_cmd_view_write_with_filter"></a>write_with_filter()</h3></div></div></div>
+<pre class="programlisting">cmd_view.write_with_filter(text, error=<code class="constant">false</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em></span> : </p></td>
+<td><p><code class="constant">bool</code> or <code class="constant">nil</code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01s04.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-moo.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch01s06.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">moo.App - application object </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> moo.Edit - document object</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[module]
+type=Python
+file=terminal.py
+version=@MOO_MODULE_MAJOR_VERSION@.@MOO_MODULE_MINOR_VERSION@
+
+[plugin]
+id=Terminal
+_name=Terminal
+_description=Terminal plugin
+author=Yevgen Muntyan <emuntyan@users.sourceforge.net>
+version=@MOO_VERSION@

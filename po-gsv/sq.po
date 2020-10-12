@@ -1,0 +1,72 @@
+# Përkthimi i mesazheve të gtksourceview në shqip
+# This file is distributed under the same license as the gtksourceview package.
+# Copyright (C) 2003 THE gtksourceview'S COPYRIGHT HOLDER.
+#
+# Laurent Dhima <laurenti@alblinux.net>, 2003, 2004, 2005, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2006-03-09 19:22+0100\n"
+"Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
+"Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ChangeLog"
+msgstr "Ndryshimet"
+
+msgid "Comment"
+msgstr "Komenti"
+
+msgid "Data Type"
+msgstr "Lloji i të dhënave"
+
+msgid "Diff"
+msgstr "Dif"
+
+msgid "Keyword"
+msgstr "Fjalë kyç"
+
+msgid "Language specification directories"
+msgstr "Directory e specifikave të gjuhës"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Lista e directories ku ndodhen files e specifikave të gjuhës (.lang)"
+
+msgid "Markup"
+msgstr "Markues"
+
+msgid "Operator"
+msgstr "Operatori"
+
+msgid "Others"
+msgstr "Të tjerë"
+
+msgid "Preprocessor"
+msgstr "Pre-procesues"
+
+msgid "Ruby"
+msgstr "Rubin"
+
+msgid "Scheme"
+msgstr "Skema"
+
+msgid "Scripts"
+msgstr "Scripte"
+
+msgid "Sources"
+msgstr "Burimet"
+
+msgid "String"
+msgstr "Stringë"
+
+msgid "Texinfo"
+msgstr "Infotekst"
+
+msgid "gettext translation"
+msgstr "përkthim gettext"
+

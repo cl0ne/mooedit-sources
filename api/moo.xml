@@ -1,0 +1,1292 @@
+<module name="Moo">
+  <class gtype_id="MOO_TYPE_ACTION" moo.private="1" name="MooAction" parent="GtkAction" short_name="Action" />
+  <class gtype_id="MOO_TYPE_ACTION_COLLECTION" moo.private="1" name="MooActionCollection" parent="GObject" short_name="ActionCollection" />
+  <class gtype_id="MOO_TYPE_APP" name="MooApp" parent="GObject" short_name="App">
+    <summary>application object</summary>
+    <static-method c_name="moo_app_instance" name="instance">
+      <retval type="MooApp*" />
+    </static-method>
+    <signal name="load-session">
+      <doc>This signal is emitted when application is loading session, after editor session has been loaded.</doc>
+    </signal>
+    <signal name="quit">
+      <doc>This signal is emitted when application quits, after session has been saved.</doc>
+    </signal>
+    <signal name="save-session">
+      <doc>This signal is emitted when application is saving session, before saving editor session.</doc>
+    </signal>
+    <signal name="started">
+      <doc>This signal is emitted after application loaded session, started main loop, and hit idle for the first time.</doc>
+    </signal>
+    <method c_name="moo_app_get_editor" name="get_editor">
+      <retval type="MooEditor*" />
+    </method>
+    <method c_name="moo_app_quit" name="quit">
+      <retval type="gboolean" />
+    </method>
+  </class>
+  <class constructable="1" gtype_id="MOO_TYPE_BIG_PANED" moo.private="1" name="MooBigPaned" parent="GtkFrame" short_name="BigPaned" />
+  <class constructable="1" gtype_id="MOO_TYPE_CMD_VIEW" name="MooCmdView" parent="MooLineView" short_name="CmdView">
+    <method c_name="moo_cmd_view_run_command" name="run_command">
+      <param name="cmd" type="const-filename" />
+      <param allow_none="1" default_value="NULL" name="working_dir" type="const-filename" />
+      <param allow_none="1" default_value="NULL" name="job_name" type="const-utf8" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_cmd_view_set_filter_by_id" name="set_filter_by_id">
+      <param name="id" type="const-utf8" />
+    </method>
+    <method c_name="moo_cmd_view_write_with_filter" name="write_with_filter">
+      <param name="text" type="const-utf8" />
+      <param allow_none="1" default_value="FALSE" name="error" type="gboolean" />
+    </method>
+  </class>
+  <class constructable="1" gtype_id="MOO_TYPE_COMBO" moo.private="1" name="MooCombo" parent="GtkTable" short_name="Combo" />
+  <class gtype_id="MOO_TYPE_DOC_PLUGIN" moo.lua="0" moo.private="1" name="MooDocPlugin" parent="GObject" short_name="DocPlugin">
+    <virtual name="create">
+      <retval type="gboolean" />
+    </virtual>
+    <virtual name="destroy" />
+    <method c_name="moo_doc_plugin_get_doc" name="get_doc">
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_doc_plugin_get_plugin" name="get_plugin">
+      <retval type="MooPlugin*" />
+    </method>
+    <method c_name="moo_doc_plugin_get_window" name="get_window">
+      <retval type="MooEditWindow*" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_EDIT" moo.doc-object-name="doc" name="MooEdit" parent="GObject" short_name="Edit">
+    <summary>document object</summary>
+    <doc>Object which represents a document. It has methods for file operations and manipulating document text.</doc>
+    <signal name="after-save">
+      <doc>This signal is emitted after the document has been successfully saved on disk.</doc>
+    </signal>
+    <signal name="before-save">
+      <param name="file" type="GFile*">
+        <doc> the #GFile object which represents saved file</doc>
+      </param>
+      <retval type="MooSaveResponse">
+        <doc> #MOO_SAVE_RESPONSE_CANCEL to cancel saving, #MOO_SAVE_RESPONSE_CONTINUE otherwise.</doc>
+      </retval>
+      <doc>This signal is emitted when the document is going to be saved on disk. Callbacks should return #MOO_SAVE_RESPONSE_CANCEL if document should not be saved, and #MOO_SAVE_RESPONSE_CONTINUE otherwise.  For example, if before saving the file must be checked out from a version control system, a callback can do that and return #MOO_SAVE_RESPONSE_CANCEL if checkout failed.  Callbacks should not modify document content. If you need to modify it before saving, use MooEdit::will-save signal instead. </doc>
+    </signal>
+    <signal name="will-close">
+      <doc>This signal is emitted before the document is closed.</doc>
+    </signal>
+    <signal name="will-save">
+      <param name="file" type="GFile*">
+        <doc> the #GFile object which represents saved file</doc>
+      </param>
+      <doc>This signal is emitted when the document is going to be saved on disk, after MooEdit::before-save signal. Callbacks may modify document content at this point.</doc>
+    </signal>
+    <method c_name="moo_edit_append_text" name="append_text">
+      <param name="text" type="const-utf8" />
+      <doc>Append text to the end of document.</doc>
+    </method>
+    <method c_name="moo_edit_begin_non_undoable_action" name="begin_non_undoable_action" />
+    <method c_name="moo_edit_begin_user_action" name="begin_user_action" />
+    <method c_name="moo_edit_can_redo" name="can_redo">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_can_undo" name="can_undo">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_clear" name="clear">
+      <doc>Remove all text from document.</doc>
+    </method>
+    <method c_name="moo_edit_close" name="close">
+      <retval type="gboolean">
+        <doc> whether document was closed</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_comment_selection" name="comment_selection" />
+    <method c_name="moo_edit_copy" name="copy">
+      <doc>Copy selection to clipboard.</doc>
+    </method>
+    <method c_name="moo_edit_cut" name="cut">
+      <doc>Cut selection to clipboard.</doc>
+    </method>
+    <method c_name="moo_edit_delete_selected_lines" name="delete_selected_lines">
+      <doc>Delete selected lines. Similar to moo_edit_delete_selected_text() but selection is extended to include whole lines. If no text is selected then line at cursor is deleted.</doc>
+    </method>
+    <method c_name="moo_edit_delete_selected_text" name="delete_selected_text" />
+    <method c_name="moo_edit_delete_text" name="delete_text">
+      <param name="start" type="GtkTextIter*" />
+      <param name="end" type="GtkTextIter*" />
+    </method>
+    <method c_name="moo_edit_end_non_undoable_action" name="end_non_undoable_action" />
+    <method c_name="moo_edit_end_user_action" name="end_user_action" />
+    <method c_name="moo_edit_get_buffer" name="get_buffer">
+      <retval type="GtkTextBuffer*" />
+    </method>
+    <method c_name="moo_edit_get_char_at_pos" name="get_char_at_pos">
+      <param name="pos" type="const-GtkTextIter*" />
+      <retval type="gunichar" />
+    </method>
+    <method c_name="moo_edit_get_char_count" name="get_char_count">
+      <retval type="int" />
+    </method>
+    <method c_name="moo_edit_get_clean" name="get_clean">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_get_cursor_pos" name="get_cursor_pos">
+      <retval transfer_mode="full" type="GtkTextIter*">
+        <doc>Iterator which points to the current cursor (insertion point) position. In the case when text selection is not empty, it points to one of the ends of the selection.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_display_basename" name="get_display_basename">
+      <retval type="const-utf8" />
+    </method>
+    <method c_name="moo_edit_get_display_name" name="get_display_name">
+      <retval type="const-utf8" />
+    </method>
+    <method c_name="moo_edit_get_editor" name="get_editor">
+      <retval type="MooEditor*" />
+    </method>
+    <method c_name="moo_edit_get_encoding" name="get_encoding">
+      <retval type="const-utf8" />
+    </method>
+    <method c_name="moo_edit_get_end_pos" name="get_end_pos">
+      <retval transfer_mode="full" type="GtkTextIter*">
+        <doc>Iterator which points to the end of the document, i.e. the position past the last character in the document.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_file" name="get_file">
+      <retval transfer_mode="full" type="GFile*" />
+    </method>
+    <method c_name="moo_edit_get_filename" name="get_filename">
+      <retval transfer_mode="full" type="filename" />
+    </method>
+    <method c_name="moo_edit_get_lang_id" name="get_lang_id">
+      <retval transfer_mode="full" type="utf8">
+        <doc>id of language currently used in the document. If no language is used, then string "none" is returned.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_line_at_cursor" name="get_line_at_cursor">
+      <retval type="index">
+        <doc>%INDEXBASE-based number of the current cursor line.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_line_at_pos" name="get_line_at_pos">
+      <param name="pos" type="const-GtkTextIter*" />
+      <retval type="index">
+        <doc>%INDEXBASE-based number of the line at the given position.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_line_count" name="get_line_count">
+      <retval type="int" />
+    </method>
+    <method c_name="moo_edit_get_line_end_type" name="get_line_end_type">
+      <retval type="MooLineEndType" />
+    </method>
+    <method c_name="moo_edit_get_line_text" name="get_line_text">
+      <param default_value="-1" name="line" type="index">
+        <doc>%INDEXBASE-based line number.</doc>
+      </param>
+      <retval transfer_mode="full" type="utf8">
+        <doc>text at line @line, not including line end characters. If @line is missing, returns text at cursor line.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_line_text_at_pos" name="get_line_text_at_pos">
+      <param name="pos" type="const-GtkTextIter*" />
+      <retval transfer_mode="full" type="utf8">
+        <doc>text at line which contains position @pos, not including the line end character(s).</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_n_views" name="get_n_views">
+      <retval type="int" />
+      <doc>Get the number of views which belong to this document.</doc>
+    </method>
+    <method c_name="moo_edit_get_pos_at_line" name="get_pos_at_line">
+      <param name="line" type="index">
+        <doc>%INDEXBASE-based line number.</doc>
+      </param>
+      <retval transfer_mode="full" type="GtkTextIter*">
+        <doc>Iterator which points to the beginning of the given line.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_pos_at_line_end" name="get_pos_at_line_end">
+      <param name="line" type="index">
+        <doc>%INDEXBASE-based line number.</doc>
+      </param>
+      <retval transfer_mode="full" type="GtkTextIter*">
+        <doc>Iterator which points to the end of the given line (i.e. the position before the line end character(s)).</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_selected_lines" name="get_selected_lines">
+      <retval transfer_mode="full" type="strv" />
+      <doc>Returns selected lines as a list of strings, one string for each line, line terminator characters not included. If nothing is selected, then line at cursor is returned. </doc>
+    </method>
+    <method c_name="moo_edit_get_selected_text" name="get_selected_text">
+      <retval transfer_mode="full" type="utf8">
+        <doc>selected text.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_selection_end_pos" name="get_selection_end_pos">
+      <retval transfer_mode="full" type="GtkTextIter*">
+        <doc>Iterator which points to the end of the current text selection. If the selection is empty, it returns the current cursor position.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_selection_start_pos" name="get_selection_start_pos">
+      <retval transfer_mode="full" type="GtkTextIter*">
+        <doc>Iterator which points to the beginning of the current text selection. If the selection is empty, it returns the current cursor position.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_start_pos" name="get_start_pos">
+      <retval transfer_mode="full" type="GtkTextIter*">
+        <doc>Iterator which points to the beginning of the document.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_status" name="get_status">
+      <retval type="MooEditStatus" />
+    </method>
+    <method c_name="moo_edit_get_tab" name="get_tab">
+      <retval type="MooEditTab*" />
+    </method>
+    <method c_name="moo_edit_get_text" name="get_text">
+      <param allow_none="1" default_value="NULL" name="start" type="const-GtkTextIter*" />
+      <param allow_none="1" default_value="NULL" name="end" type="const-GtkTextIter*" />
+      <retval transfer_mode="full" type="utf8">
+        <doc>text between @start and @end. If @end is missing then it returns text from @start to the end of document; and if both @start and @end are missing then it returns whole document content.</doc>
+      </retval>
+    </method>
+    <method c_name="moo_edit_get_uri" name="get_uri">
+      <retval transfer_mode="full" type="utf8" />
+    </method>
+    <method c_name="moo_edit_get_view" name="get_view">
+      <retval type="MooEditView*" />
+      <doc>Get the active view of this document.</doc>
+    </method>
+    <method c_name="moo_edit_get_views" name="get_views">
+      <retval type="MooEditViewArray*" />
+      <doc>Get the list of views which belong to this document.</doc>
+    </method>
+    <method c_name="moo_edit_get_window" name="get_window">
+      <retval type="MooEditWindow*" />
+    </method>
+    <method c_name="moo_edit_has_selection" name="has_selection">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_insert_text" name="insert_text">
+      <param name="text" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="where" type="GtkTextIter*" />
+      <doc>Insert @text at position @where or at cursor position if @where is %NULL.</doc>
+    </method>
+    <method c_name="moo_edit_is_empty" name="is_empty">
+      <retval type="gboolean" />
+      <doc>This function returns whether the document is "empty", i.e. is not modified, is untitled, and contains no text.</doc>
+    </method>
+    <method c_name="moo_edit_is_modified" name="is_modified">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_is_untitled" name="is_untitled">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_paste" name="paste">
+      <doc>Paste clipboard contents.</doc>
+    </method>
+    <method c_name="moo_edit_redo" name="redo">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_reload" name="reload">
+      <param allow_none="1" default_value="NULL" name="info" type="MooReloadInfo*" />
+      <param name="error" type="GError**" />
+      <retval type="gboolean">
+        <doc> whether document was successfully reloaded</doc>
+      </retval>
+      <doc>Reload document from disk </doc>
+    </method>
+    <method c_name="moo_edit_replace_selected_lines" name="replace_selected_lines">
+      <param allow_none="1" name="replacement" type="strv">
+        <doc>list of lines to replace selected lines with, maybe empty</doc>
+      </param>
+      <doc>replace selected lines with @replacement. Similar to moo_edit_replace_selected_text(), but selection is extended to include whole lines. If nothing is selected, then line at cursor is replaced.</doc>
+    </method>
+    <method c_name="moo_edit_replace_selected_text" name="replace_selected_text">
+      <param name="replacement" type="const-utf8" />
+      <doc>Replace selected text with string @replacement. If nothing is selected, then @replacement is inserted at cursor.</doc>
+    </method>
+    <method c_name="moo_edit_replace_text" name="replace_text">
+      <param name="start" type="GtkTextIter*" />
+      <param name="end" type="GtkTextIter*" />
+      <param name="text" type="const-utf8" />
+    </method>
+    <method c_name="moo_edit_save" name="save">
+      <param name="error" type="GError**" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_save_as" name="save_as">
+      <param allow_none="1" name="info" type="MooSaveInfo*" />
+      <param name="error" type="GError**" />
+      <retval type="gboolean" />
+      <doc>Save document with new filename and/or encoding. If @info is missing or %NULL then the user is asked for a new filename first.</doc>
+    </method>
+    <method c_name="moo_edit_save_copy" name="save_copy">
+      <param name="info" type="MooSaveInfo*" />
+      <param name="error" type="GError**" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_select_all" name="select_all" />
+    <method c_name="moo_edit_select_lines" name="select_lines">
+      <param name="start" type="index" />
+      <param default_value="-1" name="end" type="index" />
+    </method>
+    <method c_name="moo_edit_select_lines_at_pos" name="select_lines_at_pos">
+      <param name="start" type="const-GtkTextIter*" />
+      <param allow_none="1" default_value="NULL" name="end" type="const-GtkTextIter*" />
+      <doc>Select lines which span the range from @start to @end (including @end position). If @end is %NULL, then it selects single line which contains position @start.</doc>
+    </method>
+    <method c_name="moo_edit_select_range" name="select_range">
+      <param name="start" type="const-GtkTextIter*" />
+      <param name="end" type="const-GtkTextIter*" />
+      <doc>Select text from @start to @end.</doc>
+    </method>
+    <method c_name="moo_edit_set_clean" name="set_clean">
+      <param name="clean" type="gboolean" />
+    </method>
+    <method c_name="moo_edit_set_cursor_pos" name="set_cursor_pos">
+      <param name="pos" type="const-GtkTextIter*" />
+      <doc>Move the text cursor to the given position. No text is selected after this operation, use one of the select* methods if you need to select a range of text.</doc>
+    </method>
+    <method c_name="moo_edit_set_encoding" name="set_encoding">
+      <param name="encoding" type="const-utf8" />
+    </method>
+    <method c_name="moo_edit_set_line_end_type" name="set_line_end_type">
+      <param name="le" type="MooLineEndType" />
+    </method>
+    <method c_name="moo_edit_set_modified" name="set_modified">
+      <param name="modified" type="gboolean" />
+    </method>
+    <method c_name="moo_edit_set_text" name="set_text">
+      <param name="text" type="const-utf8" />
+    </method>
+    <method c_name="moo_edit_uncomment_selection" name="uncomment_selection" />
+    <method c_name="moo_edit_undo" name="undo">
+      <retval type="gboolean" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_EDIT_ACTION" moo.private="1" name="MooEditAction" parent="MooAction" short_name="EditAction">
+    <virtual name="check_sensitive">
+      <retval type="gboolean" />
+    </virtual>
+    <virtual name="check_state" />
+    <virtual name="check_visible">
+      <retval type="gboolean" />
+    </virtual>
+  </class>
+  <class gtype_id="MOO_TYPE_EDIT_BOOKMARK" moo.private="1" name="MooEditBookmark" parent="MooLineMark" short_name="EditBookmark" />
+  <class gtype_id="MOO_TYPE_EDIT_TAB" moo.doc-object-name="tab" name="MooEditTab" parent="GtkVBox" short_name="EditTab">
+    <summary>document tab object</summary>
+    <method c_name="moo_edit_tab_get_active_view" name="get_active_view">
+      <retval type="MooEditView*" />
+    </method>
+    <method c_name="moo_edit_tab_get_doc" name="get_doc">
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_edit_tab_get_views" name="get_views">
+      <retval transfer_mode="full" type="MooEditViewArray*" />
+    </method>
+    <method c_name="moo_edit_tab_get_window" name="get_window">
+      <retval type="MooEditWindow*" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_EDIT_VIEW" moo.doc-object-name="view" name="MooEditView" parent="MooTextView" short_name="EditView">
+    <summary>document view object</summary>
+    <method c_name="moo_edit_view_get_doc" name="get_doc">
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_edit_view_get_editor" name="get_editor">
+      <retval type="MooEditor*" />
+    </method>
+    <method c_name="moo_edit_view_get_tab" name="get_tab">
+      <retval type="MooEditTab*" />
+    </method>
+    <method c_name="moo_edit_view_get_window" name="get_window">
+      <retval type="MooEditWindow*" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_EDIT_WINDOW" moo.doc-object-name="window" name="MooEditWindow" parent="MooWindow" short_name="EditWindow">
+    <summary>document window object</summary>
+    <signal name="before-close">
+      <retval type="MooCloseResponse" />
+    </signal>
+    <signal name="will-close" />
+    <method c_name="moo_edit_window_abort_jobs" moo.lua="0" name="abort_jobs" />
+    <method c_name="moo_edit_window_add_pane" moo.lua="0" name="add_pane">
+      <param name="user_id" type="const-utf8" />
+      <param name="widget" type="GtkWidget*" />
+      <param name="label" type="MooPaneLabel*" />
+      <param name="position" type="MooPanePosition" />
+      <retval type="MooPane*" />
+    </method>
+    <method c_name="moo_edit_window_add_stop_client" moo.lua="0" name="add_stop_client">
+      <param name="client" type="GObject*" />
+    </method>
+    <method c_name="moo_edit_window_close" name="close">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_window_close_all" name="close_all">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_window_get_active_doc" name="get_active_doc">
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_edit_window_get_active_tab" name="get_active_tab">
+      <retval type="MooEditTab*" />
+    </method>
+    <method c_name="moo_edit_window_get_active_view" name="get_active_view">
+      <retval type="MooEditView*" />
+    </method>
+    <method c_name="moo_edit_window_get_docs" name="get_docs">
+      <retval transfer_mode="full" type="MooEditArray*" />
+    </method>
+    <method c_name="moo_edit_window_get_editor" name="get_editor">
+      <retval type="MooEditor*" />
+    </method>
+    <method c_name="moo_edit_window_get_n_tabs" name="get_n_tabs">
+      <retval type="int" />
+    </method>
+    <method c_name="moo_edit_window_get_output" name="get_output">
+      <retval type="GtkWidget*">
+        <doc> an output pane, as #MooCmdView object.</doc>
+      </retval>
+      <doc>Get the output pane, create it if necessary. This function does not open the pane, use #moo_edit_window_present_output for that.</doc>
+    </method>
+    <method c_name="moo_edit_window_get_pane" moo.lua="0" name="get_pane">
+      <param name="user_id" type="const-utf8" />
+      <retval type="GtkWidget*" />
+    </method>
+    <method c_name="moo_edit_window_get_tabs" name="get_tabs">
+      <retval transfer_mode="full" type="MooEditTabArray*" />
+    </method>
+    <method c_name="moo_edit_window_get_views" name="get_views">
+      <retval transfer_mode="full" type="MooEditViewArray*" />
+    </method>
+    <method c_name="moo_edit_window_present_output" name="present_output">
+      <doc>Open the output pane.</doc>
+    </method>
+    <method c_name="moo_edit_window_remove_pane" moo.lua="0" name="remove_pane">
+      <param name="user_id" type="const-utf8" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_edit_window_remove_stop_client" moo.lua="0" name="remove_stop_client">
+      <param name="client" type="GObject*" />
+    </method>
+    <method c_name="moo_edit_window_set_active_doc" name="set_active_doc">
+      <param name="doc" type="MooEdit*" />
+    </method>
+    <method c_name="moo_edit_window_set_active_tab" name="set_active_tab">
+      <param name="tab" type="MooEditTab*" />
+    </method>
+    <method c_name="moo_edit_window_set_active_view" name="set_active_view">
+      <param name="view" type="MooEditView*" />
+    </method>
+    <method c_name="moo_edit_window_show_pane" moo.lua="0" moo.private="1" name="show_pane">
+      <param name="user_id" type="const-utf8" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_EDITOR" name="MooEditor" parent="GObject" short_name="Editor">
+    <summary>editor object</summary>
+    <static-method c_name="moo_editor_create_instance" moo.lua="0" name="create_instance">
+      <param default_value="TRUE" name="embedded" type="gboolean" />
+      <retval transfer_mode="full" type="MooEditor*" />
+    </static-method>
+    <static-method c_name="moo_editor_instance" name="instance">
+      <retval type="MooEditor*" />
+    </static-method>
+    <signal name="after-save">
+      <param name="doc" type="MooEdit*">
+        <doc> the document which was saved on disk</doc>
+      </param>
+      <doc>This signal is emitted after the document has been successfully saved on disk.</doc>
+    </signal>
+    <signal name="before-save">
+      <param name="doc" type="MooEdit*">
+        <doc> the document which is about to be saved on disk</doc>
+      </param>
+      <param name="file" type="GFile*">
+        <doc> the #GFile object which represents saved file</doc>
+      </param>
+      <retval type="MooSaveResponse">
+        <doc> #MOO_SAVE_RESPONSE_CANCEL to cancel saving, #MOO_SAVE_RESPONSE_CONTINUE otherwise.</doc>
+      </retval>
+      <doc>This signal is emitted when the document is going to be saved on disk. Callbacks must return #MOO_SAVE_RESPONSE_CANCEL if document should not be saved, and #MOO_SAVE_RESPONSE_CONTINUE otherwise.  For example, if before saving the file must be checked out from a version control system, a callback can do that and return #MOO_SAVE_RESPONSE_CANCEL if checkout failed.  Callbacks must not modify document content. If you need to modify it before saving, use MooEditor::will-save signal instead. </doc>
+    </signal>
+    <signal name="will-close-doc">
+      <param name="doc" type="MooEdit*">
+        <doc> the document which is about to be closed</doc>
+      </param>
+      <retval type="MooCloseResponse" />
+      <doc>This signal is emitted before the document is closed.</doc>
+    </signal>
+    <signal name="will-close-window">
+      <param name="window" type="MooEditWindow*">
+        <doc> the window which is about to be closed</doc>
+      </param>
+      <doc>This signal is emitted before the window is closed.</doc>
+    </signal>
+    <signal name="will-save">
+      <param name="doc" type="MooEdit*">
+        <doc> the document which is about to be saved on disk</doc>
+      </param>
+      <param name="file" type="GFile*">
+        <doc> the #GFile object which represents saved file</doc>
+      </param>
+      <doc>This signal is emitted when the document is going to be saved on disk, after MooEditor::before-save signal. Callbacks may modify document content at this point.</doc>
+    </signal>
+    <method c_name="moo_editor_close_doc" name="close_doc">
+      <param name="doc" type="MooEdit*" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_editor_close_docs" name="close_docs">
+      <param name="docs" type="MooEditArray*" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_editor_close_window" name="close_window">
+      <param name="window" type="MooEditWindow*" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_editor_create_doc" moo.lua="0" name="create_doc">
+      <param allow_none="1" default_value="NULL" name="filename" type="const-filename" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <param name="error" type="GError**" />
+      <retval type="MooEdit*" />
+      <doc>Create a document instance which can be embedded into arbitrary widget.  This method may not be used in medit (use moo_editor_new_doc(), moo_editor_new_file(), moo_editor_open_file(), moo_editor_open_files(), moo_editor_open_uri(), moo_editor_open_path() instead).</doc>
+    </method>
+    <method c_name="moo_editor_get_active_doc" name="get_active_doc">
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_editor_get_active_view" name="get_active_view">
+      <retval type="MooEditView*" />
+    </method>
+    <method c_name="moo_editor_get_active_window" name="get_active_window">
+      <retval type="MooEditWindow*" />
+    </method>
+    <method c_name="moo_editor_get_doc" name="get_doc">
+      <param name="filename" type="const-filename" />
+      <retval type="MooEdit*" />
+      <doc>Finds open document by filename.</doc>
+    </method>
+    <method c_name="moo_editor_get_doc_for_file" name="get_doc_for_file">
+      <param name="file" type="GFile*" />
+      <retval type="MooEdit*" />
+      <doc>Finds open document by #GFile.</doc>
+    </method>
+    <method c_name="moo_editor_get_doc_for_uri" name="get_doc_for_uri">
+      <param name="uri" type="const-utf8" />
+      <retval type="MooEdit*" />
+      <doc>Finds open document by URI.</doc>
+    </method>
+    <method c_name="moo_editor_get_doc_ui_xml" moo.private="1" name="get_doc_ui_xml">
+      <retval type="MooUiXml*" />
+    </method>
+    <method c_name="moo_editor_get_docs" name="get_docs">
+      <retval transfer_mode="full" type="MooEditArray*" />
+    </method>
+    <method c_name="moo_editor_get_ui_xml" moo.private="1" name="get_ui_xml">
+      <retval type="MooUiXml*" />
+    </method>
+    <method c_name="moo_editor_get_windows" name="get_windows">
+      <retval transfer_mode="full" type="MooEditWindowArray*" />
+    </method>
+    <method c_name="moo_editor_new_doc" name="new_doc">
+      <param allow_none="1" default_value="NULL" name="window" type="MooEditWindow*" />
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_editor_new_file" name="new_file">
+      <param name="info" type="MooOpenInfo*" />
+      <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+      <param name="error" type="GError**" />
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_editor_new_window" name="new_window">
+      <retval type="MooEditWindow*" />
+    </method>
+    <method c_name="moo_editor_open_file" name="open_file">
+      <param name="info" type="MooOpenInfo*" />
+      <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+      <param name="error" type="GError**" />
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_editor_open_files" name="open_files">
+      <param name="files" type="MooOpenInfoArray*" />
+      <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+      <param name="error" type="GError**" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_editor_open_path" kwargs="1" name="open_path">
+      <param name="path" type="const-filename" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <param default_value="-1" name="line" type="int" />
+      <param allow_none="1" default_value="NULL" name="window" type="MooEditWindow*" />
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_editor_open_uri" kwargs="1" name="open_uri">
+      <param name="uri" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <param default_value="-1" name="line" type="int" />
+      <param allow_none="1" default_value="NULL" name="window" type="MooEditWindow*" />
+      <retval type="MooEdit*" />
+    </method>
+    <method c_name="moo_editor_reload" name="reload">
+      <param name="doc" type="MooEdit*" />
+      <param allow_none="1" default_value="NULL" name="info" type="MooReloadInfo*" />
+      <param name="error" type="GError**" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_editor_save" name="save">
+      <param name="doc" type="MooEdit*" />
+      <param name="error" type="GError**" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_editor_save_as" name="save_as">
+      <param name="doc" type="MooEdit*" />
+      <param allow_none="1" default_value="NULL" name="info" type="MooSaveInfo*" />
+      <param name="error" type="GError**" />
+      <retval type="gboolean" />
+      <doc>Save document with new filename and/or encoding. If @info is missing or %NULL then user is asked for new filename first.</doc>
+    </method>
+    <method c_name="moo_editor_save_copy" name="save_copy">
+      <param name="doc" type="MooEdit*" />
+      <param name="info" type="MooSaveInfo*" />
+      <param name="error" type="GError**" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_editor_set_active_doc" name="set_active_doc">
+      <param name="doc" type="MooEdit*" />
+    </method>
+    <method c_name="moo_editor_set_active_view" name="set_active_view">
+      <param name="view" type="MooEditView*" />
+    </method>
+    <method c_name="moo_editor_set_active_window" name="set_active_window">
+      <param name="window" type="MooEditWindow*" />
+    </method>
+    <method c_name="moo_editor_set_doc_type" moo.lua="0" name="set_doc_type">
+      <param name="type" type="GType" />
+    </method>
+    <method c_name="moo_editor_set_ui_xml" moo.private="1" name="set_ui_xml">
+      <param name="xml" type="MooUiXml*" />
+    </method>
+    <method c_name="moo_editor_set_window_type" moo.lua="0" name="set_window_type">
+      <param name="type" type="GType" />
+    </method>
+  </class>
+  <class constructable="1" gtype_id="MOO_TYPE_ENTRY" moo.private="1" name="MooEntry" parent="GtkEntry" short_name="Entry" />
+  <class constructable="1" gtype_id="MOO_TYPE_FILE_DIALOG" moo.private="1" name="MooFileDialog" parent="GObject" short_name="FileDialog" />
+  <class gtype_id="MOO_TYPE_GLADE_XML" moo.private="1" name="MooGladeXml" parent="GObject" short_name="GladeXml" />
+  <class constructable="1" gtype_id="MOO_TYPE_HISTORY_COMBO" moo.private="1" name="MooHistoryCombo" parent="MooCombo" short_name="HistoryCombo" />
+  <class constructable="1" gtype_id="MOO_TYPE_HISTORY_LIST" moo.private="1" name="MooHistoryList" parent="GObject" short_name="HistoryList" />
+  <class gtype_id="MOO_TYPE_HISTORY_MGR" moo.private="1" name="MooHistoryMgr" parent="GObject" short_name="HistoryMgr" />
+  <class constructable="1" gtype_id="MOO_TYPE_LINE_MARK" moo.private="1" name="MooLineMark" parent="GObject" short_name="LineMark" />
+  <class constructable="1" gtype_id="MOO_TYPE_LINE_VIEW" name="MooLineView" parent="MooTextView" short_name="LineView">
+    <method c_name="moo_line_view_clear" name="clear" />
+  </class>
+  <class constructable="1" gtype_id="MOO_TYPE_LUA_STATE" moo.lua="0" moo.private="1" name="MooLuaState" parent="GObject" short_name="LuaState">
+    <method c_name="moo_lua_state_run_string" name="run_string">
+      <param name="string" type="const-utf8" />
+      <retval transfer_mode="full" type="utf8" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_MENU_ACTION" moo.private="1" name="MooMenuAction" parent="MooAction" short_name="MenuAction" />
+  <class constructable="1" gtype_id="MOO_TYPE_MENU_MGR" moo.private="1" name="MooMenuMgr" parent="GObject" short_name="MenuMgr" />
+  <class gtype_id="MOO_TYPE_MENU_TOOL_BUTTON" moo.private="1" name="MooMenuToolButton" parent="GtkToggleToolButton" short_name="MenuToolButton" />
+  <class constructable="1" gtype_id="MOO_TYPE_NOTEBOOK" moo.private="1" name="MooNotebook" parent="GtkNotebook" short_name="Notebook" />
+  <class gtype_id="MOO_TYPE_OPEN_INFO" name="MooOpenInfo" parent="GObject" short_name="OpenInfo">
+    <summary>information for opening a file</summary>
+    <doc>Object which contains filename, character encoding, line number, and options to use in moo_editor_open_file().</doc>
+    <constructor c_name="moo_open_info_new" kwargs="1" name="new">
+      <param name="path" type="const-filename" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <param default_value="-1" name="line" type="index" />
+      <param default_value="0" name="flags" type="MooOpenFlags" />
+      <retval transfer_mode="full" type="MooOpenInfo*" />
+    </constructor>
+    <static-method c_name="moo_open_info_new_file" kwargs="1" name="new_file">
+      <param name="file" type="GFile*" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <param default_value="-1" name="line" type="index" />
+      <param default_value="0" name="flags" type="MooOpenFlags" />
+      <retval transfer_mode="full" type="MooOpenInfo*" />
+    </static-method>
+    <static-method c_name="moo_open_info_new_uri" kwargs="1" name="new_uri">
+      <param name="uri" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <param default_value="-1" name="line" type="index" />
+      <param default_value="0" name="flags" type="MooOpenFlags" />
+      <retval transfer_mode="full" type="MooOpenInfo*" />
+    </static-method>
+    <method c_name="moo_open_info_add_flags" name="add_flags">
+      <param name="flags" type="MooOpenFlags" />
+    </method>
+    <method c_name="moo_open_info_dup" name="dup">
+      <retval transfer_mode="full" type="MooOpenInfo*" />
+    </method>
+    <method c_name="moo_open_info_get_encoding" moo.private="1" name="get_encoding">
+      <retval type="const-utf8" />
+    </method>
+    <method c_name="moo_open_info_get_file" moo.private="1" name="get_file">
+      <retval transfer_mode="full" type="GFile*" />
+    </method>
+    <method c_name="moo_open_info_get_filename" moo.private="1" name="get_filename">
+      <retval transfer_mode="full" type="filename" />
+    </method>
+    <method c_name="moo_open_info_get_flags" name="get_flags">
+      <retval type="MooOpenFlags" />
+    </method>
+    <method c_name="moo_open_info_get_line" name="get_line">
+      <retval type="index" />
+    </method>
+    <method c_name="moo_open_info_get_uri" moo.private="1" name="get_uri">
+      <retval transfer_mode="full" type="utf8" />
+    </method>
+    <method c_name="moo_open_info_set_encoding" moo.private="1" name="set_encoding">
+      <param allow_none="1" name="encoding" type="const-utf8" />
+    </method>
+    <method c_name="moo_open_info_set_flags" name="set_flags">
+      <param name="flags" type="MooOpenFlags" />
+    </method>
+    <method c_name="moo_open_info_set_line" name="set_line">
+      <param name="line" type="index" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_PANE" moo.lua="0" moo.private="1" name="MooPane" parent="GtkObject" short_name="Pane">
+    <method c_name="moo_pane_attach" name="attach" />
+    <method c_name="moo_pane_detach" name="detach" />
+    <method c_name="moo_pane_get_child" name="get_child">
+      <retval type="GtkWidget*" />
+    </method>
+    <method c_name="moo_pane_get_detachable" name="get_detachable">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_pane_get_id" name="get_id">
+      <retval type="const-utf8" />
+    </method>
+    <method c_name="moo_pane_get_index" name="get_index">
+      <retval type="int" />
+    </method>
+    <method c_name="moo_pane_get_label" name="get_label">
+      <retval type="MooPaneLabel*" />
+    </method>
+    <method c_name="moo_pane_get_params" name="get_params">
+      <retval type="MooPaneParams*" />
+    </method>
+    <method c_name="moo_pane_get_removable" name="get_removable">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="moo_pane_open" name="open" />
+    <method c_name="moo_pane_present" name="present" />
+    <method c_name="moo_pane_set_detachable" name="set_detachable">
+      <param name="detachable" type="gboolean" />
+    </method>
+    <method c_name="moo_pane_set_drag_dest" name="set_drag_dest" />
+    <method c_name="moo_pane_set_frame_markup" name="set_frame_markup">
+      <param allow_none="1" name="markup" type="const-utf8" />
+    </method>
+    <method c_name="moo_pane_set_frame_text" name="set_frame_text">
+      <param allow_none="1" name="text" type="const-utf8" />
+    </method>
+    <method c_name="moo_pane_set_label" name="set_label">
+      <param name="label" type="MooPaneLabel*" />
+    </method>
+    <method c_name="moo_pane_set_params" name="set_params">
+      <param name="params" type="MooPaneParams*" />
+    </method>
+    <method c_name="moo_pane_set_removable" name="set_removable">
+      <param name="removable" type="gboolean" />
+    </method>
+    <method c_name="moo_pane_unset_drag_dest" name="unset_drag_dest" />
+  </class>
+  <class constructable="1" gtype_id="MOO_TYPE_PANED" moo.lua="0" moo.private="1" name="MooPaned" parent="GtkBin" short_name="Paned" />
+  <class gtype_id="MOO_TYPE_PLUGIN" moo.lua="0" moo.private="1" name="MooPlugin" parent="GObject" short_name="Plugin">
+    <virtual name="attach_doc">
+      <param name="doc" type="MooEdit*" />
+      <param name="window" type="MooEditWindow*" />
+    </virtual>
+    <virtual name="attach_win">
+      <param name="window" type="MooEditWindow*" />
+    </virtual>
+    <virtual name="create_prefs_page">
+      <retval type="GtkWidget*" />
+    </virtual>
+    <virtual name="deinit" />
+    <virtual name="detach_doc">
+      <param name="doc" type="MooEdit*" />
+      <param name="window" type="MooEditWindow*" />
+    </virtual>
+    <virtual name="detach_win">
+      <param name="window" type="MooEditWindow*" />
+    </virtual>
+    <virtual name="init">
+      <retval type="gboolean" />
+    </virtual>
+    <method c_name="moo_plugin_set_doc_plugin_type" name="set_doc_plugin_type">
+      <param name="type" type="GType" />
+    </method>
+    <method c_name="moo_plugin_set_info" name="set_info">
+      <param name="info" type="MooPluginInfo*" />
+    </method>
+    <method c_name="moo_plugin_set_win_plugin_type" name="set_win_plugin_type">
+      <param name="type" type="GType" />
+    </method>
+  </class>
+  <class constructable="1" gtype_id="MOO_TYPE_PREFS_DIALOG" moo.private="1" name="MooPrefsDialog" parent="GtkDialog" short_name="PrefsDialog">
+    <virtual name="apply" />
+    <virtual name="init" />
+  </class>
+  <class constructable="1" gtype_id="MOO_TYPE_PREFS_PAGE" moo.private="1" name="MooPrefsPage" parent="GtkVBox" short_name="PrefsPage">
+    <virtual name="apply" />
+    <virtual name="init" />
+  </class>
+  <class gtype_id="MOO_TYPE_RELOAD_INFO" name="MooReloadInfo" parent="GObject" short_name="ReloadInfo">
+    <summary>information for reloading a file</summary>
+    <doc>Object which contains character encoding and line number to use in moo_editor_reload().</doc>
+    <constructor c_name="moo_reload_info_new" name="new">
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <param default_value="-1" name="line" type="index" />
+      <retval type="MooReloadInfo*" />
+    </constructor>
+    <method c_name="moo_reload_info_dup" name="dup">
+      <retval transfer_mode="full" type="MooReloadInfo*" />
+    </method>
+    <method c_name="moo_reload_info_get_line" name="get_line">
+      <retval type="index" />
+    </method>
+    <method c_name="moo_reload_info_set_line" name="set_line">
+      <param name="line" type="index" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_SAVE_INFO" name="MooSaveInfo" parent="GObject" short_name="SaveInfo">
+    <summary>information for saving a file</summary>
+    <doc>Object which contains a filename and character encoding to use in moo_editor_save() and moo_editor_save_as().</doc>
+    <constructor c_name="moo_save_info_new" name="new">
+      <param name="path" type="const-filename" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <retval transfer_mode="full" type="MooSaveInfo*" />
+    </constructor>
+    <static-method c_name="moo_save_info_new_file" name="new_file">
+      <param name="file" type="GFile*" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <retval transfer_mode="full" type="MooSaveInfo*" />
+    </static-method>
+    <static-method c_name="moo_save_info_new_uri" name="new_uri">
+      <param name="uri" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="encoding" type="const-utf8" />
+      <retval transfer_mode="full" type="MooSaveInfo*" />
+    </static-method>
+    <method c_name="moo_save_info_dup" name="dup">
+      <retval transfer_mode="full" type="MooSaveInfo*" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_TEXT_BUFFER" moo.private="1" name="MooTextBuffer" parent="GtkTextBuffer" short_name="TextBuffer" />
+  <class constructable="1" gtype_id="MOO_TYPE_TEXT_VIEW" name="MooTextView" parent="GtkTextView" short_name="TextView">
+    <summary>text view object</summary>
+    <method c_name="moo_text_view_set_font_from_string" moo.private="1" name="set_font_from_string">
+      <param name="font" type="const-utf8" />
+    </method>
+    <method c_name="moo_text_view_set_lang_by_id" moo.private="1" name="set_lang_by_id">
+      <param name="lang_id" type="const-utf8" />
+    </method>
+  </class>
+  <class constructable="1" gtype_id="MOO_TYPE_UI_XML" moo.private="1" name="MooUiXml" parent="GObject" short_name="UiXml">
+    <method c_name="moo_ui_xml_add_item" name="add_item">
+      <param name="merge_id" type="guint" />
+      <param name="parent_path" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="name" type="const-utf8" />
+      <param name="action" type="const-utf8" />
+      <param default_value="-1" name="position" type="index" />
+      <retval type="MooUiNode*" />
+    </method>
+    <method c_name="moo_ui_xml_add_ui_from_string" name="add_ui_from_string">
+      <param name="buffer" type="const-utf8" />
+      <param default_value="-1" name="length" type="int" />
+    </method>
+    <method c_name="moo_ui_xml_create_widget" name="create_widget">
+      <param name="type" type="MooUiWidgetType" />
+      <param name="path" type="const-utf8" />
+      <param name="actions" type="MooActionCollection*" />
+      <param name="accel_group" type="GtkAccelGroup*" />
+      <retval type="GtkWidget*" />
+    </method>
+    <method c_name="moo_ui_xml_find_placeholder" name="find_placeholder">
+      <param name="name" type="const-utf8" />
+      <retval type="MooUiNode*" />
+    </method>
+    <method c_name="moo_ui_xml_get_node" name="get_node">
+      <param name="path" type="const-utf8" />
+      <retval type="MooUiNode*" />
+    </method>
+    <method c_name="moo_ui_xml_get_widget" name="get_widget">
+      <param name="widget" type="GtkWidget*" />
+      <param name="path" type="const-utf8" />
+      <retval type="GtkWidget*" />
+    </method>
+    <method c_name="moo_ui_xml_insert" name="insert">
+      <param name="merge_id" type="guint" />
+      <param name="parent" type="MooUiNode*" />
+      <param default_value="-1" name="position" type="index" />
+      <param name="markup" type="const-utf8" />
+    </method>
+    <method c_name="moo_ui_xml_insert_after" name="insert_after">
+      <param name="merge_id" type="guint" />
+      <param name="parent" type="MooUiNode*" />
+      <param name="after" type="MooUiNode*" />
+      <param name="markup" type="const-utf8" />
+    </method>
+    <method c_name="moo_ui_xml_insert_before" name="insert_before">
+      <param name="merge_id" type="guint" />
+      <param name="parent" type="MooUiNode*" />
+      <param name="before" type="MooUiNode*" />
+      <param name="markup" type="const-utf8" />
+    </method>
+    <method c_name="moo_ui_xml_insert_markup" name="insert_markup">
+      <param name="merge_id" type="guint" />
+      <param name="parent_path" type="const-utf8" />
+      <param default_value="-1" name="position" type="index" />
+      <param name="markup" type="const-utf8" />
+    </method>
+    <method c_name="moo_ui_xml_insert_markup_after" name="insert_markup_after">
+      <param name="merge_id" type="guint" />
+      <param name="parent_path" type="const-utf8" />
+      <param name="after_name" type="const-utf8" />
+      <param name="markup" type="const-utf8" />
+    </method>
+    <method c_name="moo_ui_xml_insert_markup_before" name="insert_markup_before">
+      <param name="merge_id" type="guint" />
+      <param name="parent_path" type="const-utf8" />
+      <param name="before_name" type="const-utf8" />
+      <param name="markup" type="const-utf8" />
+    </method>
+    <method c_name="moo_ui_xml_new_merge_id" name="new_merge_id">
+      <retval type="guint" />
+    </method>
+    <method c_name="moo_ui_xml_remove_node" name="remove_node">
+      <param name="node" type="MooUiNode*" />
+    </method>
+    <method c_name="moo_ui_xml_remove_ui" name="remove_ui">
+      <param name="merge_id" type="guint" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_WIN_PLUGIN" moo.lua="0" moo.private="1" name="MooWinPlugin" parent="GObject" short_name="WinPlugin">
+    <virtual name="create">
+      <retval type="gboolean" />
+    </virtual>
+    <virtual name="destroy" />
+    <method c_name="moo_win_plugin_get_plugin" name="get_plugin">
+      <retval type="MooPlugin*" />
+    </method>
+    <method c_name="moo_win_plugin_get_window" name="get_window">
+      <retval type="MooEditWindow*" />
+    </method>
+  </class>
+  <class gtype_id="MOO_TYPE_WINDOW" name="MooWindow" parent="GtkWindow" short_name="Window">
+    <summary>window object</summary>
+  </class>
+  <boxed gtype_id="MOO_TYPE_PANE_LABEL" moo.lua="0" moo.private="1" name="MooPaneLabel" short_name="PaneLabel">
+    <constructor c_name="moo_pane_label_new" name="new">
+      <param allow_none="1" default_value="NULL" name="icon_name" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="icon_pixbuf" type="GdkPixbuf*" />
+      <param allow_none="1" default_value="NULL" name="label_text" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="window_title" type="const-utf8" />
+      <retval type="MooPaneLabel*" />
+    </constructor>
+  </boxed>
+  <boxed gtype_id="MOO_TYPE_PANE_PARAMS" moo.lua="0" moo.private="1" name="MooPaneParams" short_name="PaneParams">
+    <constructor c_name="moo_pane_params_new" name="new">
+      <param name="window_position" type="GdkRectangle*" />
+      <param name="detached" type="gboolean" />
+      <param name="maximized" type="gboolean" />
+      <param name="keep_on_top" type="gboolean" />
+      <retval type="MooPaneParams*" />
+    </constructor>
+  </boxed>
+  <boxed gtype_id="MOO_TYPE_PLUGIN_INFO" moo.lua="0" moo.private="1" name="MooPluginInfo" short_name="PluginInfo">
+    <constructor c_name="moo_plugin_info_new" name="new">
+      <param name="name" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="description" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="author" type="const-utf8" />
+      <param allow_none="1" default_value="NULL" name="version" type="const-utf8" />
+      <retval type="MooPluginInfo*" />
+    </constructor>
+  </boxed>
+  <boxed gtype_id="MOO_TYPE_PLUGIN_PARAMS" moo.lua="0" moo.private="1" name="MooPluginParams" short_name="PluginParams">
+    <constructor c_name="moo_plugin_params_new" name="new">
+      <param default_value="TRUE" name="enabled" type="gboolean" />
+      <param default_value="TRUE" name="visible" type="gboolean" />
+      <retval type="MooPluginParams*" />
+    </constructor>
+  </boxed>
+  <pointer gtype_id="MOO_TYPE_UI_NODE" moo.private="1" name="MooUiNode" short_name="UiNode">
+    <method c_name="moo_ui_node_get_path" name="get_path">
+      <retval transfer_mode="full" type="utf8" />
+    </method>
+    <method c_name="moo_ui_node_get_child" name="get_child">
+      <param name="name" type="const-utf8" />
+      <retval type="MooUiNode*" />
+    </method>
+  </pointer>
+  <enum gtype_id="MOO_TYPE_ACTION_CHECK_TYPE" moo.lua="0" moo.private="1" name="MooActionCheckType" short_name="ActionCheckType">
+    <value name="MOO_ACTION_CHECK_SENSITIVE" />
+    <value name="MOO_ACTION_CHECK_VISIBLE" />
+    <value name="MOO_ACTION_CHECK_ACTIVE" />
+  </enum>
+  <enum gtype_id="MOO_TYPE_CLOSE_RESPONSE" name="MooCloseResponse" short_name="CloseResponse">
+    <value name="MOO_CLOSE_RESPONSE_CONTINUE" />
+    <value name="MOO_CLOSE_RESPONSE_CANCEL" />
+  </enum>
+  <flags gtype_id="MOO_TYPE_EDIT_STATUS" name="MooEditStatus" short_name="EditStatus">
+    <value name="MOO_EDIT_STATUS_NORMAL">
+      <doc> none of the below flags, it is equal to &lt;code&gt;0&lt;/code&gt;.</doc>
+    </value>
+    <value name="MOO_EDIT_STATUS_MODIFIED_ON_DISK">
+      <doc> file has been modified on disk outside the program.</doc>
+    </value>
+    <value name="MOO_EDIT_STATUS_DELETED">
+      <doc> file has been deleted from disk.</doc>
+    </value>
+    <value name="MOO_EDIT_STATUS_CHANGED_ON_DISK">
+      <doc> file has been modified on disk outside the program or deleted from disk, it is equal to &lt;code&gt;#MOO_EDIT_STATUS_MODIFIED_ON_DISK | #MOO_EDIT_STATUS_DELETED&lt;/code&gt;.</doc>
+    </value>
+    <value name="MOO_EDIT_STATUS_MODIFIED">
+      <doc> document content is modifed and not saved yet.</doc>
+    </value>
+    <value name="MOO_EDIT_STATUS_NEW">
+      <doc> file doesn't exist on disk yet. This is the state of documents opened from command line when requested file doesn't exist.</doc>
+    </value>
+    <value name="MOO_EDIT_STATUS_CLEAN">
+      <doc> doesn't prompt on close, even if it's modified.</doc>
+    </value>
+  </flags>
+  <enum gtype_id="MOO_TYPE_LINE_END_TYPE" name="MooLineEndType" short_name="LineEndType">
+    <value name="MOO_LE_UNIX">
+      <doc> UNIX line endings (&lt;code&gt;\n&lt;/code&gt;)</doc>
+    </value>
+    <value name="MOO_LE_WIN32">
+      <doc> Windows line endings (&lt;code&gt;\r\n&lt;/code&gt;)</doc>
+    </value>
+    <value name="MOO_LE_MAC">
+      <doc> classic Mac line endings (&lt;code&gt;\r&lt;/code&gt;)</doc>
+    </value>
+    <value name="MOO_LE_NATIVE">
+      <doc> equal to #MOO_LE_UNIX on UNIX systems (including Mac OS X) and #MOO_LE_WIN32 on Windows</doc>
+    </value>
+  </enum>
+  <flags gtype_id="MOO_TYPE_OPEN_FLAGS" name="MooOpenFlags" short_name="OpenFlags">
+    <value name="MOO_OPEN_FLAG_NEW_WINDOW">
+      <doc> open document in a new window</doc>
+    </value>
+    <value name="MOO_OPEN_FLAG_NEW_TAB">
+      <doc> open document in existing window (default)</doc>
+    </value>
+    <value name="MOO_OPEN_FLAG_RELOAD">
+      <doc> reload document if it's already open</doc>
+    </value>
+    <value name="MOO_OPEN_FLAG_CREATE_NEW">
+      <doc> if file doesn't exist on disk, create a new document</doc>
+    </value>
+  </flags>
+  <enum gtype_id="MOO_TYPE_PANE_POSITION" moo.private="1" name="MooPanePosition" short_name="PanePosition">
+    <value name="MOO_PANE_POS_LEFT" />
+    <value name="MOO_PANE_POS_RIGHT" />
+    <value name="MOO_PANE_POS_TOP" />
+    <value name="MOO_PANE_POS_BOTTOM" />
+  </enum>
+  <enum gtype_id="MOO_TYPE_SAVE_CHANGES_RESPONSE" name="MooSaveChangesResponse" short_name="SaveChangesResponse">
+    <value name="MOO_SAVE_CHANGES_RESPONSE_CANCEL">
+      <doc> cancel current operation, don't save</doc>
+    </value>
+    <value name="MOO_SAVE_CHANGES_RESPONSE_SAVE">
+      <doc> do save the file</doc>
+    </value>
+    <value name="MOO_SAVE_CHANGES_RESPONSE_DONT_SAVE">
+      <doc> do not save the file and continue</doc>
+    </value>
+    <doc>Values returned by moo_save_changes_dialog().</doc>
+  </enum>
+  <enum gtype_id="MOO_TYPE_SAVE_RESPONSE" name="MooSaveResponse" short_name="SaveResponse">
+    <value name="MOO_SAVE_RESPONSE_CONTINUE">
+      <doc> continue invoking before-save callbacks, save if there aren't any left</doc>
+    </value>
+    <value name="MOO_SAVE_RESPONSE_CANCEL">
+      <doc> stop invoking before-save callbacks and do not save</doc>
+    </value>
+    <doc>Values returned by MooEditor::before-save and MooEdit::before-save callbacks.</doc>
+  </enum>
+  <enum gtype_id="MOO_TYPE_UI_WIDGET_TYPE" moo.private="1" name="MooUiWidgetType" short_name="UiWidgetType" />
+  <function c_name="moo_dgettext" moo.lua="0" name="dgettext">
+    <param name="domain" type="const-utf8" />
+    <param name="string" type="const-utf8" />
+    <retval type="const-utf8" />
+  </function>
+  <function c_name="moo_edit_window_set_action_filter" moo.lua="0" name="edit_window_set_action_filter">
+    <param name="action_id" type="const-utf8" />
+    <param name="type" type="MooActionCheckType" />
+    <param name="filter_string" type="const-utf8" />
+  </function>
+  <function c_name="moo_error_dialog" name="error_dialog">
+    <param name="text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="secondary_text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+  </function>
+  <function c_name="moo_get_data_and_lib_subdirs" moo.private="1" name="get_data_and_lib_subdirs">
+    <param name="subdir" type="const-utf8" />
+    <retval transfer_mode="full" type="strv" />
+  </function>
+  <function c_name="moo_get_data_dirs" moo.private="1" name="get_data_dirs">
+    <retval transfer_mode="full" type="strv" />
+  </function>
+  <function c_name="moo_get_data_subdirs" moo.private="1" name="get_data_subdirs">
+    <param name="subdir" type="const-utf8" />
+    <retval transfer_mode="full" type="strv" />
+  </function>
+  <function c_name="moo_get_lib_dirs" moo.private="1" name="get_lib_dirs">
+    <retval transfer_mode="full" type="strv" />
+  </function>
+  <function c_name="moo_get_lib_subdirs" moo.private="1" name="get_lib_subdirs">
+    <param name="subdir" type="const-utf8" />
+    <retval transfer_mode="full" type="strv" />
+  </function>
+  <function c_name="moo_get_named_user_data_file" moo.private="1" name="get_named_user_data_file">
+    <param name="basename" type="const-utf8" />
+    <retval transfer_mode="full" type="filename" />
+  </function>
+  <function c_name="moo_get_sys_data_subdirs" moo.private="1" name="get_sys_data_subdirs">
+    <param name="subdir" type="const-utf8" />
+    <retval transfer_mode="full" type="strv" />
+  </function>
+  <function c_name="moo_get_user_cache_file" moo.private="1" name="get_user_cache_file">
+    <param name="basename" type="const-utf8" />
+    <retval transfer_mode="full" type="filename" />
+  </function>
+  <function c_name="moo_get_user_data_dir" moo.private="1" name="get_user_data_dir">
+    <retval transfer_mode="full" type="filename" />
+  </function>
+  <function c_name="moo_get_user_data_file" moo.private="1" name="get_user_data_file">
+    <param name="basename" type="const-utf8" />
+    <retval transfer_mode="full" type="filename" />
+  </function>
+  <function c_name="moo_gettext" moo.lua="0" name="gettext">
+    <param name="string" type="const-utf8" />
+    <retval type="const-utf8" />
+  </function>
+  <function c_name="moo_info_dialog" name="info_dialog">
+    <param name="text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="secondary_text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+  </function>
+  <function c_name="moo_overwrite_file_dialog" name="overwrite_file_dialog">
+    <param name="display_name" type="const-utf8" />
+    <param name="display_dirname" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+    <retval type="gboolean" />
+  </function>
+  <function c_name="moo_plugin_register" moo.lua="0" moo.private="1" name="plugin_register">
+    <param name="id" type="const-utf8" />
+    <param name="type" type="GType" />
+    <param name="info" type="const-MooPluginInfo*" />
+    <param allow_none="1" default_value="NULL" name="params" type="const-MooPluginParams*" />
+    <retval type="gboolean" />
+  </function>
+  <function c_name="moo_prefs_get_bool" name="prefs_get_bool">
+    <param name="key" type="const-utf8" />
+    <retval type="gboolean" />
+  </function>
+  <function c_name="moo_prefs_get_file" name="prefs_get_file">
+    <param name="key" type="const-utf8" />
+    <retval transfer_mode="full" type="GFile*" />
+  </function>
+  <function c_name="moo_prefs_get_filename" name="prefs_get_filename">
+    <param name="key" type="const-utf8" />
+    <retval type="const-filename" />
+  </function>
+  <function c_name="moo_prefs_get_int" name="prefs_get_int">
+    <param name="key" type="const-utf8" />
+    <retval type="int" />
+  </function>
+  <function c_name="moo_prefs_get_string" name="prefs_get_string">
+    <param name="key" type="const-utf8" />
+    <retval type="const-cstring" />
+  </function>
+  <function c_name="moo_prefs_new_key_bool" name="prefs_new_key_bool">
+    <param name="key" type="const-utf8" />
+    <param default_value="FALSE" name="default_val" type="gboolean" />
+  </function>
+  <function c_name="moo_prefs_new_key_int" name="prefs_new_key_int">
+    <param name="key" type="const-utf8" />
+    <param default_value="0" name="default_val" type="int" />
+  </function>
+  <function c_name="moo_prefs_new_key_string" name="prefs_new_key_string">
+    <param name="key" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="default_val" type="const-cstring" />
+  </function>
+  <function c_name="moo_prefs_set_bool" name="prefs_set_bool">
+    <param name="key" type="const-utf8" />
+    <param name="val" type="gboolean" />
+  </function>
+  <function c_name="moo_prefs_set_file" name="prefs_set_file">
+    <param name="key" type="const-utf8" />
+    <param allow_none="1" name="val" type="GFile*" />
+  </function>
+  <function c_name="moo_prefs_set_filename" name="prefs_set_filename">
+    <param name="key" type="const-utf8" />
+    <param allow_none="1" name="val" type="const-filename" />
+  </function>
+  <function c_name="moo_prefs_set_int" name="prefs_set_int">
+    <param name="key" type="const-utf8" />
+    <param name="val" type="int" />
+  </function>
+  <function c_name="moo_prefs_set_string" name="prefs_set_string">
+    <param name="key" type="const-utf8" />
+    <param allow_none="1" name="val" type="const-cstring" />
+  </function>
+  <function c_name="moo_question_dialog" name="question_dialog">
+    <param name="text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="secondary_text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+    <param default_value="GTK_RESPONSE_OK" name="default_response" type="GtkResponseType" />
+    <retval type="gboolean" />
+  </function>
+  <function c_name="moo_save_changes_dialog" name="save_changes_dialog">
+    <param name="display_name" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+    <retval type="MooSaveChangesResponse" />
+  </function>
+  <function c_name="moo_spin_main_loop" name="spin_main_loop">
+    <param name="sec" type="double" />
+  </function>
+  <function c_name="moo_tempdir" name="tempdir">
+    <retval transfer_mode="full" type="filename" />
+    <doc>Return the path of &amp;medit; temporary file directory. This directory is created automatically and is removed on exit. It is unique among all &amp;medit; instances. </doc>
+  </function>
+  <function c_name="moo_tempnam" name="tempnam">
+    <param allow_none="1" default_value="NULL" name="extension" type="const-filename" />
+    <retval transfer_mode="full" type="filename" />
+    <doc>Generate a unique filename for a temporary file. Generated filename is located inside directory returned by moo_tempdir(), and it will be automatically removed on exit. </doc>
+  </function>
+  <function c_name="moo_test_assert_impl" moo.private="1" name="test_assert_impl">
+    <param name="passed" type="gboolean" />
+    <param name="text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="file" type="const-utf8" />
+    <param default_value="-1" name="line" type="int" />
+  </function>
+  <function c_name="moo_test_set_silent_messages" moo.private="1" name="test_set_silent_messages">
+    <param name="silent" type="gboolean" />
+    <retval type="gboolean" />
+  </function>
+  <function c_name="moo_warning_dialog" name="warning_dialog">
+    <param name="text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="secondary_text" type="const-utf8" />
+    <param allow_none="1" default_value="NULL" name="parent" type="GtkWidget*" />
+  </function>
+  <function c_name="moo_window_class_add_action" moo.lua="0" moo.private="1" name="window_class_add_action" />
+  <function c_name="moo_window_class_find_action" moo.lua="0" moo.private="1" name="window_class_find_action">
+    <param name="klass" type="MooWindowClass*" />
+    <param name="id" type="const-utf8" />
+    <retval type="gboolean" />
+  </function>
+  <function c_name="moo_window_class_remove_action" moo.lua="0" moo.private="1" name="window_class_remove_action">
+    <param name="klass" type="MooWindowClass*" />
+    <param name="id" type="const-utf8" />
+  </function>
+</module>

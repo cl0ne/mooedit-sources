@@ -1,0 +1,50 @@
+# Duit PPRT siapa yang kebas????      
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Hasbullah Bin Pit (sebol) <sebol@ikhlas.com>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2004-08-26 07:16+0730\n"
+"Last-Translator: Hasbullah Bin Pit <sebol@my-penguin.org>\n"
+"Language-Team: Projek Gabai <gabai-penyumbang@lists.sourceforge.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Comment"
+msgstr "Komen"
+
+msgid "Data Type"
+msgstr "Jenis Data"
+
+msgid "Keyword"
+msgstr "katakunci"
+
+msgid "Language specification directories"
+msgstr "Direktori spesifikasi bahasa"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Senarai direktori dimana fail spefisikasi bahasa /.lang)  diletak"
+
+msgid "Others"
+msgstr "Lain-lain"
+
+msgid "Preprocessor"
+msgstr "Pra Pemproses"
+
+msgid "Scripts"
+msgstr "Skrip"
+
+msgid "Sources"
+msgstr "Sumber"
+
+msgid "String"
+msgstr "Rentetan"
+
+msgid "gettext translation"
+msgstr "terjemahan gettext"
+

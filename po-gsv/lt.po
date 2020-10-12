@@ -1,0 +1,283 @@
+# translation of lt.po to Lithuanian
+# Lithuanian translation of gtksourceview.
+# Copyright (C) 2003-2006, 2007, 2008 Free Software Foundation, Inc.
+#
+#
+# Tomas Kuliavas <tokul@users.sourceforge.net>, 2003.
+# Žygimantas Beručka <zygis@gnome.org>, 2003-2006.
+# Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008.
+# Vytautas Liuolia <vytautas.liuolia@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: lt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-05 11:13+0200\n"
+"Last-Translator: Gintautas Miliauskas <gintautas@miliauskas.lt>\n"
+"Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "Background"
+msgstr "Fonas"
+
+msgid "Background color"
+msgstr "Fono spalva"
+
+msgid "Background set"
+msgstr "Nustatyta fono spalva"
+
+msgid "Blue based color scheme"
+msgstr "Mėlynos pagrindo spalvų schema"
+
+msgid "Bold"
+msgstr "Pusjuodis"
+
+msgid "Bold set"
+msgstr "Nustatytas pusjuodis šriftas"
+
+msgid "Boolean value"
+msgstr "Loginė reikšmė"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC antraštė"
+
+msgid "CG Shader Language"
+msgstr "CG šešėliavimo kalba"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Nepavyko sukurti reguliariojo reiškinio perėjimams, sintaksės ryškinimas bus lėtesnis nei įprasta.\n"
+"Klaida buvo: %s"
+
+msgid "Classic"
+msgstr "Klasikinis"
+
+msgid "Classic color scheme"
+msgstr "Klasikinė spalvų schema"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate redaktoriuje naudojama spalvų schema"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Spalvų schema, naudojanti Tango paletę"
+
+msgid "Comment"
+msgstr "Komentaras"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tamsi spalvų schema, naudojanti Tango paletę"
+
+msgid "Data Type"
+msgstr "Duomenų tipas"
+
+msgid "Decimal number"
+msgstr "Dešimtainis skaičius"
+
+msgid "Defaults"
+msgstr "Standartinis(ė)"
+
+msgid "Diff"
+msgstr "Pasikeitimai"
+
+msgid "Dos Batch"
+msgstr "Dos komandų failas"
+
+msgid "Error"
+msgstr "Klaida"
+
+msgid "Escaped Character"
+msgstr "Simbolis kaitos sekoje"
+
+msgid "Floating point number"
+msgstr "Skaičius su slankiu kableliu"
+
+msgid "Foreground"
+msgstr "Priekinis planas"
+
+msgid "Foreground color"
+msgstr "Priekinio plano spalva"
+
+msgid "Foreground set"
+msgstr "Nustatyta priekinio plano spalva"
+
+msgid "Hexadecimal number"
+msgstr "Šešioliktainis skaičius"
+
+msgid "Hidden"
+msgstr "Paslėptas"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Vienos eilutės ryškinimas užtruko per ilgai, sintaksės ryškinimas išjungiamas"
+
+msgid "Identifier"
+msgstr "Identifikatorius"
+
+msgid "Italic"
+msgstr "Kursyvas"
+
+msgid "Italic set"
+msgstr "Nustatytas kursyvas"
+
+msgid "Keyword"
+msgstr "Raktas"
+
+msgid "Language id"
+msgstr "Kalbos identifikatorius"
+
+msgid "Language ids"
+msgstr "Kalbos identifikatoriai"
+
+msgid "Language name"
+msgstr "Kalbos pavadinimas"
+
+msgid "Language section"
+msgstr "Kalbos sekcija"
+
+msgid "Language specification directories"
+msgstr "Kalbų specifikacijų aplankai"
+
+msgid "Line background"
+msgstr "Linijos fonas"
+
+msgid "Line background color"
+msgstr "Linijos fono spalva"
+
+msgid "Line background set"
+msgstr "Nustatyta eilutės fono spalva"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Aplankų ir failų, kuriuose yra stilių schemos, vieta"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Aplankų, kuriuose yra kalbų specifikacijų failo (.lang), vieta"
+
+msgid "List of the ids of the available languages"
+msgstr "Prieinamų kalbų identifikatorių ąrašas"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Prieinamų stilių schemų identifikatorių sąrašas"
+
+msgid "Markup"
+msgstr "Žymėjimas"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Trūksta kalbos apibrėžimo (id = \"%s\".)"
+
+msgid "OpenGL Shading Language"
+msgstr "OpenGL šešėliavimo kalba"
+
+msgid "Operator"
+msgstr "Operatorius"
+
+msgid "Others"
+msgstr "Kiti"
+
+msgid "Preprocessor"
+msgstr "Apdorojanti programa"
+
+msgid "Prolog"
+msgstr "Prologas"
+
+msgid "RPM spec"
+msgstr "RPM specifikacija"
+
+msgid "Scheme ids"
+msgstr "Schemų identifikatoriai"
+
+msgid "Scientific"
+msgstr "Mokslinis"
+
+msgid "Scripts"
+msgstr "Scenarijai"
+
+msgid "Sources"
+msgstr "Pradiniai tekstai"
+
+msgid "Strikethrough"
+msgstr "Perbraukimas"
+
+msgid "Strikethrough set"
+msgstr "Nustatytas perbraukimas"
+
+msgid "String"
+msgstr "Seka"
+
+msgid "Style scheme description"
+msgstr "Stiliaus schemos aprašas"
+
+msgid "Style scheme filename"
+msgstr "Stiliaus schemos failo pavadinimas"
+
+msgid "Style scheme id"
+msgstr "Stiliaus schemos identifikatorius"
+
+msgid "Style scheme name"
+msgstr "Stiliaus schemos pavadinimas"
+
+msgid "Style scheme search path"
+msgstr "Vietos, kuriose ieškoti stilių schemų"
+
+msgid "Underline"
+msgstr "Pabraukimas"
+
+msgid "Underline set"
+msgstr "Nustatytas pabraukimas"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Nežinomas identifikatorius „%s“ reguliariajame reiškinyje „%s“"
+
+msgid "Whether background color is set"
+msgstr "Ar nustatyta fono spalva"
+
+msgid "Whether bold attribute is set"
+msgstr "Ar nustatytas pusjuodžio šrifto požymis"
+
+msgid "Whether foreground color is set"
+msgstr "Ar nustatyta priekinio plano spalva"
+
+msgid "Whether italic attribute is set"
+msgstr "Ar nustatytas kursyvo požymis"
+
+msgid "Whether line background color is set"
+msgstr "Ar nustatyta eilutės fono spalva"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Ar nustatytas perbraukimo požymis"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Ar slėpti kalbą nuo naudotojo"
+
+msgid "Whether underline attribute is set"
+msgstr "Ar nustatytas pabraukimo požymis"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "kontekstas „%s“ negali turėti komandos \\%%{...@start}"
+
+msgid "duplicated context id '%s'"
+msgstr "susidvejinęs konteksto identifikatorius „%s“"
+
+msgid "gettext translation"
+msgstr "gettext vertimas"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "reguliariajame reiškinyje „%s“: kartotinės nuorodos nepalaikomos"
+
+msgid "invalid context reference '%s'"
+msgstr "netaisyklinga konteksto nuoroda „%s“"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "stiliaus nepaisymas naudojamas su pakaitinio konteksto nuoroda kalboje „%s“ nuorodoje „%s“"
+
+msgid "unknown context '%s'"
+msgstr "nežinomas kontekstas „%s“"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "\\C naudojimas nepalaikomas kalbų aprašyme"
+

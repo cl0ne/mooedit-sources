@@ -1,0 +1,12 @@
+build/
+junk/
+plat/
+tools/
+moo/mooedit/langs/
+moo/gtksourceview/
+moo/eggsmclient/
+
+doc/txt2tags/txt2tags.py
+moo/mooutils/moofontsel.c
+moo/moopython/plugins/pyproject/
+moo/plugins/old/

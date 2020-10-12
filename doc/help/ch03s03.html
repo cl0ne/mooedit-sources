@@ -1,0 +1,208 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Shell scripts</title>
+<link rel="stylesheet" type="text/css" href="medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit manual">
+<link rel="up" href="ch03.html" title="Chapter 3. User-defined tools">
+<link rel="prev" href="ch03s02.html" title="Storing tools in files">
+<link rel="next" href="ch03s04.html" title="Lua scripts">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Shell scripts</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch03s02.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 3. User-defined tools</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch03s04.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="section-user-tools-shell"></a>Shell scripts</h2></div></div></div>
+<p>
+Shell script user tools execute command entered in the <span class="guilabel">Command</span>
+text field using default user shell on Unix systems or <span class="command"><strong>cmd.exe</strong></span> on Windows.
+</p>
+<p>
+Its input and output are specified by the following controls:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+<em class="parameter"><code><span class="guilabel">Input</span></code></em> entry specifies what text from the document should be passed to the command.
+    The text is passed via command's standard input, except for <em class="parameter"><code>Document copy</code></em> case.
+    <div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>None</code></em></span></p></td>
+<td>no input text.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Selected lines</code></em></span></p></td>
+<td>the lines containing selection or the line containing the cursor in
+        case when no text is selected.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Selection</code></em></span></p></td>
+<td>exact selected text. This will be different from <em class="parameter"><code>Selected lines</code></em>
+        if selection does not span whole lines of the document, for instance if it is a single word.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Whole document</code></em></span></p></td>
+<td>whole document contents.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Document copy</code></em></span></p></td>
+<td>document contents will be saved to a temporary file and the file path will be stored
+        in <code class="envar">INPUT_FILE</code> environment variable. No text will be passed to the command via standard
+        input.</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+<li class="listitem">
+<em class="parameter"><code><span class="guilabel">Output</span></code></em> entry specifies how the standard output of the command should be redirected.
+    <div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>None</code></em></span></p></td>
+<td>the command output will be discarded.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>None, asynchronous</code></em></span></p></td>
+<td>the command output will be discarded, and the command will be executed in background.
+     Use this if you need to launch some external program like a web browser.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Output pane</code></em></span></p></td>
+<td>the command output will be displayed in an output pane. This is useful for running programs
+     like compilers, where you want to see the output.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Insert into the document</code></em></span></p></td>
+<td>output will be inserted into the current document at the cursor position. It will replace the
+     text used as an input, if any.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>New document</code></em></span></p></td>
+<td>new document will be created and the command output will be inserted into it.</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+<li class="listitem">
+<em class="parameter"><code><span class="guilabel">Filter</span></code></em> combo. If the output pane is used, then it can be passed through a
+    <em class="parameter"><code>filter</code></em>: the filter can match filenames and line numbers, so when you click
+    the text in the output pane it will open the corresponding file. This is used for compilers and
+    similar commands, which output locations of errors in processed files.
+  </li>
+</ul></div>
+<p>
+</p>
+<p>
+Shell script user tools have a number of environment variables set.
+<code class="envar">APP_PID</code> variable is set so that opening a file in the same instance
+of <span class="application">medit</span> is as simple as <code class="code">medit filename</code> (on the other hand, you will
+have to use command line options if you need to run a new <span class="application">medit</span> instance). The
+following environment variables are set when scripts are executed:
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="envar">APP_PID</code></span></p></td>
+<td>current process id.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">DOC</code></span></p></td>
+<td>document basename ("<code class="filename">file.c</code>" for file <code class="filename">/home/user/file.c</code>).</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">DOC_DIR</code></span></p></td>
+<td>document directory ("<code class="filename">/home/user</code>" for file <code class="filename">/home/user/file.c</code>). Full file path is
+    <code class="filename"><code class="envar">$DOC_DIR</code>/<code class="envar">$DOC</code></code>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">DOC_BASE</code></span></p></td>
+<td>basename without extension ("<code class="filename">file</code>" for file <code class="filename">/home/user/file.c</code>).</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">DOC_EXT</code></span></p></td>
+<td>document filename extension including the period ("<code class="filename">.c</code>" for file
+    <code class="filename">/home/user/file.c</code>). Basename is always
+    <code class="filename"><code class="envar">$DOC_BASE</code><code class="envar">$DOC_EXT</code></code>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">DOC_PATH</code></span></p></td>
+<td>full document path.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">LINE</code></span></p></td>
+<td>
+<code class="constant">1</code>-based number of the line containing cursor.
+    For example, if cursor is at the first line then <code class="envar">LINE</code> will be
+    set to <code class="constant">1</code>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">LINE0</code></span></p></td>
+<td>
+<code class="constant">0</code>-based number of the line containing cursor.
+    For example, if cursor is at the first line then <code class="envar">LINE0</code> will be
+    set to <code class="constant">0</code>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">DATA_DIR</code></span></p></td>
+<td>user data directory (<code class="filename">$HOME/.local/share/medit-1/</code> on Unix systems).</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="envar">INPUT_FILE</code></span></p></td>
+<td>if <em class="parameter"><code>input</code></em> was set to "Document copy" then this is set to
+    full path of the temporary file containing document text.</td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+<p>
+Additionally, all shell commands which run inside <span class="application">medit</span> will have
+<code class="filename"><code class="envar">DATA_DIR</code>/scripts</code>
+directories in <code class="envar">$PATH</code>, so you may place some <span class="application">medit</span>-specific programs
+or scripts into <code class="filename"><code class="envar">DATA_DIR</code>/scripts/</code> to be used from shell script tools.
+</p>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch03s02.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="ch03.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch03s04.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Storing tools in files </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> Lua scripts</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

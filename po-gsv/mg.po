@@ -1,0 +1,65 @@
+# MALAGASY TRANSLATION OF GTKSOURCEVIEW.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Thierry Randrianiriana <randrianiriana@gmail.com>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: GTKSOURCEVIEW 2.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2006-08-04 22:04+0300\n"
+"Last-Translator: Fano Rajaonarisoa <rajfanhar@yahoo.fr>\n"
+"Language-Team: MALAGASY <i18n-malagasy-gnomeL@gna.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ChangeLog"
+msgstr "Raki-panovana"
+
+msgid "Comment"
+msgstr "Fanamarihana"
+
+msgid "Data Type"
+msgstr "Karazan'ilay data"
+
+msgid "Keyword"
+msgstr "Teny fahatra"
+
+msgid "Language specification directories"
+msgstr "Lahatahirin'ny fifaritry ny teny"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Lisi-dahatahiry misy ny rakitry ny fifaritry ny teny (.lang)"
+
+msgid "Markup"
+msgstr "Fanampin-teny"
+
+msgid "Octave"
+msgstr "Havaloana"
+
+msgid "Operator"
+msgstr "Mpikirakira"
+
+msgid "Others"
+msgstr "Hafa"
+
+msgid "Preprocessor"
+msgstr "Préprocesseur"
+
+msgid "Scheme"
+msgstr "Amboaran-doko"
+
+msgid "Scripts"
+msgstr "Baiko soratra"
+
+msgid "Sources"
+msgstr "Loharano"
+
+msgid "String"
+msgstr "Laha-daza"
+
+msgid "gettext translation"
+msgstr "Dika teny gettext"
+

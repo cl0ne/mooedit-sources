@@ -1,0 +1,345 @@
+# translation of gtksourceview.master.kn.po to Kannada
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Shankar Prasad <svenkate@redhat.com>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.master.kn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-09-19 23:06+0530\n"
+"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+"Language-Team: Kannada <en@li.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);"
+
+msgid "Background"
+msgstr "ಹಿನ್ನೆಲೆ"
+
+msgid "Background color"
+msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ"
+
+msgid "Background set"
+msgstr "ಹಿನ್ನೆಲೆ ಹೊಂದಿಕೆ"
+
+msgid "Blue based color scheme"
+msgstr "ನೀಲಿ ಆಧರಿತವಾದ ಬಣ್ಣದ ಸ್ಕೀಮ್"
+
+msgid "Bold"
+msgstr "ಬೋಲ್ಡ್‍"
+
+msgid "Bold set"
+msgstr "ಬೋಲ್ಡ್‍ ಹೊಂದಿಕೆ"
+
+msgid "Boolean value"
+msgstr "ಬೂಲಿಯನ್ ಮೌಲ್ಯ"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC ಹೆಡರ್"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"ಎಲ್ಲಾ ರೂಪಾಂತರಕ್ಕೂ regex ಅನ್ನು ನಿರ್ಮಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ಸಿಂಟ್ಯಾಕ್ಸನ್ನು ಸುಪ್ರಕಾಶಗೊಳಿಸುವ ಪ್ರಕ್ರಿಯೆಯು ಮಾಮೂಲಿಗಿಂತ ನಿಧಾಧಗೊಳ್ಳುತ್ತದೆ.\n"
+"ದೋಷವು ಹೀಗಿರುತ್ತದೆ: %s"
+
+msgid "Classic"
+msgstr "ಸಾಂಪ್ರದಾಯಿಕ"
+
+msgid "Classic color scheme"
+msgstr "ಸಾಂಪ್ರದಾಯಿಕ ಬಣ್ಣದ ಸ್ಕೀಮ್"
+
+msgid "Cobalt"
+msgstr "ಕೋಬಾಲ್ಟ್‌"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "ಕೇಟ್ ಪಠ್ಯ ಸಂಪಾದಕದಲ್ಲಿ ಬಳಸಲಾಗುವ ಬಣ್ಣದ ಸ್ಕೀಮ್"
+
+msgid "Color scheme using Tango color palette"
+msgstr "ಟ್ಯಾಂಗೋ ವರ್ಣ ಫಲಕವನ್ನು ಬಳಸುವ ಬಣ್ಣದ ಸ್ಕೀಮ್"
+
+msgid "Comment"
+msgstr "ಟಿಪ್ಪಣಿ"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "ಟ್ಯಾಂಗೋ ವರ್ಣ ಫಲಕವನ್ನು ಬಳಸುವ ಗಾಢ ಬಣ್ಣದ ಸ್ಕೀಮ್"
+
+msgid "Data Type"
+msgstr "ದತ್ತಾಂಶದ ಬಗೆ"
+
+msgid "Decimal number"
+msgstr "ದಶಮಾಂಶ ಸಂಖ್ಯೆ"
+
+msgid "Defaults"
+msgstr "ಡೀಫಾಲ್ಟುಗಳು"
+
+msgid "Diff"
+msgstr "ಡಿಫ್"
+
+msgid "Docbook"
+msgstr "ಡಾಕ್‌ಬುಕ್"
+
+msgid "Dos Batch"
+msgstr "Dos ಬ್ಯಾಚ್‌"
+
+msgid "Eiffel"
+msgstr "ಈಫೆಲ್"
+
+msgid "Error"
+msgstr "ದೋಷ"
+
+msgid "Escaped Character"
+msgstr "ತಪ್ಪಿಸಿಕೊಂಡಂತ ಅಕ್ಷರ"
+
+msgid "Floating point number"
+msgstr "ತೇಲುವ ಬಿಂದು ಸಂಖ್ಯೆ"
+
+msgid "Foreground"
+msgstr "ಮುನ್ನೆಲೆ"
+
+msgid "Foreground color"
+msgstr "ಮುನ್ನೆಲೆ ಬಣ್ಣ"
+
+msgid "Foreground set"
+msgstr "ಮುನ್ನೆಲೆ ಹೊಂದಿಕೆ"
+
+msgid "Forth"
+msgstr "ಮುಂದಿನ"
+
+msgid "Fortran 95"
+msgstr "ಫೊರ್ಟ್ರಾನ್ 95"
+
+msgid "Graphviz Dot"
+msgstr "Graphviz ಚುಕ್ಕಿ"
+
+msgid "HTML"
+msgstr "HTML "
+
+msgid "Hexadecimal number"
+msgstr "ಹೆಕ್ಸಾಡೆಸಿಮಲ್ ಸಂಖ್ಯೆ"
+
+msgid "Hidden"
+msgstr "ಅಡಗಿಸಲಾದ"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "ಒಂದು ಸಾಲನ್ನು ಸುಪ್ರಕಾಶಗೊಳಿಸಲು ಬಹಳ ಸಮಯ ಹಿಡಿದಿದೆ, ಸಿಂಟ್ಯಾಕ್ಸಿನ ಸುಪ್ರಕಾಶಗೊಳಿಸುವಿಕೆಯನ್ನು ಅಶಕ್ತಗೊಳಿಸಲಾಗುವುದು"
+
+msgid "Identifier"
+msgstr "ಗುರುತುಗಾರ"
+
+msgid "Italic"
+msgstr "ಇಟಾಲಿಕ್"
+
+msgid "Italic set"
+msgstr "ಇಟಾಲಿಕ್ ಹೊಂದಿಕೆ"
+
+msgid "Java"
+msgstr "ಜಾವಾ"
+
+msgid "Kate"
+msgstr "ಕೇಟ್"
+
+msgid "Keyword"
+msgstr "ಮುಖ್ಯಪದ"
+
+msgid "Language id"
+msgstr "ಭಾಷೆ ಐಡಿ"
+
+msgid "Language ids"
+msgstr "ಭಾಷೆ ಐಡಿಗಳು"
+
+msgid "Language name"
+msgstr "ಭಾಷೆಯ ಹೆಸರು"
+
+msgid "Language section"
+msgstr "ಭಾಷೆಯ ವಿಭಾಗ"
+
+msgid "Language specification directories"
+msgstr "ಭಾಷೆಯ ನಿಶ್ಚಿತವಾದ ಕಡತಗಳು"
+
+msgid "Line background"
+msgstr "ಸಾಲಿನ ಹಿನ್ನಲೆ"
+
+msgid "Line background color"
+msgstr "ಸಾಲಿನ ಹಿನ್ನಲೆಯ ಬಣ್ಣ"
+
+msgid "Line background set"
+msgstr "ಸಾಲಿನ ಹಿನ್ನಲೆ ಹೊಂದಿಕೆ"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "ಶೈಲಿ ಸ್ಕೀಮುಗಳು ಇರುವಂತಹ ಕೋಶಗಳು ಹಾಗು ಕಡತಗಳ ಪಟ್ಟಿ"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "ಭಾಷೆಯ ನಿಶ್ಚಿತವಾದ ಕಡತಗಳನ್ನು(.lang) ಇರಿಸಲಾದ ಕೋಶಗಳ ಪಟ್ಟಿ"
+
+msgid "List of the ids of the available languages"
+msgstr "ಲಭ್ಯವಿರುವ ಭಾಷೆಗಳ ಐಡಿಗಳ ಪಟ್ಟಿ"
+
+msgid "List of the ids of the available style schemes"
+msgstr "ಶೈಲಿ ಸ್ಕೀಮುಗಳಲ್ಲಿ ಲಭ್ಯವಿರುವ ಐಡಿಗಳ ಪಟ್ಟಿ"
+
+msgid "Literate Haskell"
+msgstr "ಲಿಟರೇಟ್ Haskell"
+
+msgid "Makefile"
+msgstr "ನಿರ್ಮಾಣಕಡತ"
+
+msgid "Mallard"
+msgstr "ಮಲಾರ್ಡ್"
+
+msgid "Markup"
+msgstr "ಗುರುತು"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "ಮುಖ್ಯ ಭಾಷೆಯ ವಿವರಣೆಯು ಕಾಣೆಯಾಗಿದೆ (id = \"%s\".)"
+
+msgid "Objective Caml"
+msgstr "ಆಬ್ಜೆಕ್ಟೀವ್ Caml"
+
+msgid "Objective-C"
+msgstr "ಆಬ್ಜೆಕ್ಟೀವ್-C"
+
+msgid "Oblivion"
+msgstr "ಓಬ್ಲಿವಿಯನ್"
+
+msgid "Octave"
+msgstr "ಆಕ್ಟೇವ್"
+
+msgid "Operator"
+msgstr "ಕಾರ್ಯನಿರ್ವಾಹಕ"
+
+msgid "Others"
+msgstr "ಇತರೆ"
+
+msgid "Pascal"
+msgstr "ಪ್ಯಾಸ್ಕಲ್"
+
+msgid "Perl"
+msgstr "ಪರ್ಲ್"
+
+msgid "Preprocessor"
+msgstr "ಪೂರ್ವಸಂಸ್ಕಾರಕ"
+
+msgid "Prolog"
+msgstr "ಪ್ರೊಲಾಗ್"
+
+msgid "Python"
+msgstr "ಪೈಥಾನ್"
+
+msgid "RPM spec"
+msgstr "RPM ಸ್ಪೆಕ್"
+
+msgid "Ruby"
+msgstr "ಕಡುಗೆಂಪು"
+
+msgid "Scheme"
+msgstr "ಸ್ಕೀಮ್"
+
+msgid "Scheme ids"
+msgstr "ಸ್ಕೀಮಿನ ಐಡಿ"
+
+msgid "Scientific"
+msgstr "ವೈಜ್ಞಾನಿಕ"
+
+msgid "Scripts"
+msgstr "ಸ್ಕ್ರಿಪ್ಟುಗಳು"
+
+msgid "Sources"
+msgstr "ಆಕರಗಳು"
+
+msgid "Strikethrough"
+msgstr "ಹೊಡೆದು ಹಾಕು"
+
+msgid "Strikethrough set"
+msgstr "ಹೊಡೆದು ಹಾಕುವ ಹೊಂದಿಕೆ"
+
+msgid "String"
+msgstr "ಅಕ್ಷರಪುಂಜ"
+
+msgid "Style scheme description"
+msgstr "ಶೈಲಿ ಸ್ಕೀಮಿನ ವಿವರಣೆ"
+
+msgid "Style scheme filename"
+msgstr "ಶೈಲಿ ಸ್ಕೀಮಿನ ಕಡತದ ಹೆಸರು"
+
+msgid "Style scheme id"
+msgstr "ಶೈಲಿ ಸ್ಕೀಮಿನ ಐಡಿ"
+
+msgid "Style scheme name"
+msgstr "ಶೈಲಿ ಸ್ಕೀಮಿನ ಹೆಸರು"
+
+msgid "Style scheme search path"
+msgstr "ಶೈಲಿ ಸ್ಕೀಮಿನ ಹುಡುಕು ಮಾರ್ಗ"
+
+msgid "Tango"
+msgstr "ಟ್ಯಾಂಗೋ"
+
+msgid "Texinfo"
+msgstr "ಟೆಕ್ಸ್‍ಇನ್ಫೋ"
+
+msgid "Underline"
+msgstr "ಅಡಿಗೆರೆ"
+
+msgid "Underline set"
+msgstr "ಅಡಿಗೆರೆ ಹೊಂದಿಕೆ"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "ಗೊತ್ತಿರದ id '%s', regex '%s' ನಲ್ಲಿ"
+
+msgid "Verilog"
+msgstr "ವೆರಿಲಾಗ್"
+
+msgid "Whether background color is set"
+msgstr "ಹಿನ್ನಲೆ ಬಣ್ಣವನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ"
+
+msgid "Whether bold attribute is set"
+msgstr "ಬೋಲ್ಡ್‍ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ"
+
+msgid "Whether foreground color is set"
+msgstr "ಮುನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ"
+
+msgid "Whether italic attribute is set"
+msgstr "ಇಟಾಲಿಕ್ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ"
+
+msgid "Whether line background color is set"
+msgstr "ಸಾಲಿನ ಹಿನ್ನಲೆ ಬಣ್ಣವನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "ಹೊಡೆದು ಹಾಕುವ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "ಭಾಷೆಯನ್ನು ಬಳಕೆದಾರರಿಗೆ ಕಾಣಿಸದಂತೆ ಇರಿಸಬೇಕೆ"
+
+msgid "Whether underline attribute is set"
+msgstr "ಅಡಿಗೆರೆ ಎಳೆಯುವ ವೈಶಿಷ್ಟ್ತವನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "ಸನ್ನಿವೇಶ '%s' ವು \\%%{...@start} ಆಜ್ಞೆಯನ್ನು ಹೊಂದಿರುವಂತಿಲ್ಲ"
+
+msgid "duplicated context id '%s'"
+msgstr "ಸನ್ನಿವೇಶ ಐಡಿ '%s' ಅನ್ನು ನಕಲು ಮಾಡಲಾಗಿದೆ"
+
+msgid "gettext translation"
+msgstr "gettext ಅನುವಾದ"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "regex '%s' ನಲ್ಲಿ: ಹಿಂದಕ್ಕೆ ಉಲ್ಲೇಖಿಸುವುದನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ"
+
+msgid "invalid context reference '%s'"
+msgstr "ಅಮಾನ್ಯವಾದ ಸನ್ನಿವೇಶ ಉಲ್ಲೇಖ '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "ಶೈಲಿಯ ಅತಿಕ್ರಮಗೊಳಿಸುವಿಕೆಯನ್ನು '%s' ಭಾಷೆಯ '%s' ಉಲ್ಲೇಖದಲ್ಲಿ ವೈಲ್ಡ್‌ಕಾರ್ಡಿನ ಸನ್ನಿವೇಶ ಉಲ್ಲೇಖದೊಂದಿಗೆ ಬಳಸಲಾಗಿದೆ"
+
+msgid "unknown context '%s'"
+msgstr "ಅಜ್ಞಾತ ಸನ್ನಿವೇಶ '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "\\C ಅನ್ನು ಬಳಸುವುದು ಭಾಷೆಯ ವಿವರಣೆಯಲ್ಲಿ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ"
+

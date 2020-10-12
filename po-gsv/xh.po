@@ -1,0 +1,136 @@
+# Xhosa translation of gtksourceview
+# Copyright (C) 2005 Canonical Ltd.
+# This file is distributed under the same license as the gtksourceview package.
+# Translation by Canonical Ltd <translations@canonical.com> with thanks to
+# Translation World CC in South Africa, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2005-03-18 00:40+0200\n"
+"Last-Translator: Canonical Ltd <translations@canonical.com>\n"
+"Language-Team: Xhosa <xh-translate@ubuntu.com>\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid ".desktop"
+msgstr "I-.desktop"
+
+msgid "Ada"
+msgstr "I-Ada"
+
+msgid "Comment"
+msgstr "Inkcazo"
+
+msgid "DTD"
+msgstr "I-DTD"
+
+msgid "Data Type"
+msgstr "Uhlobo Lwe-data"
+
+msgid "Diff"
+msgstr "Umahluko"
+
+msgid "Fortran 95"
+msgstr "I-Fortran 95"
+
+msgid "GtkRC"
+msgstr "I-GtkRC"
+
+msgid "HTML"
+msgstr "I-HTML"
+
+msgid "Haskell"
+msgstr "I-Haskell"
+
+msgid "IDL"
+msgstr "I-IDL"
+
+msgid "Java"
+msgstr "I-Java"
+
+msgid "Keyword"
+msgstr "Igama eliphambili"
+
+msgid "LaTeX"
+msgstr "I-LaTeX"
+
+msgid "Language specification directories"
+msgstr "Oovimba befayili bokucacisa ulwimi"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Uluhlu loovimba beefayili apho iifayili zokucacisa ulwimi (.lang) zibekwe khona"
+
+msgid "Lua"
+msgstr "I-Lua"
+
+msgid "Markup"
+msgstr "Ukunyusa ixabiso"
+
+msgid "Nemerle"
+msgstr "I-Nemerle"
+
+msgid "Others"
+msgstr "Ezinye"
+
+msgid "PHP"
+msgstr "I-PHP"
+
+msgid "Pascal"
+msgstr "I-Pascal"
+
+msgid "Perl"
+msgstr "I-Perl"
+
+msgid "Preprocessor"
+msgstr "Isanduleli sesixhobo sokusebenza"
+
+msgid "Python"
+msgstr "I-Python"
+
+msgid "Ruby"
+msgstr "i-Ruby"
+
+msgid "SQL"
+msgstr "I-SQL"
+
+msgid "Scripts"
+msgstr "Izikripti"
+
+msgid "Sources"
+msgstr "Imithombo"
+
+msgid "String"
+msgstr "Uluhlu lwamagama"
+
+msgid "Style scheme search path"
+msgstr "khona"
+
+msgid "Tcl"
+msgstr "I-Tcl"
+
+msgid "Texinfo"
+msgstr "Ulwazi lombhalo"
+
+msgid "VB.NET"
+msgstr "I-VB.NET"
+
+msgid "VHDL"
+msgstr "I-VHDL"
+
+msgid "Verilog"
+msgstr "I-Verilog"
+
+msgid "XML"
+msgstr "I-XML"
+
+msgid "gettext translation"
+msgstr "uguqulelo lwe-gettext"
+
+msgid "sh"
+msgstr "i-sh"
+

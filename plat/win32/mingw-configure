@@ -1,0 +1,118 @@
+#! /bin/sh
+# -%- lang:sh; indent-width:2 -%-
+
+builddir=`pwd`
+srcdir=`dirname $0`/../..
+srcdir=`cd $srcdir && pwd`
+if [ ! -e $srcdir/configure ]; then
+  echo "configure script not found"
+  exit 1
+fi
+
+_configure_target=
+for prefix in i586-mingw32msvc i686-w64-mingw32 i486-mingw32 i686-pc-mingw32; do
+  if [ -e /usr/bin/$prefix-gcc ]; then
+    _configure_target=$prefix
+    break
+  fi
+done
+if [ -z "$_configure_target" ]; then
+  echo "don't know where mingw compiler is"
+  exit 1
+fi
+
+_mingw_tool_prefix="/usr/bin/$_configure_target"
+
+export mgwdir=`dirname $0`/gtk-win
+. $mgwdir/config.sh || exit 1
+
+en_only=false
+if [ "$1" = "--en" ]; then
+  en_only=true
+  shift
+fi
+
+destdir=$mgwdestdir
+if $en_only; then
+  destdir=$destdir-en
+fi
+
+case "$mgwconfig" in
+  debug) :
+    _def_cflags='-gstabs+' ;;
+  reldbg) :
+    _def_cflags='-gstabs+ -O2' ;;
+  release) :
+    _def_cflags='-O2' ;;
+  *) :
+    echo "oops"; exit 1 ;;
+esac
+
+export ADDR2LINE=$_mingw_tool_prefix-addr2line
+export AS=$_mingw_tool_prefix-as
+export CC=$_mingw_tool_prefix-gcc
+export CPP=$_mingw_tool_prefix-cpp
+export CPPFILT=$_mingw_tool_prefix-c++filt
+export CXX=$_mingw_tool_prefix-g++
+export DLLTOOL=$_mingw_tool_prefix-dlltool
+export DLLWRAP=$_mingw_tool_prefix-dllwrap
+export GCOV=$_mingw_tool_prefix-gcov
+export LD=$_mingw_tool_prefix-ld
+export NM=$_mingw_tool_prefix-nm
+export OBJCOPY=$_mingw_tool_prefix-objcopy
+export OBJDUMP=$_mingw_tool_prefix-objdump
+export READELF=$_mingw_tool_prefix-readelf
+export SIZE=$_mingw_tool_prefix-size
+export STRINGS=$_mingw_tool_prefix-strings
+export WINDRES=$_mingw_tool_prefix-windres
+export RC=$_mingw_tool_prefix-windres
+export AR=$_mingw_tool_prefix-ar
+export RANLIB=$_mingw_tool_prefix-ranlib
+export STRIP=$_mingw_tool_prefix-strip
+
+export LDFLAGS="-L$mgwtargetdir/lib"
+export CPPFLAGS="-I$mgwtargetdir/include"
+export CFLAGS="-mms-bitfields -march=i686 $_def_cflags"
+export CXXFLAGS="-mms-bitfields -march=i686 $_def_cflags"
+export OBJCFLAGS="-mms-bitfields -march=i686 $_def_cflags"
+
+export PKG_CONFIG_LIBDIR="$mgwtargetdir/lib/pkgconfig"
+export PKG_CONFIG_PATH="$mgwtargetdir/lib/pkgconfig"
+
+export PYTHON_INCLUDES="-I$mgwtargetdir/include/python"
+export PYTHON_LIBS="-lpython$mgwpythonver"
+export PYTHON_VERSION=$mgwpythondotver
+
+if $mgwlinux; then
+    _configure_build=i686-pc-linux-gnu
+elif $mgwcygwin; then
+    _configure_build=i686-pc-cygwin
+    _configure_target=i686-pc-mingw32
+else
+  echo "*** oops, neither mgwlinux nor mgwcygwin are set ***"
+fi
+
+configure_args="--build=$_configure_build --host=$_configure_target --target=$_configure_target \
+AR=$AR RANLIB=$RANLIB STRIP=$STRIP AS=$AS DLLTOOL=$DLLTOOL OBJDUMP=$OBJDUMP NM=$NM WINDRES=$WINDRES RC=$RC \
+INSTALL=`which install-check` MOO_WIN32_CONFIG=$mgwconfig \
+--prefix=$destdir"
+
+if $en_only; then
+  moo_nls_flags='--disable-nls'
+else
+  moo_nls_flags=
+fi
+
+if [ "$mgwconfig" = "debug" ]; then
+  moo_configure_args='--enable-debug'
+else
+  moo_configure_args='--enable-dev-mode'
+fi
+
+if [ "$1" = "--python" ]; then
+  shift
+  moo_configure_args="$moo_configure_args --enable-strict --enable-moo-module --enable-shared --disable-static"
+fi
+
+echo $srcdir/configure $configure_args $moo_configure_args $moo_nls_flags "$@"
+exec $srcdir/configure $configure_args $moo_configure_args $moo_nls_flags "$@"

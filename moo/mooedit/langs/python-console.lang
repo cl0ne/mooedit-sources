@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language id="python-console" name="python-console" version="2.0" hidden="true">
+  <styles>
+    <style id="ps" name="ps" map-to="def:keyword"/>
+  </styles>
+
+  <definitions>
+    <context id="python-console">
+      <include>
+        <context end-at-line-end="true">
+          <start>^(>>>|\.\.\.)\ </start>
+          <include>
+            <context sub-pattern="1" where="start" style-ref="ps"/>
+            <context ref="python:python"/>
+          </include>
+        </context>
+      </include>
+    </context>
+  </definitions>
+</language>

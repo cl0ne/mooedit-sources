@@ -1,0 +1,159 @@
+moo_edit_enum_headers =			\
+	mooedit/mooedit-enums.h
+
+moo_sources +=				\
+	$(moo_edit_enum_headers)	\
+	mooedit/mooeditor.h		\
+	mooedit/mootextview.h		\
+	mooedit/mootextprint.h		\
+	mooedit/mooeditview.h		\
+	mooedit/mooeditaction.h		\
+	mooedit/mooeditbookmark.h	\
+	mooedit/mooeditconfig.h		\
+	mooedit/mooeditdialogs.h	\
+	mooedit/mooeditfiltersettings.h	\
+	mooedit/mooedit.h		\
+	mooedit/mooedithistoryitem.h	\
+	mooedit/mooeditprefs.h		\
+	mooedit/mooedittypes.h          \
+	mooedit/mooeditwindow.h		\
+	mooedit/mooeditfileinfo.h	\
+	mooedit/mooplugin.h		\
+	mooedit/mootextbuffer.h		\
+	mooedit/mootextfind.h		\
+	mooedit/mootextiter.h		\
+	mooedit/mootextsearch.h		\
+	mooedit/mootextstylescheme.h	\
+	mooedit/mooeditview.cpp		\
+	mooedit/mooeditview-priv.h	\
+	mooedit/mooeditview-impl.h	\
+	mooedit/mooeditview-script.cpp	\
+	mooedit/mooeditview-script.h	\
+	mooedit/mooedit-accels.h	\
+	mooedit/mooeditaction.cpp	\
+	mooedit/mooeditaction-factory.cpp\
+	mooedit/mooeditaction-factory.h	\
+	mooedit/mooeditbookmark.cpp	\
+	mooedit/mooedit.cpp		\
+	mooedit/mooeditconfig.cpp	\
+	mooedit/mooeditdialogs.cpp	\
+	mooedit/mooedit-enum-types.c	\
+	mooedit/mooedit-enum-types.h	\
+	mooedit/mooedit-enums.h		\
+	mooedit/mooedit-fileops.cpp	\
+	mooedit/mooedit-fileops.h	\
+	mooedit/mooeditfiltersettings.cpp\
+	mooedit/mooedithistoryitem.cpp	\
+	mooedit/mooedit-impl.h		\
+	mooedit/mooedit-script.cpp	\
+	mooedit/mooedit-script.h	\
+	mooedit/mooeditprefs.cpp	\
+	mooedit/mooeditprefspage.cpp	\
+	mooedit/mooedit-private.h	\
+	mooedit/mooeditprogress.h	\
+	mooedit/mooeditprogress.c	\
+	mooedit/mooedittab.cpp		\
+	mooedit/mooedittab.h		\
+	mooedit/mooedittab-impl.h	\
+	mooedit/mooeditwindow.cpp	\
+	mooedit/mooeditwindow-impl.h	\
+	mooedit/mooeditfileinfo-impl.h	\
+	mooedit/mooeditfileinfo.cpp	\
+	mooedit/moofold.cpp		\
+	mooedit/moofold.h		\
+	mooedit/mooindenter.cpp		\
+	mooedit/mooindenter.h		\
+	mooedit/moolang.cpp		\
+	mooedit/moolang.h		\
+	mooedit/moolangmgr.cpp		\
+	mooedit/moolangmgr.h		\
+	mooedit/moolangmgr-private.h	\
+	mooedit/moolang-private.h	\
+	mooedit/moolinebuffer.c		\
+	mooedit/moolinebuffer.h		\
+	mooedit/moolinemark.c		\
+	mooedit/moolinemark.h		\
+	mooedit/mooplugin.c		\
+	mooedit/mooplugin-loader.c	\
+	mooedit/mooplugin-loader.h	\
+	mooedit/mooplugin-macro.h	\
+	mooedit/mootextbtree.c		\
+	mooedit/mootextbtree.h		\
+	mooedit/mootextbuffer.c		\
+	mooedit/mootextfind.c		\
+	mooedit/mootextprint.c		\
+	mooedit/mootextprint-private.h	\
+	mooedit/mootext-private.h	\
+	mooedit/mootextsearch.c		\
+	mooedit/mootextsearch-private.h	\
+	mooedit/mootextstylescheme.c	\
+	mooedit/mootextview.c		\
+	mooedit/mootextview-input.c	\
+	mooedit/mootextview-private.h   \
+	mooedit/mooeditor.cpp		\
+	mooedit/mooeditor-impl.h	\
+	mooedit/mooeditor-private.h	\
+	mooedit/mooeditor-tests.cpp	\
+	mooedit/mooeditor-tests.h	\
+	mooedit/mooeditor-tests.h
+
+EXTRA_DIST +=						\
+	mooedit/glade/moopluginprefs.glade		\
+	mooedit/glade/mooeditprefs-view.glade		\
+	mooedit/glade/mooeditprefs-file.glade		\
+	mooedit/glade/mooeditprefs-filters.glade	\
+	mooedit/glade/mooeditprefs-general.glade	\
+	mooedit/glade/mooeditprefs-langs.glade		\
+	mooedit/glade/mooeditprogress.glade		\
+	mooedit/glade/mooeditsavemult.glade		\
+	mooedit/glade/mootryencoding.glade		\
+	mooedit/glade/mooprint.glade			\
+	mooedit/glade/mootextfind.glade			\
+	mooedit/glade/mootextfind-prompt.glade		\
+	mooedit/glade/mootextgotoline.glade		\
+	mooedit/glade/mooquicksearch.glade		\
+	mooedit/glade/moostatusbar.glade
+
+built_moo_sources +=					\
+	mooedit/moopluginprefs-gxml.h			\
+	mooedit/mooeditprefs-view-gxml.h		\
+	mooedit/mooeditprefs-file-gxml.h		\
+	mooedit/mooeditprefs-filters-gxml.h		\
+	mooedit/mooeditprefs-general-gxml.h		\
+	mooedit/mooeditprefs-langs-gxml.h		\
+	mooedit/mooeditprogress-gxml.h			\
+	mooedit/mooeditsavemult-gxml.h			\
+	mooedit/mootryencoding-gxml.h			\
+	mooedit/mooprint-gxml.h				\
+	mooedit/mootextfind-gxml.h			\
+	mooedit/mootextfind-prompt-gxml.h		\
+	mooedit/mootextgotoline-gxml.h			\
+	mooedit/mooquicksearch-gxml.h			\
+	mooedit/moostatusbar-gxml.h
+
+EXTRA_DIST += mooedit/medit.xml mooedit/mooedit.xml
+built_moo_sources += mooedit/medit-ui.h mooedit/mooedit-ui.h
+
+if MOO_DEV_MODE
+built_moo_sources += mooedit/mooedit-enum-types.h.stamp mooedit/mooedit-enum-types.c.stamp
+mooedit/mooedit-enum-types.h.stamp: $(moo_edit_enum_headers) Makefile mooedit/mooedit-enum-types.h.tmpl
+	$(AM_V_at)$(MKDIR_P) mooedit
+	$(AM_V_GEN)( cd $(srcdir) && \
+		$(GLIB_MKENUMS) --template mooedit/mooedit-enum-types.h.tmpl $(moo_edit_enum_headers) ) > mooedit/mooedit-enum-types.h.tmp
+	$(AM_V_at)cmp -s mooedit/mooedit-enum-types.h.tmp $(srcdir)/mooedit/mooedit-enum-types.h || \
+		mv mooedit/mooedit-enum-types.h.tmp $(srcdir)/mooedit/mooedit-enum-types.h
+	$(AM_V_at)rm -f mooedit/mooedit-enum-types.h.tmp
+	$(AM_V_at)echo stamp > mooedit/mooedit-enum-types.h.stamp
+mooedit/mooedit-enum-types.c.stamp: $(moo_edit_enum_headers) Makefile mooedit/mooedit-enum-types.c.tmpl
+	$(AM_V_at)$(MKDIR_P) mooedit
+	$(AM_V_GEN)( cd $(srcdir) && \
+		$(GLIB_MKENUMS) --template mooedit/mooedit-enum-types.c.tmpl $(moo_edit_enum_headers) ) > mooedit/mooedit-enum-types.c.tmp
+	$(AM_V_at)cmp -s mooedit/mooedit-enum-types.c.tmp $(srcdir)/mooedit/mooedit-enum-types.c || \
+		mv mooedit/mooedit-enum-types.c.tmp $(srcdir)/mooedit/mooedit-enum-types.c
+	$(AM_V_at)rm -f mooedit/mooedit-enum-types.c.tmp
+	$(AM_V_at)echo stamp > mooedit/mooedit-enum-types.c.stamp
+endif
+
+include mooedit/langs/Makefile.incl
+
+# -%- strip:true -%-

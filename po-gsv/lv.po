@@ -1,0 +1,278 @@
+# translation of lv.po to Latvian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Raivis Dejus <orvils@gmail.com>, 2006, 2007.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-06-16 18:00+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latviešu <lata-l10n@googlegroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-01-04 13:24+0000\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"
+
+msgid "Background"
+msgstr "Fons"
+
+msgid "Background color"
+msgstr "Fona krāsa"
+
+msgid "Background set"
+msgstr "Fona iestatījums"
+
+msgid "Blue based color scheme"
+msgstr "Zilo toņu krāsu shēma"
+
+msgid "Bold"
+msgstr "Treknraksts"
+
+msgid "Bold set"
+msgstr "Treknraksta iestatījums"
+
+msgid "Boolean value"
+msgstr "Loģiskā vērtība"
+
+msgid "CG Shader Language"
+msgstr "CG Shader valoda"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Nevar izveidot regulāro izteiksmi (regexp) visām pārejām, sintakses izcelšanas process var būt lēnāks kā parasti.\n"
+"Kļūda: %s"
+
+msgid "Classic"
+msgstr "Klasisks"
+
+msgid "Classic color scheme"
+msgstr "Klasiskā krāsu shēma"
+
+msgid "Cobalt"
+msgstr "Kobalts"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Krāsu shēma, ko izmanto Kate teksta redaktors"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Krāsu shēma, izmantojot Tango krāsu paleti"
+
+msgid "Comment"
+msgstr "Komentārs"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tumša krāsu shēma, izmantojot Tango krāsu paleti"
+
+msgid "Data Type"
+msgstr "Datu tips"
+
+msgid "Decimal number"
+msgstr "Decimālskaitlis"
+
+msgid "Defaults"
+msgstr "Noklusētie"
+
+msgid "Dos Batch"
+msgstr "Dos pakete (batch)"
+
+msgid "Error"
+msgstr "Kļūda"
+
+msgid "Escaped Character"
+msgstr "Atsoļa rakstzīme"
+
+msgid "Floating point number"
+msgstr "Peldošā komata skaitlis"
+
+msgid "Foreground"
+msgstr "Priekšplāns"
+
+msgid "Foreground color"
+msgstr "Priekšplāna krāsa"
+
+msgid "Foreground set"
+msgstr "Priekšplāna iestatījums"
+
+msgid "Hexadecimal number"
+msgstr "Heksadecimāls skaitlis"
+
+msgid "Hidden"
+msgstr "Slēpts"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Vienas rindas izcelšana aizņēma pārāk daudz laika, sintakses izcelšana tiks atslēgta"
+
+msgid "Identifier"
+msgstr "Identifikators"
+
+msgid "Italic"
+msgstr "Slīpraksts"
+
+msgid "Italic set"
+msgstr "Slīpraksta iestatījums"
+
+msgid "Keyword"
+msgstr "Atslēgvārds"
+
+msgid "Language id"
+msgstr "Valodas id"
+
+msgid "Language ids"
+msgstr "Valodu id"
+
+msgid "Language name"
+msgstr "Valodas nosaukums"
+
+msgid "Language section"
+msgstr "Valodas izvēle"
+
+msgid "Language specification directories"
+msgstr "Valodu specifikāciju mapes"
+
+msgid "Line background"
+msgstr "Rindas fons"
+
+msgid "Line background color"
+msgstr "Rindas fona krāsa"
+
+msgid "Line background set"
+msgstr "Rindas fona iestatījums"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Saraksts ar mapēm un failiem, kur atrodas stila shēmas"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Valodu specifikācijas failu (.lang) mapju saraksts"
+
+msgid "List of the ids of the available languages"
+msgstr "Pieejamo valodu id saraksts"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Saraksts ar pieejamo stilu shēmu id"
+
+msgid "Literate Haskell"
+msgstr "Haskell literālis"
+
+msgid "Markup"
+msgstr "Marķējums"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Trūkst galvenās valodas definīcija (id = \"%s\".)"
+
+msgid "Objective Caml"
+msgstr "Objektu Caml"
+
+msgid "OpenGL Shading Language"
+msgstr "OpenGL Shading valoda"
+
+msgid "Operator"
+msgstr "Operators"
+
+msgid "Others"
+msgstr "Citi"
+
+msgid "Preprocessor"
+msgstr "Priekšprocesors"
+
+msgid "Scheme ids"
+msgstr "Shēmu id"
+
+msgid "Scientific"
+msgstr "Zinātnisks"
+
+msgid "Scripts"
+msgstr "Skripti"
+
+msgid "Sources"
+msgstr "Avoti"
+
+msgid "Strikethrough"
+msgstr "Pārsvītrojums"
+
+msgid "Strikethrough set"
+msgstr "Pārsvītrošanas iestatījums"
+
+msgid "String"
+msgstr "Virkne"
+
+msgid "Style scheme description"
+msgstr "Sistēmas shēmas apraksts"
+
+msgid "Style scheme filename"
+msgstr "Stila shēmas faila nosaukums"
+
+msgid "Style scheme id"
+msgstr "Sistēmas shēmas id"
+
+msgid "Style scheme name"
+msgstr "Sistēmas shēmas nosaukums"
+
+msgid "Style scheme search path"
+msgstr "Stila shēmas meklēšanas ceļš"
+
+msgid "Underline"
+msgstr "Pasvītrojums"
+
+msgid "Underline set"
+msgstr "Pasvītrošanas iestatījums"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Nezināms id '%s' regulārajā izteiksmē '%s'"
+
+msgid "Whether background color is set"
+msgstr "Vai fona krāsa ir iestatīta"
+
+msgid "Whether bold attribute is set"
+msgstr "Vai treknraksta atribūts ir iestatīts"
+
+msgid "Whether foreground color is set"
+msgstr "Vai priekšplāna krāsa ir iestatīta"
+
+msgid "Whether italic attribute is set"
+msgstr "Vai slīpraksta atribūts ir iestatīts"
+
+msgid "Whether line background color is set"
+msgstr "Vai rindas fona krāsa ir iestatīta"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Vai pārsvītrošanas atribūts ir iestatīts"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Vai valoda būtu jāslēpj no lietotāja"
+
+msgid "Whether underline attribute is set"
+msgstr "Vai pasvītrošanas atribūts ir iestatīts"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "konteksts '%s' nevar saturēt \\%%{...@start} komandu"
+
+msgid "duplicated context id '%s'"
+msgstr "konteksta id '%s' dublikāts"
+
+msgid "gettext translation"
+msgstr "gettext tulkojums"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "regulārajā izteiksmē '%s': atpakaļatsauces nav atbalstītas"
+
+msgid "invalid context reference '%s'"
+msgstr "nederīga konteksta norāde '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "stila aizstāšana izmantojot aizstājējzīmes konteksta norādi valodā '%s' norādē '%s'"
+
+msgid "unknown context '%s'"
+msgstr "nezināms konteksts '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "\\C lietošana nav atbalstīta valodas definīcijās"
+

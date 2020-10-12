@@ -1,0 +1,303 @@
+# gtksourceview
+# This file is distributed under the same license as the gtksourceview package.
+#
+# Changwoo Ryu <cwryu@debian.org>, 2003-2006, 2007, 2008, 2009.
+#
+# 새로 번역하시는 분은 아래 translator-credits에 추가하세요.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-09-20 08:46+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: GNOME Korean <gnome-kr-hackers@lists.kldp.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "배경"
+
+msgid "Background color"
+msgstr "배경 색"
+
+msgid "Background set"
+msgstr "배경 설정"
+
+msgid "Blue based color scheme"
+msgstr "파란색 양식"
+
+msgid "Bold"
+msgstr "굵게"
+
+msgid "Bold set"
+msgstr "굵게 설정"
+
+msgid "Boolean value"
+msgstr "불리언 값"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC 헤더"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"모든 변환에 대한 정규식을 만들 수 없습니다. 구문 강조는 보통의 경우보다 느려질 것입니다.\n"
+"오류는: %s"
+
+msgid "ChangeLog"
+msgstr "바꾼 기록"
+
+msgid "Classic"
+msgstr "클래식"
+
+msgid "Classic color scheme"
+msgstr "클래식 색 양식"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate 텍스트 편집기에서 사용하는 색 양식"
+
+msgid "Color scheme using Tango color palette"
+msgstr "탱고 컬러 팔레트를 사용한 색 양식"
+
+msgid "Comment"
+msgstr "주석"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "탱고 컬러 팔레트를 사용한 어두운 색 양식"
+
+msgid "Data Type"
+msgstr "데이터 타입"
+
+msgid "Decimal number"
+msgstr "십진수"
+
+msgid "Defaults"
+msgstr "기본값"
+
+msgid "Diff"
+msgstr "diff"
+
+msgid "Dos Batch"
+msgstr "DOS 배치"
+
+msgid "Error"
+msgstr "오류"
+
+msgid "Escaped Character"
+msgstr "이스케이프 문자"
+
+msgid "Floating point number"
+msgstr "부동소수점 수"
+
+msgid "Foreground"
+msgstr "전경"
+
+msgid "Foreground color"
+msgstr "전경 색"
+
+msgid "Foreground set"
+msgstr "전경 설정"
+
+msgid "Haskell"
+msgstr "해스켈"
+
+msgid "Hexadecimal number"
+msgstr "16진수"
+
+msgid "Hidden"
+msgstr "숨김"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "한 줄을 강조하는 데 너무 오래 걸렸습니다. 구문 분석을 하지 않습니다."
+
+msgid "Identifier"
+msgstr "식별어"
+
+msgid "Italic"
+msgstr "기울임"
+
+msgid "Italic set"
+msgstr "기울임 설정"
+
+msgid "Java"
+msgstr "자바"
+
+msgid "Keyword"
+msgstr "키워드"
+
+msgid "Language id"
+msgstr "언어 ID"
+
+msgid "Language ids"
+msgstr "언어 ID 목록"
+
+msgid "Language name"
+msgstr "언어 이름"
+
+msgid "Language section"
+msgstr "언어 섹션"
+
+msgid "Language specification directories"
+msgstr "언어 명세 디렉토리"
+
+msgid "Line background"
+msgstr "선 배경"
+
+msgid "Line background color"
+msgstr "선 배경 색"
+
+msgid "Line background set"
+msgstr "선 배경 색"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "스타일 양식이 들어 있는 디렉토리와 파일의 목록"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "언어 명세 파일(.lang)이 들어 있는 디렉토리의 목록"
+
+msgid "List of the ids of the available languages"
+msgstr "사용 가능한 언어의 ID 목록"
+
+msgid "List of the ids of the available style schemes"
+msgstr "사용 가능한 스타일 양식의 ID 목록"
+
+msgid "Lua"
+msgstr "lua"
+
+msgid "Makefile"
+msgstr "메이크파일"
+
+msgid "Markup"
+msgstr "마크업"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "주 언어 정의가 없습니다. (ID = \"%s\")"
+
+msgid "Oblivion"
+msgstr "무의식"
+
+msgid "Octave"
+msgstr "옥타브"
+
+msgid "Operator"
+msgstr "연산자"
+
+msgid "Others"
+msgstr "그 외"
+
+msgid "Preprocessor"
+msgstr "전처리기"
+
+msgid "Python"
+msgstr "파이썬"
+
+msgid "RPM spec"
+msgstr "RPM 스펙"
+
+msgid "Scheme"
+msgstr "스킴"
+
+msgid "Scheme ids"
+msgstr "양식 ID 목록"
+
+msgid "Scientific"
+msgstr "과학"
+
+msgid "Scripts"
+msgstr "스크립트"
+
+msgid "Sources"
+msgstr "소스"
+
+msgid "Strikethrough"
+msgstr "취소선"
+
+msgid "Strikethrough set"
+msgstr "취소선 설정"
+
+msgid "String"
+msgstr "문자열"
+
+msgid "Style scheme description"
+msgstr "스타일 양식 설명"
+
+msgid "Style scheme filename"
+msgstr "스타일 양식 파일 이름"
+
+msgid "Style scheme id"
+msgstr "스타일 양식 ID"
+
+msgid "Style scheme name"
+msgstr "스타일 양식 이름"
+
+msgid "Style scheme search path"
+msgstr "스타일 양식 찾기 경로"
+
+msgid "Tango"
+msgstr "탱고"
+
+msgid "Tcl"
+msgstr "TCL"
+
+msgid "Underline"
+msgstr "밑줄"
+
+msgid "Underline set"
+msgstr "밑줄 설정"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "알 수 없는 ID '%s' (정규식 '%s')"
+
+msgid "Whether background color is set"
+msgstr "배경 색을 설정했는 지 여부"
+
+msgid "Whether bold attribute is set"
+msgstr "굵게 속성을 설정했는 지 여부"
+
+msgid "Whether foreground color is set"
+msgstr "전경 색을 설정했는 지 여부"
+
+msgid "Whether italic attribute is set"
+msgstr "기울임 속성을 설정했는 지 여부"
+
+msgid "Whether line background color is set"
+msgstr "선 배경 색을 설정했는 지 여부"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "취소선 속성을 설정했는 지 여부"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "언어를 사용자에게 숨길 지 여부"
+
+msgid "Whether underline attribute is set"
+msgstr "밑줄 속성을 설정했는 지 여부"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "컨텍스트에는 ('%s') \\%%{...@start} 명령이 들어갈 수 없습니다"
+
+msgid "duplicated context id '%s'"
+msgstr "컨텍스트 ID가 중복되었습니다 ('%s')"
+
+msgid "gettext translation"
+msgstr "gettext 번역"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "정규식 '%s': 후위 참조는 지원하지 않습니다"
+
+msgid "invalid context reference '%s'"
+msgstr "컨텍스트 참조가 잘못되었습니다 ('%s')"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "스타일 무시를 와일드카드 컨텍스트 참조와 같이 사용했습니다. (언어 '%s', 참조 '%s')"
+
+msgid "unknown context '%s'"
+msgstr "컨텍스트를 알 수 없습니다 ('%s')"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "언어 정의에서 \\C 사용은 지원하지 않습니다"
+

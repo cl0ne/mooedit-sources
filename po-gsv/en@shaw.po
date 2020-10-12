@@ -1,0 +1,301 @@
+# Shavian translation for gtksourceview.
+# Copyright (C) 2009 The Gnome Foundation.
+# Thomas Thurman <tthurman@gnome.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-05-12 18:37 -0400\n"
+"Last-Translator: Thomas Thurman <tthurman@gnome.org>\n"
+"Language-Team: Shavian <ubuntu-l10n-en-shaw@launchpad.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;"
+
+msgid "ASP"
+msgstr "·𐑨𐑕𐑐"
+
+msgid "Ada"
+msgstr "·𐑨𐑛𐑩"
+
+msgid "Background"
+msgstr "𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛"
+
+msgid "Background color"
+msgstr "𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+msgid "Background set"
+msgstr "𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑕𐑧𐑑"
+
+msgid "Blue based color scheme"
+msgstr "𐑚𐑤𐑵 𐑚𐑱𐑕𐑑 𐑒𐑳𐑤𐑼 𐑕𐑒𐑰𐑥"
+
+msgid "Bold"
+msgstr "𐑚𐑴𐑤𐑛"
+
+msgid "Bold set"
+msgstr "𐑚𐑴𐑤𐑛 𐑕𐑧𐑑"
+
+msgid "Boo"
+msgstr "·𐑚𐑵"
+
+msgid "Boolean value"
+msgstr "𐑚𐑵𐑤𐑰𐑩𐑯 𐑝𐑨𐑤𐑿"
+
+msgid "Classic"
+msgstr "𐑒𐑤𐑨𐑕𐑦𐑒"
+
+msgid "Classic color scheme"
+msgstr "𐑒𐑤𐑨𐑕𐑦𐑒 𐑒𐑳𐑤𐑼 𐑕𐑒𐑰𐑥"
+
+msgid "Cobalt"
+msgstr "𐑒𐑴𐑚𐑪𐑤𐑑"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "𐑒𐑳𐑤𐑼 𐑕𐑒𐑰𐑥 𐑿𐑕𐑑 𐑦𐑯 𐑞 ·𐑒𐑱𐑑 𐑑𐑧𐑒𐑕𐑑 𐑧𐑛𐑦𐑑𐑹"
+
+msgid "Color scheme using Tango color palette"
+msgstr "𐑒𐑳𐑤𐑼 𐑕𐑒𐑰𐑥 𐑿𐑟𐑦𐑙 ·𐑑𐑨𐑙𐑜𐑴 𐑒𐑳𐑤𐑼 𐑐𐑩𐑤𐑧𐑑"
+
+msgid "Comment"
+msgstr "𐑒𐑳𐑥𐑥𐑩𐑯𐑑"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "𐑛𐑸𐑒 𐑒𐑳𐑤𐑼 𐑕𐑒𐑰𐑥 𐑿𐑟𐑦𐑙 𐑞 ·𐑑𐑨𐑙𐑜𐑴 𐑒𐑳𐑤𐑼 𐑐𐑩𐑤𐑧𐑑"
+
+msgid "Data Type"
+msgstr "𐑛𐑱𐑑𐑩 𐑑𐑲𐑐"
+
+msgid "Decimal number"
+msgstr "𐑛𐑧𐑕𐑦𐑥𐑩𐑤 𐑯𐑳𐑥𐑚𐑼"
+
+msgid "Defaults"
+msgstr "𐑛𐑦𐑓𐑷𐑤𐑑𐑕"
+
+msgid "Diff"
+msgstr "𐑛𐑦𐑓"
+
+msgid "Dos Batch"
+msgstr "·𐑛𐑵𐑟 𐑚𐑨𐑗"
+
+msgid "Eiffel"
+msgstr "·𐑲𐑓𐑩𐑤"
+
+msgid "Error"
+msgstr "𐑻𐑼"
+
+msgid "Escaped Character"
+msgstr "𐑦𐑕𐑒𐑱𐑐𐑑 𐑒𐑸𐑩𐑒𐑑𐑼"
+
+msgid "Floating point number"
+msgstr "𐑓𐑤𐑴𐑑𐑦𐑙 𐑐𐑶𐑯𐑑 𐑯𐑳𐑥𐑚𐑼"
+
+msgid "Foreground"
+msgstr "𐑓𐑹𐑜𐑮𐑬𐑯𐑛"
+
+msgid "Foreground color"
+msgstr "𐑓𐑹𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+msgid "Foreground set"
+msgstr "𐑓𐑹𐑜𐑮𐑬𐑯𐑛 𐑕𐑧𐑑"
+
+msgid "Forth"
+msgstr "·𐑓𐑹𐑔"
+
+msgid "GAP"
+msgstr "·𐑜𐑨𐑐"
+
+msgid "Haddock"
+msgstr "·𐑣𐑨𐑛𐑩𐑒"
+
+msgid "Haskell"
+msgstr "·𐑣𐑨𐑕𐑒𐑩𐑤"
+
+msgid "Hidden"
+msgstr "𐑣𐑦𐑛𐑩𐑯"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "𐑣𐑲𐑤𐑲𐑑𐑦𐑙 𐑩 𐑕𐑦𐑙𐑜𐑩𐑤 𐑤𐑲𐑯 𐑑𐑫𐑒 𐑑𐑵 𐑥𐑳𐑗 𐑑𐑲𐑥, 𐑕𐑦𐑯𐑑𐑨𐑒𐑕 𐑣𐑲𐑤𐑲𐑑𐑦𐑙 𐑢𐑦𐑤 𐑚𐑰 𐑛𐑦𐑕𐑱𐑚𐑩𐑤𐑛"
+
+msgid "Identifier"
+msgstr "𐑲𐑛𐑧𐑯𐑑𐑦𐑓𐑲𐑼"
+
+msgid "Italic"
+msgstr "𐑲𐑑𐑨𐑤𐑦𐑒"
+
+msgid "Italic set"
+msgstr "𐑲𐑑𐑨𐑤𐑦𐑒 𐑕𐑧𐑑"
+
+msgid "Java"
+msgstr "·𐑡𐑭𐑝𐑩"
+
+msgid "Kate"
+msgstr "·𐑒𐑱𐑑"
+
+msgid "Keyword"
+msgstr "𐑒𐑰𐑢𐑻𐑛"
+
+msgid "LaTeX"
+msgstr "·𐑤𐑱𐑑𐑧𐑒"
+
+msgid "Language id"
+msgstr "𐑤𐑨𐑙𐑜𐑢𐑩𐑡 id"
+
+msgid "Language name"
+msgstr "𐑤𐑨𐑙𐑜𐑢𐑩𐑡 𐑯𐑱𐑥"
+
+msgid "Language section"
+msgstr "𐑤𐑨𐑙𐑜𐑢𐑩𐑡 𐑕𐑧𐑒𐑖𐑩𐑯"
+
+msgid "Language specification directories"
+msgstr "𐑤𐑨𐑙𐑜𐑢𐑩𐑡 𐑕𐑐𐑧𐑕𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦𐑟"
+
+msgid "Line background"
+msgstr "𐑤𐑲𐑯 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛"
+
+msgid "Line background color"
+msgstr "𐑤𐑲𐑯 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+msgid "Line background set"
+msgstr "𐑤𐑲𐑯 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑕𐑧𐑑"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "𐑤𐑦𐑕𐑑 𐑝 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦𐑟 𐑯 𐑓𐑲𐑤𐑟 𐑢𐑺 𐑞 𐑕𐑑𐑲𐑤 𐑕𐑒𐑰𐑥𐑟 𐑸 𐑤𐑴𐑒𐑱𐑑𐑩𐑛"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "𐑤𐑦𐑕𐑑 𐑝 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦𐑟 𐑢𐑺 𐑞 𐑤𐑨𐑙𐑜𐑢𐑩𐑡 𐑕𐑐𐑧𐑕𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯 𐑓𐑲𐑤𐑟 (.𐑤𐑨𐑙) 𐑸 𐑤𐑴𐑒𐑱𐑑𐑩𐑛"
+
+msgid "Literate Haskell"
+msgstr "𐑤𐑦𐑑𐑻𐑩𐑑 ·𐑣𐑨𐑕𐑒𐑩𐑤"
+
+msgid "Lua"
+msgstr "·𐑤𐑵𐑩"
+
+msgid "Mallard"
+msgstr "·𐑥𐑨𐑤𐑻𐑛"
+
+msgid "Markup"
+msgstr "𐑥𐑭𐑮𐑒𐑩𐑐"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "𐑥𐑦𐑕𐑦𐑙 𐑥𐑱𐑯 𐑤𐑨𐑙𐑜𐑢𐑩𐑡 𐑛𐑧𐑓𐑩𐑯𐑦𐑖𐑩𐑯 (id = \"%s\".)"
+
+msgid "Objective-C"
+msgstr "𐑩𐑚𐑡𐑧𐑒𐑑𐑦𐑝-C"
+
+msgid "Oblivion"
+msgstr "𐑩𐑚𐑤𐑦𐑝𐑰𐑩𐑯"
+
+msgid "Octave"
+msgstr "𐑭𐑒𐑑𐑦𐑝"
+
+msgid "Operator"
+msgstr "𐑪𐑐𐑼𐑱𐑑𐑼"
+
+msgid "Others"
+msgstr "𐑳𐑞𐑼𐑟"
+
+msgid "Pascal"
+msgstr "·𐑐𐑨𐑕𐑒𐑨𐑤"
+
+msgid "Perl"
+msgstr "·𐑐𐑻𐑤"
+
+msgid "Prolog"
+msgstr "·𐑐𐑮𐑴𐑤𐑭𐑜"
+
+msgid "Python"
+msgstr "·𐑐𐑲𐑔𐑭𐑯"
+
+msgid "RPM spec"
+msgstr "RPM 𐑕𐑐𐑧𐑒"
+
+msgid "Ruby"
+msgstr "·𐑮𐑵𐑚𐑰"
+
+msgid "Scheme"
+msgstr "·𐑕𐑒𐑰𐑥"
+
+msgid "Scientific"
+msgstr "𐑕𐑲𐑩𐑯𐑑𐑦𐑓𐑦𐑒"
+
+msgid "Scripts"
+msgstr "𐑕𐑒𐑮𐑦𐑐𐑑𐑕"
+
+msgid "Sources"
+msgstr "𐑕𐑹𐑕𐑩𐑟"
+
+msgid "String"
+msgstr "𐑕𐑑𐑮𐑦𐑙"
+
+msgid "Style scheme description"
+msgstr "𐑕𐑑𐑲𐑤 𐑕𐑒𐑰𐑥 𐑛𐑦𐑕𐑒𐑮𐑦𐑐𐑖𐑩𐑯"
+
+msgid "Style scheme filename"
+msgstr "𐑕𐑑𐑲𐑤 𐑕𐑒𐑰𐑥 𐑓𐑲𐑤𐑯𐑱𐑥"
+
+msgid "Style scheme id"
+msgstr "𐑕𐑑𐑲𐑤 𐑕𐑒𐑰𐑥 id"
+
+msgid "Style scheme name"
+msgstr "𐑕𐑑𐑲𐑤 𐑕𐑒𐑰𐑥 𐑯𐑱𐑥"
+
+msgid "Style scheme search path"
+msgstr "𐑕𐑑𐑲𐑤 𐑕𐑒𐑰𐑥 𐑕𐑻𐑗 𐑐𐑭𐑔"
+
+msgid "Tango"
+msgstr "·𐑑𐑨𐑙𐑜𐑴"
+
+msgid "Underline"
+msgstr "𐑩𐑯𐑛𐑻𐑤𐑲𐑯"
+
+msgid "Underline set"
+msgstr "𐑩𐑯𐑛𐑻𐑤𐑲𐑯 𐑕𐑧𐑑"
+
+msgid "Vala"
+msgstr "·𐑝𐑭𐑤𐑩"
+
+msgid "Whether background color is set"
+msgstr "𐑢𐑧𐑞𐑼 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼 𐑦𐑟 𐑕𐑧𐑑"
+
+msgid "Whether bold attribute is set"
+msgstr "𐑢𐑧𐑞𐑼 𐑚𐑴𐑤𐑛 𐑩𐑑𐑮𐑦𐑚𐑿𐑑 𐑦𐑟 𐑕𐑧𐑑"
+
+msgid "Whether foreground color is set"
+msgstr "𐑢𐑧𐑞𐑼 𐑓𐑹𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼 𐑦𐑟 𐑕𐑧𐑑"
+
+msgid "Whether italic attribute is set"
+msgstr "𐑢𐑧𐑞𐑼 𐑲𐑑𐑨𐑤𐑦𐑒 𐑩𐑑𐑮𐑦𐑚𐑿𐑑 𐑦𐑟 𐑕𐑧𐑑"
+
+msgid "Whether line background color is set"
+msgstr "𐑢𐑧𐑞𐑼 𐑤𐑲𐑯 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼 𐑦𐑟 𐑕𐑧𐑑"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "𐑢𐑧𐑞𐑼 𐑞 𐑤𐑨𐑙𐑜𐑢𐑩𐑡 𐑖𐑫𐑛 𐑚𐑰 𐑣𐑦𐑛𐑩𐑯 𐑓𐑮𐑪𐑥 𐑞 𐑿𐑟𐑼"
+
+msgid "Whether underline attribute is set"
+msgstr "𐑢𐑧𐑞𐑼 𐑩𐑯𐑛𐑻𐑤𐑲𐑯 𐑩𐑑𐑮𐑦𐑚𐑿𐑑 𐑦𐑟 𐑕𐑧𐑑"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "𐑒𐑪𐑯𐑑𐑧𐑒𐑕𐑑 '%s' 𐑒𐑨𐑯𐑪𐑑 𐑒𐑩𐑯𐑑𐑱𐑯 𐑩 \\%%{...@start} 𐑒𐑩𐑥𐑭𐑯𐑛"
+
+msgid "duplicated context id '%s'"
+msgstr "𐑛𐑿𐑐𐑤𐑦𐑒𐑱𐑑𐑩𐑛 𐑒𐑪𐑯𐑑𐑧𐑒𐑕𐑑 𐑦𐑛 '%s'"
+
+msgid "invalid context reference '%s'"
+msgstr "𐑦𐑯𐑝𐑨𐑤𐑦𐑛 𐑒𐑪𐑯𐑑𐑧𐑒𐑕𐑑 𐑮𐑧𐑓𐑼𐑩𐑯𐑕 '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "𐑕𐑑𐑲𐑤 𐑴𐑝𐑼𐑮𐑲𐑛 𐑿𐑟𐑛 𐑢𐑦𐑞 𐑢𐑲𐑤𐑛𐑒𐑭𐑮𐑛 𐑒𐑪𐑯𐑑𐑧𐑒𐑕𐑑 𐑮𐑧𐑓𐑼𐑩𐑯𐑕 𐑦𐑯 𐑤𐑨𐑙𐑜𐑢𐑩𐑡 '%s' 𐑦𐑯 𐑮𐑧𐑓 '%s'"
+
+msgid "unknown context '%s'"
+msgstr "𐑳𐑯𐑴𐑯 𐑒𐑪𐑯𐑑𐑧𐑒𐑕𐑑 '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr ""
+"𐑿𐑟𐑦𐑙 \\C 𐑦𐑟 𐑯𐑪𐑑 𐑕𐑩𐑐𐑹𐑑𐑩𐑛 𐑦𐑯 𐑤𐑨𐑙𐑜𐑢𐑩𐑡 𐑛𐑧𐑓𐑩𐑯𐑦𐑖𐑩𐑯𐑟The error was: %s𐑒𐑨𐑯𐑪𐑑 𐑒𐑮𐑦𐑱𐑑 𐑩 regex 𐑓𐑹 𐑷𐑤 𐑞 𐑑𐑮𐑨𐑯𐑟𐑦𐑖𐑩𐑯𐑟, 𐑞 𐑕𐑦𐑯𐑑𐑨𐑒𐑕 𐑣𐑲𐑤𐑲𐑑𐑦𐑙 𐑐𐑮𐑴𐑕𐑧𐑕 𐑢𐑦𐑤 𐑚𐑰 𐑕𐑤𐑴𐑼 𐑞𐑨𐑯 𐑿𐑠𐑿𐑩𐑤.\n"
+"𐑞 𐑻𐑼 𐑢𐑪𐑟: %s"
+

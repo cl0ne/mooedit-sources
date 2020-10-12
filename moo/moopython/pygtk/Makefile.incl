@@ -1,0 +1,64 @@
+moo_python_sources +=				\
+	moopython/pygtk/moo-pygtk.c		\
+	moopython/pygtk/moo-pygtk.h
+
+built_moo_python_sources +=			\
+	moopython/pygtk/moo-mod.h
+
+gendefs_files =					\
+	$(top_srcdir)/api/gendefs.py		\
+	$(top_srcdir)/api/mpi/__init__.py	\
+	$(top_srcdir)/api/mpi/module.py		\
+	$(top_srcdir)/api/mpi/defswriter.py
+
+moo_override_files =				\
+	moopython/pygtk/mooutils.override	\
+	moopython/pygtk/moo.override
+
+EXTRA_DIST +=					\
+	$(moo_override_files)			\
+	moopython/pygtk/codebefore.c		\
+	moopython/pygtk/codeafter.c		\
+	moopython/pygtk/moo.py
+
+built_moo_python_sources +=			\
+	moopython/pygtk/moo-mod.cpp		\
+	moopython/pygtk/moo-mod.h
+
+if MOO_OS_WIN32
+codegen_platform = --platform win32
+endif
+
+built_moo_python_sources += moopython/pygtk/moo.defs
+moopython/pygtk/moo.defs: $(gendefs_files) $(top_srcdir)/api/moo.xml Makefile
+	$(AM_V_at)$(MKDIR_P) moopython/pygtk
+	$(AM_V_GEN)$(MOO_PYTHON) $(top_srcdir)/api/gendefs.py $(top_srcdir)/api/moo.xml > moopython/pygtk/moo.defs.tmp
+	$(AM_V_at)mv moopython/pygtk/moo.defs.tmp moopython/pygtk/moo.defs
+
+codegen_files =						\
+	$(srcdir)/moopython/codegen/codegen.py		\
+	$(srcdir)/moopython/codegen/argtypes.py		\
+	$(srcdir)/moopython/codegen/argtypes_m.py	\
+	$(srcdir)/moopython/codegen/reversewrapper.py
+codegen_script = $(srcdir)/moopython/codegen/codegen.py
+codegen = $(MOO_PYTHON) $(codegen_script) $(codegen_platform) \
+	--codebefore $(srcdir)/moopython/pygtk/codebefore.c \
+	--codeafter $(srcdir)/moopython/pygtk/codeafter.c
+
+moopython/pygtk/moo-mod.cpp: $(moo_override_files) moopython/pygtk/moo.defs $(codegen_files) \
+				$(srcdir)/moopython/pygtk/codebefore.c \
+				$(srcdir)/moopython/pygtk/codeafter.c
+	$(AM_V_at)$(MKDIR_P) moopython/pygtk
+	$(AM_V_GEN)$(codegen) --prefix _moo \
+		--load-types $(srcdir)/moopython/codegen/argtypes_m.py \
+		--register $(PYGOBJECT_DEFS_DIR)/gio-types.defs \
+		--register $(PYGTK_DEFS_DIR)/gtk-types.defs \
+		--register $(PYGTK_DEFS_DIR)/gdk-types.defs \
+		--override $(srcdir)/moopython/pygtk/moo.override \
+		--outfilename moopython/pygtk/moo-mod.c \
+		moopython/pygtk/moo.defs > $@.tmp && \
+		mv $@.tmp $@
+
+moopython/pygtk/moo-mod.h: moopython/pygtk/moo.py $(top_srcdir)/tools/xml2h.py
+	$(AM_V_at)$(MKDIR_P) moopython/pygtk
+	$(AM_V_GEN)$(MOO_PYTHON) $(top_srcdir)/tools/xml2h.py $(srcdir)/moopython/pygtk/moo.py moopython/pygtk/moo-mod.h MOO_PY

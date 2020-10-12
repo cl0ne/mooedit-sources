@@ -1,0 +1,124 @@
+/* -%- lang: C; indent-width: 4; use-tabs: no; strip: yes -%-
+ *
+ *   moo.override
+ *
+ *   Copyright (C) 2004-2010 by Yevgen Muntyan <emuntyan@users.sourceforge.net>
+ *
+ *   This file is part of medit.  medit is free software; you can
+ *   redistribute it and/or modify it under the terms of the
+ *   GNU Lesser General Public License as published by the
+ *   Free Software Foundation; either version 2.1 of the License,
+ *   or (at your option) any later version.
+ *
+ *   You should have received a copy of the GNU Lesser General Public
+ *   License along with medit.  If not, see <http://www.gnu.org/licenses/>.
+ */
+%%
+headers
+#include <Python.h>
+#define NO_IMPORT_PYGOBJECT
+#define NO_IMPORT_PYGTK
+#include <pygobject.h>
+G_BEGIN_DECLS
+#include <pygtk/pygtk.h>
+G_END_DECLS
+#include "moopython/moopython-utils.h"
+#include "moopython/pygtk/moo-pygtk.h"
+
+#include "mooutils/mooprefsdialog.h"
+#include "mooutils/moocombo.h"
+#include "mooutils/mooentry.h"
+#include "mooutils/moofiledialog.h"
+#include "mooutils/moohistorymgr.h"
+#include "mooutils/moohistorylist.h"
+#include "mooutils/moohistorycombo.h"
+#include "mooutils/moofontsel.h"
+#include "mooutils/moofiltermgr.h"
+#include "mooutils/mooprefs.h"
+#include "mooutils/mooutils-enums.h"
+#include "mooutils/mooutils-misc.h"
+#include "mooutils/moo-mime.h"
+#include "mooutils/mooi18n.h"
+#include "mooutils/moohelp.h"
+#include "mooutils/moofileicon.h"
+#include "mooutils/moodialogs.h"
+#include "mooutils/moofilewatch.h"
+#include "mooutils/moomenuaction.h"
+#include "mooutils/moomenutoolbutton.h"
+#include "mooutils/moonotebook.h"
+#include "mooutils/mooundo.h"
+#include "mooutils/mooutils-script.h"
+#include "mooutils/moo-test-utils.h"
+
+#include "moofileview/moofileview.h"
+
+#include "mooedit/mooedit.h"
+#include "mooedit/mooeditor.h"
+#include "mooedit/mooeditwindow.h"
+#include "mooedit/mooeditbookmark.h"
+#include "mooedit/mooplugin.h"
+#include "mooedit/mooedit-enums.h"
+#include "mooedit/mooeditprefs.h"
+#include "mooedit/mooeditaction.h"
+#include "mooedit/mooeditaction-factory.h"
+#include "mooedit/mootextbuffer.h"
+#include "mooedit/moolangmgr.h"
+#include "mooedit/mooeditfileinfo.h"
+#include "mooedit/mooedit-script.h"
+#include "mooedit/mooedittab.h"
+
+#include "plugins/support/moocmdview.h"
+#include "plugins/support/mooeditwindowoutput.h"
+
+#include "plugins/usertools/moocommand.h"
+
+#include "mooapp/mooapp.h"
+
+#include "moolua/medit-lua.h"
+
+%%
+modulename moo
+%%
+import gobject.GObject as PyGObject_Type
+import gtk.Bin as PyGtkBin_Type
+import gtk.Widget as PyGtkWidget_Type
+import gtk.VBox as PyGtkVBox_Type
+import gtk.Button as PyGtkButton_Type
+import gtk.TextBuffer as PyGtkTextBuffer_Type
+import gtk.TextView as PyGtkTextView_Type
+import gtk.Window as PyGtkWindow_Type
+import gtk.Dialog as PyGtkDialog_Type
+import gtk.Entry as PyGtkEntry_Type
+import gtk.Table as PyGtkTable_Type
+import gtk.Frame as PyGtkFrame_Type
+import gtk.TreeModel as PyGtkTreeModel_Type
+import gtk.TreeModelFilter as PyGtkTreeModelFilter_Type
+import gtk.ComboBox as PyGtkComboBox_Type
+import gtk.FileChooser as PyGtkFileChooser_Type
+import gtk.TextTag as PyGtkTextTag_Type
+import gtk.TextTagTable as PyGtkTextTagTable_Type
+import gtk.gdk.Pixbuf as PyGdkPixbuf_Type
+import gtk.Action as PyGtkAction_Type
+import gtk.RadioAction as PyGtkRadioAction_Type
+import gtk.ToggleAction as PyGtkToggleAction_Type
+import gtk.ToggleToolButton as PyGtkToggleToolButton_Type
+import gtk.Object as PyGtkObject_Type
+import gtk.Container as PyGtkContainer_Type
+import gtk.AccelGroup as PyGtkAccelGroup_Type
+import gtk.Notebook as PyGtkNotebook_Type
+import gtk.Paned as PyGtkPaned_Type
+import gtk.HPaned as PyGtkHPaned_Type
+import gtk.VPaned as PyGtkVPaned_Type
+import gio.File as PyGFile_Type
+%%
+ignore-glob
+  *_get_type
+%%
+include mooutils.override
+%%
+//include moopaned.override
+//%%
+//include mooedit.override
+//%%
+// include mooapp.override
+// %%

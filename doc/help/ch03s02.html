@@ -1,0 +1,187 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Storing tools in files</title>
+<link rel="stylesheet" type="text/css" href="medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit manual">
+<link rel="up" href="ch03.html" title="Chapter 3. User-defined tools">
+<link rel="prev" href="ch03s01.html" title="Managing tools in Preferences dialog">
+<link rel="next" href="ch03s03.html" title="Shell scripts">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Storing tools in files</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch03s01.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 3. User-defined tools</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch03s03.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="section-storing-tools-in-files"></a>Storing tools in files</h2></div></div></div>
+<p>
+It is possible to create tools without using the <span class="guilabel">Preferences</span> dialog,
+they can be stored in files in <code class="filename">tools</code> subfolder of the <span class="application">medit</span> data
+folders (or <code class="filename">tools-context</code> for tools which appear in the document context
+menu). In particular, on Unix systems you can place files into <code class="filename">$HOME/.local/share/medit-1/tools/</code> folder.
+</p>
+<p>
+Names of the files in the <code class="filename">tools</code> folder are used as their menu item
+labels, after stripping first three characters, so you can use trhee-character
+prefix to affect the order of the menu items, e.g. you can have <code class="filename">00-Do Something</code>,
+<code class="filename">01-Another tool</code> files to have them in that order in the menu. The files
+may be of three types:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">files with extension "<code class="filename">.py</code>", they will be used
+as Python scripts;</li>
+<li class="listitem">files with extension "<code class="filename">.lua</code>", they will be used
+as Lua scripts;</li>
+<li class="listitem">executable files, they will be executed in the same way
+as shell commands.</li>
+</ul></div>
+<p>
+</p>
+<p>
+Note that files with <code class="filename">.py</code> and <code class="filename">.lua</code> extensions will be
+executed inside <span class="application">medit</span> process; if you want to use them as regular scripts, then just remove the
+extension.
+</p>
+<p>
+To set parameters for a tool, place them on the first or the second line of the file in
+the following format:
+</p>
+<pre class="programlisting">
+!! <em class="parameter"><code>key</code></em>=<em class="parameter"><code>value</code></em>; <em class="parameter"><code>key</code></em>=<em class="parameter"><code>value</code></em>; ... !!
+</pre>
+<p>
+</p>
+<p>
+<em class="parameter"><code>key</code></em> may be one of the following:
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="code">position</code></span></p></td>
+<td>it can be <code class="code">start</code> or <code class="code">end</code>, and it defines whether the menu item
+  will be located at the start or at the end of the menu.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">id</code></span></p></td>
+<td>the tool identificator.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">name</code></span></p></td>
+<td>the tool name, i.e. the label used in the menu item. Overrides the file name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">accel</code></span></p></td>
+<td>default keyboard accelerator used to invoke this tool.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">menu</code></span></p></td>
+<td>the menu to place this tool into. By default tools are located in the <span class="guimenu">Tools</span> menu,
+  but they can be as well put into any other menu.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">langs</code></span></p></td>
+<td>comma-separated list of languages for which this tool will be enabled.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">file-filter</code></span></p></td>
+<td>defines for which files this tool will be enabled. The value has the same format as
+  in the <span class="guilabel">Preferences</span> dialog.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">options</code></span></p></td>
+<td>this corresponds to Requires and Save controls in the <span class="guilabel">Preferences</span> dialog. It is a
+  comma-separated list of the following:
+    <div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="code">need-doc</code></span></p></td>
+<td>tool will be enabled only if there is an open document.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">need-file</code></span></p></td>
+<td>tool will be enabled only if current document is saved on disk (i.e. it is not "Untitled").</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">need-save</code></span></p></td>
+<td>current document will be automatically saved before the command is executed.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">need-save-all</code></span></p></td>
+<td>all open documents will be automatically saved before the command is executed.</td>
+</tr>
+</tbody>
+</table></div>
+</td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+<p>
+In addition to these, you can set input and output options for executable files (see <a class="xref" href="ch03s03.html" title="Shell scripts">the section called &#8220;Shell scripts&#8221;</a>
+for the meaning of these options):
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="code">input</code></span></p></td>
+<td>
+<code class="code">none</code>, <code class="code">lines</code>, <code class="code">selection</code>, or <code class="code">doc</code>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">output</code></span></p></td>
+<td>
+<code class="code">none</code>, <code class="code">async</code>, <code class="code">pane</code>, <code class="code">insert</code>, or <code class="code">new-doc</code>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">filter</code></span></p></td>
+<td>output filter name.</td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch03s01.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="ch03.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch03s03.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Managing tools in <span class="guilabel">Preferences</span> dialog </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> Shell scripts</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

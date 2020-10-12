@@ -1,0 +1,22 @@
+<ui>
+  <object name="Editor">
+    <widget name="Popup">
+      <separator/>
+      <placeholder name="PopupStart"/>
+      <separator/>
+      <item action="Undo"/>
+      <item action="Redo"/>
+      <separator/>
+      <item action="Cut"/>
+      <item action="Copy"/>
+      <item action="Paste"/>
+      <separator/>
+      <item action="SelectAll"/>
+      <separator/>
+      <placeholder name="PopupEnd"/>
+      <separator/>
+      <item action="InputMethods"/>
+      <item action="SpecialChars"/>
+    </widget> <!-- Popup -->
+  </object> <!-- Editor -->
+</ui>

@@ -1,0 +1,209 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>gtk.GObject</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-gtk.html" title="Chapter 2. Gtk API for Lua scripts">
+<link rel="prev" href="ch02s05.html" title="gtk.GFile">
+<link rel="next" href="ch02s07.html" title="gtk.GdkRectangle">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">gtk.GObject</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch02s05.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 2. Gtk API for Lua scripts</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch02s07.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="lua.GObject"></a>gtk.GObject</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch02s06.html#lua.g_object_connect">connect()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s06.html#lua.g_object_connect_after">connect_after()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s06.html#lua.g_object_disconnect">disconnect()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s06.html#lua.g_object_get_property">get_property()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s06.html#lua.g_object_set_property">set_property()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s06.html#lua.g_object_signal_handler_block">signal_handler_block()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s06.html#lua.g_object_signal_handler_unblock">signal_handler_unblock()</a></span></dt>
+</dl></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_object_connect"></a>connect()</h3></div></div></div>
+<pre class="programlisting">object.connect(signal, callback)</pre>
+<p>Connect a signal handler.  </p>
+<div class="example">
+<a name="idm2726"></a><p class="title"><b>Example 2.1. GObject.connect()</b></p>
+<div class="example-contents"><pre class="programlisting"> editor.connect("before-save", function(editor, doc, file)
+   if #doc.get_text() % 2 ~= 0 then
+     moo.error_dialog("Won't save",
+                      "Odd number of characters in a file " ..
+                      "is bad for your hard drive, I am not " ..
+                      "going to save this.",
+                      doc.get_window())
+     return moo.SAVE_RESPONSE_CANCEL
+   else
+     return moo.SAVE_RESPONSE_CONTINUE
+   end
+ end) </pre></div>
+</div>
+<p><br class="example-break"> </p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>signal</code></em></span> : </p></td>
+<td><p>signal name</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em></span> : </p></td>
+<td><p> function to call when the signal is emitted</p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em>  id of connected signal handler. Use <code class="function"><a class="link" href="ch02s06.html#lua.g_object_disconnect" title="disconnect()">disconnect()</a></code> to remove it.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_object_connect_after"></a>connect_after()</h3></div></div></div>
+<pre class="programlisting">object.connect_after(signal, callback)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>signal</code></em></span> : </p></td>
+<td><p>signal name</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em></span> : </p></td>
+<td><p> function to call when the signal is emitted</p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_object_disconnect"></a>disconnect()</h3></div></div></div>
+<pre class="programlisting">object.disconnect(handler_id)</pre>
+<p>Disconnect a signal handler.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>handler_id</code></em></span> : </p></td>
+<td><p> signal handler id returned from <code class="function"><a class="link" href="ch02s06.html#lua.g_object_connect" title="connect()">connect()</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_object_get_property"></a>get_property()</h3></div></div></div>
+<pre class="programlisting">object.get_property(property_name)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>property_name</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">value</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_object_set_property"></a>set_property()</h3></div></div></div>
+<pre class="programlisting">object.set_property(property_name, value)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>property_name</code></em></span> : </p></td>
+<td><p><code class="constant">string</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>value</code></em></span> : </p></td>
+<td><p><code class="constant">value</code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_object_signal_handler_block"></a>signal_handler_block()</h3></div></div></div>
+<pre class="programlisting">object.signal_handler_block(handler_id)</pre>
+<p>Temporarily blocks signal handler so it will not be called when the signal it's connected to is emitted. Call <code class="function"><a class="link" href="ch02s06.html#lua.g_object_signal_handler_unblock" title="signal_handler_unblock()">signal_handler_unblock()</a></code> to re-enable the signal handler.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>handler_id</code></em></span> : </p></td>
+<td><p> signal handler id returned from <code class="function"><a class="link" href="ch02s06.html#lua.g_object_connect" title="connect()">connect()</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.g_object_signal_handler_unblock"></a>signal_handler_unblock()</h3></div></div></div>
+<pre class="programlisting">object.signal_handler_unblock(handler_id)</pre>
+<p>Re-enables signal handler disabled by <code class="function"><a class="link" href="ch02s06.html#lua.g_object_signal_handler_block" title="signal_handler_block()">signal_handler_block()</a></code>.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>handler_id</code></em></span> : </p></td>
+<td><p> signal handler id returned from <code class="function"><a class="link" href="ch02s06.html#lua.g_object_connect" title="connect()">connect()</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch02s05.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-gtk.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch02s07.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">gtk.GFile </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> gtk.GdkRectangle</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

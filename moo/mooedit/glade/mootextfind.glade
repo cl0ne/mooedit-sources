@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glade-interface>
+<!-- interface-requires gtk+ 2.6 -->
+<!-- interface-naming-policy toplevel-contextual -->
+<widget class="GtkDialog" id="dialog1">
+<property name="title">Find</property>
+<property name="window_position">center-on-parent</property>
+<property name="destroy_with_parent">True</property>
+<property name="type_hint">dialog</property>
+<child internal-child="vbox">
+<widget class="GtkVBox" id="dialog-vbox1">
+<property name="visible">True</property>
+<child>
+<widget class="GtkVBox" id="MooFindBox">
+<property name="visible">True</property>
+<property name="border_width">3</property>
+<property name="spacing">3</property>
+<child>
+<widget class="GtkFrame" id="find_frame">
+<property name="visible">True</property>
+<property name="label_xalign">0</property>
+<child>
+<widget class="GtkAlignment" id="alignment1">
+<property name="visible">True</property>
+<property name="top_padding">6</property>
+<property name="bottom_padding">6</property>
+<property name="left_padding">6</property>
+<property name="right_padding">6</property>
+<child>
+<widget class="GtkVBox" id="vbox2">
+<property name="visible">True</property>
+<property name="spacing">3</property>
+<child>
+<widget class="GtkLabel" id="label3">
+<property name="visible">True</property>
+<property name="xalign">0</property>
+<property name="label" translatable="yes">_Text to find:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">search_entry:MooHistoryCombo</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="search_entry:MooHistoryCombo">
+<property name="visible">True</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+<child>
+<widget class="GtkHBox" id="hbox1">
+<property name="visible">True</property>
+<child>
+<widget class="GtkCheckButton" id="regex">
+<property name="label" translatable="yes">Regular e_xpression</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">2</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</child>
+<child>
+<widget class="GtkLabel" id="label1">
+<property name="visible">True</property>
+<property name="label" translatable="yes">Find</property>
+</widget>
+<packing>
+<property name="type">label_item</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkFrame" id="replace_frame">
+<property name="visible">True</property>
+<property name="label_xalign">0</property>
+<child>
+<widget class="GtkAlignment" id="alignment3">
+<property name="visible">True</property>
+<property name="top_padding">6</property>
+<property name="bottom_padding">6</property>
+<property name="left_padding">6</property>
+<property name="right_padding">6</property>
+<child>
+<widget class="GtkVBox" id="vbox3">
+<property name="visible">True</property>
+<property name="spacing">3</property>
+<child>
+<widget class="GtkLabel" id="label4">
+<property name="visible">True</property>
+<property name="xalign">0</property>
+<property name="label" translatable="yes">_Replacement text:</property>
+<property name="use_underline">True</property>
+<property name="mnemonic_widget">replace_entry:MooHistoryCombo</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="replace_entry:MooHistoryCombo">
+<property name="visible">True</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+<child>
+<widget class="GtkHBox" id="hbox2">
+<property name="visible">True</property>
+<child>
+<widget class="GtkCheckButton" id="repl_literal">
+<property name="label" translatable="yes">_Literal replacement</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">2</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</child>
+<child>
+<widget class="GtkLabel" id="label5">
+<property name="visible">True</property>
+<property name="label" translatable="yes">Replace With</property>
+</widget>
+<packing>
+<property name="type">label_item</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+<child>
+<widget class="GtkFrame" id="options_frame">
+<property name="visible">True</property>
+<property name="label_xalign">0</property>
+<child>
+<widget class="GtkAlignment" id="alignment2">
+<property name="visible">True</property>
+<property name="top_padding">3</property>
+<property name="bottom_padding">3</property>
+<property name="left_padding">3</property>
+<property name="right_padding">3</property>
+<child>
+<widget class="GtkTable" id="table1">
+<property name="visible">True</property>
+<property name="n_rows">3</property>
+<property name="n_columns">2</property>
+<property name="column_spacing">3</property>
+<child>
+<widget class="GtkCheckButton" id="dont_prompt">
+<property name="label" translatable="yes">Don't _prompt on replace</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">2</property>
+<property name="bottom_attach">3</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="backwards">
+<property name="label" translatable="yes">Find _backwards</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="case_sensitive">
+<property name="label" translatable="yes">Case _sensitive</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="selected">
+<property name="label" translatable="yes">S_elected text</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="from_cursor">
+<property name="label" translatable="yes">From c_ursor</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="top_attach">2</property>
+<property name="bottom_attach">3</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="whole_words">
+<property name="label" translatable="yes">_Whole words only</property>
+<property name="visible">True</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</child>
+<child>
+<widget class="GtkLabel" id="label2">
+<property name="visible">True</property>
+<property name="label" translatable="yes">Options</property>
+</widget>
+<packing>
+<property name="type">label_item</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">2</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="position">1</property>
+</packing>
+</child>
+<child internal-child="action_area">
+<widget class="GtkHButtonBox" id="dialog-action_area1">
+<property name="visible">True</property>
+<property name="layout_style">end</property>
+<child>
+<widget class="GtkButton" id="cancel_btn">
+<property name="label">gtk-cancel</property>
+<property name="response_id">-6</property>
+<property name="visible">True</property>
+<property name="can_default">True</property>
+<property name="use_stock">True</property>
+<property name="focus_on_click">False</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkButton" id="ok_btn">
+<property name="label">gtk-find</property>
+<property name="response_id">-5</property>
+<property name="visible">True</property>
+<property name="can_default">True</property>
+<property name="has_default">True</property>
+<property name="use_stock">True</property>
+<property name="focus_on_click">False</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="pack_type">end</property>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</glade-interface>

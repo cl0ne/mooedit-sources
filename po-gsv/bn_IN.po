@@ -1,0 +1,276 @@
+# translation of bn_IN.po to Bengali INDIA
+# Bengali India translation of gtksourceview.
+# Copyright (C) 2003, 2007, 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtksourceview package.
+#
+# Sayamindu Dasgupta <unmadindu@bengalinux.org>, 2003.
+# Mahay Alam Khan <makl10n@yahoo.com>, 2005.
+# Samia Niamatullah <mailsamia2001@yahoo.com>, 2005.
+# Runa Bhattacharjee <runabh@gmail.com>, 2007.
+# Runa Bhattacharjee <runab@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: bn_IN\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-08-27 16:15+0530\n"
+"Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+"Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+""
+
+msgid "Background"
+msgstr "পটভূমি"
+
+msgid "Background color"
+msgstr "পটভূমির রং"
+
+msgid "Background set"
+msgstr "পটভূমি নির্ধারিত হয়েছে"
+
+msgid "Blue based color scheme"
+msgstr "নীল রঙ ভিক্তিক রঙের বিন্যাস"
+
+msgid "Bold"
+msgstr "গাঢ়"
+
+msgid "Bold set"
+msgstr "গাঢ় মান নির্ধারিত হয়েছে"
+
+msgid "Boolean value"
+msgstr "বুলিয়ান মান"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC হেডার"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"সকল অস্থায়ী পরিবর্তনগুলির জন্য regex নির্মাণ করা সম্ভব হবে না, সিন্টেক্স উজ্জ্বল করে দর্শানোর প্রক্রিয়া অন্যান্য সময়ের থেকে ধীরে হবে।\n"
+"উৎপন্ন ত্রুটি: %s"
+
+msgid "Classic"
+msgstr "পারম্পরিক"
+
+msgid "Classic color scheme"
+msgstr "পারম্পরিক রঙের বিন্যাস"
+
+msgid "Cobalt"
+msgstr "কোবাল্ট"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kate টেক্সট এডিটরে ব্যবহৃত রঙের স্কিম"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Tango রঙের প্যালেট ব্যবহার করে নির্মিত রঙের বিন্যাস"
+
+msgid "Comment"
+msgstr "মন্তব্য (কমেন্ট)"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tango রঙের প্যালেট ব্যবহার করে নির্মিত গাঢ় রঙের বিন্যাস"
+
+msgid "Data Type"
+msgstr "ডাটা টাইপ"
+
+msgid "Decimal number"
+msgstr "দশমিক সংখ্যা"
+
+msgid "Defaults"
+msgstr "ডিফল্ট"
+
+msgid "Error"
+msgstr "ত্রুটি"
+
+msgid "Escaped Character"
+msgstr "এস্কেপ ক্যারেক্টার"
+
+msgid "Floating point number"
+msgstr "ফ্লোটিং পয়েন্ট সংখ্যা"
+
+msgid "Foreground"
+msgstr "অগ্রভূমি"
+
+msgid "Foreground color"
+msgstr "অগ্রভূমির রং"
+
+msgid "Foreground set"
+msgstr "অগ্রভূমি নির্ধারিত হয়েছে"
+
+msgid "Hexadecimal number"
+msgstr "হেক্সাডেসিমাল সংখ্যা"
+
+msgid "Hidden"
+msgstr "আড়াল করা"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "একটি পংক্তিকে উজ্জ্বল করে প্রদর্শন করতে অধিক সময় ব্যয় হয়েছে, সিন্টেক্স উজ্জ্বল করে দর্শানোর প্রক্রিয়া নিষ্ক্রিয় করা হবে"
+
+msgid "Identifier"
+msgstr "আইডেন্টিফায়ার"
+
+msgid "Italic"
+msgstr "তেরছা"
+
+msgid "Italic set"
+msgstr "তেরছা মান নির্ধারিত হয়েছে"
+
+msgid "Keyword"
+msgstr "কীওয়ার্ড"
+
+msgid "Language id"
+msgstr "ভাষার id"
+
+msgid "Language ids"
+msgstr "ভাষার id"
+
+msgid "Language name"
+msgstr "ভাষার নাম"
+
+msgid "Language section"
+msgstr "ভাষার বিভাগ"
+
+msgid "Language specification directories"
+msgstr "ভাষা নির্ধারণে ব্যবহৃত ডিরেক্টরি"
+
+msgid "Line background"
+msgstr "রেখার পটভূমি"
+
+msgid "Line background color"
+msgstr "রেখার পটভূমির রং"
+
+msgid "Line background set"
+msgstr "রেখার পটভূমি নির্ধারিত"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "বিন্যাসের স্কিম ধারণকারী ডিরেক্টরি ও ফাইলের তালিকা"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "ভাষা স্পেসিফিকেশন ফাইল (.lang) যে ডিরেক্টরী সমূহতে আছে - তার তালিকা "
+
+msgid "List of the ids of the available languages"
+msgstr "উপলব্ধ ভাষার id"
+
+msgid "List of the ids of the available style schemes"
+msgstr "উপলব্ধ বিন্যাসের স্কিমের id-র তালিকা"
+
+msgid "Literate Haskell"
+msgstr "লিটারেট Haskell"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "ভাষার প্রধান ব্যাখ্যা অনুপস্থিত (id = \"%s\".)"
+
+msgid "Oblivion"
+msgstr "অবলিভিয়ান"
+
+msgid "Operator"
+msgstr "অপারেটর"
+
+msgid "Others"
+msgstr "অন্যান্য"
+
+msgid "Preprocessor"
+msgstr "প্রিপ্রসেসর"
+
+msgid "Scheme"
+msgstr "স্কিম"
+
+msgid "Scheme ids"
+msgstr "স্কিমের id"
+
+msgid "Scientific"
+msgstr "বৈজ্ঞানিক"
+
+msgid "Scripts"
+msgstr "স্ক্রিপ্ট"
+
+msgid "Sources"
+msgstr "সোর্স"
+
+msgid "Strikethrough"
+msgstr "মধ্যে রেখাঙ্কিত"
+
+msgid "Strikethrough set"
+msgstr "মধ্যে রেখাঙ্কণ নির্ধারিত হয়েছে"
+
+msgid "String"
+msgstr "স্ট্রিং"
+
+msgid "Style scheme description"
+msgstr "বিন্যাসের স্কিমের বর্ণনা"
+
+msgid "Style scheme filename"
+msgstr "বিন্যাসের স্কিমের ফাইলের-নাম"
+
+msgid "Style scheme id"
+msgstr "বিন্যাসের স্কিমের id"
+
+msgid "Style scheme name"
+msgstr "বিন্যাসের স্কিমের nam"
+
+msgid "Style scheme search path"
+msgstr "বিন্যাসের স্কিমের অনুসন্ধানের পাথ"
+
+msgid "Underline"
+msgstr "নিম্নরেখাঙ্কিত"
+
+msgid "Underline set"
+msgstr "নিম্নরেখাঙ্কণ নির্ধারিত হয়েছে"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "অজানা id '%s', '%s' রেগুলার এক্সপ্রেশনের মধ্যে উপস্থিত রয়েছে"
+
+msgid "Whether background color is set"
+msgstr "পটভূমির রং নির্ধারিত হয়েছে কি না"
+
+msgid "Whether bold attribute is set"
+msgstr "গাঢ় ভাবের মান নির্ধারণ হয়েছে কিনা"
+
+msgid "Whether foreground color is set"
+msgstr "অগ্রভূমির রং নির্ধারণ করা হয়েছে কি না"
+
+msgid "Whether italic attribute is set"
+msgstr "তেরছা ভাবের মান নির্ধারণ হয়েছে কিনা"
+
+msgid "Whether line background color is set"
+msgstr "রেখার পটভূমির রং নির্ধারিত হয়েছে কি না"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "মধ্যে রেখাঙ্কনের মান নির্ধারণ হয়েছে কিনা"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "ব্যবহারকারী থেকে ভাষা আড়াল করা হবে কি না"
+
+msgid "Whether underline attribute is set"
+msgstr "নিম্নরেখাঙ্কনের মান নির্ধারণ হয়েছে কিনা"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "'%s' কনটেক্সটের মধ্যে \\%%{...@start} কমান্ড অন্তর্ভুক্ত করা সম্ভব নয়"
+
+msgid "duplicated context id '%s'"
+msgstr "কন্টেক্সট id '%s'-র দ্বৈত উপস্থিতি"
+
+msgid "gettext translation"
+msgstr "gettext অনুবাদ"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "রেগুলার এক্সপ্রেশন '%s'-র মধ্যে: ব্যাক-রেফারেন্স সমর্থিত হবে না"
+
+msgid "invalid context reference '%s'"
+msgstr "অবৈধ কন্টেক্সট রেফারেন্স '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "'%s' ভাষার '%s' ref-র মধ্যে ওয়াইল্ড-কার্ড কনটেক্সট রেফারেন্সের সাথে বিন্যাস উপেক্ষার নির্দেশ প্রয়োগ করা হয়েছে"
+
+msgid "unknown context '%s'"
+msgstr "অজানা কনটেক্সট '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "ভাষার ব্যাখায় \\C-র ব্যবহার সমর্থিত নয়"
+

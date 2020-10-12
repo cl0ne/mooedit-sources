@@ -1,0 +1,260 @@
+# Dutch translation for gtksourceview
+#
+# This file is distributed under the same license as the gtksourceview package.
+#
+# Jan-Willem Harmanny <jwharmanny@hotmail.com>, 2003.
+# Tino Meinen <tino.meinen@gmail.com>, 2003–2006, 2008.
+# Michiel Sikkes <michiels@gnome.org>, 2005.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006, 2008–2009
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-02-24 23:09+0100\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "Achtergrond"
+
+msgid "Background color"
+msgstr "Achtergrondkleur"
+
+msgid "Background set"
+msgstr "Achtergrond ingesteld"
+
+msgid "Blue based color scheme"
+msgstr "Blauw kleurenschema"
+
+msgid "Bold"
+msgstr "Vet"
+
+msgid "Bold set"
+msgstr "Vet ingesteld"
+
+msgid "Boolean value"
+msgstr "Booleaanse waarde"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC-header"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Kon geen reguliere expressie voor alle overgangen maken. Syntaxiskleuring zal langzamer zijn dan gebruikelijk.\n"
+"De foutmelding was: %s"
+
+msgid "Classic"
+msgstr "Klassiek"
+
+msgid "Classic color scheme"
+msgstr "Klassiek kleurenschema"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Kleurenschema gebruikt in de tekst-editor Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Kleurenschema met Tango-kleurenstaal"
+
+msgid "Comment"
+msgstr "Commentaar"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Donker kleurenschema met Tango-kleurenstaal"
+
+msgid "Data Type"
+msgstr "Gegevenstype"
+
+msgid "Decimal number"
+msgstr "Decimaal getal"
+
+msgid "Defaults"
+msgstr "Standaarden"
+
+msgid "Dos Batch"
+msgstr "DOS-batch"
+
+msgid "Error"
+msgstr "Fout"
+
+msgid "Escaped Character"
+msgstr "‘Escaped’ teken"
+
+msgid "Floating point number"
+msgstr "Floating-point getal"
+
+msgid "Foreground"
+msgstr "Voorgrond"
+
+msgid "Foreground color"
+msgstr "Voorgrondkleur"
+
+msgid "Foreground set"
+msgstr "Voorgrond ingesteld"
+
+msgid "Hexadecimal number"
+msgstr "Hexadecimaal getal"
+
+msgid "Hidden"
+msgstr "Verborgen"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Oplichten van een enkele regel duurde te lang. Syntaxiskleuring wordt uitgeschakeld ."
+
+msgid "Italic"
+msgstr "Schuin"
+
+msgid "Italic set"
+msgstr "Schuingedrukt ingesteld"
+
+msgid "Keyword"
+msgstr "Sleutelwoord"
+
+msgid "Language id"
+msgstr "Taal-id"
+
+msgid "Language ids"
+msgstr "Taal-id's"
+
+msgid "Language name"
+msgstr "Taalnaam"
+
+msgid "Language section"
+msgstr "Taal-onderdeel"
+
+msgid "Language specification directories"
+msgstr "Taal specificatie mappen"
+
+msgid "Line background"
+msgstr "Regelachtergrond"
+
+msgid "Line background color"
+msgstr "Regelachtergrondkleur"
+
+msgid "Line background set"
+msgstr "Regelachtergrond ingesteld"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Een lijst van mappen waarin de stijlschema's zich bevinden"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Een lijst van mappen waarin de taal specificatiebestanden (.lang) zich bevinden"
+
+msgid "List of the ids of the available languages"
+msgstr "Lijst met de id's van de beschikbare talen"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Lijst van id's van de beschikbare stijlschema's"
+
+msgid "Literate Haskell"
+msgstr "Letterlijke Haskell"
+
+msgid "Markup"
+msgstr "Markering"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Hoofdtaaldefinitie ontbreekt (id = ‘%s’)"
+
+msgid "Others"
+msgstr "Andere"
+
+msgid "RPM spec"
+msgstr "RPM-spec"
+
+msgid "Scheme ids"
+msgstr "Schema-id's"
+
+msgid "Scientific"
+msgstr "Wetenschappelijk"
+
+msgid "Sources"
+msgstr "Bronnen"
+
+msgid "Strikethrough"
+msgstr "Doorhalen"
+
+msgid "Strikethrough set"
+msgstr "Doorhalen ingesteld"
+
+msgid "String"
+msgstr "Tekenreeks"
+
+msgid "Style scheme description"
+msgstr "Beschrijving stijlschema"
+
+msgid "Style scheme filename"
+msgstr "Bestandsnaam stijlschema"
+
+msgid "Style scheme id"
+msgstr "Id van stijlschema"
+
+msgid "Style scheme name"
+msgstr "Naam stijlschema"
+
+msgid "Style scheme search path"
+msgstr "Zoekpad voor stijlschema's"
+
+msgid "Underline"
+msgstr "Onderstrepen"
+
+msgid "Underline set"
+msgstr "Onderstrepen ingesteld"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Onbekend id ‘%s’ in regex ‘%s’"
+
+msgid "Whether background color is set"
+msgstr "Of er een achtergrondkleur is ingesteld"
+
+msgid "Whether bold attribute is set"
+msgstr "Of het vet-attribuut is ingesteld"
+
+msgid "Whether foreground color is set"
+msgstr "Of er een voorgrondkleur is ingesteld"
+
+msgid "Whether italic attribute is set"
+msgstr "Of het schuingedrukt-attribuut is ingesteld"
+
+msgid "Whether line background color is set"
+msgstr "Of er een regelachtergrond is ingesteld"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Of het doorhalen-attribuut is ingesteld"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Of de taal verborgen wordt voor de gebruiker"
+
+msgid "Whether underline attribute is set"
+msgstr "Of het onderstrepen-attribuut is ingesteld"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "context ‘%s’ mag geen opdracht \\%%{...@start} bevatten"
+
+msgid "duplicated context id '%s'"
+msgstr "duplicaat context-id ‘%s’"
+
+msgid "gettext translation"
+msgstr "gettext-vertaling"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "in regex ‘%s’: terugverwijzingen worden niet ondersteund"
+
+msgid "invalid context reference '%s'"
+msgstr "ongeldige contextreferentie ‘%s’"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "‘style override’ gebruikt met een ‘wildcard’-contextreferentie in taal ‘%s’ in ref ‘%s’"
+
+msgid "unknown context '%s'"
+msgstr "onbekende context ‘%s’"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "het gebruik van \\C is niet mogelijk in taaldefinities"
+

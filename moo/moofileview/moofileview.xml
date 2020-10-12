@@ -1,0 +1,49 @@
+<ui><!-- -*- Mode: XML; indent-tabs-mode: nil; c-basic-offset: 2 -*- -->
+  <object name="MooFileView">
+    <widget name="Menu">
+      <separator/>
+      <item action="GoUp"/>
+      <item action="GoBack"/>
+      <item action="GoForward"/>
+      <item action="GoHome"/>
+      <separator/>
+      <item action="Cut"/>
+      <item action="Copy"/>
+      <item action="Paste"/>
+      <separator/>
+      <item action="NewFolder"/>
+      <item action="Delete"/>
+      <separator/>
+      <item name="View" _label="View">
+        <separator/>
+        <item action="ShowHiddenFiles"/>
+        <!--<item action="ShowParentFolder"/>-->
+        <!--<item action="CaseSensitiveSort"/>-->
+        <!--<item action="SortFoldersFirst"/>-->
+        <separator/>
+        <item action="Reload"/>
+        <separator/>
+      </item>
+      <separator/>
+      <item action="Properties"/>
+      <separator/>
+      <item name="OpenWithSubmenu" _label="Open _With">
+        <placeholder name="OpenWith"/>
+      </item>
+    </widget> <!-- Menubar -->
+
+    <widget name="Toolbar">
+      <item action="GoUp"/>
+      <item action="GoBack"/>
+      <item action="GoForward"/>
+      <item action="GoHome"/>
+      <item action="BookmarksMenu" _tooltip="Bookmarks" icon-stock-id="gtk-about">
+        <placeholder name="Bookmarks"/>
+        <separator/>
+        <item action="AddBookmark"/>
+        <item action="EditBookmarks"/>
+      </item>
+    </widget> <!-- Toolbar -->
+
+  </object> <!-- MooFileView -->
+</ui>

@@ -1,0 +1,274 @@
+# translation of ro.po to Romanian
+# Romanian translation for gtksourceview
+# Copyright (c) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtksourceview package.
+# Cristian Vat <deathgeneral@gmail.com>, 2005.
+# Dan Damian <dand@gnome.ro>, 2005-2006.
+# Adi Roiban https://launchpad.net/~adiroiban, 2009
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-22 01:15+0200\n"
+"Last-Translator: Adi Roiban <adi@roiban.ro>\n"
+"Language-Team: Romanian GNOME Team <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.5.2\n"
+"X-Launchpad-Export-Date: 2009-08-21 13:52+0000"
+
+msgid "Background"
+msgstr "Fundal"
+
+msgid "Background color"
+msgstr "Culoare fundal"
+
+msgid "Background set"
+msgstr "Fundal activat"
+
+msgid "Blue based color scheme"
+msgstr "Schemă de culori bazată pe albastru"
+
+msgid "Bold"
+msgstr "Aldin"
+
+msgid "Bold set"
+msgstr "Aldin activat"
+
+msgid "Boolean value"
+msgstr "Valoare logică"
+
+msgid "C/C++/ObjC Header"
+msgstr "Antet C/C++/ObjC"
+
+msgid "CG Shader Language"
+msgstr "Limbajul de shader CG"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Nu s-a putut crea o expresie regulată pentru toate tranzițiile, procesul de evidențiere a sintaxei va fi mai lent decât deobicei.\n"
+"Eroare a fost: %s"
+
+msgid "Classic"
+msgstr "Clasic"
+
+msgid "Classic color scheme"
+msgstr "Schemă de culori clasică"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Schema de culori utilizată de editorul de text Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Schema de culori folosește paleta de culori Tango"
+
+msgid "Comment"
+msgstr "Comentariu"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Schemă de culori întunecată folosită cu paleta de culori Tango"
+
+msgid "Data Type"
+msgstr "Tip de date"
+
+msgid "Decimal number"
+msgstr "Număr zecimal"
+
+msgid "Defaults"
+msgstr "Valori implicite"
+
+msgid "Error"
+msgstr "Eroare"
+
+msgid "Escaped Character"
+msgstr "Caracter exceptat"
+
+msgid "Floating point number"
+msgstr "Număr în virgulă mobilă"
+
+msgid "Foreground"
+msgstr "Prim plan"
+
+msgid "Foreground color"
+msgstr "Culoare prim plan"
+
+msgid "Foreground set"
+msgstr "Prim-plan activat"
+
+msgid "Hexadecimal number"
+msgstr "Număr hexazecimal"
+
+msgid "Hidden"
+msgstr "Ascuns"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Evidențierea sintaxei pentru o singură linie a durat prea mult timp, evidențierea sintaxei va fi dezactivată"
+
+msgid "Identifier"
+msgstr "Identificator"
+
+msgid "Italic"
+msgstr "Cursiv"
+
+msgid "Italic set"
+msgstr "Cursiv activat"
+
+msgid "Keyword"
+msgstr "Cuvânt cheie"
+
+msgid "Language id"
+msgstr "Identificator limbaj"
+
+msgid "Language ids"
+msgstr "Identificatori limbaj"
+
+msgid "Language name"
+msgstr "Nume limbaj"
+
+msgid "Language section"
+msgstr "Secțiune limbaj"
+
+msgid "Language specification directories"
+msgstr "Directoare cu specificații de limbaj"
+
+msgid "Line background"
+msgstr "Fundal linie"
+
+msgid "Line background color"
+msgstr "Culoare fundal linie"
+
+msgid "Line background set"
+msgstr "Fundalul liniei activat"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Lista dosarelor și fișierelor unde se află fișierele cu scheme de stil"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Lista dosarelor unde se află fișierele cu specificații de limbaje (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "Lista cu identificatorii limbilor disponibile"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Lista cu identificatorii schemelor de stil disponibile"
+
+msgid "Markup"
+msgstr "Marcaj"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Definiția principală de limbaj lipsește (id = „%s”.)"
+
+msgid "Objective Caml"
+msgstr "Caml Obiectual"
+
+msgid "OpenGL Shading Language"
+msgstr "Limbajul de umbrire OpenGL"
+
+msgid "Others"
+msgstr "Altele"
+
+msgid "Preprocessor"
+msgstr "Preprocesor"
+
+msgid "RPM spec"
+msgstr "Specificație RPM"
+
+msgid "Scheme ids"
+msgstr "Identificatori schemă"
+
+msgid "Scientific"
+msgstr "Științific"
+
+msgid "Scripts"
+msgstr "Scripturi"
+
+msgid "Sources"
+msgstr "Surse"
+
+msgid "Strikethrough"
+msgstr "Tăiat"
+
+msgid "Strikethrough set"
+msgstr "Tăiat activat"
+
+msgid "String"
+msgstr "Șir"
+
+msgid "Style scheme description"
+msgstr "Descriere schemă stil"
+
+msgid "Style scheme filename"
+msgstr "Nume fișier schemă stil"
+
+msgid "Style scheme id"
+msgstr "Identificator schemă stil"
+
+msgid "Style scheme name"
+msgstr "Nume schemă stil"
+
+msgid "Style scheme search path"
+msgstr "Calea de căutare pentru scheme de stil"
+
+msgid "Underline"
+msgstr "Subliniere"
+
+msgid "Underline set"
+msgstr "Subliniat activat"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Identificator „%s” necunoscut în expresia regulată „%s”"
+
+msgid "Whether background color is set"
+msgstr "Dacă culoarea fundalului este activat"
+
+msgid "Whether bold attribute is set"
+msgstr "Dacă atributul aldin este activat"
+
+msgid "Whether foreground color is set"
+msgstr "Dacă culoarea prim-planului este activată"
+
+msgid "Whether italic attribute is set"
+msgstr "Dacă atributul cursiv este activat"
+
+msgid "Whether line background color is set"
+msgstr "Dacă fundalul liniei este activat"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Dacă atributul tăiat este activat"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Dacă limbajul trebuie să fie ascuns utilizatorului"
+
+msgid "Whether underline attribute is set"
+msgstr "Dacă atributul subliniat este activat"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "contextul „%s” nu poate conține o comandă \\%%{...@start}"
+
+msgid "duplicated context id '%s'"
+msgstr "identificator de context duplicat „%s”"
+
+msgid "gettext translation"
+msgstr "traducere gettext"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "în expresia regulată „%s”: referințele înapoi nu sunt admise"
+
+msgid "invalid context reference '%s'"
+msgstr "referință la context nevalidă „%s”"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "suprascrierea stilului folosit cu referința contextului unui metacaracter în limbajul „%s” în ref „%s”"
+
+msgid "unknown context '%s'"
+msgstr "context necunoscut „%s”"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "utilizarea \\C nu este suportată în definirea limbajelor"
+

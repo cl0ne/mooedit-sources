@@ -1,0 +1,284 @@
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aviary.pl
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-01 21:49+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: Poland"
+
+msgid "Background"
+msgstr "Tło"
+
+msgid "Background color"
+msgstr "Kolor tła"
+
+msgid "Background set"
+msgstr "Ustawione tło"
+
+msgid "Blue based color scheme"
+msgstr "Niebieski schemat kolorów"
+
+msgid "Bold"
+msgstr "Pogrubienie"
+
+msgid "Bold set"
+msgstr "Pogrubienie ustawione"
+
+msgid "Boolean value"
+msgstr "Wartość logiczna"
+
+msgid "C/C++/ObjC Header"
+msgstr "Nagłówek C/C++/ObjC"
+
+msgid "CG Shader Language"
+msgstr "Język cieniowania CG"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Nie można utworzyć wyrażenia regularnego dla wszystkich przejść, przez co proces wyróżniania elementów składni będzie spowolniony.\n"
+"Wystąpił błąd: %s"
+
+msgid "ChangeLog"
+msgstr "Dziennik zmian"
+
+msgid "Classic"
+msgstr "Klasyczny"
+
+msgid "Classic color scheme"
+msgstr "Klasyczny schemat kolorów"
+
+msgid "Cobalt"
+msgstr "Kobalt"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Schemat kolorów używany w edytorze tekstowym Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Schemat kolorów używający palety Tango"
+
+msgid "Comment"
+msgstr "Komentarz"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Schemat używający ciemnych kolorów z palety Tango"
+
+msgid "Data Type"
+msgstr "Typ danych"
+
+msgid "Decimal number"
+msgstr "Liczba dziesiętna"
+
+msgid "Defaults"
+msgstr "Domyślne"
+
+msgid "Diff"
+msgstr "Różnica"
+
+msgid "Docbook"
+msgstr "DocBook"
+
+msgid "Dos Batch"
+msgstr "Plik wsadowy DOS"
+
+msgid "Error"
+msgstr "Błąd"
+
+msgid "Escaped Character"
+msgstr "Znak sterujący"
+
+msgid "Floating point number"
+msgstr "Liczba zmiennoprzecinkowa"
+
+msgid "Foreground"
+msgstr "Kolor pierwszoplanowy"
+
+msgid "Foreground color"
+msgstr "Kolor pierwszoplanowy"
+
+msgid "Foreground set"
+msgstr "Kolor pierwszoplanowy ustawiony"
+
+msgid "Hexadecimal number"
+msgstr "Liczba szesnastkowa"
+
+msgid "Hidden"
+msgstr "Ukryty"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Wyróżnianie składni w wierszu zajęło zbyt dużo czasu i zostanie wyłączone"
+
+msgid "Identifier"
+msgstr "Identyfikator"
+
+msgid "Italic"
+msgstr "Kursywa"
+
+msgid "Italic set"
+msgstr "Kursywa ustawiona"
+
+msgid "Keyword"
+msgstr "Słowo kluczowe"
+
+msgid "Language id"
+msgstr "Identyfikator języka"
+
+msgid "Language ids"
+msgstr "Identyfikatory języków"
+
+msgid "Language name"
+msgstr "Nazwa języka"
+
+msgid "Language section"
+msgstr "Sekcja języka"
+
+msgid "Language specification directories"
+msgstr "Katalogi specyfikacji języka"
+
+msgid "Line background"
+msgstr "Tło wiersza"
+
+msgid "Line background color"
+msgstr "Kolor tła wiersza"
+
+msgid "Line background set"
+msgstr "Ustawione tło linii"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Lista katalogów i plików, w których przechowywane są schematy stylów"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Lista katalogów, w których przechowywane są pliki specyfikacji języka (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "Lista identyfikatorów dostępnych języków"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Lista identyfikatorów dostępnych schematów stylów"
+
+msgid "Markup"
+msgstr "Znaczniki"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Brakująca definicja języka (identyfikator = \"%s\".)"
+
+msgid "Objective Caml"
+msgstr "Obiektowy Caml"
+
+msgid "OpenGL Shading Language"
+msgstr "Język cieniowania OpenGL"
+
+msgid "Others"
+msgstr "Inne"
+
+msgid "Preprocessor"
+msgstr "Preprocesor"
+
+msgid "Scheme ids"
+msgstr "Identyfikatory schematów"
+
+msgid "Scientific"
+msgstr "Naukowe"
+
+msgid "Scripts"
+msgstr "Skrypty"
+
+msgid "Sources"
+msgstr "Źródła"
+
+msgid "Strikethrough"
+msgstr "Przekreślenie"
+
+msgid "Strikethrough set"
+msgstr "Przekreślenie ustawione"
+
+msgid "String"
+msgstr "Ciąg znaków"
+
+msgid "Style scheme description"
+msgstr "Opis schematu stylu"
+
+msgid "Style scheme filename"
+msgstr "Nazwa pliku schematu stylu"
+
+msgid "Style scheme id"
+msgstr "Identyfikator schematu stylu"
+
+msgid "Style scheme name"
+msgstr "Nazwa schematu stylu"
+
+msgid "Style scheme search path"
+msgstr "Ścieżka poszukiwania schematów stylów"
+
+msgid "Underline"
+msgstr "Podkreślenie"
+
+msgid "Underline set"
+msgstr "Podkreślenie ustawione"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Nieznany identyfikator \"%s\" w wyrażeniu regularnym \"%s\""
+
+msgid "Whether background color is set"
+msgstr "Określa, czy ustawiony jest kolor tła"
+
+msgid "Whether bold attribute is set"
+msgstr "Określa, czy ustawiony jest atrybut pogrubienia"
+
+msgid "Whether foreground color is set"
+msgstr "Określa, czy ustawiony jest kolor pierwszoplanowy"
+
+msgid "Whether italic attribute is set"
+msgstr "Określa, czy ustawiony jest atrybut kursywy"
+
+msgid "Whether line background color is set"
+msgstr "Określa, czy tło linii jest ustawione"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Określa, czy ustawiony jest atrybut przekreślenia"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Określa, czy język powinien być ukrywany przed użytkownikiem"
+
+msgid "Whether underline attribute is set"
+msgstr "Określa, czy ustawiony jest atrybut podkreślenia"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "kontekst \"%s\" nie może zawierać polecenia \\%%{...@start}"
+
+msgid "duplicated context id '%s'"
+msgstr "powtórzony identyfikator kontekstu \"%s\""
+
+msgid "gettext translation"
+msgstr "Tłumaczenie gettext"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "wyrażenie regularne \"%s\": referencje wsteczne nie są obsługiwane"
+
+msgid "invalid context reference '%s'"
+msgstr "nieprawidłowa referencja kontekstu \"%s\""
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "użyto wymuszenia stylu za pomocą ogólnej referencji kontekstu w języku \"%s\", w referencji \"%s\""
+
+msgid "unknown context '%s'"
+msgstr "nieznany kontekst \"%s\""
+
+msgid "using \\C is not supported in language definitions"
+msgstr "użycie \\C nie jest obsługiwane w definicjach języka"
+

@@ -1,0 +1,280 @@
+# Simplified Chinese translation of gtksourceview.
+# Copyright (C) 2003, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtksourceveiw package.
+# Funda Wang <fundawang@linux.net.cn>, 2003.
+# Eleanor Chen <chenyueg@gmail.com>, 2010.
+# Aron Xu <aronxu@gnome.org>, 2010.
+# Tao Wang <dancefire@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-10-20 17:35+0800\n"
+"Last-Translator: Tao Wang <dancefire@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "背景"
+
+msgid "Background color"
+msgstr "背景颜色"
+
+msgid "Background set"
+msgstr "背景设定"
+
+msgid "Blue based color scheme"
+msgstr "蓝色经典配色方案"
+
+msgid "Bold"
+msgstr "粗体"
+
+msgid "Bold set"
+msgstr "粗体设定"
+
+msgid "Boolean value"
+msgstr "布尔值"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC 头文件"
+
+msgid "CG Shader Language"
+msgstr "CG Shader 语言"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"无法为所有的转换创建正则表达式，语法加亮进程将会比正常情况慢。\n"
+"错误是：%s"
+
+msgid "Classic"
+msgstr "经典"
+
+msgid "Classic color scheme"
+msgstr "经典配色方案"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "使用 Kate 调色板中的配色方案"
+
+msgid "Color scheme using Tango color palette"
+msgstr "使用 Tango 调色板中配色方案"
+
+msgid "Comment"
+msgstr "注释"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "使用 Tango 调色板的暗配色方案"
+
+msgid "Data Type"
+msgstr "数据类型"
+
+msgid "Decimal number"
+msgstr "十进制数"
+
+msgid "Defaults"
+msgstr "默认值"
+
+msgid "Dos Batch"
+msgstr "DOS 批处理"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Escaped Character"
+msgstr "转码字符"
+
+msgid "Floating point number"
+msgstr "浮点数"
+
+msgid "Foreground"
+msgstr "前景"
+
+msgid "Foreground color"
+msgstr "前景颜色"
+
+msgid "Foreground set"
+msgstr "前景设定"
+
+msgid "GDB Log"
+msgstr "GDB 日志"
+
+msgid "Hexadecimal number"
+msgstr "十六进制数"
+
+msgid "Hidden"
+msgstr "隐藏"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "加亮一整行花费的时间太多，语法加亮将被禁用"
+
+msgid "Identifier"
+msgstr "标识符"
+
+msgid "Italic"
+msgstr "斜体"
+
+msgid "Italic set"
+msgstr "斜体设定"
+
+msgid "Keyword"
+msgstr "关键字"
+
+msgid "Language id"
+msgstr "语言 ID"
+
+msgid "Language ids"
+msgstr "语言 id"
+
+msgid "Language name"
+msgstr "语言名称"
+
+msgid "Language section"
+msgstr "语言部分"
+
+msgid "Language specification directories"
+msgstr "语言规范目录"
+
+msgid "Line background"
+msgstr "行背景"
+
+msgid "Line background color"
+msgstr "行背景颜色"
+
+msgid "Line background set"
+msgstr "行背景设定"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "样式大纲所在的目录与文件的列表"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "列出语言规范文件(.lang)所在的目录"
+
+msgid "List of the ids of the available languages"
+msgstr "可用语言的 id 列表"
+
+msgid "List of the ids of the available style schemes"
+msgstr "可用的样式大纲的 id 的列表"
+
+msgid "Literate Haskell"
+msgstr "字面 Haskell"
+
+msgid "Markup"
+msgstr "标记"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "缺少主要语言定义(id = “%s”)。"
+
+msgid "OpenGL Shading Language"
+msgstr "OpenGL着色语言"
+
+msgid "Operator"
+msgstr "操作符"
+
+msgid "Others"
+msgstr "其它"
+
+msgid "Preprocessor"
+msgstr "预处理器"
+
+msgid "Scheme"
+msgstr "大纲"
+
+msgid "Scheme ids"
+msgstr "大纲 id"
+
+msgid "Scientific"
+msgstr "科学"
+
+msgid "Scripts"
+msgstr "脚本"
+
+msgid "Sources"
+msgstr "源代码"
+
+msgid "Strikethrough"
+msgstr "删除线"
+
+msgid "Strikethrough set"
+msgstr "删除线设定"
+
+msgid "String"
+msgstr "字符串"
+
+msgid "Style scheme description"
+msgstr "样式大纲描述"
+
+msgid "Style scheme filename"
+msgstr "样式大纲文件名"
+
+msgid "Style scheme id"
+msgstr "样式大纲 id"
+
+msgid "Style scheme name"
+msgstr "样式大纲名称"
+
+msgid "Style scheme search path"
+msgstr "样式大纲搜索路径"
+
+msgid "Underline"
+msgstr "下划线"
+
+msgid "Underline set"
+msgstr "下划线设定"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "正则表达式‘%2$s’中的未知 id ‘%1$s’"
+
+msgid "Whether background color is set"
+msgstr "是否设定了背景颜色"
+
+msgid "Whether bold attribute is set"
+msgstr "是否设定粗体属性"
+
+msgid "Whether foreground color is set"
+msgstr "是否设定了前景颜色"
+
+msgid "Whether italic attribute is set"
+msgstr "是否设定斜体属性"
+
+msgid "Whether line background color is set"
+msgstr "是否设定行背景颜色"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "是否设定删除线属性"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "是否向用户隐藏语言"
+
+msgid "Whether underline attribute is set"
+msgstr "下划线属性是否设定"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "上下文‘%s’不能包含一个 \\%%{...@start} 命令"
+
+msgid "duplicated context id '%s'"
+msgstr "重复的上下文 id ‘%s’"
+
+msgid "gettext translation"
+msgstr "gettext 翻译"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "于正则表达式‘%s’中：后向引用不被支持"
+
+msgid "invalid context reference '%s'"
+msgstr "无效的上下文引用‘%s’"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "语言‘%s’在参考‘%s’中与通配符上下文引用一同使用的样式覆盖"
+
+msgid "unknown context '%s'"
+msgstr "未知的上下文‘%s’"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "语言定义中不支持使用 \\C"
+

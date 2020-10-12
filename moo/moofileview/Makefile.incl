@@ -1,0 +1,51 @@
+AM_CPPFLAGS += -Imoofileview -Imoofileview/glade
+
+moo_sources +=					\
+	moofileview/moobookmarkmgr.c		\
+	moofileview/moobookmarkmgr.h		\
+	moofileview/moobookmarkview.c		\
+	moofileview/moobookmarkview.h		\
+	moofileview/moofile.c			\
+	moofileview/moofile.h			\
+	moofileview/moofile-private.h		\
+	moofileview/moofileentry.c		\
+	moofileview/moofileentry.h		\
+	moofileview/moofilesystem.c		\
+	moofileview/moofilesystem.h		\
+	moofileview/moofileview.c		\
+	moofileview/moofileview.h		\
+	moofileview/moofileview-accels.h	\
+	moofileview/moofileview-aux.h		\
+	moofileview/moofileview-dialogs.c	\
+	moofileview/moofileview-dialogs.h	\
+	moofileview/moofileview-impl.h		\
+	moofileview/moofileview-private.h	\
+	moofileview/moofileview-tools.c		\
+	moofileview/moofileview-tools.h		\
+	moofileview/moofolder-private.h		\
+	moofileview/moofolder.c			\
+	moofileview/moofolder.h			\
+	moofileview/moofoldermodel.c		\
+	moofileview/moofoldermodel.h		\
+	moofileview/moofoldermodel-private.h	\
+	moofileview/mooiconview.c		\
+	moofileview/mooiconview.h		\
+	moofileview/mootreeview.c		\
+	moofileview/mootreeview.h
+
+EXTRA_DIST +=						\
+	moofileview/glade/moofileview-drop.glade	\
+	moofileview/glade/moofileprops.glade		\
+	moofileview/glade/moocreatefolder.glade		\
+	moofileview/glade/moobookmark-editor.glade
+
+built_moo_sources +=					\
+	moofileview/moofileview-drop-gxml.h             \
+	moofileview/moofileprops-gxml.h			\
+	moofileview/moocreatefolder-gxml.h		\
+	moofileview/moobookmark-editor-gxml.h
+
+EXTRA_DIST += moofileview/moofileview.xml
+built_moo_sources += moofileview/moofileview-ui.h
+
+# -%- strip:true -%-

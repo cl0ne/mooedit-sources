@@ -1,0 +1,290 @@
+# German GtkSourceView translation.
+# Copyright (C) 2002-2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the GtkSourceView package.
+# Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+# Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2008.
+# Hendrik Brandt <heb@gnome-de.org>, 2007.
+# Philipp Kerling <k.philipp@gmail.com>, 2008.
+# Andre Klapper <ak-47@gmx.net>, 2008.
+# Wolfgang Stöggl <c72578@yahoo.de>, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2010.
+# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GtkSourceView master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-07-16 21:13+0100\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)"
+
+msgid "Background"
+msgstr "Hintergrund"
+
+msgid "Background color"
+msgstr "Hintergrundfarbe"
+
+msgid "Background set"
+msgstr "Hintergrund gesetzt"
+
+msgid "Blue based color scheme"
+msgstr "Auf blau basierendes Farbschema"
+
+msgid "Bold"
+msgstr "Fett"
+
+msgid "Bold set"
+msgstr "Fett gesetzt"
+
+msgid "Boolean value"
+msgstr "Boolescher Wert"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC-Header"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Regulärer Ausdruck konnte nicht für alle Umwandlungen erstellt werden. Syntax-Hervorhebung wird langsamer als gewohnt sein.\n"
+"Der Fehler war: %s"
+
+msgid "ChangeLog"
+msgstr "Änderungsprotokoll"
+
+msgid "Classic"
+msgstr "Klassisch"
+
+msgid "Classic color scheme"
+msgstr "Klassisches Farbschema"
+
+msgid "Cobalt"
+msgstr "Kobalt"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Das im Kate-Texteditor verwendete Farbschema"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Farbschema, das die Tango-Farbpalette verwendet"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Dunkles Farbschema, das die Tango-Farbpalette verwendet"
+
+msgid "Data Type"
+msgstr "Datentyp"
+
+msgid "Decimal number"
+msgstr "Dezimalzahl"
+
+msgid "Defaults"
+msgstr "Vorgaben"
+
+msgid "Docbook"
+msgstr "DocBook"
+
+msgid "Dos Batch"
+msgstr "Dos-Stapelverarbeitung"
+
+msgid "Error"
+msgstr "Fehler"
+
+msgid "Escaped Character"
+msgstr "Maskierungszeichen"
+
+msgid "Floating point number"
+msgstr "Fließkommazahl"
+
+msgid "Foreground"
+msgstr "Vordergrund"
+
+msgid "Foreground color"
+msgstr "Vordergrundfarbe"
+
+msgid "Foreground set"
+msgstr "Vordergrund gesetzt"
+
+msgid "GDB Log"
+msgstr "GDB-Protokoll"
+
+msgid "Graphviz Dot"
+msgstr "Graphviz-Dot"
+
+msgid "Hexadecimal number"
+msgstr "Hexadezimalzahl"
+
+msgid "Hidden"
+msgstr "Versteckt"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Das Hervorheben einer einzelnen Zeile benötigte zu viel Zeit, daher wird die Syntax-Hervorhebung ausgeschaltet"
+
+msgid "Identifier"
+msgstr "Bezeichner"
+
+msgid "Italic"
+msgstr "Kursiv"
+
+msgid "Italic set"
+msgstr "Kursiv gesetzt"
+
+msgid "Keyword"
+msgstr "Stichwort"
+
+msgid "Language id"
+msgstr "Sprach-ID"
+
+msgid "Language ids"
+msgstr "Sprach-IDs"
+
+msgid "Language name"
+msgstr "Sprache"
+
+msgid "Language section"
+msgstr "Sprachsektion"
+
+msgid "Language specification directories"
+msgstr "Sprachspezifikationsordner"
+
+msgid "Line background"
+msgstr "Zeilenhintergrund"
+
+msgid "Line background color"
+msgstr "Zeilenhintergrundfarbe"
+
+msgid "Line background set"
+msgstr "Zeilenhintergrund gesetzt"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Liste der Ordner und Dateien, in denen sich die Stilvorlagen befinden"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Liste der Ordner, in denen sich die Sprachspezifikationsdateien (.lang) befinden"
+
+msgid "List of the ids of the available languages"
+msgstr "Liste mit IDs der verfügbaren Sprachen"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Liste mit IDs der verfügbaren Stilvorlagen"
+
+msgid "Literate Haskell"
+msgstr "Haskell-Literat"
+
+msgid "Markup"
+msgstr "Auszeichnung"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Hauptsprachendefinition fehlt (id = »%s«)"
+
+msgid "Others"
+msgstr "Sonstige"
+
+msgid "Preprocessor"
+msgstr "Präprozessor"
+
+msgid "RPM spec"
+msgstr "RPM-Spezifikation"
+
+msgid "Scheme ids"
+msgstr "Schemen-IDs"
+
+msgid "Scientific"
+msgstr "Wissenschaftlich"
+
+msgid "Scripts"
+msgstr "Skripte"
+
+msgid "Sources"
+msgstr "Quelltexte"
+
+msgid "Strikethrough"
+msgstr "Durchgestrichen"
+
+msgid "Strikethrough set"
+msgstr "Durchgestrichen gesetzt"
+
+msgid "String"
+msgstr "Zeichenkette"
+
+msgid "Style scheme description"
+msgstr "Stilvorlagen-Beschreibung"
+
+msgid "Style scheme filename"
+msgstr "Stilvorlagen-Dateiname"
+
+msgid "Style scheme id"
+msgstr "Stilvorlagen-ID"
+
+msgid "Style scheme name"
+msgstr "Stilvorlagen-Name"
+
+msgid "Style scheme search path"
+msgstr "Suchpfad für Stilvorlagen"
+
+msgid "Underline"
+msgstr "Unterstrichen"
+
+msgid "Underline set"
+msgstr "Unterstrichen gesetzt"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Unbekannte ID »%s« in regulärem Ausdruck »%s«"
+
+msgid "Whether background color is set"
+msgstr "Legt fest, ob die Hintergrundfarbe gesetzt ist"
+
+msgid "Whether bold attribute is set"
+msgstr "Legt fest, ob das »fett«-Attribut gesetzt ist"
+
+msgid "Whether foreground color is set"
+msgstr "Legt fest, ob die Vordergrundfarbe gesetzt ist"
+
+msgid "Whether italic attribute is set"
+msgstr "Legt fest, ob das »kursiv«-Attribut gesetzt ist"
+
+msgid "Whether line background color is set"
+msgstr "Legt fest, ob die Zeilenhintergrundfarbe gesetzt ist"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Legt fest, ob das »durchgestrichen«-Attribut gesetzt ist"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Legt fest, ob die Sprache für den Benutzer versteckt sein soll"
+
+msgid "Whether underline attribute is set"
+msgstr "Legt fest, ob das »unterstrichen«-Attribut gesetzt ist"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "Kontext »%s« kann keinen \\%%{...@start}-Befehl enthalten"
+
+msgid "duplicated context id '%s'"
+msgstr "Mehrfache Kontext-ID »%s«"
+
+msgid "gettext translation"
+msgstr "gettext-Übersetzung"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "in regulärem Ausdruck »%s«: Rückreferenzen werden nicht unterstützt"
+
+msgid "invalid context reference '%s'"
+msgstr "Ungültige Kontextreferenz »%s«"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "Stilüberschreibung durch Platzhalter-Kontext-Referenz in Sprache »%s« in Referenz »%s«"
+
+msgid "unknown context '%s'"
+msgstr "Unbekannter Kontext »%s«"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "Das Verwenden von \\C ist in Sprachdefinition nicht unterstützt"
+

@@ -1,0 +1,32 @@
+#include <windows.h>
+
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "@top_srcdir@/moo/mooutils/pixmaps/medit.ico"
+
+VS_VERSION_INFO VERSIONINFO
+  FILEVERSION @MOO_MAJOR_VERSION@,@MOO_MINOR_VERSION@,@MOO_MICRO_VERSION@,0
+  PRODUCTVERSION @MOO_MAJOR_VERSION@,@MOO_MINOR_VERSION@,@MOO_MICRO_VERSION@,0
+  FILEFLAGSMASK 0
+  FILEFLAGS 0
+  FILEOS VOS__WINDOWS32
+  FILETYPE VFT_DLL
+  FILESUBTYPE VFT2_UNKNOWN
+  BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+      BLOCK "040904B0"
+      BEGIN
+        VALUE "CompanyName", "@MOO_WEBSITE@"
+        VALUE "FileDescription", "medit"
+        VALUE "FileVersion", "@MOO_MAJOR_VERSION@.@MOO_MINOR_VERSION@.@MOO_MICRO_VERSION@.0"
+        VALUE "InternalName", "medit"
+        VALUE "LegalCopyright", "@MOO_COPYRIGHT@"
+        VALUE "OriginalFilename", "medit.exe"
+        VALUE "ProductName", "medit"
+        VALUE "ProductVersion", "@MOO_DISPLAY_VERSION@"
+      END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+      VALUE "Translation", 0x409, 1200
+    END
+  END

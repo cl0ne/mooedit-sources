@@ -1,0 +1,52 @@
+# translation of gtksourceview.HEAD.az.po to Azerbaijani Turkish
+# Copyright (C) 2003 Mətin Əmirov
+# This file is distributed under the same license as the gtksourceview package.
+# Mətin Əmirov <metin@karegen.com>, 2003, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.HEAD.az\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2004-02-01 21:43+0200\n"
+"Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
+"Language-Team: Azerbaijani Turkish <translation-team-az@lists.sourceforge.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2"
+
+msgid "Comment"
+msgstr "Şərh"
+
+msgid "Data Type"
+msgstr "Mə'lumat Növü"
+
+msgid "Keyword"
+msgstr "Açar kəlmə"
+
+msgid "Language specification directories"
+msgstr "Dil spesifikasiya cərgələri"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Dil spesifikasiya fayllarının (.lang) olduğu cərgələr siyahısı"
+
+msgid "Markup"
+msgstr "İşarələmə"
+
+msgid "Others"
+msgstr "Digərləri"
+
+msgid "Scripts"
+msgstr "Skriptlər"
+
+msgid "Sources"
+msgstr "Mənbələr"
+
+msgid "String"
+msgstr "Qatar"
+
+msgid "gettext translation"
+msgstr "gettext trərcüməsi"
+

@@ -1,0 +1,20 @@
+from munit import *
+import moo
+
+editor = moo.Editor.instance()
+tassert(editor is not None)
+tassert(isinstance(editor, moo.Editor))
+window = editor.get_active_window()
+tassert(window is not None)
+tassert(isinstance(window, moo.EditWindow))
+doc = window.get_active_doc()
+tassert(doc is not None)
+tassert(isinstance(doc, moo.Edit))
+tassert(doc == editor.get_active_doc())
+tassert(doc.get_window() == window)
+view = doc.get_view()
+tassert(view is not None)
+tassert(isinstance(view, moo.EditView))
+tassert(isinstance(view, moo.TextView))
+tassert(view is window.get_active_view())
+tassert(view is editor.get_active_view())

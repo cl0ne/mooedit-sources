@@ -1,0 +1,141 @@
+.variablelist
+{
+  padding: 4px;
+  margin-left: 3em;
+}
+.variablelist td:first-child
+{
+  vertical-align: top;
+}
+
+.programlisting
+{
+  /* tango:sky blue 0/1 */
+  background: #e6f3ff;
+/*  border: solid 1px #729fcf;*/
+/*  padding: 0.5em;*/
+  font-family: monospace;
+  white-space: pre;
+/*  background: #F4F4F4;*/
+  border: solid 1px #C5C5C5;
+  padding: 0.25em;
+  margin: 0.5em;
+}
+
+.code
+{
+  font-family: monospace;
+  white-space: pre;
+  background: #e6f3ff;
+/*  background: #F4F4F4;*/
+/*  border: solid 1px #C5C5C5;*/
+  padding: 0.1em;
+/*  margin: 0.5em;*/
+}
+
+div.table table
+{
+  border-collapse: collapse;
+  border-spacing: 0px;
+  /* tango:aluminium 3 */
+  border: solid 1px #babdb6;
+}
+
+div.table table td, div.table table th
+{
+  /* tango:aluminium 3 */
+  border: solid 1px #babdb6;
+  padding: 3px;
+  vertical-align: top;
+}
+
+div.table table th
+{
+  /* tango:aluminium 2 */
+  background-color: #d3d7cf;
+}
+
+hr
+{
+  /* tango:aluminium 3 */
+  color: #babdb6;
+  background: #babdb6;
+  border: none 0px;
+  height: 1px;
+  clear: both;
+}
+
+.warning
+{
+  /* tango:orange 0/1 */
+  background: #ffeed9;
+  border-color: #ffb04f;
+}
+.note
+{
+  /* tango:chameleon 0/0.5 */
+  background: #d8ffb2;
+  border-color: #abf562;
+}
+.note, .warning
+{
+  padding: 0.5em;
+  border-width: 1px;
+  border-style: solid;
+}
+.note h3, .warning h3
+{
+  margin-top: 0.0em
+}
+/*.note p, .warning p
+{
+  margin-bottom: 0.0em
+}*/
+
+/* blob links */
+h2 .extralinks, h3 .extralinks
+{
+  float: right;
+  /* tango:aluminium 3 */
+  color: #babdb6;
+  font-size: 80%;
+  font-weight: normal;
+}
+
+.annotation
+{
+  /* tango:aluminium 5 */
+  color: #555753;
+  font-size: 80%;
+  font-weight: normal;
+}
+
+.listing_frame {
+  /* tango:sky blue 1 */
+  border: solid 1px #729fcf;
+  padding: 0px;
+}
+
+.listing_lines, .listing_code {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0.5em;
+}
+.listing_lines {
+  /* tango:sky blue 0.5 */
+  background: #a6c5e3;
+  /* tango:aluminium 6 */
+  color: #2e3436;
+}
+.listing_code {
+  /* tango:sky blue 0 */
+  background: #e6f3ff;
+}
+.listing_code .programlisting {
+  /* override from previous */
+  border: none 0px;
+  padding: 0px;
+}
+.listing_lines pre, .listing_code pre {
+  margin: 0px;
+}

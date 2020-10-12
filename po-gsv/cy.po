@@ -1,0 +1,66 @@
+# gtksourceview yn Gymraeg
+# This file is distributed under the same license as the gtksourceview package.
+# Dafydd Harries <daf@muse.19inch.net>, 2003 2004
+#
+# Trafferth yn meddwl am eiriau da ar gyfer "Global" a "Intrinsics". Wedi
+# defnyddio "Eang" a "Hanfodolion".
+# -- daf
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2006-02-22 22:22-0000\n"
+"Last-Translator: Rhys Jones <rhys@sucs.org>\n"
+"Language-Team: Cymraeg <gnome-cy@www.linux.org.uk>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ChangeLog"
+msgstr "Log Newidiadau"
+
+msgid "Comment"
+msgstr "Sylw"
+
+msgid "Data Type"
+msgstr "Math Data"
+
+msgid "Keyword"
+msgstr "Allweddair"
+
+msgid "Language specification directories"
+msgstr "Cyfeiriaduron penodiadau ieithoedd"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Rhestr o gyfeiriaduron lle mae'r ffeiliau penodi iaith (.lang) wedi eu lleoli"
+
+msgid "Makefile"
+msgstr "Ffeil Wneud (Makefile)"
+
+msgid "Markup"
+msgstr "Marciau"
+
+msgid "Operator"
+msgstr "Gweithredwr"
+
+msgid "Others"
+msgstr "Eraill"
+
+msgid "Preprocessor"
+msgstr "Cyn-brosesydd"
+
+msgid "Scripts"
+msgstr "Sgriptiau"
+
+msgid "Sources"
+msgstr "Ffynonellau"
+
+msgid "String"
+msgstr "Llinyn"
+
+msgid "gettext translation"
+msgstr "cyfieithiad gettext"
+

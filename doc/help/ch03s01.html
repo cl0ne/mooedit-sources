@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Managing tools in Preferences dialog</title>
+<link rel="stylesheet" type="text/css" href="medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit manual">
+<link rel="up" href="ch03.html" title="Chapter 3. User-defined tools">
+<link rel="prev" href="ch03.html" title="Chapter 3. User-defined tools">
+<link rel="next" href="ch03s02.html" title="Storing tools in files">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Managing tools in <span class="guilabel">Preferences</span> dialog</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch03.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 3. User-defined tools</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch03s02.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="section-prefs-user-tools"></a>Managing tools in <span class="guilabel">Preferences</span> dialog</h2></div></div></div>
+<p>
+To create a new tool or to modify existing ones, open
+<span class="guilabel">Preferences</span> dialog and select <span class="guilabel">Tools</span> in the list on the left.
+</p>
+<p>
+Select the tool in the list or click the <span class="guibutton">New</span>
+button to create a new one. To modify the order in which tools
+appear in the <span class="guimenu">Tools</span> menu (or in the document
+context menu), use <span class="guibutton">Up</span> and <span class="guibutton">Down</span> buttons. To rename a tool,
+click its name in the list to select it and then click again to
+edit the name. Use the <span class="guibutton">Delete</span> button to delete a tool.
+</p>
+<p>
+The following controls are available to modify tools:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+<p>
+    <em class="parameter"><code><span class="guilabel">Files</span></code></em> entry specifies for which files the tool is going to be available. It can
+    contain the following:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; ">
+<li class="listitem">a comma-separated list of file patterns, e.g. <pre class="programlisting"><code class="code">*.c,*.h</code></pre>
+</li>
+<li class="listitem">a comma-separated list of languages prefixed with "<code class="code">langs:</code>", e.g.
+      <pre class="programlisting"><code class="code">langs: c, c++, objc</code></pre>
+</li>
+<li class="listitem">a regular expression matching document filename prefixed with "<code class="code">regex:</code>", e.g. the above
+      pattern list may be written as <pre class="programlisting"><code class="code">regex:\.[ch]$</code></pre>
+</li>
+</ul></div>
+<p>
+    </p>
+<p>Empty entry means that the tool will be available for all documents.</p>
+</li>
+<li class="listitem">
+<em class="parameter"><code><span class="guilabel">Requires</span></code></em> combo box specifies whether the tool should be
+    enabled depending on current document.
+    <div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Nothing</code></em></span></p></td>
+<td>the tool is enabled regardless whether there is an open document.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Document</code></em></span></p></td>
+<td>the tool is enabled only if there is an open document. For example, if the tool manipulates
+        current document text, then it needs a document to be there.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>File on disk</code></em></span></p></td>
+<td>the tool is enabled only if current document is saved on disk (i.e. it is not "Untitled").
+        For example, to compile a TeX file, it needs to be saved first.</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+<li class="listitem">
+<em class="parameter"><code><span class="guilabel">Save</span></code></em> combo box specifies what should be saved every time
+    before the command is executed.
+    <div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Nothing</code></em></span></p></td>
+<td>nothing will be saved.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Current document</code></em></span></p></td>
+<td>current document will be automatically saved. For example, you probably want to save currrent
+        document before compiling it with latex.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>All documents</code></em></span></p></td>
+<td>all open documents will be automatically saved. For example, if the tool builds a C project, then
+        you probably want to save all open files before running make.</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+<li class="listitem">
+<em class="parameter"><code><span class="guilabel">Type</span></code></em> combo specifies the type of the tool: a Python script, a
+    Lua script, or a shell script.
+  </li>
+<li class="listitem">
+<span class="guilabel">Code</span> text field contains script or shell command text. See
+    <a class="xref" href="ch03s03.html" title="Shell scripts">the section called &#8220;Shell scripts&#8221;</a>, <a class="xref" href="ch03s04.html" title="Lua scripts">the section called &#8220;Lua scripts&#8221;</a>,
+    <a class="xref" href="ch03s05.html" title="Python scripts">the section called &#8220;Python scripts&#8221;</a> for details on what can be here.
+  </li>
+</ul></div>
+<p>
+</p>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch03.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="ch03.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch03s02.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Chapter 3. User-defined tools </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> Storing tools in files</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

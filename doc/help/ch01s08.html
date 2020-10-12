@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Preferences files</title>
+<link rel="stylesheet" type="text/css" href="medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit manual">
+<link rel="up" href="ch01.html" title="Chapter 1. Preferences">
+<link rel="prev" href="ch01s07.html" title="Options for editing text">
+<link rel="next" href="ch02.html" title="Chapter 2. Regular expressions">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Preferences files</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01s07.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 1. Preferences</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch02.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="section-prefs-xml"></a>Preferences files</h2></div></div></div>
+<p>
+<span class="application">medit</span> preferences are stored in <code class="filename">$HOME/.local/share/medit-1/prefs.xml</code> file.
+It is an XML file which may be edited to set preferences which have not found
+their place in the <span class="guilabel">Preferences</span> dialog.
+</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Note</h3>
+<p>
+<span class="application">medit</span> reads the preferences file on startup and writes it whenever <span class="guilabel">OK</span>
+or <span class="guilabel">Apply</span> button is clicked in the <span class="guilabel">Preferences</span> dialog. Therefore, if you
+modify the preferences file, your changes may be overwritten, and they not take
+effect until you restart <span class="application">medit</span>.
+</p>
+</div>
+<p>
+The following "hidden" settings are available:
+</p>
+<div class="variablelist"><dl class="variablelist">
+<dt><span class="term"><em class="parameter"><code>Editor/window_title</code></em></span></dt>
+<dd>
+<p>Format of the window title. It is a string which may
+    contain format sequences, which are percent sign followed by a character:
+    </p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><code class="code">%a</code></span> : </p></td>
+<td>application name</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">%b</code></span> : </p></td>
+<td>current document basename</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">%f</code></span> : </p></td>
+<td>full path of the current document</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">%u</code></span> : </p></td>
+<td>URI of the current document</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">%s</code></span> : </p></td>
+<td>the status of the current document, e.g. "<code class="code"> [modified]</code>". It is prefixed
+        with a space, so that "<code class="code">%b%s</code>" produces a nice string</td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">%%</code></span> : </p></td>
+<td>the percent character</td>
+</tr>
+</tbody>
+</table></div>
+<p>
+    Default value is "<code class="code">%a - %f%s</code>" which produces something like "<code class="code">medit - /home/user/file [modified]</code>".
+    </p>
+</dd>
+<dt><span class="term"><em class="parameter"><code>Editor/window_title_no_doc</code></em></span></dt>
+<dd><p>same as <em class="parameter"><code>Editor/window_title</code></em>, used when no document is open.
+    Default value is "<code class="code">%a</code>".</p></dd>
+</dl></div>
+<p>
+</p>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01s07.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="ch01.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch02.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Options for editing text </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> Chapter 2. Regular expressions</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

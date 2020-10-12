@@ -1,0 +1,467 @@
+# translation of gtksourceview.master.po to Tamil
+# translation of gtksourceview.HEAD.ta.po to
+# Tamil translation of Tamil Gnome SourceView 2.4.
+# Copyright (C) 2003, 2004, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+#
+#
+# Dinesh Nadarajah <n_dinesh@yahoo.com>, 2003.
+# Jayaradha N <jaya@pune.redhat.com>, 2004.
+# Felix <ifelix@redhat.com>, 2006.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008, 2009, 2010.
+# I. Felix <ifelix@redhat.com>, 2009.
+# Dr,T,Vasudevan <agnihot3@gmail.com>, 2009, 2010.
+# Dr.T.vasudevan <agnihot3@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-12-03 19:08+0530\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"17:19-0500\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
+"\n"
+"\n"
+"\n"
+""
+
+msgid "ASP"
+msgstr "ஏஎஸ்பி(ASP)"
+
+msgid "Ada"
+msgstr "அடா(Ada)"
+
+msgid "Background"
+msgstr "பின்னணி"
+
+msgid "Background color"
+msgstr "பின்னணி வண்ணம்"
+
+msgid "Background set"
+msgstr "பின்னணி அமைக்கப்பட்டது"
+
+msgid "BennuGD"
+msgstr "பென்னுஜிடி"
+
+msgid "BibTeX"
+msgstr "பிப்டெக்ஸ்"
+
+msgid "Blue based color scheme"
+msgstr "நீல நிறம் அடிப்படையான நிற திட்டம்"
+
+msgid "Bold"
+msgstr "தடித்த"
+
+msgid "Bold set"
+msgstr "தடித்த அமைக்கப்பட்டது"
+
+msgid "Boo"
+msgstr "பூ"
+
+msgid "Boolean value"
+msgstr "பூலியன் மதிப்பு"
+
+msgid "C"
+msgstr "சி(C)"
+
+msgid "C++"
+msgstr "சி(C)++"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC தலைப்பு"
+
+msgid "CG Shader Language"
+msgstr "சிஜி நிழலிடும் மொழி"
+
+msgid "CMake"
+msgstr "சிமேக்(CMake)"
+
+msgid "CSS"
+msgstr "சிஎஸ்எஸ்(CSS)"
+
+msgid "CUDA"
+msgstr "சியுடிஏ(CUDA)"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"அனைத்து மாற்றங்களுக்கும் வழமையான எண்ணுருக்கோவையை  உருவாக்க முடியாது, இலக்கண சுட்டல் வழக்கத்தை விட மெதுவாக நடக்கும். \n"
+"பிழை: %s"
+
+msgid "ChangeLog"
+msgstr "பதிவு மாற்று"
+
+msgid "Classic"
+msgstr "தொன்மையான"
+
+msgid "Classic color scheme"
+msgstr "தொன்மையான நிற திட்டம்"
+
+msgid "Cobalt"
+msgstr "கோபால்ட்"
+
+msgid "Cobol"
+msgstr "கோபால்"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "கேட் உரை திருத்தியில் பயன்பட்ட வண்ணம்"
+
+msgid "Color scheme using Tango color palette"
+msgstr "டாங்கோ வண்ணத்தட்டை பயன்படுத்தி வண்ண திட்டம்"
+
+msgid "Comment"
+msgstr "குறிப்புரை"
+
+msgid "D"
+msgstr "டி(D)"
+
+msgid "DPatch"
+msgstr "டிபாட்ச்(DPatch)"
+
+msgid "DTD"
+msgstr "டிடிடிட்(DTD)"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "டாங்கோ வண்ணத்தட்டை பயன்படுத்தி அடர்ந்த வண்ண திட்டம்"
+
+msgid "Data Type"
+msgstr "தகவல் வகை"
+
+msgid "Decimal number"
+msgstr "பதின்ம எண்"
+
+msgid "Defaults"
+msgstr "முன்னிருப்புகள்"
+
+msgid "Diff"
+msgstr "வித்தியாசம்"
+
+msgid "Docbook"
+msgstr "ஆவண புத்தகம்"
+
+msgid "Eiffel"
+msgstr "ஈஃபில்"
+
+msgid "Erlang"
+msgstr "எர்லாங்"
+
+msgid "Error"
+msgstr "பிழை"
+
+msgid "Escaped Character"
+msgstr "விடுபடு எழுத்துக்கள்"
+
+msgid "FCL"
+msgstr "எஃப்சிஎல்"
+
+msgid "Floating point number"
+msgstr "மிதவைப்புள்ளி எண்"
+
+msgid "Foreground"
+msgstr "முன்னணி"
+
+msgid "Foreground color"
+msgstr "முன்னணி வண்ணம்"
+
+msgid "Foreground set"
+msgstr "முன்னணி நிறம் அமைக்கப்பட்டதா"
+
+msgid "Forth"
+msgstr "போர்த்"
+
+msgid "Fortran 95"
+msgstr "ஃபோட்ரான் 95"
+
+msgid "GAP"
+msgstr "ஜிஏபி(GAP)"
+
+msgid "GDB Log"
+msgstr "ஜிடிபி (GDB) பதிவு "
+
+msgid "Go"
+msgstr "போ"
+
+msgid "Graphviz Dot"
+msgstr "க்ராப்விஃச் புள்ளி"
+
+msgid "GtkRC"
+msgstr "ஜிடிகேஆர்சி(GtkRC)"
+
+msgid "HTML"
+msgstr "ஹெச்டிஎம்எல்(HTML)"
+
+msgid "Haddock"
+msgstr "ஹடாக்"
+
+msgid "Haskell"
+msgstr "ஹாஸ்கெல்(Haskell)"
+
+msgid "Hexadecimal number"
+msgstr "பதின்அறும எண்"
+
+msgid "Hidden"
+msgstr "மறைந்துள்ள"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "ஒரு தனி வரியை சிறப்பு சுட்டுதல் அதிக நேரம் எடுத்துக்கொண்டது. இலக்கண சிறப்பு சுட்டல் செயல் நீக்கம் செய்யப்படும்"
+
+msgid "IDL"
+msgstr "ஐடிஎல்(IDL)"
+
+msgid "Identifier"
+msgstr "இனங்காட்டி"
+
+msgid "Italic"
+msgstr "சாய்ந்த"
+
+msgid "Italic set"
+msgstr "சாய்ந்த அமைக்கப்பட்டது"
+
+msgid "Java"
+msgstr "ஜாவா"
+
+msgid "JavaScript"
+msgstr "ஜாவா ஸ்கிரிப்ட்"
+
+msgid "Kate"
+msgstr "கேட்"
+
+msgid "Keyword"
+msgstr "விசைவார்த்தை"
+
+msgid "Language id"
+msgstr "மொழி அடையாளம்"
+
+msgid "Language ids"
+msgstr "மொழி அடையாளங்கள்"
+
+msgid "Language name"
+msgstr "மொழி பெயர்"
+
+msgid "Language section"
+msgstr "மொழி பகுதி"
+
+msgid "Language specification directories"
+msgstr "மொழி குறிப்புள்ள அடைவுகள்"
+
+msgid "Line background"
+msgstr "வரியின் பின்னணி"
+
+msgid "Line background color"
+msgstr "வரியின் பின்னணி வண்ணம்"
+
+msgid "Line background set"
+msgstr "வரியின் பின்னணி அமைக்கப்பட்டது"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "பாணி திட்டங்கள் கொண்ட கோப்புகள் அடைவுகளின் பட்டியல்"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "மொழி பற்றிய குறிப்புகளை கொண்ட அடைவுகளின் பட்டியல் (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "கிடைக்கும் மொழிகளின் அடையாள பட்டியல்"
+
+msgid "List of the ids of the available style schemes"
+msgstr "சிறப்பியல்பு திட்டங்களின் அடையாள பட்டியல்"
+
+msgid "Literate Haskell"
+msgstr "லிடரேட் ஹாஸ்கெல் "
+
+msgid "Lua"
+msgstr "லுவா(Lua)"
+
+msgid "Makefile"
+msgstr "கோப்பு உருவாக்கு"
+
+msgid "Mallard"
+msgstr "மலர்ட்டு"
+
+msgid "Markup"
+msgstr "உரைவிவரம்"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "முக்கிய மொழி வரையறை காணப்படவில்லை (அடையாளம் = \"%s\".)"
+
+msgid "OCL"
+msgstr "ஓசிஎல்"
+
+msgid "OOC"
+msgstr "ஓஓசி"
+
+msgid "Objective Caml"
+msgstr "தன்னின் வேறான"
+
+msgid "Objective-C"
+msgstr "இலக்கு-C"
+
+msgid "Oblivion"
+msgstr "மறதி"
+
+msgid "Octave"
+msgstr "எட்டன் தொகுதி( Octave)"
+
+msgid "OpenGL Shading Language"
+msgstr "ஓபன் ஜிஎல் நிழலிடும் மொழி"
+
+msgid "Operator"
+msgstr "குறியீடு"
+
+msgid "Others"
+msgstr "மற்றவை"
+
+msgid "PHP"
+msgstr "பிஹெச்பி(PHP)"
+
+msgid "Pascal"
+msgstr "பாஸ்கல்"
+
+msgid "Perl"
+msgstr "பெர்ல்(Perl)"
+
+msgid "Preprocessor"
+msgstr "முன்செயல்"
+
+msgid "Prolog"
+msgstr "ப்ரோலாக்"
+
+msgid "Python"
+msgstr "பைத்தான்"
+
+msgid "R"
+msgstr "ஆர்(R)"
+
+msgid "RPM spec"
+msgstr "ஆர்பிஎம்(RPM) வரன்முறை "
+
+msgid "Ruby"
+msgstr "ரூபி"
+
+msgid "Scheme"
+msgstr "திட்டம்"
+
+msgid "Scheme ids"
+msgstr "திட்ட அடையாளம்"
+
+msgid "Scientific"
+msgstr "அறிவியல்"
+
+msgid "Scilab"
+msgstr "சைலாப்"
+
+msgid "Scripts"
+msgstr "சிறுநிரல்கள்"
+
+msgid "Sources"
+msgstr "மூலங்கள்"
+
+msgid "Strikethrough"
+msgstr "நடு-கோடு"
+
+msgid "Strikethrough set"
+msgstr "நடுக்கோடு அமைக்கப்பட்டது"
+
+msgid "String"
+msgstr "சரம்"
+
+msgid "Style scheme description"
+msgstr "சிறப்பியல்பு பாணி விவரணம்"
+
+msgid "Style scheme filename"
+msgstr "சிறப்பியல்பு திட்ட கோப்புப் பெயர்"
+
+msgid "Style scheme id"
+msgstr "சிறப்பியல்பு பாணி அடையாளம்"
+
+msgid "Style scheme name"
+msgstr "சிறப்பியல்பு பாணி பெயர்"
+
+msgid "Style scheme search path"
+msgstr "சிறப்பியல்பு பாணி தேடல் தடம்"
+
+msgid "SystemVerilog"
+msgstr "சிஸ்டம் வெரிலாக்"
+
+msgid "Tango"
+msgstr "டாங்கோ"
+
+msgid "Texinfo"
+msgstr "உரைதகவல்"
+
+msgid "Underline"
+msgstr "அடிக்கோடு"
+
+msgid "Underline set"
+msgstr "கீழ்கோடு அமைக்கப்பட்டது"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr " தெரியாத அடையாளம் '%s' வழக்கமான எண்ணுருக்கோவை '%s இல்"
+
+msgid "Whether background color is set"
+msgstr "பின்னணி நிறம் அமைக்கப்பட்டதா"
+
+msgid "Whether bold attribute is set"
+msgstr "தடித்த மதிப்புரு அமைக்கப்பட்டது"
+
+msgid "Whether foreground color is set"
+msgstr "முன்னணி நிறம் அமைக்கப்பட்டது"
+
+msgid "Whether italic attribute is set"
+msgstr "சாய்ந்த மதிப்புரு அமைக்கப்பட்டது"
+
+msgid "Whether line background color is set"
+msgstr "வரியின் பின்னணி நிறம் அமைக்கப்பட்டதா"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "நடு-கோடு மதிப்புரு அமைக்கப்பட்டதா"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "பயனரிடமிருந்து மொழி மறைக்கப்பட வேண்டுமா"
+
+msgid "Whether underline attribute is set"
+msgstr "அடிக்கோடு மதிப்புரு அமைக்கப்பட்டதா"
+
+msgid "awk"
+msgstr "ஆக்(awk)"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "சூழல் '%s' ஒரு \\%%{...@start} கட்டளையை அடக்கி இருக்க கூடாது"
+
+msgid "duplicated context id '%s'"
+msgstr "இரட்டையான சூழல் அடையாளம் '%s"
+
+msgid "gettext translation"
+msgstr "கெட்டெக்ஸ்ட் மொழிபெயர்பு"
+
+msgid "gtk-doc"
+msgstr "ஜிடிகே-டாக் (gtk-doc)"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "வழக்கமான எண்ணுருக்கோவை '%s': பின் தொடர்புகள் அனுமதிக்கப்படவில்லை"
+
+msgid "invalid context reference '%s'"
+msgstr "செல்லுபடியாகாத சான்றாதாரம் '%s'"
+
+msgid "libtool"
+msgstr "லிப்டூல்(libtool)"
+
+msgid "pkg-config"
+msgstr "பிகேஜி கான்பிக்(pkg-config)"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "'%s மொழியில் உள்ளே '%s தொடர்பாக குறிப்பில் சூழல் உறவுடன் பாங்கு இணக்கமறுப்பு பயன்பட்டது "
+
+msgid "unknown context '%s'"
+msgstr "தெரியாத சூழல் '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "\\C ஐ மொழியை வரையறையில் பயன்படுத்துதல் ஆதரிக்கப்படவில்லை"
+

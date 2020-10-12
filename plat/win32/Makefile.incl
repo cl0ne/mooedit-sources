@@ -1,0 +1,4 @@
+EXTRA_DIST +=				\
+	plat/win32/installer.iss.in	\
+	plat/win32/istrans.sh		\
+	plat/win32/mingw-configure

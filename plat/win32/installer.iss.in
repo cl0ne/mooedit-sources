@@ -1,0 +1,57 @@
+[Setup]
+AppId=@MEDIT_WIN32_APP_UID@
+AppName="medit"
+AppVersion="@MOO_DISPLAY_VERSION@"
+;AppVerName="medit @MOO_DISPLAY_VERSION@"
+AppPublisher="Yevgen Muntyan"
+AppPublisherURL="@MOO_WEBSITE@"
+AppSupportURL="@MOO_WEBSITE@"
+AppUpdatesURL="@MOO_WEBSITE@"
+AppContact="@MOO_EMAIL@"
+AppCopyright="@MOO_COPYRIGHT@"
+DefaultDirName={pf}\medit
+DefaultGroupName="medit"
+AllowNoIcons=yes
+;LicenseFile="@MEDIT_INNO_TOP_SRCDIR@/COPYING.GPL"
+OutputDir="@MEDIT_INNO_TOP_BUILDDIR@"
+OutputBaseFilename="@MEDIT_SETUP_NAME@"
+Compression=lzma
+SolidCompression=yes
+DisableReadyPage=true
+ShowLanguageDialog=auto
+
+; Run plat/win32/istrans.sh to get language files
+[Languages]
+Name: "english"; MessagesFile: "compiler:Default.isl"
+Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\brazilianportuguese.isl"
+Name: "catalan"; MessagesFile: "compiler:Languages\catalan.isl"
+Name: "czech"; MessagesFile: "compiler:Languages\czech.isl"
+Name: "danish"; MessagesFile: "compiler:Languages\danish.isl"
+Name: "dutch"; MessagesFile: "compiler:Languages\dutch.isl"
+Name: "finnish"; MessagesFile: "compiler:Languages\finnish.isl"
+Name: "french"; MessagesFile: "compiler:Languages\french.isl"
+Name: "greek"; MessagesFile: "compiler:Languages\greek.isl"
+Name: "hebrew"; MessagesFile: "compiler:Languages\hebrew.isl"
+Name: "hungarian"; MessagesFile: "compiler:Languages\hungarian.isl"
+Name: "italian"; MessagesFile: "compiler:Languages\italian.isl"
+Name: "japanese"; MessagesFile: "compiler:Languages\japanese.isl"
+Name: "norwegian"; MessagesFile: "compiler:Languages\norwegian.isl"
+Name: "polish"; MessagesFile: "compiler:Languages\polish.isl"
+Name: "portuguese"; MessagesFile: "compiler:Languages\portuguese.isl"
+Name: "russian"; MessagesFile: "compiler:Languages\russian.isl"
+Name: "serbiancyrillic"; MessagesFile: "compiler:Languages\serbiancyrillic.isl"
+Name: "serbianlatin"; MessagesFile: "compiler:Languages\serbianlatin.isl"
+Name: "slovenian"; MessagesFile: "compiler:Languages\slovenian.isl"
+Name: "spanish"; MessagesFile: "compiler:Languages\spanish.isl"
+Name: "ukrainian"; MessagesFile: "compiler:Languages\ukrainian.isl"
+
+[Files]
+Source: "@MEDIT_INNO_INSTDIR@/*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+[Icons]
+Name: "{group}\medit"; Filename: "{app}\bin\medit.exe"
+Name: "{group}\{cm:ProgramOnTheWeb,medit}"; Filename: "@MOO_WEBSITE@"
+Name: "{group}\{cm:UninstallProgram,medit}"; Filename: "{uninstallexe}"
+
+[Run]
+Filename: "{app}\bin\medit.exe"; Description: "{cm:LaunchProgram,medit}"; Flags: nowait postinstall skipifsilent

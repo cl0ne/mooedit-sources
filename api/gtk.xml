@@ -1,0 +1,272 @@
+<module name="Gtk">
+  <class gtype_id="G_TYPE_FILE" moo.python="0" name="GFile" parent="GObject" short_name="GFile">
+    <static-method c_name="g_file_new_for_path" name="new_for_path">
+      <param name="path" type="const-filename" />
+      <retval transfer_mode="full" type="GFile*" />
+    </static-method>
+    <static-method c_name="g_file_new_for_uri" name="new_for_uri">
+      <param name="uri" type="const-utf8" />
+      <retval transfer_mode="full" type="GFile*" />
+    </static-method>
+    <static-method c_name="g_file_parse_name" name="parse_name">
+      <param name="parse_name" type="const-utf8" />
+      <retval transfer_mode="full" type="GFile*" />
+    </static-method>
+    <method c_name="g_file_dup" name="dup">
+      <retval transfer_mode="full" type="GFile*" />
+    </method>
+    <method c_name="g_file_equal" name="equal">
+      <param name="file2" type="GFile*" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="g_file_get_basename" name="get_basename">
+      <retval transfer_mode="full" type="filename" />
+    </method>
+    <method c_name="g_file_get_child" name="get_child">
+      <param name="name" type="const-filename" />
+      <retval transfer_mode="full" type="GFile*" />
+    </method>
+    <method c_name="g_file_get_child_for_display_name" name="get_child_for_display_name">
+      <param name="display_name" type="const-utf8" />
+      <param name="error" type="GError**" />
+      <retval transfer_mode="full" type="GFile*" />
+    </method>
+    <method c_name="g_file_get_parent" name="get_parent">
+      <retval transfer_mode="full" type="GFile*" />
+    </method>
+    <method c_name="g_file_get_parse_name" name="get_parse_name">
+      <retval transfer_mode="full" type="utf8" />
+    </method>
+    <method c_name="g_file_get_path" name="get_path">
+      <retval transfer_mode="full" type="filename" />
+    </method>
+    <method c_name="g_file_get_relative_path" name="get_relative_path">
+      <param name="descendant" type="GFile*" />
+      <retval transfer_mode="full" type="filename" />
+    </method>
+    <method c_name="g_file_get_uri" name="get_uri">
+      <retval transfer_mode="full" type="utf8" />
+    </method>
+    <method c_name="g_file_get_uri_scheme" name="get_uri_scheme">
+      <retval transfer_mode="full" type="utf8" />
+    </method>
+    <method c_name="g_file_has_parent" name="has_parent">
+      <param allow_none="1" default_value="NULL" name="parent" type="GFile*" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="g_file_has_prefix" name="has_prefix">
+      <param name="prefix" type="GFile*" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="g_file_has_uri_scheme" name="has_uri_scheme">
+      <param name="uri_scheme" type="const-utf8" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="g_file_hash" name="hash">
+      <retval type="guint" />
+    </method>
+    <method c_name="g_file_is_native" name="is_native">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="g_file_resolve_relative_path" name="resolve_relative_path">
+      <param name="relative_path" type="const-filename" />
+      <retval transfer_mode="full" type="GFile*" />
+    </method>
+  </class>
+  <class gtype_id="G_TYPE_OBJECT" name="GObject" parent="none" short_name="GObject">
+    <method c_name="g_object_connect" moo.python="0" name="connect">
+      <param name="signal" type="const-utf8">
+        <doc>signal name</doc>
+      </param>
+      <param name="callback" type="SignalClosure*">
+        <doc> function to call when the signal is emitted</doc>
+      </param>
+      <retval type="gulong">
+        <doc> id of connected signal handler. Use g_object_disconnect() to remove it.</doc>
+      </retval>
+      <doc>Connect a signal handler.  &lt;example&gt; &lt;title&gt;GObject.connect&lt;!-- --&gt;()&lt;/title&gt; &lt;programlisting&gt; &lt;n/&gt;editor.connect("before-save", function(editor, doc, file)&lt;nl/&gt; &lt;n/&gt;  if #&lt;!-- --&gt;doc.get_text&lt;!-- --&gt;() % 2 ~= 0 then&lt;nl/&gt; &lt;n/&gt;    moo.error_dialog("Won't save",&lt;nl/&gt; &lt;n/&gt;                     "Odd number of characters in a file " ..&lt;nl/&gt; &lt;n/&gt;                     "is bad for your hard drive, I am not " ..&lt;nl/&gt; &lt;n/&gt;                     "going to save this.",&lt;nl/&gt; &lt;n/&gt;                     doc.get_window&lt;!-- --&gt;())&lt;nl/&gt; &lt;n/&gt;    return moo.SAVE_RESPONSE_CANCEL&lt;nl/&gt; &lt;n/&gt;  else&lt;nl/&gt; &lt;n/&gt;    return moo.SAVE_RESPONSE_CONTINUE&lt;nl/&gt; &lt;n/&gt;  end&lt;nl/&gt; &lt;n/&gt;end) &lt;/programlisting&gt; &lt;/example&gt; </doc>
+    </method>
+    <method c_name="g_object_connect_after" moo.python="0" name="connect_after">
+      <param name="signal" type="const-utf8">
+        <doc>signal name</doc>
+      </param>
+      <param name="callback" type="SignalClosure*">
+        <doc> function to call when the signal is emitted</doc>
+      </param>
+      <retval type="gulong" />
+    </method>
+    <method c_name="g_object_disconnect" moo.python="0" name="disconnect">
+      <param name="handler_id" type="gulong">
+        <doc> signal handler id returned from g_object_connect()</doc>
+      </param>
+      <doc>Disconnect a signal handler.</doc>
+    </method>
+    <method c_name="g_object_get_property" moo.lua.cfunc="moo_lua_cfunc_get_property" moo.python="0" name="get_property">
+      <param name="property_name" type="const-utf8" />
+      <retval type="value" />
+    </method>
+    <method c_name="g_object_set_property" moo.lua.cfunc="moo_lua_cfunc_set_property" moo.python="0" name="set_property">
+      <param name="property_name" type="const-utf8" />
+      <param name="value" type="value" />
+    </method>
+    <method c_name="g_object_signal_handler_block" moo.python="0" name="signal_handler_block">
+      <param name="handler_id" type="gulong">
+        <doc> signal handler id returned from g_object_connect()</doc>
+      </param>
+      <doc>Temporarily blocks signal handler so it will not be called when the signal it's connected to is emitted. Call g_object_signal_handler_unblock() to re-enable the signal handler.</doc>
+    </method>
+    <method c_name="g_object_signal_handler_unblock" moo.python="0" name="signal_handler_unblock">
+      <param name="handler_id" type="gulong">
+        <doc> signal handler id returned from g_object_connect()</doc>
+      </param>
+      <doc>Re-enables signal handler disabled by g_object_signal_handler_block().</doc>
+    </method>
+  </class>
+  <class gtype_id="GDK_TYPE_PIXBUF" moo.private="1" moo.python="0" name="GdkPixbuf" parent="GObject" short_name="GdkPixbuf" />
+  <class gtype_id="GTK_TYPE_ACCEL_GROUP" moo.private="1" moo.python="0" name="GtkAccelGroup" parent="GObject" short_name="AccelGroup" />
+  <class gtype_id="GTK_TYPE_BIN" moo.python="0" name="GtkBin" parent="GtkContainer" short_name="Bin" />
+  <class gtype_id="GTK_TYPE_BOX" moo.python="0" name="GtkBox" parent="GtkContainer" short_name="Box" />
+  <class gtype_id="GTK_TYPE_CONTAINER" moo.python="0" name="GtkContainer" parent="GtkWidget" short_name="Container" />
+  <class gtype_id="GTK_TYPE_OBJECT" moo.python="0" name="GtkObject" parent="GObject" short_name="Object" />
+  <class gtype_id="GTK_TYPE_TEXT_BUFFER" moo.python="0" name="GtkTextBuffer" parent="GObject" short_name="TextBuffer" />
+  <class gtype_id="GTK_TYPE_TEXT_VIEW" moo.python="0" name="GtkTextView" parent="GtkContainer" short_name="TextView" />
+  <class gtype_id="GTK_TYPE_V_BOX" moo.python="0" name="GtkVBox" parent="GtkBox" short_name="VBox" />
+  <class gtype_id="GTK_TYPE_WIDGET" moo.python="0" name="GtkWidget" parent="GtkObject" short_name="Widget" />
+  <class gtype_id="GTK_TYPE_WINDOW" moo.python="0" name="GtkWindow" parent="GtkBin" short_name="Window" />
+  <boxed gtype_id="GDK_TYPE_RECTANGLE" moo.python="0" name="GdkRectangle" short_name="GdkRectangle" />
+  <boxed gtype_id="GTK_TYPE_TEXT_ITER" moo.python="0" name="GtkTextIter" short_name="TextIter">
+    <method c_name="gtk_text_iter_get_buffer" name="get_buffer">
+      <retval type="GtkTextBuffer*" />
+    </method>
+    <method c_name="gtk_text_iter_copy" name="copy">
+      <retval transfer_mode="full" type="GtkTextIter*" />
+    </method>
+    <method c_name="gtk_text_iter_get_offset" name="get_offset">
+      <retval type="index" />
+    </method>
+    <method c_name="gtk_text_iter_get_line" name="get_line">
+      <retval type="index" />
+    </method>
+    <method c_name="gtk_text_iter_get_line_offset" name="get_line_offset">
+      <retval type="index" />
+    </method>
+    <method c_name="gtk_text_iter_get_line_index" name="get_line_index">
+      <retval type="index" />
+    </method>
+    <method c_name="gtk_text_iter_get_char" name="get_char">
+      <retval type="gunichar" />
+    </method>
+    <method c_name="gtk_text_iter_get_text" name="get_text">
+      <param name="end" type="const-GtkTextIter*" />
+      <retval transfer_mode="full" type="utf8" />
+    </method>
+    <method c_name="gtk_text_iter_starts_line" name="starts_line">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_ends_line" name="ends_line">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_is_cursor_position" name="is_cursor_position">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_get_chars_in_line" name="get_chars_in_line">
+      <retval type="gint" />
+    </method>
+    <method c_name="gtk_text_iter_get_bytes_in_line" name="get_bytes_in_line">
+      <retval type="gint" />
+    </method>
+    <method c_name="gtk_text_iter_is_end" name="is_end">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_is_start" name="is_start">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_forward_char" name="forward_char">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_backward_char" name="backward_char">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_forward_chars" name="forward_chars">
+      <param name="count" type="gint" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_backward_chars" name="backward_chars">
+      <param name="count" type="gint" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_forward_line" name="forward_line">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_backward_line" name="backward_line">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_forward_lines" name="forward_lines">
+      <param name="count" type="gint" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_backward_lines" name="backward_lines">
+      <param name="count" type="gint" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_forward_cursor_position" name="forward_cursor_position">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_backward_cursor_position" name="backward_cursor_position">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_forward_cursor_positions" name="forward_cursor_positions">
+      <param name="count" type="gint" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_backward_cursor_positions" name="backward_cursor_positions">
+      <param name="count" type="gint" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_set_offset" name="set_offset">
+      <param name="char_offset" type="index" />
+    </method>
+    <method c_name="gtk_text_iter_set_line" name="set_line">
+      <param name="line_number" type="index" />
+    </method>
+    <method c_name="gtk_text_iter_set_line_offset" name="set_line_offset">
+      <param name="char_on_line" type="index" />
+    </method>
+    <method c_name="gtk_text_iter_set_line_index" name="set_line_index">
+      <param name="byte_on_line" type="index" />
+    </method>
+    <method c_name="gtk_text_iter_forward_to_end" name="forward_to_end" />
+    <method c_name="gtk_text_iter_forward_to_line_end" name="forward_to_line_end">
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_equal" name="equal">
+      <param name="rhs" type="const-GtkTextIter*" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_compare" name="compare">
+      <param name="rhs" type="const-GtkTextIter*" />
+      <retval type="gint" />
+    </method>
+    <method c_name="gtk_text_iter_in_range" name="in_range">
+      <param name="start" type="const-GtkTextIter*" />
+      <param name="end" type="const-GtkTextIter*" />
+      <retval type="gboolean" />
+    </method>
+    <method c_name="gtk_text_iter_order" name="order">
+      <param name="second" type="GtkTextIter*" />
+    </method>
+  </boxed>
+  <enum gtype_id="GTK_TYPE_RESPONSE_TYPE" moo.python="0" name="GtkResponseType" short_name="ResponseType">
+    <value name="GTK_RESPONSE_NONE" />
+    <value name="GTK_RESPONSE_REJECT" />
+    <value name="GTK_RESPONSE_ACCEPT" />
+    <value name="GTK_RESPONSE_DELETE_EVENT" />
+    <value name="GTK_RESPONSE_OK" />
+    <value name="GTK_RESPONSE_CANCEL" />
+    <value name="GTK_RESPONSE_CLOSE" />
+    <value name="GTK_RESPONSE_YES" />
+    <value name="GTK_RESPONSE_NO" />
+    <value name="GTK_RESPONSE_APPLY" />
+    <value name="GTK_RESPONSE_HELP" />
+  </enum>
+</module>

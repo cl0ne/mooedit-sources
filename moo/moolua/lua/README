@@ -1,0 +1,4 @@
+This is Lua-5.1.3 with the following modifications:
+
+1) lstrlib.c replaced with slnunico.c, see comments in utf8.c;
+2) lbaselib.c:luaB_print() uses g_print().

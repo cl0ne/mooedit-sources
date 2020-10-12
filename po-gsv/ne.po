@@ -1,0 +1,341 @@
+# translation of gtksourceview.gnome-2-20.ne.po to Nepali
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Jyotsna Shrestha <jyoshrestha@hotmail.com>, 2005.
+# Bishnu Adhikari <bsn_adk@hotmail.com>, 2005.
+# Jaydeep Bhusal <zaydeep@hotmail.com>, 2005.
+# Shiva  Pokharel <pokharelshiva@hotmail.com>, 2005.
+# Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>, 2006.
+# Nabin Gautam <nabin@mpp.org.np>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.gnome-2-20.ne\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2007-12-10 12:20+0545\n"
+"Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"Language: ne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n !=1"
+
+msgid "Background"
+msgstr "पृष्ठभूमि"
+
+msgid "Background color"
+msgstr "पृष्ठभूमि रङ"
+
+msgid "Background set"
+msgstr "पृष्ठभूमि सेट"
+
+msgid "Bold"
+msgstr "बाक्लो"
+
+msgid "Bold set"
+msgstr "बाक्लो सेट"
+
+msgid "Boolean value"
+msgstr "बूलियन मान"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC हेडर"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"सबै परिवर्तनका लगि रेगेक्स सिर्जना गर्न सकिँदैन, वाक्य संरचना हाइलाइटिङ प्रक्रिया सामान्य भन्दा ढिलो हुन्छ ।\n"
+"त्रुटि यस प्रकारको थियो: %s"
+
+msgid "ChangeLog"
+msgstr "परिवर्तन लग"
+
+msgid "Classic"
+msgstr "उत्कृष्ट"
+
+msgid "Classic color scheme"
+msgstr "उत्कृष्ट रङ योजना"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "केट पाठ सम्पादकमा प्रयोग गरिने रङ योजना"
+
+msgid "Color scheme using Tango color palette"
+msgstr "टाङ्गो रङ रङदानी प्रयोग गर्ने रङ योजना"
+
+msgid "Comment"
+msgstr "टिप्पणी"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "टाङ्गो रङ रङदानी प्रयोग गर्ने गाढा रङ योजना"
+
+msgid "Data Type"
+msgstr "डेटा प्रकार"
+
+msgid "Decimal number"
+msgstr "दशमलव सङ्ख्या"
+
+msgid "Defaults"
+msgstr "पूर्वनिर्धारित"
+
+msgid "Diff"
+msgstr "फरक"
+
+msgid "Docbook"
+msgstr "कागजात पुस्तिका"
+
+msgid "Erlang"
+msgstr "इरल्याङ"
+
+msgid "Error"
+msgstr "त्रुटि"
+
+msgid "Escaped Character"
+msgstr "हटाइएको क्यारेक्टर"
+
+msgid "Floating point number"
+msgstr "उत्प्लवान बिन्दु नम्बर"
+
+msgid "Foreground"
+msgstr "अग्रभूमि"
+
+msgid "Foreground color"
+msgstr "अग्रभूमि रङ"
+
+msgid "Foreground set"
+msgstr "अग्रभूमि सेट"
+
+msgid "Fortran 95"
+msgstr "फर्ट्रान ९५"
+
+msgid "HTML"
+msgstr "एचटीएमएल (HTML)"
+
+msgid "Haddock"
+msgstr "ह्याडडक"
+
+msgid "Haskell"
+msgstr "हासकेल"
+
+msgid "Hexadecimal number"
+msgstr "हेक्साडेसिमल नम्बर"
+
+msgid "Hidden"
+msgstr "लुकेको"
+
+msgid "Identifier"
+msgstr "पहिचायक"
+
+msgid "Italic"
+msgstr "छड्के"
+
+msgid "Italic set"
+msgstr "छड्के सेट"
+
+msgid "Java"
+msgstr "जाभा"
+
+msgid "Kate"
+msgstr "केट"
+
+msgid "Keyword"
+msgstr "शब्दकुञ्जी"
+
+msgid "Language id"
+msgstr "भाषा आईडी"
+
+msgid "Language ids"
+msgstr "भाषा आईडी"
+
+msgid "Language name"
+msgstr "भाषा नाम"
+
+msgid "Language section"
+msgstr "भाषा खण्ड"
+
+msgid "Language specification directories"
+msgstr "भाषा विशिष्टिकरण डाइरेक्टरीहरू"
+
+msgid "Line background"
+msgstr "लाइन पृष्ठभूमि"
+
+msgid "Line background color"
+msgstr "लाइन पृष्ठभूमि रङ"
+
+msgid "Line background set"
+msgstr "लाइन पृष्ठभूमि सेट"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "शैलि योजना स्थापना गरिएको ठाउमा डाइरेक्टरी र फाइलको सूची"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "भाषा विशिष्टिकरण फाइल (.lang) स्थापना गरिने डाइरेक्टरीको सूची"
+
+msgid "List of the ids of the available languages"
+msgstr "उपलब्ध भाषाका आईडीको सूची"
+
+msgid "List of the ids of the available style schemes"
+msgstr "उपलब्ध शैलि योजनाका आईडीको सूची"
+
+msgid "Literate Haskell"
+msgstr "साक्षर हास्केल"
+
+msgid "Makefile"
+msgstr "फाइल बनाउनुहोस्"
+
+msgid "Markup"
+msgstr "मार्कअप"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "हराइरहेको मूख्य भाषा परिभाषा (id = \"%s\".)"
+
+msgid "Nemerle"
+msgstr "नेमेरले"
+
+msgid "Objective Caml"
+msgstr "उद्देश्य Caml"
+
+msgid "Objective-C"
+msgstr "उद्देश्य-C"
+
+msgid "Oblivion"
+msgstr "अब्लिभिअन"
+
+msgid "Octave"
+msgstr "ओक्टेभ"
+
+msgid "Operator"
+msgstr "सञ्चालक"
+
+msgid "Others"
+msgstr "अन्य"
+
+msgid "Pascal"
+msgstr "पास्कल"
+
+msgid "Perl"
+msgstr "पर्ल"
+
+msgid "Preprocessor"
+msgstr "पूर्व प्रोसेसर"
+
+msgid "Python"
+msgstr "पाइथोन"
+
+msgid "RPM spec"
+msgstr "RPM विशेष"
+
+msgid "Ruby"
+msgstr "रुबी"
+
+msgid "Scheme"
+msgstr "योजना"
+
+msgid "Scheme ids"
+msgstr "योजना आईडी"
+
+msgid "Scientific"
+msgstr "वैज्ञानिक"
+
+msgid "Scripts"
+msgstr "स्क्रिप्टहरू"
+
+msgid "Sources"
+msgstr "स्रोतहरू"
+
+msgid "Strikethrough"
+msgstr "स्ट्राइकथ्रु"
+
+msgid "Strikethrough set"
+msgstr "स्ट्राइकथ्रु सेट"
+
+msgid "String"
+msgstr "स्ट्रिङ"
+
+msgid "Style scheme description"
+msgstr "शैलि योजना वर्णन"
+
+msgid "Style scheme filename"
+msgstr "शैलि योजना फाइलनाम"
+
+msgid "Style scheme id"
+msgstr "शैलि योजना आईडी"
+
+msgid "Style scheme name"
+msgstr "शैलि योजना नाम"
+
+msgid "Style scheme search path"
+msgstr "शैलि योजना खोजी मार्ग"
+
+msgid "Tango"
+msgstr "टाङ्गो"
+
+msgid "Texinfo"
+msgstr "टेक्सइनफो"
+
+msgid "Underline"
+msgstr "अधोरेखा"
+
+msgid "Underline set"
+msgstr "अधोरेखा सेट"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "रेगेक्स '%s' मा अज्ञात आईडी '%s'"
+
+msgid "Verilog"
+msgstr "भेरिलग"
+
+msgid "Whether background color is set"
+msgstr "पृष्ठभूमि रङ सेट छ या छैन"
+
+msgid "Whether bold attribute is set"
+msgstr "बाक्लो विशेषता सेट छ या छैन"
+
+msgid "Whether foreground color is set"
+msgstr "अग्रभूमि रङ सेट छ या छैन"
+
+msgid "Whether italic attribute is set"
+msgstr "छड्के विशेषता सेट छ या छैन"
+
+msgid "Whether line background color is set"
+msgstr "लाइन पृष्ठभूमि रङ सेट छ या छैन"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "स्ट्राइकथ्रु विशेषता सेट छ या छैन"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "प्रयोगकर्ताबाट भाषा लुकाउनु पर्दछ या पर्दैन"
+
+msgid "Whether underline attribute is set"
+msgstr "अधोरेखा विशेषता सेट छ या छैन"
+
+msgid "Yacc"
+msgstr "याक"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "सन्दर्भ '%s' ले \\%%{...@start} आदेश समावेश गर्न सक्दैन"
+
+msgid "duplicated context id '%s'"
+msgstr "नक्कली सन्दर्भ आईडी '%s'"
+
+msgid "gettext translation"
+msgstr "गेटटेक्स्ट अनुवाद"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "रेगेक्स '%s' मा: पछिल्ला सन्दर्भ समर्थित हुदैनन्"
+
+msgid "pkg-config"
+msgstr "pkg-कन्फिग"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "भाषा '%s' को '%s' सन्दर्भमा वाइल्डकार्ड विषय सन्दर्भसँग शैलि अधिरोहण प्रयोग गरियो"
+
+msgid "unknown context '%s'"
+msgstr "अज्यात विषय '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr " \\C को प्रयोग भाषा सेटिङमा समर्थन गरिदैन"
+

@@ -1,0 +1,495 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>gtk.TextIter</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-gtk.html" title="Chapter 2. Gtk API for Lua scripts">
+<link rel="prev" href="ch02s09.html" title="gtk.TextBuffer">
+<link rel="next" href="ch02s11.html" title="gtk.TextView">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">gtk.TextIter</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch02s09.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 2. Gtk API for Lua scripts</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch02s11.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="lua.GtkTextIter"></a>gtk.TextIter</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_buffer">get_buffer()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_copy">copy()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_offset">get_offset()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_line">get_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_line_offset">get_line_offset()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_line_index">get_line_index()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_char">get_char()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_text">get_text()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_starts_line">starts_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_ends_line">ends_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_is_cursor_position">is_cursor_position()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_chars_in_line">get_chars_in_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_get_bytes_in_line">get_bytes_in_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_is_end">is_end()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_is_start">is_start()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_forward_char">forward_char()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_backward_char">backward_char()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_forward_chars">forward_chars()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_backward_chars">backward_chars()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_forward_line">forward_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_backward_line">backward_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_forward_lines">forward_lines()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_backward_lines">backward_lines()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_forward_cursor_position">forward_cursor_position()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_backward_cursor_position">backward_cursor_position()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_forward_cursor_positions">forward_cursor_positions()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_backward_cursor_positions">backward_cursor_positions()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_set_offset">set_offset()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_set_line">set_line()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_set_line_offset">set_line_offset()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_set_line_index">set_line_index()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_forward_to_end">forward_to_end()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_forward_to_line_end">forward_to_line_end()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_equal">equal()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_compare">compare()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_in_range">in_range()</a></span></dt>
+<dt><span class="sect2"><a href="ch02s10.html#lua.gtk_text_iter_order">order()</a></span></dt>
+</dl></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_buffer"></a>get_buffer()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_buffer()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s09.html" title="gtk.TextBuffer">gtk.TextBuffer</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_copy"></a>copy()</h3></div></div></div>
+<pre class="programlisting">text_iter.copy()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_offset"></a>get_offset()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_offset()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer index (1-based)</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_line"></a>get_line()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_line()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer index (1-based)</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_line_offset"></a>get_line_offset()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_line_offset()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer index (1-based)</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_line_index"></a>get_line_index()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_line_index()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer index (1-based)</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_char"></a>get_char()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_char()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_text"></a>get_text()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_text(end)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>end</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">string</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_starts_line"></a>starts_line()</h3></div></div></div>
+<pre class="programlisting">text_iter.starts_line()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_ends_line"></a>ends_line()</h3></div></div></div>
+<pre class="programlisting">text_iter.ends_line()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_is_cursor_position"></a>is_cursor_position()</h3></div></div></div>
+<pre class="programlisting">text_iter.is_cursor_position()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_chars_in_line"></a>get_chars_in_line()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_chars_in_line()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_get_bytes_in_line"></a>get_bytes_in_line()</h3></div></div></div>
+<pre class="programlisting">text_iter.get_bytes_in_line()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_is_end"></a>is_end()</h3></div></div></div>
+<pre class="programlisting">text_iter.is_end()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_is_start"></a>is_start()</h3></div></div></div>
+<pre class="programlisting">text_iter.is_start()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_forward_char"></a>forward_char()</h3></div></div></div>
+<pre class="programlisting">text_iter.forward_char()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_backward_char"></a>backward_char()</h3></div></div></div>
+<pre class="programlisting">text_iter.backward_char()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_forward_chars"></a>forward_chars()</h3></div></div></div>
+<pre class="programlisting">text_iter.forward_chars(count)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>count</code></em></span> : </p></td>
+<td><p><code class="constant">integer</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_backward_chars"></a>backward_chars()</h3></div></div></div>
+<pre class="programlisting">text_iter.backward_chars(count)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>count</code></em></span> : </p></td>
+<td><p><code class="constant">integer</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_forward_line"></a>forward_line()</h3></div></div></div>
+<pre class="programlisting">text_iter.forward_line()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_backward_line"></a>backward_line()</h3></div></div></div>
+<pre class="programlisting">text_iter.backward_line()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_forward_lines"></a>forward_lines()</h3></div></div></div>
+<pre class="programlisting">text_iter.forward_lines(count)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>count</code></em></span> : </p></td>
+<td><p><code class="constant">integer</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_backward_lines"></a>backward_lines()</h3></div></div></div>
+<pre class="programlisting">text_iter.backward_lines(count)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>count</code></em></span> : </p></td>
+<td><p><code class="constant">integer</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_forward_cursor_position"></a>forward_cursor_position()</h3></div></div></div>
+<pre class="programlisting">text_iter.forward_cursor_position()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_backward_cursor_position"></a>backward_cursor_position()</h3></div></div></div>
+<pre class="programlisting">text_iter.backward_cursor_position()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_forward_cursor_positions"></a>forward_cursor_positions()</h3></div></div></div>
+<pre class="programlisting">text_iter.forward_cursor_positions(count)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>count</code></em></span> : </p></td>
+<td><p><code class="constant">integer</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_backward_cursor_positions"></a>backward_cursor_positions()</h3></div></div></div>
+<pre class="programlisting">text_iter.backward_cursor_positions(count)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>count</code></em></span> : </p></td>
+<td><p><code class="constant">integer</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_set_offset"></a>set_offset()</h3></div></div></div>
+<pre class="programlisting">text_iter.set_offset(char_offset)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>char_offset</code></em></span> : </p></td>
+<td><p><code class="constant">integer index (1-based)</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_set_line"></a>set_line()</h3></div></div></div>
+<pre class="programlisting">text_iter.set_line(line_number)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>line_number</code></em></span> : </p></td>
+<td><p><code class="constant">integer index (1-based)</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_set_line_offset"></a>set_line_offset()</h3></div></div></div>
+<pre class="programlisting">text_iter.set_line_offset(char_on_line)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>char_on_line</code></em></span> : </p></td>
+<td><p><code class="constant">integer index (1-based)</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_set_line_index"></a>set_line_index()</h3></div></div></div>
+<pre class="programlisting">text_iter.set_line_index(byte_on_line)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>byte_on_line</code></em></span> : </p></td>
+<td><p><code class="constant">integer index (1-based)</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_forward_to_end"></a>forward_to_end()</h3></div></div></div>
+<pre class="programlisting">text_iter.forward_to_end()</pre>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_forward_to_line_end"></a>forward_to_line_end()</h3></div></div></div>
+<pre class="programlisting">text_iter.forward_to_line_end()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_equal"></a>equal()</h3></div></div></div>
+<pre class="programlisting">text_iter.equal(rhs)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>rhs</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_compare"></a>compare()</h3></div></div></div>
+<pre class="programlisting">text_iter.compare(rhs)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>rhs</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">integer</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_in_range"></a>in_range()</h3></div></div></div>
+<pre class="programlisting">text_iter.in_range(start, end)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>start</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>end</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="lua.gtk_text_iter_order"></a>order()</h3></div></div></div>
+<pre class="programlisting">text_iter.order(second)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>second</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch02s10.html" title="gtk.TextIter">gtk.TextIter</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch02s09.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-gtk.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch02s11.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">gtk.TextBuffer </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> gtk.TextView</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

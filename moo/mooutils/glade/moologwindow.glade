@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<glade-interface>
+<widget class="GtkWindow" id="LogWindow">
+<property name="title">Log</property>
+<property name="default_width">400</property>
+<property name="default_height">300</property>
+<child>
+<widget class="GtkScrolledWindow" id="scrolledwindow1">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+<property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+<property name="shadow_type">GTK_SHADOW_ETCHED_IN</property>
+<child>
+<widget class="GtkTextView" id="textview">
+<property name="visible">True</property>
+<property name="wrap_mode">GTK_WRAP_CHAR</property>
+</widget>
+</child>
+</widget>
+</child>
+</widget>
+</glade-interface>

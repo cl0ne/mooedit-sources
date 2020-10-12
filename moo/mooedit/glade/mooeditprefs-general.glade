@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<glade-interface>
+<!-- interface-requires gtk+ 2.8 -->
+<!-- interface-naming-policy toplevel-contextual -->
+<widget class="GtkWindow" id="window1">
+<child>
+<widget class="GtkVBox" id="PrefsGeneral">
+<property name="visible">True</property>
+<property name="border_width">12</property>
+<property name="spacing">18</property>
+<child>
+<widget class="GtkVBox" id="vbox21">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkLabel" id="label15">
+<property name="visible">True</property>
+<property name="xalign">0</property>
+<property name="label" translatable="yes">&lt;b&gt;Keyboard&lt;/b&gt;</property>
+<property name="use_markup">True</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkAlignment" id="alignment11">
+<property name="visible">True</property>
+<property name="left_padding">12</property>
+<child>
+<widget class="GtkVBox" id="vbox22">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkCheckButton" id="smarthome">
+<property name="label" translatable="yes">Smart Home and End</property>
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="enable_auto_indent">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<property name="draw_indicator">True</property>
+<child>
+<widget class="GtkLabel" id="label16">
+<property name="visible">True</property>
+<property name="label" translatable="yes">Enable auto indentation</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="usespaces">
+<property name="label" translatable="yes">Do not use tabs for indentation</property>
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<property name="use_underline">True</property>
+<property name="focus_on_click">False</property>
+<property name="draw_indicator">True</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">2</property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="backspace_indents">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<property name="draw_indicator">True</property>
+<child>
+<widget class="GtkLabel" id="label17">
+<property name="visible">True</property>
+<property name="label" translatable="yes">Backspace key unindents</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="position">3</property>
+</packing>
+</child>
+<child>
+<widget class="GtkCheckButton" id="tab_indents">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<property name="draw_indicator">True</property>
+<child>
+<widget class="GtkLabel" id="label18">
+<property name="visible">True</property>
+<property name="label" translatable="yes">Tab key indents</property>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="position">4</property>
+</packing>
+</child>
+<child>
+<widget class="GtkTable" id="table1">
+<property name="visible">True</property>
+<property name="n_rows">2</property>
+<property name="n_columns">2</property>
+<property name="column_spacing">6</property>
+<property name="row_spacing">6</property>
+<child>
+<widget class="GtkSpinButton" id="indent_width">
+<property name="visible">True</property>
+<property name="adjustment">4 1 100 1 10 0</property>
+<property name="climb_rate">1</property>
+<property name="numeric">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label32">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Indent width:</property>
+<property name="mnemonic_widget">indent_width</property>
+</widget>
+<packing>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options">GTK_FILL</property>
+</packing>
+</child>
+<child>
+<widget class="GtkSpinButton" id="tab_width">
+<property name="visible">True</property>
+<property name="can_focus">True</property>
+<property name="adjustment">8 1 100 1 10 0</property>
+<property name="numeric">True</property>
+<property name="update_policy">if-valid</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="x_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label19">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Tab width:</property>
+<property name="mnemonic_widget">tab_width</property>
+</widget>
+<packing>
+<property name="x_options">GTK_FILL</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="position">5</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkVBox" id="vbox19">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkLabel" id="label14">
+<property name="visible">True</property>
+<property name="xalign">0</property>
+<property name="label" translatable="yes">&lt;b&gt;Font and colors&lt;/b&gt;</property>
+<property name="use_markup">True</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkAlignment" id="alignment10">
+<property name="visible">True</property>
+<property name="left_padding">12</property>
+<child>
+<widget class="GtkVBox" id="vbox20">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkTable" id="table2">
+<property name="visible">True</property>
+<property name="n_rows">2</property>
+<property name="n_columns">2</property>
+<property name="column_spacing">6</property>
+<property name="row_spacing">6</property>
+<child>
+<widget class="GtkLabel" id="label99">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Font:</property>
+</widget>
+<packing>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkComboBox" id="color_scheme_combo">
+<property name="visible">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label100">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Color scheme:</property>
+</widget>
+<packing>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkFontButton" id="fontbutton:MooFontButton">
+<property name="visible">True</property>
+<property name="can_focus">False</property>
+<property name="receives_default">False</property>
+<property name="use_font">True</property>
+<property name="use_size">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="y_options"></property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</glade-interface>

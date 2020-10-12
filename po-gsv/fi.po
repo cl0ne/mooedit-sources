@@ -1,0 +1,282 @@
+# gtksourceview Finnish translation.
+# Copyright (C) 2003-2009 The Free Software Foundation.
+# This file is distributed under the same license as the gtksourceview package.
+# Pauli Virtanen <pauli.virtanen@hut.fi>, 2003-2005.
+# Ilkka Tuohela <hile@iki.fi>, 2005-2009.
+# Tommi Vainikainen <thv@iki.fi>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-25 04:56+0200\n"
+"Last-Translator: Tommi Vainikainen <thv@iki.fi>\n"
+"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background"
+msgstr "Tausta"
+
+msgid "Background color"
+msgstr "Taustaväri"
+
+msgid "Background set"
+msgstr "Tausta asetettu"
+
+msgid "Blue based color scheme"
+msgstr "Siniseen perustuva värimalli"
+
+msgid "Bold"
+msgstr "Lihavoitu"
+
+msgid "Bold set"
+msgstr "Lihavoitu asetettu"
+
+msgid "Boolean value"
+msgstr "Totuusarvo"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC-otsake"
+
+msgid "CG Shader Language"
+msgstr "CG-varjostinkieli"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Kaikille siirtymille ei voitu luoda säännöllistä lauseketta, syntaksin korostustoiminto saattaa olla hitaampi kuin yleensä.\n"
+"Virhe oli: %s"
+
+msgid "Classic"
+msgstr "Klassinen"
+
+msgid "Classic color scheme"
+msgstr "Klassinen värimalli"
+
+msgid "Cobalt"
+msgstr "Kobaltti"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "KATE-muokkaimessa käytetty värimalli"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Tango-väripaletissa käytetty värimalli"
+
+msgid "Comment"
+msgstr "Kommentti"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tango-väripalettia käyttävä tumma värimalli"
+
+msgid "Data Type"
+msgstr "Tietotyyppi"
+
+msgid "Decimal number"
+msgstr "Desimaaliluku"
+
+msgid "Defaults"
+msgstr "Oletukset"
+
+msgid "Dos Batch"
+msgstr "DOS-batch"
+
+msgid "Error"
+msgstr "Virhe"
+
+msgid "Escaped Character"
+msgstr "Suojattu merkkijono"
+
+msgid "Floating point number"
+msgstr "Liukuluku"
+
+msgid "Foreground"
+msgstr "Edusta"
+
+msgid "Foreground color"
+msgstr "Edustaväri"
+
+msgid "Foreground set"
+msgstr "Edusta asetettu"
+
+msgid "GAP"
+msgstr "VÄLI"
+
+msgid "Graphviz Dot"
+msgstr "Graphviz-piste"
+
+msgid "Hexadecimal number"
+msgstr "Heksadesimaaliluku"
+
+msgid "Hidden"
+msgstr "Piilotettu"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Yhden rivin korostaminen kesti liian pitkään, syntaksin korostus on pois päältä"
+
+msgid "Identifier"
+msgstr "Tunniste"
+
+msgid "Italic"
+msgstr "Kursiivi"
+
+msgid "Italic set"
+msgstr "Kursiivi asetettu"
+
+msgid "Keyword"
+msgstr "Avainsana"
+
+msgid "Language id"
+msgstr "Kielitunniste"
+
+msgid "Language ids"
+msgstr "Kielitunnisteet"
+
+msgid "Language name"
+msgstr "Kielen nimi"
+
+msgid "Language section"
+msgstr "Kieliosio"
+
+msgid "Language specification directories"
+msgstr "Kielimääritelmien hakemisto"
+
+msgid "Line background"
+msgstr "Rivin tausta"
+
+msgid "Line background color"
+msgstr "Rivin austaväri"
+
+msgid "Line background set"
+msgstr "Rivin tausta asetettu"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Luettelo kansioista ja tiedostoista, joissa tyylimallit voivat sijaita"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Luettelo hakemistoista, joissa kielimäärittelytiedostot (.lang) ovat"
+
+msgid "List of the ids of the available languages"
+msgstr "Luettelo saatavilla olevien kielten tunnisteista"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Luettelo saatavilla olevista tyylimallien tunnisteista"
+
+msgid "Markup"
+msgstr "Merkintä"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Kielen päämäärittly puuttuu (tunniste = ”%s”.)"
+
+msgid "OpenGL Shading Language"
+msgstr "OpenGL-varjostinkieli"
+
+msgid "Operator"
+msgstr "Operaattori"
+
+msgid "Others"
+msgstr "Muut"
+
+msgid "Preprocessor"
+msgstr "Esikäsittejä"
+
+msgid "RPM spec"
+msgstr "RPM-määrittely"
+
+msgid "Scheme ids"
+msgstr "Mallitunnisteet"
+
+msgid "Scientific"
+msgstr "Tieteellinen"
+
+msgid "Scripts"
+msgstr "Komentojonot"
+
+msgid "Sources"
+msgstr "Lähdekoodit"
+
+msgid "Strikethrough"
+msgstr "Yliviivattu"
+
+msgid "Strikethrough set"
+msgstr "Yliviivaus asetettu"
+
+msgid "String"
+msgstr "Merkkijono"
+
+msgid "Style scheme description"
+msgstr "Tyylimallin kuvaus"
+
+msgid "Style scheme filename"
+msgstr "Tyylimallin tiedostonimi"
+
+msgid "Style scheme id"
+msgstr "Tyylimallin tunniste"
+
+msgid "Style scheme name"
+msgstr "Tyylimallin nimi"
+
+msgid "Style scheme search path"
+msgstr "Tyylimallien hakupolku"
+
+msgid "Underline"
+msgstr "Alleviivattu"
+
+msgid "Underline set"
+msgstr "Alleviivaus asetettu"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Tuntematon tunniste ”%s” säännöllisessä lauseessa ”%s”"
+
+msgid "Whether background color is set"
+msgstr "Onko taustaväri asetettu"
+
+msgid "Whether bold attribute is set"
+msgstr "Onko lihavointimääre asetettu"
+
+msgid "Whether foreground color is set"
+msgstr "Onko edustaväri asetettu"
+
+msgid "Whether italic attribute is set"
+msgstr "Onko kursiivimääre asetettu"
+
+msgid "Whether line background color is set"
+msgstr "Onko rivin taustaväri asetettu"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Onko yliviivausmääre asetettu"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Piilotetaanko kieli käyttäjältä"
+
+msgid "Whether underline attribute is set"
+msgstr "Onko alleviivausmääre asetettu"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "konteksti ”%s” ei voi sisältää \\%%{…@start} -komentoa"
+
+msgid "duplicated context id '%s'"
+msgstr "kahdennettu kontekstin tunniste ”%s”"
+
+msgid "gettext translation"
+msgstr "Gettext-käännös"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "lausekkeessa ”%s”: takaisinviittauksia ei tueta"
+
+msgid "invalid context reference '%s'"
+msgstr "virheellinen kontekstiviite ”%s”"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "tyylin ohitusta käytettiin jokerimerkillisessä kontekstiviitteessä kielellä ”%s” viitteessä ”%s”"
+
+msgid "unknown context '%s'"
+msgstr "tuntematon konteksti ”%s”"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "Käytetään arvoa \\C tukemattomissa kielimäärittelyissä"
+

@@ -1,0 +1,43 @@
+moo_python_ini_in_files =			\
+	moopython/plugins/terminal.ini.in	\
+	moopython/plugins/python.ini.in
+
+moo_python_plugins =				\
+	moopython/plugins/terminal.py		\
+	moopython/plugins/python.py
+
+moo_python_lib_files =				\
+	moopython/plugins/lib/pyconsole.py	\
+	moopython/plugins/lib/insert_date_and_time.py
+
+moo_python_lib_medit_files =			\
+	moopython/plugins/medit/__init__.py	\
+	moopython/plugins/medit/runpython.py
+
+EXTRA_DIST +=					\
+    $(moo_python_ini_in_files)			\
+    $(moo_python_plugins)			\
+    $(moo_python_lib_files)			\
+    $(moo_python_lib_medit_files)
+
+if MOO_ENABLE_PYTHON
+
+moo_python_ini_files = $(moo_python_ini_in_files:.ini.in=.ini)
+built_plugins_sources += $(moo_python_ini_in_files) $(moo_python_ini_files)
+
+moopython/plugins/%.ini: $(srcdir)/moopython/plugins/%.ini.in $(top_builddir)/config.status
+	$(AM_V_at)$(MKDIR_P) moopython/plugins
+	$(AM_V_GEN)cd $(top_builddir) && ./config.status --silent --file=$(subdir)/$@
+
+moo_python_plugindir = ${MOO_PYTHON_PLUGIN_DIR}
+moo_python_libdir = ${MOO_PYTHON_LIB_DIR}
+moo_python_lib_meditdir = ${MOO_PYTHON_LIB_DIR}/medit
+moo_python_plugin_DATA =			\
+	$(moo_python_ini_files)			\
+	$(moo_python_plugins)
+moo_python_lib_DATA =				\
+	$(moo_python_lib_files)
+moo_python_lib_medit_DATA =			\
+	$(moo_python_lib_medit_files)
+
+endif

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glade-interface>
+<!-- interface-requires gtk+ 2.8 -->
+<!-- interface-naming-policy toplevel-contextual -->
+<widget class="GtkWindow" id="window5">
+<child>
+<widget class="GtkVBox" id="PrefsLangs">
+<property name="visible">True</property>
+<property name="border_width">12</property>
+<property name="spacing">18</property>
+<child>
+<widget class="GtkVBox" id="vbox15">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkLabel" id="label10">
+<property name="visible">True</property>
+<property name="xalign">0</property>
+<property name="label" translatable="yes">&lt;b&gt;Language-specific options&lt;/b&gt;</property>
+<property name="use_markup">True</property>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+<child>
+<widget class="GtkAlignment" id="alignment8">
+<property name="visible">True</property>
+<property name="left_padding">12</property>
+<child>
+<widget class="GtkVBox" id="vbox16">
+<property name="visible">True</property>
+<property name="spacing">6</property>
+<child>
+<widget class="GtkTable" id="table">
+<property name="visible">True</property>
+<property name="n_rows">4</property>
+<property name="n_columns">2</property>
+<property name="column_spacing">6</property>
+<property name="row_spacing">6</property>
+<child>
+<widget class="GtkEntry" id="config">
+<property name="visible">True</property>
+<property name="tooltip">strip: bool; add-newline:bool; use-tabs: bool; indent-width: integer; tab-width: integer</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">3</property>
+<property name="bottom_attach">4</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label11">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Options:</property>
+</widget>
+<packing>
+<property name="top_attach">3</property>
+<property name="bottom_attach">4</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label_mimetypes">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Mime types:</property>
+</widget>
+<packing>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label_extensions">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Extensions:</property>
+</widget>
+<packing>
+<property name="top_attach">2</property>
+<property name="bottom_attach">3</property>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="mimetypes">
+<property name="visible">True</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">1</property>
+<property name="bottom_attach">2</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkEntry" id="extensions">
+<property name="visible">True</property>
+<property name="activates_default">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="top_attach">2</property>
+<property name="bottom_attach">3</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkLabel" id="label768">
+<property name="visible">True</property>
+<property name="xalign">1</property>
+<property name="label" translatable="yes">Language:</property>
+</widget>
+<packing>
+<property name="x_options">GTK_FILL</property>
+<property name="y_options"></property>
+</packing>
+</child>
+<child>
+<widget class="GtkComboBox" id="lang_combo">
+<property name="visible">True</property>
+</widget>
+<packing>
+<property name="left_attach">1</property>
+<property name="right_attach">2</property>
+<property name="y_options"></property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">1</property>
+</packing>
+</child>
+</widget>
+<packing>
+<property name="expand">False</property>
+<property name="fill">False</property>
+<property name="position">0</property>
+</packing>
+</child>
+</widget>
+</child>
+</widget>
+</glade-interface>

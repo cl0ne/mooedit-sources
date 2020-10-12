@@ -1,0 +1,358 @@
+# translation of gtksourceview.HEAD.po to Arabic
+# Arabic translation of PACKAGE.
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Arafat Medini <lumina@silverpen.de>, 2003.
+# Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+# Djihed Afifi <djihed@gmail.com>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2007, 2008, 2009.
+# Abderrahim Kitouni <a.kitouni@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2009-08-20 22:31+0300\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Virtaal 0.4.0"
+
+msgid "Ada"
+msgstr "أدا"
+
+msgid "Background"
+msgstr "الخلفية"
+
+msgid "Background color"
+msgstr "لون الخلفية"
+
+msgid "Background set"
+msgstr "الخلفية معينة"
+
+msgid "Blue based color scheme"
+msgstr "مخطط أزرق"
+
+msgid "Bold"
+msgstr "سميك"
+
+msgid "Bold set"
+msgstr "سميك معين"
+
+msgid "Boo"
+msgstr "بو"
+
+msgid "Boolean value"
+msgstr "قيمة منطقية"
+
+msgid "C"
+msgstr "سي"
+
+msgid "C#"
+msgstr "سي#"
+
+msgid "C++"
+msgstr "سي++"
+
+msgid "C/C++/ObjC Header"
+msgstr "ترويسة C/C++/ObjC"
+
+msgid "CSS"
+msgstr "صفحات الطرز المتراصة"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"لا يمكن انشاء عبارة منتظمة من أجل كل الحالات الانتقالية، سيكون ابراز الصياغة أبطأ من المعتاد.\n"
+"الخطأ هو: %s"
+
+msgid "ChangeLog"
+msgstr "سجب التغييرات"
+
+msgid "Classic"
+msgstr "تقليدي"
+
+msgid "Classic color scheme"
+msgstr "مخطط ألوان تقليدي"
+
+msgid "Cobalt"
+msgstr "كوبالت"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "تنسيق الألوان المستعمل في محرر النصوص Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "مخطَّط الألوان باستعمال لوحة ألوان تانجو"
+
+msgid "Comment"
+msgstr "تعليق"
+
+msgid "D"
+msgstr "دي"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "مخطَّط الألوان الغامقة باستعمال لوحة ألوان تانجو"
+
+msgid "Data Type"
+msgstr "نوع بيانات"
+
+msgid "Decimal number"
+msgstr "عدد عشري"
+
+msgid "Defaults"
+msgstr "المبدئيات"
+
+msgid "Diff"
+msgstr "الاختلافات"
+
+msgid "Docbook"
+msgstr "دوك‌بوك"
+
+msgid "Dos Batch"
+msgstr "سكربت دوس"
+
+msgid "Erlang"
+msgstr "إيرلانغ"
+
+msgid "Error"
+msgstr "خطأ"
+
+msgid "Escaped Character"
+msgstr "مِحرف متجاوز"
+
+msgid "Floating point number"
+msgstr "عدد عشري"
+
+msgid "Foreground"
+msgstr "الواجهة الأمامية"
+
+msgid "Foreground color"
+msgstr "لون الواجهة الأمامية"
+
+msgid "Foreground set"
+msgstr "الواجهة الأمامية معينة"
+
+msgid "Forth"
+msgstr "فورث"
+
+msgid "Fortran 95"
+msgstr "فورتران 95"
+
+msgid "Haskell"
+msgstr "هاسكيل"
+
+msgid "Hexadecimal number"
+msgstr "عدد ست عشري"
+
+msgid "Hidden"
+msgstr "خفي"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "أخذ تلوين سطر واحد وقتا كبيرا، لذا سيتم تعطيل التلوين"
+
+msgid "Identifier"
+msgstr "معرف"
+
+msgid "Italic"
+msgstr "مائل"
+
+msgid "Italic set"
+msgstr "مائل معين"
+
+msgid "Java"
+msgstr "جافا"
+
+msgid "Keyword"
+msgstr "كلمة مفتاحية"
+
+msgid "LaTeX"
+msgstr "لاتك"
+
+msgid "Language id"
+msgstr "معرف اللغة"
+
+msgid "Language ids"
+msgstr "معرفات اللغة"
+
+msgid "Language name"
+msgstr "اسم اللغة"
+
+msgid "Language section"
+msgstr "قسم اللغة"
+
+msgid "Language specification directories"
+msgstr "دلائل خصائص اللغة"
+
+msgid "Line background"
+msgstr "خلفية السطر"
+
+msgid "Line background color"
+msgstr "لون خلفية السطر"
+
+msgid "Line background set"
+msgstr "خلفية السطر معينة"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "قائمة الدلائل والملفات أين توجد مخططات الطرز"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "قائمة الدلائل الحاوية لملفات خصائص اللغة (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "قائمة معرفات اللغات المتوفرة"
+
+msgid "List of the ids of the available style schemes"
+msgstr "قائمة معرفات مخططات الطرز المتوفرة"
+
+msgid "Lua"
+msgstr "لوا"
+
+msgid "Markup"
+msgstr "رقْم"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "تعريف اللغة الرئيسية غائب (id = \"%s\".)"
+
+msgid "Nemerle"
+msgstr "رقم"
+
+msgid "Oblivion"
+msgstr "نسيان"
+
+msgid "Operator"
+msgstr "عملية"
+
+msgid "Others"
+msgstr "أخرى"
+
+msgid "Pascal"
+msgstr "باسكال"
+
+msgid "Perl"
+msgstr "پيرل"
+
+msgid "Preprocessor"
+msgstr "معالج أولي"
+
+msgid "Python"
+msgstr "پيثون"
+
+msgid "R"
+msgstr "آر"
+
+msgid "Ruby"
+msgstr "روبي"
+
+msgid "Scheme"
+msgstr "سكيم"
+
+msgid "Scheme ids"
+msgstr "معرفات المخطط"
+
+msgid "Scientific"
+msgstr "علمي"
+
+msgid "Scripts"
+msgstr "نصوص شفرية"
+
+msgid "Sources"
+msgstr "مصادر"
+
+msgid "Strikethrough"
+msgstr "تشريط"
+
+msgid "Strikethrough set"
+msgstr "التشريط معين"
+
+msgid "String"
+msgstr "سلسلة"
+
+msgid "Style scheme description"
+msgstr "وصف مخطط الطرز"
+
+msgid "Style scheme filename"
+msgstr "اسم ملف مخطط الطرز"
+
+msgid "Style scheme id"
+msgstr "معرف مخطط الطرز"
+
+msgid "Style scheme name"
+msgstr "اسم مخطط الطرز"
+
+msgid "Style scheme search path"
+msgstr "مسار البحث عن مخططات الطرز"
+
+msgid "Tango"
+msgstr "تانجو"
+
+msgid "Texinfo"
+msgstr "تخ‌إنفو"
+
+msgid "Underline"
+msgstr "تسطير"
+
+msgid "Underline set"
+msgstr "التسطير معين"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "معرف مجهول '%s' في العبارة المنتظمة '%s'"
+
+msgid "Vala"
+msgstr "ڤالا"
+
+msgid "Whether background color is set"
+msgstr "فيما إذا تم تعيين لون الواجهة الخلفية "
+
+msgid "Whether bold attribute is set"
+msgstr "فيما إذا تم تعيين خاصية العرض"
+
+msgid "Whether foreground color is set"
+msgstr "فيما إذا تم تعيين لون الواجهة الأمامية "
+
+msgid "Whether italic attribute is set"
+msgstr "فيما إذا تم تعيين خاصية المَيلان"
+
+msgid "Whether line background color is set"
+msgstr "فيما إذا وجب تعيين لون خلفية الخط "
+
+msgid "Whether strikethrough attribute is set"
+msgstr "فيما إذا تم تعيين خاصية التشطيب"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "فيما إذا وجب إخفاء اللغة عن المستخدم"
+
+msgid "Whether underline attribute is set"
+msgstr "فيما إذا تم تعيين خاصية التسطير"
+
+msgid "awk"
+msgstr "أوْك"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "لا يمكن للسياق '%s' أن يحوي أمر \\%%{...@start}"
+
+msgid "duplicated context id '%s'"
+msgstr "معرف السياق '%s' مكرر"
+
+msgid "gettext translation"
+msgstr "ترجمة جتكست"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "في العبارة المنتظمة '%s': النصوص المطابقة الراحعة غير مدعمة"
+
+msgid "invalid context reference '%s'"
+msgstr "مرجع السياق غير صالح '%s'"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "أسلوب التجاوز المستعمل مع بدل مرجع السياق في اللغة  '%s' في المرجع '%s'"
+
+msgid "unknown context '%s'"
+msgstr "سياق مجهول '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "استعمال \\C في تعريف اللغات غير مدعوم"
+

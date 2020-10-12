@@ -1,0 +1,119 @@
+# translation of gtksourceview.HEAD.he.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2003
+# Yair Hershkovitz <yairhr@gmail.com>, 2008
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.HEAD.he\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-12-30 18:21+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.1"
+
+msgid "Blue based color scheme"
+msgstr "ערכת צבעים מבוססת כחול"
+
+msgid "Boolean value"
+msgstr "ערך בוליאני"
+
+msgid "CG Shader Language"
+msgstr "שפת העיבוד הגרפי של CG"
+
+msgid "ChangeLog"
+msgstr "יומן שינוים"
+
+msgid "Classic"
+msgstr "קלאסי"
+
+msgid "Classic color scheme"
+msgstr "סכימת צבעים קלאסית"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "סכימת הצבעים שבשימוש עורך הטקסט Kate"
+
+msgid "Color scheme using Tango color palette"
+msgstr "סכימת צבעים בעזרת לוח הצבעים 'טנגו'"
+
+msgid "Comment"
+msgstr "הערה"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "סכימת צבעים כהה בעזרת לוח הצבעים 'טנגו'"
+
+msgid "Data Type"
+msgstr "סוג הנתון"
+
+msgid "Decimal number"
+msgstr "מספר עשרוני"
+
+msgid "Dos Batch"
+msgstr "אצווה של Dos"
+
+msgid "Error"
+msgstr "שגיאות"
+
+msgid "Floating point number"
+msgstr "מספר עם נקודה צפה"
+
+msgid "GDB Log"
+msgstr "יומן GDB"
+
+msgid "Go"
+msgstr "מעבר"
+
+msgid "Hexadecimal number"
+msgstr "מספר הקסדצימלי"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "הדגשת שורה אחת לקחה זמן כל כך רב, הדגשת תחביר תבוטל"
+
+msgid "Kate"
+msgstr "‏Kate"
+
+msgid "Keyword"
+msgstr "מילת מפתח"
+
+msgid "Markup"
+msgstr "סימון"
+
+msgid "Oblivion"
+msgstr "אבדון"
+
+msgid "OpenGL Shading Language"
+msgstr "שפת העיבוד הגרפית של OpenGL"
+
+msgid "Operator"
+msgstr "סימן פעולה"
+
+msgid "Others"
+msgstr "אחרים"
+
+msgid "Scientific"
+msgstr "מדעי"
+
+msgid "Scripts"
+msgstr "תסריטים"
+
+msgid "Sources"
+msgstr "מקורות"
+
+msgid "String"
+msgstr "מחרוזת"
+
+msgid "Tango"
+msgstr "טנגו"
+
+msgid "Text2Tags"
+msgstr "טקסט לתגיות"
+
+msgid "gettext translation"
+msgstr "תרגום gettext"
+

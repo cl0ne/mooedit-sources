@@ -1,0 +1,698 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>moo.Editor - editor object</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="python-moo.html" title="Chapter 3. medit Python API">
+<link rel="prev" href="ch03s07.html" title="moo.EditWindow - document window object">
+<link rel="next" href="ch03s09.html" title="moo.LineView">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">moo.Editor - editor object</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch03s07.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 3. <span class="application">medit</span> Python API</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch03s09.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="python.MooEditor"></a>moo.Editor - editor object</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="sect2"><a href="ch03s08.html#python.signal:MooEditor:after-save">signal after-save</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.signal:MooEditor:before-save">signal before-save</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.signal:MooEditor:will-close-doc">signal will-close-doc</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.signal:MooEditor:will-close-window">signal will-close-window</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.signal:MooEditor:will-save">signal will-save</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_create_instance">create_instance()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_instance">instance()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_close_doc">close_doc()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_close_docs">close_docs()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_close_window">close_window()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_create_doc">create_doc()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_get_active_doc">get_active_doc()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_get_active_view">get_active_view()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_get_active_window">get_active_window()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_get_doc">get_doc()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_get_doc_for_file">get_doc_for_file()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_get_doc_for_uri">get_doc_for_uri()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_get_docs">get_docs()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_get_windows">get_windows()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_new_doc">new_doc()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_new_file">new_file()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_new_window">new_window()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_open_file">open_file()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_open_files">open_files()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_open_path">open_path()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_open_uri">open_uri()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_reload">reload()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_save">save()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_save_as">save_as()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_save_copy">save_copy()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_set_active_doc">set_active_doc()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_set_active_view">set_active_view()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_set_active_window">set_active_window()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_set_doc_type">set_doc_type()</a></span></dt>
+<dt><span class="sect2"><a href="ch03s08.html#python.moo_editor_set_window_type">set_window_type()</a></span></dt>
+</dl></div>
+<pre class="programlisting">
+<code class="constant"><a class="ulink" href="http://library.gnome.org/devel/pygobject/stable/class-gobject.html" target="_top">gobject.Object</a></code>
+  |
+  +-- moo.Editor
+</pre>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.signal:MooEditor:after-save"></a>signal after-save</h3></div></div></div>
+<pre class="programlisting">after-save(doc)</pre>
+<p>This signal is emitted after the document has been successfully saved on disk.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p> the document which was saved on disk</p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.signal:MooEditor:before-save"></a>signal before-save</h3></div></div></div>
+<pre class="programlisting">before-save(doc, file)</pre>
+<p>This signal is emitted when the document is going to be saved on disk. Callbacks must return <code class="constant"><a class="link" href="ch03s16.html#python.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CANCEL</a></code> if document should not be saved, and <code class="constant"><a class="link" href="ch03s16.html#python.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CONTINUE</a></code> otherwise.  For example, if before saving the file must be checked out from a version control system, a callback can do that and return <code class="constant"><a class="link" href="ch03s16.html#python.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CANCEL</a></code> if checkout failed.  Callbacks must not modify document content. If you need to modify it before saving, use <code class="function"><a class="link" href="ch03s08.html#python.signal:MooEditor:will-save" title="signal will-save">will-save</a></code> signal instead. </p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p> the document which is about to be saved on disk</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>file</code></em></span> : </p></td>
+<td><p> the <code class="constant"><a class="ulink" href="http://library.gnome.org/devel/pygobject/stable/class-giofile.html" target="_top">gio.File</a></code> object which represents saved file</p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em>  <code class="constant"><a class="link" href="ch03s16.html#python.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CANCEL</a></code> to cancel saving, <code class="constant"><a class="link" href="ch03s16.html#python.MooSaveResponse" title="moo.SaveResponse">SAVE_RESPONSE_CONTINUE</a></code> otherwise.</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.signal:MooEditor:will-close-doc"></a>signal will-close-doc</h3></div></div></div>
+<pre class="programlisting">will-close-doc(doc)</pre>
+<p>This signal is emitted before the document is closed.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p> the document which is about to be closed</p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s16.html#python.MooCloseResponse" title="moo.CloseResponse">moo.CloseResponse</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.signal:MooEditor:will-close-window"></a>signal will-close-window</h3></div></div></div>
+<pre class="programlisting">will-close-window(window)</pre>
+<p>This signal is emitted before the window is closed.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>window</code></em></span> : </p></td>
+<td><p> the window which is about to be closed</p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.signal:MooEditor:will-save"></a>signal will-save</h3></div></div></div>
+<pre class="programlisting">will-save(doc, file)</pre>
+<p>This signal is emitted when the document is going to be saved on disk, after <code class="function"><a class="link" href="ch03s08.html#python.signal:MooEditor:before-save" title="signal before-save">before-save</a></code> signal. Callbacks may modify document content at this point.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p> the document which is about to be saved on disk</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>file</code></em></span> : </p></td>
+<td><p> the <code class="constant"><a class="ulink" href="http://library.gnome.org/devel/pygobject/stable/class-giofile.html" target="_top">gio.File</a></code> object which represents saved file</p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_create_instance"></a>create_instance()</h3></div></div></div>
+<pre class="programlisting">Editor.create_instance(embedded=<code class="constant">True</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>embedded</code></em></span> : </p></td>
+<td><p><code class="constant">bool</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s08.html" title="moo.Editor - editor object">moo.Editor</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_instance"></a>instance()</h3></div></div></div>
+<pre class="programlisting">Editor.instance()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s08.html" title="moo.Editor - editor object">moo.Editor</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_close_doc"></a>close_doc()</h3></div></div></div>
+<pre class="programlisting">editor.close_doc(doc)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_close_docs"></a>close_docs()</h3></div></div></div>
+<pre class="programlisting">editor.close_docs(docs)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>docs</code></em></span> : </p></td>
+<td><p>list of <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code> objects</p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_close_window"></a>close_window()</h3></div></div></div>
+<pre class="programlisting">editor.close_window(window)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>window</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s07.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_create_doc"></a>create_doc()</h3></div></div></div>
+<pre class="programlisting">editor.create_doc(filename=<code class="constant">None</code>, encoding=<code class="constant">None</code>)</pre>
+<p>Create a document instance which can be embedded into arbitrary widget.  This method may not be used in medit (use <code class="function"><a class="link" href="ch03s08.html#python.moo_editor_new_doc" title="new_doc()">new_doc()</a></code>, <code class="function"><a class="link" href="ch03s08.html#python.moo_editor_new_file" title="new_file()">new_file()</a></code>, <code class="function"><a class="link" href="ch03s08.html#python.moo_editor_open_file" title="open_file()">open_file()</a></code>, <code class="function"><a class="link" href="ch03s08.html#python.moo_editor_open_files" title="open_files()">open_files()</a></code>, <code class="function"><a class="link" href="ch03s08.html#python.moo_editor_open_uri" title="open_uri()">open_uri()</a></code>, <code class="function"><a class="link" href="ch03s08.html#python.moo_editor_open_path" title="open_path()">open_path()</a></code> instead).</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>filename</code></em></span> : </p></td>
+<td><p><code class="constant">str</code> or <code class="constant">None</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>encoding</code></em></span> : </p></td>
+<td><p><code class="constant">str</code> or <code class="constant">None</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_get_active_doc"></a>get_active_doc()</h3></div></div></div>
+<pre class="programlisting">editor.get_active_doc()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_get_active_view"></a>get_active_view()</h3></div></div></div>
+<pre class="programlisting">editor.get_active_view()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s06.html" title="moo.EditView - document view object">moo.EditView</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_get_active_window"></a>get_active_window()</h3></div></div></div>
+<pre class="programlisting">editor.get_active_window()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s07.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_get_doc"></a>get_doc()</h3></div></div></div>
+<pre class="programlisting">editor.get_doc(filename)</pre>
+<p>Finds open document by filename.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>filename</code></em></span> : </p></td>
+<td><p><code class="constant">str</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_get_doc_for_file"></a>get_doc_for_file()</h3></div></div></div>
+<pre class="programlisting">editor.get_doc_for_file(file)</pre>
+<p>Finds open document by <code class="constant"><a class="ulink" href="http://library.gnome.org/devel/pygobject/stable/class-giofile.html" target="_top">gio.File</a></code>.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>file</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="ulink" href="http://library.gnome.org/devel/pygobject/stable/class-giofile.html" target="_top">gio.File</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_get_doc_for_uri"></a>get_doc_for_uri()</h3></div></div></div>
+<pre class="programlisting">editor.get_doc_for_uri(uri)</pre>
+<p>Finds open document by URI.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>uri</code></em></span> : </p></td>
+<td><p><code class="constant">str</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_get_docs"></a>get_docs()</h3></div></div></div>
+<pre class="programlisting">editor.get_docs()</pre>
+<p><em class="parameter"><code>Returns:</code></em> list of <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code> objects</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_get_windows"></a>get_windows()</h3></div></div></div>
+<pre class="programlisting">editor.get_windows()</pre>
+<p><em class="parameter"><code>Returns:</code></em> list of <code class="constant"><a class="link" href="ch03s07.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code> objects</p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_new_doc"></a>new_doc()</h3></div></div></div>
+<pre class="programlisting">editor.new_doc(window=<code class="constant">None</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>window</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s07.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code> or <code class="constant">None</code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_new_file"></a>new_file()</h3></div></div></div>
+<pre class="programlisting">editor.new_file(info, parent=<code class="constant">None</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>info</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s10.html" title="moo.OpenInfo - information for opening a file">moo.OpenInfo</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>parent</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="ulink" href="http://library.gnome.org/devel/pygtk/stable/class-gtkwidget.html" target="_top">gtk.Widget</a></code> or <code class="constant">None</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_new_window"></a>new_window()</h3></div></div></div>
+<pre class="programlisting">editor.new_window()</pre>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s07.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_open_file"></a>open_file()</h3></div></div></div>
+<pre class="programlisting">editor.open_file(info, parent=<code class="constant">None</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>info</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s10.html" title="moo.OpenInfo - information for opening a file">moo.OpenInfo</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>parent</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="ulink" href="http://library.gnome.org/devel/pygtk/stable/class-gtkwidget.html" target="_top">gtk.Widget</a></code> or <code class="constant">None</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_open_files"></a>open_files()</h3></div></div></div>
+<pre class="programlisting">editor.open_files(files, parent=<code class="constant">None</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>files</code></em></span> : </p></td>
+<td><p>list of <code class="constant"><a class="link" href="ch03s10.html" title="moo.OpenInfo - information for opening a file">moo.OpenInfo</a></code> objects</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>parent</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="ulink" href="http://library.gnome.org/devel/pygtk/stable/class-gtkwidget.html" target="_top">gtk.Widget</a></code> or <code class="constant">None</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_open_path"></a>open_path()</h3></div></div></div>
+<pre class="programlisting">editor.open_path(path, encoding=<code class="constant">None</code>, line=-1, window=<code class="constant">None</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>path</code></em></span> : </p></td>
+<td><p><code class="constant">str</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>encoding</code></em></span> : </p></td>
+<td><p><code class="constant">str</code> or <code class="constant">None</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>line</code></em></span> : </p></td>
+<td><p><code class="constant">int</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>window</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s07.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code> or <code class="constant">None</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_open_uri"></a>open_uri()</h3></div></div></div>
+<pre class="programlisting">editor.open_uri(uri, encoding=<code class="constant">None</code>, line=-1, window=<code class="constant">None</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>uri</code></em></span> : </p></td>
+<td><p><code class="constant">str</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>encoding</code></em></span> : </p></td>
+<td><p><code class="constant">str</code> or <code class="constant">None</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>line</code></em></span> : </p></td>
+<td><p><code class="constant">int</code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>window</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s07.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code> or <code class="constant">None</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_reload"></a>reload()</h3></div></div></div>
+<pre class="programlisting">editor.reload(doc, info=<code class="constant">None</code>)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>info</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s11.html" title="moo.ReloadInfo - information for reloading a file">moo.ReloadInfo</a></code> or <code class="constant">None</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_save"></a>save()</h3></div></div></div>
+<pre class="programlisting">editor.save(doc)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p></td>
+</tr></tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_save_as"></a>save_as()</h3></div></div></div>
+<pre class="programlisting">editor.save_as(doc, info=<code class="constant">None</code>)</pre>
+<p>Save document with new filename and/or encoding. If <em class="parameter"><code>info</code></em> is missing or <code class="constant"><code class="constant">None</code></code> then user is asked for new filename first.</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>info</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s12.html" title="moo.SaveInfo - information for saving a file">moo.SaveInfo</a></code> or <code class="constant">None</code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_save_copy"></a>save_copy()</h3></div></div></div>
+<pre class="programlisting">editor.save_copy(doc, info)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p></td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>info</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s12.html" title="moo.SaveInfo - information for saving a file">moo.SaveInfo</a></code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p><em class="parameter"><code>Returns:</code></em> <code class="constant">bool</code></p>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_set_active_doc"></a>set_active_doc()</h3></div></div></div>
+<pre class="programlisting">editor.set_active_doc(doc)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>doc</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s04.html" title="moo.Edit - document object">moo.Edit</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_set_active_view"></a>set_active_view()</h3></div></div></div>
+<pre class="programlisting">editor.set_active_view(view)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s06.html" title="moo.EditView - document view object">moo.EditView</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_set_active_window"></a>set_active_window()</h3></div></div></div>
+<pre class="programlisting">editor.set_active_window(window)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>window</code></em></span> : </p></td>
+<td><p><code class="constant"><a class="link" href="ch03s07.html" title="moo.EditWindow - document window object">moo.EditWindow</a></code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_set_doc_type"></a>set_doc_type()</h3></div></div></div>
+<pre class="programlisting">editor.set_doc_type(type)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em></span> : </p></td>
+<td><p><code class="constant">type</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="python.moo_editor_set_window_type"></a>set_window_type()</h3></div></div></div>
+<pre class="programlisting">editor.set_window_type(type)</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em></span> : </p></td>
+<td><p><code class="constant">type</code></p></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch03s07.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="python-moo.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch03s09.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">moo.EditWindow - document window object </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> moo.LineView</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

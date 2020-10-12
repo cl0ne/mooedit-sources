@@ -1,0 +1,83 @@
+# Canadian English translation of gtksourceview
+# Copyright (C) 2004-2006 Adam Weinberger and the GNOME Foundation
+# This file is distributed under the same licence as the gtksourceview package.
+# Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview 0.9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2005-08-08 20:39-0500\n"
+"Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
+"Language-Team: Canadian English <adamw@gnome.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "Background color"
+msgstr "Background colour"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Cannot create a regex for all the transitions.  The syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+
+msgid "Classic color scheme"
+msgstr "Classic colour scheme"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Colour scheme used in the Kate text editor"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Colour scheme using Tango colour palette"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Dark colour scheme using the Tango colour palette"
+
+msgid "Foreground color"
+msgstr "Foreground colour"
+
+msgid "Language id"
+msgstr "Language ID"
+
+msgid "Line background color"
+msgstr "Line background colour"
+
+msgid "List of the ids of the available style schemes"
+msgstr "List of the IDs of the available style schemes"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Missing main language definition (ID = \"%s\".)"
+
+msgid "Scheme ids"
+msgstr "Scheme IDs"
+
+msgid "Style scheme id"
+msgstr "Style scheme ID"
+
+msgid "Tcl"
+msgstr "TCL"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Unknown ID '%s' in regex '%s'"
+
+msgid "Whether background color is set"
+msgstr "Whether background colour is set"
+
+msgid "Whether foreground color is set"
+msgstr "Whether foreground colour is set"
+
+msgid "Whether line background color is set"
+msgstr "Whether line background colour is set"
+
+msgid "awk"
+msgstr "AWK"
+
+msgid "duplicated context id '%s'"
+msgstr "duplicated context ID '%s'"
+

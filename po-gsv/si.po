@@ -1,0 +1,83 @@
+# translation of si.po to Sinhala
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Danishka Navin <snavin@redhat.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: si\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2007-08-31 15:00+0530\n"
+"Last-Translator: Danishka Navin <snavin@redhat.com>\n"
+"Language-Team: Sinhala <en@li.org>\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);"
+
+msgid "Background"
+msgstr "පසුබිම"
+
+msgid "Background color"
+msgstr "පසුබිම් වර්‍ණය"
+
+msgid "Background set"
+msgstr "පසුබිම් එකතුව"
+
+msgid "Bold"
+msgstr "තදකුරු"
+
+msgid "Bold set"
+msgstr "තදකුරු එකතුව"
+
+msgid "Classic"
+msgstr "සුසංගත"
+
+msgid "Comment"
+msgstr "සටහන"
+
+msgid "Error"
+msgstr "දෝෂය"
+
+msgid "Foreground"
+msgstr "පුර්‍වබිම"
+
+msgid "Foreground color"
+msgstr "පුර්‍වබිම් වර්‍ණය"
+
+msgid "Foreground set"
+msgstr "පුර්‍වබිම් එකතුව"
+
+msgid "HTML"
+msgstr "HTML "
+
+msgid "Hidden"
+msgstr "සැඟවුනු"
+
+msgid "Italic"
+msgstr "ඇලකුරු"
+
+msgid "Italic set"
+msgstr "ඇලකුරු එකතුව"
+
+msgid "Language name"
+msgstr "භෂා නම"
+
+msgid "Language section"
+msgstr "භාෂා අංශය"
+
+msgid "Others"
+msgstr "වෙනත් පිරිස්"
+
+msgid "Scientific"
+msgstr "විද්‍යාත්මක"
+
+msgid "Underline"
+msgstr "යටි ඉර"
+
+msgid "Underline set"
+msgstr "යටිඉරි එකතුව"
+

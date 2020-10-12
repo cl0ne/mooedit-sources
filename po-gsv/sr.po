@@ -1,0 +1,389 @@
+# Serbian translation of gtksourceview
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003 - 2009.
+#
+# This file is distributed under the same license as the gtksourceview package.
+#
+# Maintainer: Данило Шеган <dsegan@gmx.net>
+# Reviewed on 2005-09-03 by: Данило Шеган <dsegan@gmx.net>
+# Translate on 2009-21-09 by: Бранко Кокановић <branko.kokanovic@gmail.com>
+# Бранко Кокановић <branko.kokanovic@gmail.com>, 2010.
+# Милош Поповић <gpopac@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-08-21 17:13+0200\n"
+"Last-Translator: Милош Поповић <gpopac@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4;    plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 :    n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;"
+
+msgid "Ada"
+msgstr "Ада"
+
+msgid "Background"
+msgstr "Позадина"
+
+msgid "Background color"
+msgstr "Боја позадине"
+
+msgid "Background set"
+msgstr "Постављена позадина"
+
+msgid "BibTeX"
+msgstr "БибТекс"
+
+msgid "Blue based color scheme"
+msgstr "Плава шема боја"
+
+msgid "Bold"
+msgstr "Подебљано"
+
+msgid "Bold set"
+msgstr "Постављено подебљано"
+
+msgid "Boolean value"
+msgstr "Истинитосна вредност"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC заглавље"
+
+msgid "CG Shader Language"
+msgstr "Језик CG нијансирања"
+
+msgid "CUDA"
+msgstr "КУДА"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Не могу да направим регуларни израз за све прелазе, процес истицања синтаксе ће бити спорији.\n"
+"Грешка: %s"
+
+msgid "ChangeLog"
+msgstr "Дневник промена"
+
+msgid "Classic"
+msgstr "Класично"
+
+msgid "Classic color scheme"
+msgstr "Класична шема боја"
+
+msgid "Cobalt"
+msgstr "Кобалт"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Шема боја коришћена у Кејт уређивачу текста"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Шема боја користећи Танго палету боја"
+
+msgid "Comment"
+msgstr "Примедба"
+
+msgid "DTD"
+msgstr "ДТД"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Тамна шема боја користећи Танго палету боја"
+
+msgid "Data Type"
+msgstr "Тип података"
+
+msgid "Decimal number"
+msgstr "Декадни број"
+
+msgid "Defaults"
+msgstr "Подразумевано"
+
+msgid "Diff"
+msgstr "Разлике (Diff)"
+
+msgid "Docbook"
+msgstr "Докбук"
+
+msgid "Dos Batch"
+msgstr "ДОС batch"
+
+msgid "Eiffel"
+msgstr "Ајфел"
+
+msgid "Erlang"
+msgstr "Ерланг"
+
+msgid "Error"
+msgstr "Грешка"
+
+msgid "Escaped Character"
+msgstr "Знак за избегавање"
+
+msgid "F#"
+msgstr "Ф#"
+
+msgid "FCL"
+msgstr "ФЦЛ"
+
+msgid "Floating point number"
+msgstr "Број у покретном зарезу"
+
+msgid "Foreground"
+msgstr "Текст"
+
+msgid "Foreground color"
+msgstr "Боја текста"
+
+msgid "Foreground set"
+msgstr "Постављена боја текста"
+
+msgid "Fortran 95"
+msgstr "Фортран 95"
+
+msgid "Haskell"
+msgstr "Хаскел"
+
+msgid "Hexadecimal number"
+msgstr "Хексадецимални број"
+
+msgid "Hidden"
+msgstr "Скривен"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Истицање једне линије је трајало предуго, истицање синтаксе ће бити онемогућено"
+
+msgid "Identifier"
+msgstr "Идентификатор"
+
+msgid "Italic"
+msgstr "Курзив"
+
+msgid "Italic set"
+msgstr "Постављен курзив"
+
+msgid "Java"
+msgstr "Јава"
+
+msgid "Kate"
+msgstr "Кејт"
+
+msgid "Keyword"
+msgstr "Кључна реч"
+
+msgid "LaTeX"
+msgstr "ЛаТеХ"
+
+msgid "Language id"
+msgstr "Идентификација језика"
+
+msgid "Language ids"
+msgstr "Идентификације језика"
+
+msgid "Language name"
+msgstr "Име језика"
+
+msgid "Language section"
+msgstr "Одељак језика"
+
+msgid "Language specification directories"
+msgstr "Директоријуми са дефиницијама језика"
+
+msgid "Line background"
+msgstr "Позадина линије"
+
+msgid "Line background color"
+msgstr "Боја позадине линије"
+
+msgid "Line background set"
+msgstr "Постављена позадина линије"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Списак директоријума и датотека у којима се налазе схеме стила"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Списак директоријума у којима се налазе датотеке са дефиницијама језика (.lang)"
+
+msgid "List of the ids of the available languages"
+msgstr "Списак идентификација доступних језика"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Списак идентификатора доступних шема стила"
+
+msgid "Literate Haskell"
+msgstr "Literate Хаскел"
+
+msgid "Lua"
+msgstr "Луа"
+
+msgid "Mallard"
+msgstr "Малард"
+
+msgid "Markup"
+msgstr "Означавање"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Недостаје главна дефиниција језика (иб = „%s“.)"
+
+msgid "OOC"
+msgstr "ООЦ"
+
+msgid "Objective Caml"
+msgstr "Објектни Caml"
+
+msgid "Objective-C"
+msgstr "Објектни C"
+
+msgid "Oblivion"
+msgstr "Обливион"
+
+msgid "Octave"
+msgstr "Октава"
+
+msgid "OpenGL Shading Language"
+msgstr "Језик за ОпенГЛ сенчење"
+
+msgid "Operator"
+msgstr "Оператор"
+
+msgid "Others"
+msgstr "Остали"
+
+msgid "PHP"
+msgstr "ПХП"
+
+msgid "Pascal"
+msgstr "Паскал"
+
+msgid "Perl"
+msgstr "Перл"
+
+msgid "Preprocessor"
+msgstr "Препроцесор"
+
+msgid "Prolog"
+msgstr "Пролог"
+
+msgid "Python"
+msgstr "Питон"
+
+msgid "RPM spec"
+msgstr "RPM спец"
+
+msgid "Ruby"
+msgstr "Руби"
+
+msgid "Scheme"
+msgstr "Шема"
+
+msgid "Scheme ids"
+msgstr "Идентификатори шема"
+
+msgid "Scientific"
+msgstr "Научни"
+
+msgid "Scripts"
+msgstr "Скрипте"
+
+msgid "Sources"
+msgstr "Извори"
+
+msgid "Strikethrough"
+msgstr "Прецртано"
+
+msgid "Strikethrough set"
+msgstr "Постављено прецртано"
+
+msgid "String"
+msgstr "Ниска"
+
+msgid "Style scheme description"
+msgstr "Опис схеме стила"
+
+msgid "Style scheme filename"
+msgstr "Име датотеке схеме стила"
+
+msgid "Style scheme id"
+msgstr "Идентификатор схеме стила"
+
+msgid "Style scheme name"
+msgstr "Име схеме стила"
+
+msgid "Style scheme search path"
+msgstr "Путања за претрагу схеме стила"
+
+msgid "Tango"
+msgstr "Танго"
+
+msgid "Texinfo"
+msgstr "Техинфо"
+
+msgid "Underline"
+msgstr "Подвучено"
+
+msgid "Underline set"
+msgstr "Постављено подвучено"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "Непозната идентификација „%s“ у регуларном изразу „%s“"
+
+msgid "VB.NET"
+msgstr "ВБ.НЕТ"
+
+msgid "Vala"
+msgstr "Вала"
+
+msgid "Verilog"
+msgstr "Верилог"
+
+msgid "Whether background color is set"
+msgstr "Да ли је боја позадине постављена"
+
+msgid "Whether bold attribute is set"
+msgstr "Да ли је постављено да је текст подебљан"
+
+msgid "Whether foreground color is set"
+msgstr "Да ли је боја текста постављена"
+
+msgid "Whether italic attribute is set"
+msgstr "Да ли је постављено да је текст у курзиву"
+
+msgid "Whether line background color is set"
+msgstr "Да ли је постављена боја позадине линије"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Да ли је постављено да је текст прецртан"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Одређује да ли језик треба да буде скривен од корисника"
+
+msgid "Whether underline attribute is set"
+msgstr "Да ли је постављено да је текст подвучен"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "контекст '%s' не може да садржи \\%%{...@start} наредбу"
+
+msgid "duplicated context id '%s'"
+msgstr "поновљени идентификатор контекста „%s“"
+
+msgid "gettext translation"
+msgstr "геттекст превод"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "у регуларном изразу „%s“: повратне референце нису подржане"
+
+msgid "invalid context reference '%s'"
+msgstr "неисправна референца контекста „%s“"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "преклапање стила коришћено са џокер референцом контекста у језику „%s“ и референци „%s“"
+
+msgid "unknown context '%s'"
+msgstr "непознати контекст „%s“"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "коришћење \\C није подржано у дефиницијама језика"
+

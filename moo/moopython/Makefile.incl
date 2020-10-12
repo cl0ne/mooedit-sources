@@ -1,0 +1,49 @@
+moo_python_sources =
+built_moo_python_sources =
+
+include moopython/pygtk/Makefile.incl
+include moopython/plugins/Makefile.incl
+
+moo_python_sources +=				\
+	moopython/moopython-pygtkmod.h		\
+	moopython/moopython-builtin.h		\
+	moopython/moopython-builtin.c		\
+	moopython/moopython-api.h		\
+	moopython/moopython-loader.h		\
+	moopython/moopython-loader.c		\
+	moopython/moopython-utils.h		\
+	moopython/moopython-utils.c		\
+	moopython/moopython-tests.h		\
+	moopython/moopython-tests.cpp
+
+moo_sources +=					\
+	moopython/medit-python.h		\
+	moopython/medit-python.c
+
+EXTRA_DIST += moopython/medit-python-init.py
+built_moo_sources += moopython/medit-python-init.h
+moopython/medit-python-init.h: moopython/medit-python-init.py $(top_srcdir)/tools/xml2h.py
+	$(AM_V_at)$(MKDIR_P) moopython
+	$(AM_V_GEN)$(MOO_PYTHON) $(top_srcdir)/tools/xml2h.py $(srcdir)/moopython/medit-python-init.py \
+		moopython/medit-python-init.h.tmp MEDIT_PYTHON_INIT_PY \
+		&& mv moopython/medit-python-init.h.tmp moopython/medit-python-init.h
+
+if MOO_ENABLE_PYTHON
+moo_sources += $(moo_python_sources)
+built_moo_sources += $(built_moo_python_sources)
+endif
+
+EXTRA_DIST +=					\
+	$(moo_python_sources)			\
+	moopython/codegen/__init__.py		\
+	moopython/codegen/argtypes.py		\
+	moopython/codegen/argtypes_m.py		\
+	moopython/codegen/codegen.py		\
+	moopython/codegen/definitions.py	\
+	moopython/codegen/defsparser.py		\
+	moopython/codegen/docgen.py		\
+	moopython/codegen/mergedefs.py		\
+	moopython/codegen/mkskel.py		\
+	moopython/codegen/override.py		\
+	moopython/codegen/reversewrapper.py	\
+	moopython/codegen/scmexpr.py

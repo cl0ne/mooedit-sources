@@ -1,0 +1,96 @@
+EXTRA_DIST += medit-app/data
+dist-hook: delete-junk-from-data
+delete-junk-from-data:
+	rm -rf `find $(distdir)/medit-app/data -name '*~'`
+
+EXTRA_DIST +=					\
+	medit-app/run-tests.sh			\
+	medit-app/print-functions.py		\
+	medit-app/run-tests-installed.sh	\
+	medit-app/run-tests-uninstalled.sh
+
+EXTRA_DIST += medit-app/medit.rc.in
+EXTRA_DIST += medit-app/medit.desktop.in
+
+if MOO_BUILD_APP
+
+bin_PROGRAMS += medit
+
+TESTS = medit-app/run-tests-uninstalled.sh
+TESTS_ENVIRONMENT = EXEEXT=$(EXEEXT) top_srcdir=$(top_srcdir) bindir=$(bindir) PYTHON=$(MOO_PYTHON) print_functions=$(srcdir)/medit-app/print-functions.py
+
+if !MOO_ENABLE_COVERAGE
+TESTS_ENVIRONMENT += IGNORE_COVERAGE=1
+endif
+
+installcheck-local: run-tests-installed
+run-tests-installed:
+	$(TESTS_ENVIRONMENT) srcdir=$(srcdir) $(srcdir)/medit-app/run-tests-installed.sh
+	@echo 'PASS: medit-app/run-tests-installed.sh'
+	@echo '==========='
+	@echo 'test passed'
+	@echo '==========='
+
+if MOO_OS_UNIX
+AM_CFLAGS += -DMOO_UNIT_TEST_DATA_DIR=\"${MOO_TOP_SRCDIR}/moo/medit-app/data\"
+endif
+
+medit_SOURCES =				\
+	medit-app/mem-debug.h		\
+	medit-app/run-tests.h		\
+	medit-app/parse.h		\
+	medit-app/main.cpp		\
+	$(moo_sources)			\
+	$(plugins_sources)
+
+nodist_EXTRA_medit_SOURCES =		\
+	dummy.cpp
+
+medit_LDADD = $(MOO_LIBS) $(moo_libadd)
+
+nodist_medit_SOURCES =			\
+	$(built_moo_sources)		\
+	$(built_plugins_sources)
+
+medit_LDFLAGS =
+if MOO_OS_WIN32
+medit_LDFLAGS += -mwindows
+endif
+
+if MOO_OS_WIN32
+CLEANFILES += medit-app/medit.rc medit-app/medit.res
+medit-app/medit.rc: medit-app/medit.rc.in $(top_builddir)/config.status
+	$(AM_V_at)$(MKDIR_P) medit-app
+	$(AM_V_GEN)cd $(top_builddir) && ./config.status --silent --file=moo/medit-app/medit.rc
+medit-app/medit.res: medit-app/medit.rc
+	$(AM_V_GEN)$(WINDRES) -i medit-app/medit.rc --input-format=rc -o medit-app/medit.res -O coff
+medit_LDADD += medit-app/medit.res
+endif
+
+if MOO_OS_UNIX
+desktopdir = $(datadir)/applications
+desktop_DATA = medit-app/medit.desktop
+medit-app/medit.desktop: medit-app/medit.desktop.in @MOO_INTLTOOL_INI_DEPS@
+	$(AM_V_at)$(MKDIR_P) medit-app
+	@MOO_INTLTOOL_INI_CMD@
+CLEANFILES += medit-app/medit.desktop
+endif MOO_OS_UNIX
+
+iconthemedir = $(datadir)/icons/hicolor/48x48/apps
+icontheme_DATA = mooutils/pixmaps/medit.png
+if MOO_ENABLE_INSTALL_HOOKS
+update_icon_cache = gtk-update-icon-cache -f -t $(DESTDIR)$(datadir)/icons/hicolor
+install-data-hook: install-data-hook-gtk-icon-cache
+install-data-hook-gtk-icon-cache:
+	@if echo "Updating icon cache" && $(update_icon_cache); then		\
+		echo "Done.";							\
+	else									\
+		echo "*** GTK icon cache not updated. After install, run this:";\
+		echo $(update_icon_cache);					\
+	fi
+uninstall-hook: uninstall-data-hook-gtk-icon-cache
+uninstall-data-hook-gtk-icon-cache:
+	@if echo "Updating icon cache" && $(update_icon_cache); then echo "Done."; else echo "Failed."; fi
+endif
+
+endif MOO_BUILD_APP

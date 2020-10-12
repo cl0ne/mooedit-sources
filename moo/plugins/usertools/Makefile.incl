@@ -1,0 +1,76 @@
+plugins_sources +=					\
+	plugins/usertools/moousertools.cpp		\
+	plugins/usertools/moousertools.h		\
+	plugins/usertools/moousertools-prefs.cpp	\
+	plugins/usertools/moousertools-prefs.h		\
+	plugins/usertools/moocommand.cpp		\
+	plugins/usertools/moocommand.h			\
+	plugins/usertools/moocommand-private.h		\
+	plugins/usertools/moocommanddisplay.cpp		\
+	plugins/usertools/moocommanddisplay.h		\
+	plugins/usertools/moooutputfilterregex.cpp	\
+	plugins/usertools/moooutputfilterregex.h	\
+	plugins/usertools/moousertools-enums.h		\
+	plugins/usertools/moousertools-enums.cpp	\
+	plugins/usertools/moocommand-exe.cpp		\
+	plugins/usertools/moocommand-exe.h		\
+	plugins/usertools/moocommand-script.cpp		\
+	plugins/usertools/moocommand-script.h
+
+EXTRA_DIST +=						\
+	plugins/usertools/glade/mooedittools-exe.glade	\
+	plugins/usertools/glade/mooedittools-script.glade\
+	plugins/usertools/glade/moousertools.glade
+
+built_plugins_sources +=				\
+	plugins/usertools/mooedittools-exe-gxml.h	\
+	plugins/usertools/mooedittools-script-gxml.h	\
+	plugins/usertools/moousertools-gxml.h
+
+EXTRA_DIST += plugins/usertools/lua-tool-setup.lua
+built_plugins_sources += plugins/usertools/lua-tool-setup.h
+plugins/usertools/lua-tool-setup.h: plugins/usertools/lua-tool-setup.lua $(top_srcdir)/tools/xml2h.py
+	$(AM_V_at)$(MKDIR_P) plugins/usertools
+	$(AM_V_GEN)$(MOO_PYTHON) $(top_srcdir)/tools/xml2h.py $(srcdir)/plugins/usertools/lua-tool-setup.lua \
+		plugins/usertools/lua-tool-setup.h.tmp LUA_TOOL_SETUP_LUA \
+		&& mv plugins/usertools/lua-tool-setup.h.tmp plugins/usertools/lua-tool-setup.h
+
+EXTRA_DIST +=						\
+	plugins/usertools/python-tool-setup.py
+if MOO_ENABLE_PYTHON
+built_plugins_sources += plugins/usertools/python-tool-setup.h
+plugins/usertools/python-tool-setup.h: plugins/usertools/python-tool-setup.py $(top_srcdir)/tools/xml2h.py
+	$(AM_V_at)$(MKDIR_P) plugins/usertools
+	$(AM_V_GEN)$(MOO_PYTHON) $(top_srcdir)/tools/xml2h.py $(srcdir)/plugins/usertools/python-tool-setup.py \
+		plugins/usertools/python-tool-setup.h.tmp PYTHON_TOOL_SETUP_PY \
+		&& mv plugins/usertools/python-tool-setup.h.tmp plugins/usertools/python-tool-setup.h
+endif
+
+cfgdir = $(MOO_DATA_DIR)
+cfg_DATA =					\
+	plugins/usertools/filters.xml		\
+	plugins/usertools/menu.xml		\
+	plugins/usertools/context.xml
+EXTRA_DIST +=					\
+	plugins/usertools/filters.xml		\
+	plugins/usertools/menu-tmpl.xml		\
+	plugins/usertools/context-tmpl.xml	\
+	plugins/usertools/genplatxml.py
+
+genplatxml_args =
+
+if MOO_OS_WIN32
+genplatxml_args += --enable=win32
+else !MOO_OS_WIN32
+genplatxml_args += --enable=unix
+endif !MOO_OS_WIN32
+
+if MOO_ENABLE_PYTHON
+genplatxml_args += --enable=python
+endif
+
+built_plugins_sources += plugins/usertools/menu.xml plugins/usertools/context.xml
+plugins/usertools/%.xml: plugins/usertools/%-tmpl.xml plugins/usertools/genplatxml.py
+	$(AM_V_at)$(MKDIR_P) plugins/usertools
+	$(AM_V_GEN)$(MOO_PYTHON) $(srcdir)/plugins/usertools/genplatxml.py $(genplatxml_args) \
+		$(srcdir)/plugins/usertools/$*-tmpl.xml > $@.tmp && mv $@.tmp $@

@@ -1,0 +1,430 @@
+# Dzongkha translation of gtksourceview
+# Copyright @ 2006 Free Software Foundation, Inc.
+# Mindu Dorji
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtksourceview.gnome-2-14 dz\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2008-10-02 16:33+0530\n"
+"Last-Translator: Dawa pemo <daws_403@hotmail.com>\n"
+"Language-Team: DZONGKHA <pgeyleg@dit.gov.bt>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=(n!=1);\n"
+"X-Poedit-Language: Dzongkha\n"
+"X-Poedit-Country: BHUTAN\n"
+"X-Poedit-SourceCharset: utf-8"
+
+msgid ".desktop"
+msgstr ".ཌེཀསི་ཊོཔ།"
+
+msgid ".ini"
+msgstr ".ཨའི་ཨེན་ཨའི།"
+
+msgid "Ada"
+msgstr "ཨ་ཌ།"
+
+msgid "Background"
+msgstr "རྒྱབ་གཞི་ "
+
+msgid "Background color"
+msgstr "རྒྱབ་གཞའི་ཚོས་གཞི་ "
+
+msgid "Background set"
+msgstr "རྒྱབ་གཞི་ གཞི་སྒྲིག་ "
+
+msgid "Bold"
+msgstr "རྒྱགས་པ་ "
+
+msgid "Bold set"
+msgstr "ཆ་ཚན་རྒྱགས་པ་ "
+
+msgid "Boo"
+msgstr "བཱོ་ "
+
+msgid "Boolean value"
+msgstr "བཱོོ་ལིཡེན་ བེ་ལུ་ "
+
+msgid "C"
+msgstr "སི།"
+
+msgid "C#"
+msgstr "སི་#།"
+
+msgid "C++"
+msgstr "སི་++།"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC  མགོ་ཡིག་ "
+
+msgid "CSS"
+msgstr "སི་ཨེསི་ཨེསི།"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"འགྱུར་བ་ག་ར་གི་དོན་ལུ་ རི་ཇེགསི་ གསར་བསྐྲུན་འབད་མི་ཚུགས་པས་   ཚིག་སྦྱོར་ གཙོ་དམིགས་འབད་ནིའི་ལས་འབྱོར་དེ་ ཨ་རྟག་དང་ཕྱེདཔ་ད་ འགྲོས་ཀྱིས་སྦེ་འོང་། \n"
+"འཛོལ་བ་དེ་ : %s ཨིན་མས་ "
+
+msgid "ChangeLog"
+msgstr "བསྒྱུར་བཅོས་དྲན་དེབ།"
+
+msgid "Classic"
+msgstr "སྔོན་སྲོལ་ "
+
+msgid "Classic color scheme"
+msgstr "སྔོན་སྲོལ་ཚོས་གཞིའི་འཆར་ལས་ "
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "ཀེཊི་ ཚིག་ཡིག་ཞུན་དགཔ་ནང་ལག་ལེན་འཐབ་ཡོད་པའི་ ཚོས་གཞིའི་འཆར་ལས་ "
+
+msgid "Color scheme using Tango color palette"
+msgstr "ཊེང་གོ་ ཚོས་གཞི་ པེལེཏི་ ལག་ལེན་འཐབ་མི་ ཚོས་གཞིའི་འཆར་ལས་ "
+
+msgid "Comment"
+msgstr "བསམ་བཀོད།"
+
+msgid "D"
+msgstr "ཌི།"
+
+msgid "DPatch"
+msgstr "ཌི་པེཆ་ "
+
+msgid "DTD"
+msgstr "ཌི་ཊི་ཌི།"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "ཊེང་གོ་ ཚོས་གཞི་པེལེཊི་ ལག་ལེན་འཐབ་མི་ འཆར་ལས་ ཚོས་གཞི་སྒྲིབ་གནག་"
+
+msgid "Data Type"
+msgstr "གནད་སྡུད་དབྱེ་བ།"
+
+msgid "Decimal number"
+msgstr "བཅུ་ཚག་ཨང་"
+
+msgid "Defaults"
+msgstr "སྔོན་སྒྲིག་ཚུ་ "
+
+msgid "Diff"
+msgstr "ཌིཕ"
+
+msgid "Docbook"
+msgstr "ཌོཀ་ ཀི་དེབ་"
+
+msgid "Eiffel"
+msgstr "ཨི་ཕཱལ་"
+
+msgid "Error"
+msgstr "འཛོལ་བ་ "
+
+msgid "Escaped Character"
+msgstr "ཐར་ཡོད་པའི་ ཡིག་འབྲུ་ "
+
+msgid "Floating point number"
+msgstr "ལྡིང་ཚད་ཨང་གྲངས་ "
+
+msgid "Foreground"
+msgstr "གདོང་གཞི་ "
+
+msgid "Foreground color"
+msgstr "གདོང་གཞིའི་ ཚོས་གཞི་ "
+
+msgid "Foreground set"
+msgstr "གདོང་གཞི་ཆ་ཚན་"
+
+msgid "Forth"
+msgstr "གདོང་ཁར་ "
+
+msgid "Fortran 95"
+msgstr "ཕོར་ཊཱེན་ ༩༥།"
+
+msgid "GAP"
+msgstr "ཇི་ཨེ་པི་ "
+
+msgid "GtkRC"
+msgstr "ཇི་ཊི་ཀེ་ཨར་སི།"
+
+msgid "HTML"
+msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ།"
+
+msgid "Haddock"
+msgstr "ཧེཌ་ཌོཀ་ "
+
+msgid "Haskell"
+msgstr "ཧེསི་ཀེལ།"
+
+msgid "Hexadecimal number"
+msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ ཨང་ "
+
+msgid "Hidden"
+msgstr "གསང་བ་ "
+
+msgid "IDL"
+msgstr "ཨའི་ཌི་ཨེལ།"
+
+msgid "Identifier"
+msgstr "ལེགས་བཅོས་འབད་མི་ "
+
+msgid "Italic"
+msgstr "ཨའི་ཊ་ལིཀ་ "
+
+msgid "Italic set"
+msgstr "ཆ་ཚན་ ཨའི་ཊ་ལིཀ་ "
+
+msgid "Java"
+msgstr "ཇ་བ།"
+
+msgid "Kate"
+msgstr "ཀེཊི་ "
+
+msgid "Keyword"
+msgstr "གཙོ་ཚིག"
+
+msgid "LaTeX"
+msgstr "ལ་ཊེགསི།"
+
+msgid "Language id"
+msgstr "སྐད་ཡིག་ ཨའི་ཌི་ "
+
+msgid "Language ids"
+msgstr "སྐད་ཡིག་གི་ ཨའི་ཌིསི་ "
+
+msgid "Language name"
+msgstr "སྐད་ཡིག་གི་མིང་ "
+
+msgid "Language section"
+msgstr "སྐད་ཡིག་གི་ དབྱེ་ཚན་"
+
+msgid "Language specification directories"
+msgstr "སྐད་ཡིག་གསལ་བཤད་ཀྱི་ ཁ་བྱང་ཐོ་དེབ།"
+
+msgid "Line background"
+msgstr "གྲལ་ཐིག་ རྒྱབ་གཞི་ "
+
+msgid "Line background color"
+msgstr "གྲལ་ཐིག་རྒྱབ་གཞིའི་ཚོས་གཞི་ "
+
+msgid "Line background set"
+msgstr "གྲལ་ཐིག་རྒྱབ་གཞི་ཆ་ཚན་ "
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "བཟོ་རྣམ་འཆར་ལས་ཚུ་ཆགས་ཡོད་པའི་ སྣོད་ཐོ་དང་ཡིག་སྣོད་ཚུ་གི་ཐོ་ཡིག་ "
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "སྐད་ཡིག་གསལ་བཤད་ཡིག་སྣོད་(.སྐད་ཡིག་) ཚུ་ཡོད་སའི་ ཁ་བྱང་ཐོ་དེབ་ཀྱི་ཐོ་ཡིག"
+
+msgid "List of the ids of the available languages"
+msgstr "འཐོབ་ཚུགས་པའི་སྐད་ཡིག་ཚུ་གི་ ཨའི་ཌིསི་གི་ ཐོ་ཡིག་ "
+
+msgid "List of the ids of the available style schemes"
+msgstr "འཐོབ་ཚུགས་པའི་བཟོ་རྣམ་འཆར་ལས་ཚུ་ཀྱི་ ཨའི་ཌི་གི་ཐོ་ཡིག་ "
+
+msgid "Literate Haskell"
+msgstr "ལི་ཊེ་རེཊི་ ཧེསི་ཀེལ་ "
+
+msgid "Lua"
+msgstr "ལུ་འ།"
+
+msgid "MSIL"
+msgstr "ཨེམ་ཨེསི་ཨའི་ཨེལ།"
+
+msgid "Makefile"
+msgstr "ཡིག་སྣོད་བཟོ།"
+
+msgid "Markup"
+msgstr "རྟགས་བཀོད།"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "སྐད་ཡིག་གི་ ངེས་ཚིག་ངོ་མ་ བརླག་སྟོར་ཞུགས་པ་ (id = \"%s\".)"
+
+msgid "Nemerle"
+msgstr "ནི་མར་ལི"
+
+msgid "OCL"
+msgstr "ཨོ་སི་ཨེལ་ "
+
+msgid "Objective Caml"
+msgstr "དམིགས་ཡུལ་སི་ཨེ་ཨེམ་ཨེལ་"
+
+msgid "Objective-C"
+msgstr "དམིགས་ཡུལ་- སི་ "
+
+msgid "Oblivion"
+msgstr "རྩ་གཏོར་"
+
+msgid "Octave"
+msgstr "བརྒྱད་ལྡན།"
+
+msgid "Operator"
+msgstr "བཀོལ་སྤྱོདཔ།"
+
+msgid "Others"
+msgstr "གཞན་ཚུ།"
+
+msgid "PHP"
+msgstr "པི་ཨེཆ་པི།"
+
+msgid "Pascal"
+msgstr "པཱསི་ཀལ།"
+
+msgid "Perl"
+msgstr "པརཱལ།"
+
+msgid "Preprocessor"
+msgstr "སྔ་གོང་ལས་སྦྱོར་འཕྲུལ་ཆས།"
+
+msgid "Python"
+msgstr "སྦུལམོ་ཆེ།"
+
+msgid "R"
+msgstr "ཨར་ "
+
+msgid "RPM spec"
+msgstr "ཨར་པི་ཨེམ་ཨེསི་པི་ཨི་སི་"
+
+msgid "Ruby"
+msgstr "ར་བི།"
+
+msgid "SQL"
+msgstr "ཨེསི་ཀིའུ་ཨེལ།"
+
+msgid "Scheme"
+msgstr "འཆར་ལས།"
+
+msgid "Scheme ids"
+msgstr "འཆར་ལས་ ཨིཌསི་ "
+
+msgid "Scientific"
+msgstr "ཚན་རིག་གི་ "
+
+msgid "Scripts"
+msgstr "ཡིག་ཚུགས།"
+
+msgid "Sources"
+msgstr "འབྱུང་ཁུངས་ཚུ།"
+
+msgid "Strikethrough"
+msgstr "སིཊའིཀ་ཐུ་རུ་ "
+
+msgid "Strikethrough set"
+msgstr "སིཊའིཀ་ཐུ་རུ་ གཞི་སྒྲིག་ "
+
+msgid "String"
+msgstr "ཡིག་རྒྱུན།"
+
+msgid "Style scheme description"
+msgstr "བཟོ་རྣམ་ འཆར་ལས་ འགྲེལ་བཤད་ "
+
+msgid "Style scheme filename"
+msgstr "བཟོ་རྣམ་ འཆར་ལས་ ཡིག་སྣོད་ཀྱི་མིང་ "
+
+msgid "Style scheme id"
+msgstr "བཟོ་རྣམ་འཆར་ལས་ ཨའི་ཌི་"
+
+msgid "Style scheme name"
+msgstr "བཟོ་རྣམ་འཆར་ལས་ཀྱི་མིང་ "
+
+msgid "Style scheme search path"
+msgstr "བཟོ་རྣམ་འཆར་ལས་ འཚོལ་ཞིབ་ འགྲུལ་ལམ་ "
+
+msgid "Tango"
+msgstr "ཊེང་གོ་ "
+
+msgid "Tcl"
+msgstr "ཊི་སི་ཨེལ།"
+
+msgid "Texinfo"
+msgstr "ཚིག་དོན་གྱི་བརྡ་དོན།"
+
+msgid "Underline"
+msgstr "འོག་ཐིག་ "
+
+msgid "Underline set"
+msgstr "འོག་ཐིག་ཆ་ཚན་ "
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "རི་ཇེགསི ་'%s' ནང་ མ་ཤེས་པའི་ ཨའི་ཌི་ '%s' "
+
+msgid "VB.NET"
+msgstr "ཝི་བི་.ནེཊི།"
+
+msgid "VHDL"
+msgstr "ཝི་ཨེཆ་ཌི་ཨེལ།"
+
+msgid "Verilog"
+msgstr "བེ་རི་ལོག"
+
+msgid "Whether background color is set"
+msgstr "རྒྱབ་གཞིའི་ཚོས་གཞི་ གཞི་སྒྲིག་འབད་དེ་ཡོད་ག་མེད་ག་ "
+
+msgid "Whether bold attribute is set"
+msgstr "ཁྱད་ཆོས་ རྒྱགས་པ་དེ་ གཞི་སྒྲིག་འབད་དེ་ཡོད་ག་མེད་་ག་ "
+
+msgid "Whether foreground color is set"
+msgstr "གདོང་གཞིའི་ཚོས་གཞི་ གཞི་སྒྲིག་འབད་དེ་ཡོད་ག་མེད་ག་ "
+
+msgid "Whether italic attribute is set"
+msgstr "ཨའི་ཊ་ལིཀ་ ཁྱད་ཆོས་དེ་ གཞི་སྒྲིག་འབད་དེ་ཡོད་ག་མེད་ག་ "
+
+msgid "Whether line background color is set"
+msgstr "གྲལ་ཐིག་གི་ རྒྱབ་ཞིའི་ཚོས་གཞི་ གཞི་སྒྲིག་འབད་དེ་ཡོད་ག་མེད་ག་ "
+
+msgid "Whether strikethrough attribute is set"
+msgstr "སིཊའིཀ་ཐུ་རུ་ ཁྱད་ཆོས་དེ་ གཞི་སྒྲིག་འབད་དེ་ཡོད་ག་མེད་ག་ "
+
+msgid "Whether the language should be hidden from the user"
+msgstr "སྐད་ཡིག་དེ་ ལག་ལེན་པ་ལས་ སྦ་བཞག་དགོཔ་ཨིན་ན་མེན་ན་ "
+
+msgid "Whether underline attribute is set"
+msgstr "འོག་ཐིག་གི་ཁྱད་ཆོས་དེ་ གཞི་སྒྲིག་འབད་དེ་ཡོད་ག་མེད་ག་ "
+
+msgid "XML"
+msgstr "ཨེགསི་ཨེམ་ཨེལ།"
+
+msgid "awk"
+msgstr "ཨེ་ཌབ་ལུ་ཀེ་ "
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "ནང་དོན་ '%s' ནང་ལུ་  \\%%{...@start} བརྡ་བཀོད་ མིན་ནུག་ "
+
+msgid "duplicated context id '%s'"
+msgstr "སྐབས་དོན་ ཨའི་ཌི་  '%s' ངོ་བཤུས་ཅནམ་ "
+
+msgid "gettext translation"
+msgstr "ཚིག་ཡིག་ལེན་ནིའི་ སྐད་བསྐྱུར།"
+
+msgid "gtk-doc"
+msgstr "ཇི་ཊི་ཀེ་ -ཌོཀ་ "
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "རི་ཇེགསི་  '%s': ནང་ རྒྱབ་རྟེན་ཚུ་ རྒྱབ་བསྐྱོར་ མི་འབད་བས་ "
+
+msgid "invalid context reference '%s'"
+msgstr "ནུས་མེད་ སྐབས་དོན་ གཞི་བསྟུན་ '%s'"
+
+msgid "libtool"
+msgstr "ལིབ་ཊུལ་ "
+
+msgid "m4"
+msgstr "ཨེམ་༤"
+
+msgid "pkg-config"
+msgstr "པི་ཀེ་ཇི་ - ཀོན་ཕིག་ "
+
+msgid "sh"
+msgstr "ཨེསི་ཨེཆ།"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "ref '%s' ནང་ སྐད་ཡིག་  '%s' ནང་ ཝའིལཌི་ཀཱཌ་ སྐབས་དོན་ གཞི་བསྟུན་དག་གཅིག་ཁར་ལག་ལེན་འཐབ་ཡོད་པའི་ མེདཔ་གཏང་ཡོད་པའི་བཟོ་རྣམ་ "
+
+msgid "unknown context '%s'"
+msgstr "མ་ཤེས་པའི་ སྐབས་དོན་ '%s'"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "སྐད་ཡིག་གི་ངེས་ཚིག་ཚུ་ནང་ \\C ལག་ལེན་འཐབ་ནི་དེ་ རྒྱབ་སྐྱོར་མ་འབད་བས་ "
+

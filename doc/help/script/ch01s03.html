@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Notations</title>
+<link rel="stylesheet" type="text/css" href="../medit.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="medit scripting manual">
+<link rel="up" href="lua-moo.html" title="Chapter 1. medit Lua API">
+<link rel="prev" href="ch01s02.html" title="medit object model">
+<link rel="next" href="ch01s04.html" title="moo.App - application object">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Notations</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01s02.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 1. <span class="application">medit</span> Lua API</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch01s04.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="section-script-lua-notations"></a>Notations</h2></div></div></div>
+<p>This manual uses the following conventions:</p>
+<div class="variablelist"><dl class="variablelist">
+<dt><span class="term">Optional parameters</span></dt>
+<dd>
+<pre class="programlisting">func(arg1=val1, arg2=val, arg3=val3)</pre>
+<code class="code"><em class="parameter"><code>arg</code></em>=val</code> means that
+    parameter <em class="parameter"><code>arg</code></em> is optional, and function receives
+    value <code class="code">val</code> if it's missing. Not all parameters are necessarily
+    optional. For example, <pre class="programlisting">insert_text(text, where=nil)</pre>
+    means that <em class="parameter"><code>text</code></em> may not be missing or <code class="constant">nil</code>
+    (unless documentation says otherwise), and <em class="parameter"><code>where</code></em> is optional.
+    </dd>
+<dt><span class="term">Keyword parameters</span></dt>
+<dd>
+<pre class="programlisting">func{arg1, arg2, kwarg1=kwval1, kwarg2=kwval2}</pre>
+    This means that function can be called in an alternative way: actual parameters are
+    taken from the single table parameter, which must be a dictionary with keys
+    <em class="parameter"><code>kwarg1</code></em>, <em class="parameter"><code>kwarg2</code></em>, etc., and whose array part
+    must contain exactly as many values as there are non-optional arguments. Similarly
+    to regular parameters, <code class="code"><em class="parameter"><code>kwarg</code></em>=kwval</code> means that
+    <em class="parameter"><code>kwarg</code></em> is optional. For example, above function can be called
+    as follows.
+    <pre class="programlisting">
+func{1, 2, kwarg1='foo'} -- equivalent to func(1, 2, 'foo')
+func{3, 4, kwarg2='bar'} -- equivalent to func(3, 4, kwval1, 'bar')
+func{5, 6, kwarg2='baz', kwarg1='bud', } -- equivalent to func(5, 6, 'bud', 'baz')</pre>
+    This is similar to Python keyword arguments (with the difference that keyword arguments
+    may be used only if function is documented to support them).
+    </dd>
+</dl></div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01s02.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="lua-moo.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch01s04.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">
+<span class="application">medit</span> object model </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> moo.App - application object</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+# translation of eu.po to Basque
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2003.
+#
+# Piarres Beobide <pi@beobide.net>, 2003.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: eu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-05 23:03-0800\n"
+"PO-Revision-Date: 2010-03-27 18:20+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+""
+
+msgid "Background"
+msgstr "Atzeko planoa"
+
+msgid "Background color"
+msgstr "Atzeko planoko kolorea"
+
+msgid "Background set"
+msgstr "Atzeko planoaren ezarpena"
+
+msgid "Blue based color scheme"
+msgstr "Urdinean oinarritutako kolore-eskema"
+
+msgid "Bold"
+msgstr "Lodia"
+
+msgid "Bold set"
+msgstr "Lodiaren ezarpena"
+
+msgid "Boolean value"
+msgstr "Balio boolearra"
+
+msgid "C/C++/ObjC Header"
+msgstr "C/C++/ObjC goiburua"
+
+msgid "CG Shader Language"
+msgstr "CG itzalduren hizkuntza"
+
+msgid ""
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
+"The error was: %s"
+msgstr ""
+"Ezin da trantsizio guztien adierazpen erregularrik sortu, sintaxia nabarmentzeko prozesua ohizkoa baino motelagoa izango da.\n"
+"Errorea: %s"
+
+msgid "Classic"
+msgstr "klasikoa"
+
+msgid "Classic color scheme"
+msgstr "Kolore-eskema klasikoa"
+
+msgid "Cobalt"
+msgstr "Kobaltoa"
+
+msgid "Color scheme used in the Kate text editor"
+msgstr "Erabilitako kolore-eskema Kate testu-editorean"
+
+msgid "Color scheme using Tango color palette"
+msgstr "Tango kolore-paleta darabilen kolore-eskema"
+
+msgid "Comment"
+msgstr "Iruzkina"
+
+msgid "Dark color scheme using the Tango color palette"
+msgstr "Tango kolore-paleta darabilen kolore-eskema iluna"
+
+msgid "Data Type"
+msgstr "Datu mota"
+
+msgid "Decimal number"
+msgstr "Zenbaki hamartarra"
+
+msgid "Defaults"
+msgstr "Lehenetsiak"
+
+msgid "Dos Batch"
+msgstr "Dos-eko batch"
+
+msgid "Error"
+msgstr "Errorea"
+
+msgid "Escaped Character"
+msgstr "Ihes karakterea"
+
+msgid "Floating point number"
+msgstr "Koma mugikorreko zenbakia"
+
+msgid "Foreground"
+msgstr "Aurreko planoa"
+
+msgid "Foreground color"
+msgstr "Aurreko planoko kolorea"
+
+msgid "Foreground set"
+msgstr "Aurreko planoaren ezarpena"
+
+msgid "Graphviz Dot"
+msgstr "Graphviz-eko Dot"
+
+msgid "Hexadecimal number"
+msgstr "Hamaseitar zenbakia"
+
+msgid "Hidden"
+msgstr "Ezkutatua"
+
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Lerro bakarra nabarmentzeak denbora asko hartu du, sintaxia nabarmentzea desgaitu egingo da"
+
+msgid "Identifier"
+msgstr "Identifikatzailea"
+
+msgid "Italic"
+msgstr "Etzana"
+
+msgid "Italic set"
+msgstr "Etzanaren ezarpena"
+
+msgid "Keyword"
+msgstr "Gako-hitza"
+
+msgid "Language id"
+msgstr "Hizkuntzaren IDa"
+
+msgid "Language ids"
+msgstr "Hizkuntzaren IDak"
+
+msgid "Language name"
+msgstr "Hizkuntzaren izena"
+
+msgid "Language section"
+msgstr "Hizkuntzaren atala"
+
+msgid "Language specification directories"
+msgstr "Hizkuntzen espezifikazioen direktorioak"
+
+msgid "Line background"
+msgstr "Lerroaren atzeko planoa"
+
+msgid "Line background color"
+msgstr "Lerroaren atzeko planoko kolorea"
+
+msgid "Line background set"
+msgstr "Lerroaren atzeko planoaren ezarpena"
+
+msgid "List of directories and files where the style schemes are located"
+msgstr "Estilo-eskemak kokatuta dauden direktorioen eta fitxategien zerrenda"
+
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Direktorioen zerrenda, hizkuntzen espezifikazioen fitxategien (.lang) kokapena"
+
+msgid "List of the ids of the available languages"
+msgstr "Hizkuntza erabilgarrien IDen zerrenda"
+
+msgid "List of the ids of the available style schemes"
+msgstr "Estilo-eskema erabilgarrien IDen zerrenda"
+
+msgid "Literate Haskell"
+msgstr "Haskell literala"
+
+msgid "Markup"
+msgstr "Marka"
+
+msgid "Missing main language definition (id = \"%s\".)"
+msgstr "Hizkuntza nagusiaren definizioa falta da (id=\"%s\")"
+
+msgid "OpenGL Shading Language"
+msgstr "OpenGL itzalduraren hizkuntza"
+
+msgid "Operator"
+msgstr "Eragilea"
+
+msgid "Others"
+msgstr "Bestelakoak"
+
+msgid "Preprocessor"
+msgstr "Preprozesadore"
+
+msgid "RPM spec"
+msgstr "RPM zehaztapenak"
+
+msgid "Scheme"
+msgstr "Eskema"
+
+msgid "Scheme ids"
+msgstr "Eskemen IDak"
+
+msgid "Scientific"
+msgstr "Zientifikoa"
+
+msgid "Scripts"
+msgstr "Skript-ak"
+
+msgid "Sources"
+msgstr "Iturburuak"
+
+msgid "Strikethrough"
+msgstr "Marratua"
+
+msgid "Strikethrough set"
+msgstr "Marratuaren ezarpena"
+
+msgid "String"
+msgstr "Katea"
+
+msgid "Style scheme description"
+msgstr "Estilo-eskemaren azalpena"
+
+msgid "Style scheme filename"
+msgstr "Estilo-eskemaren fitxategia"
+
+msgid "Style scheme id"
+msgstr "Estilo-eskemaren IDa"
+
+msgid "Style scheme name"
+msgstr "Estilo-eskemaren izena"
+
+msgid "Style scheme search path"
+msgstr "Estilo-eskema bilatzeko bide-izena"
+
+msgid "Text2Tags"
+msgstr "txt2Tags"
+
+msgid "Underline"
+msgstr "Azpimarratua"
+
+msgid "Underline set"
+msgstr "Azpimarraren ezarpena"
+
+msgid "Unknown id '%s' in regex '%s'"
+msgstr "'%s' ID ezezaguna '%s' adi. erregularrean"
+
+msgid "Whether background color is set"
+msgstr "Atzeko planoaren kolorea ezarrita dagoen ala ez"
+
+msgid "Whether bold attribute is set"
+msgstr "Lodia atributua ezarrita dagoen ala ez"
+
+msgid "Whether foreground color is set"
+msgstr "Aurreko planoaren kolorea ezarrita dagoen ala ez"
+
+msgid "Whether italic attribute is set"
+msgstr "Etzana atributua ezarrita dagoen ala ez"
+
+msgid "Whether line background color is set"
+msgstr "Lerroaren atzeko planoaren kolorea ezarrita dagoen ala ez"
+
+msgid "Whether strikethrough attribute is set"
+msgstr "Marratua atributua ezarrita dagoen ala ez"
+
+msgid "Whether the language should be hidden from the user"
+msgstr "Hizkuntza erabiltzaileari ezkutatu behar zaion ala ez"
+
+msgid "Whether underline attribute is set"
+msgstr "Azpimarra atributua ezarrita dagoen ala ez"
+
+msgid "awk"
+msgstr "Awk"
+
+msgid "context '%s' cannot contain a \\%%{...@start} command"
+msgstr "'%s' testuinguruak ezin du \\%%{...@start} komandorik eduki"
+
+msgid "duplicated context id '%s'"
+msgstr "testuinguruko '%s' id-a bikoiztuta"
+
+msgid "gettext translation"
+msgstr "gettext itzulpena"
+
+msgid "in regex '%s': backreferences are not supported"
+msgstr "'%s' adi. erregularrean: atzerako erreferentziak ez daude onartuta"
+
+msgid "invalid context reference '%s'"
+msgstr "baliogabeko testuinguruko '%s' erreferentzia"
+
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "estiloa gainjartzea testuinguruko erreferentziako komodinarekin erabilita '%s' hizkuntzako '%s' erreferentzian"
+
+msgid "unknown context '%s'"
+msgstr "'%s' testuinguru ezezaguna"
+
+msgid "using \\C is not supported in language definitions"
+msgstr "\\C erabiltzea ez dago onartuta hizkuntzen definizioetan"
+
